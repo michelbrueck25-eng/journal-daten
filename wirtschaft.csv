@@ -1,0 +1,392 @@
+date,time,country,title,actual,forecast,previous,impact
+2026-01-07,01:30,Australien,CPI y/y,3.4%,3.6%,3.8%,high
+2026-01-07,11:00,Eurozone,CPI y/y (Schnellschätzung),2.0%,2.0%,2.1%,high
+2026-01-07,11:00,Eurozone,Kern-CPI y/y (Schnellschätzung),2.3%,2.4%,2.4%,high
+2026-01-08,08:30,Schweiz,CPI m/m,0.0%,0.0%,-0.2%,high
+2026-01-08,11:00,Eurozone,Arbeitslosenquote,6.3%,6.4%,6.4%,medium
+2026-01-09,09:00,Schweiz,Arbeitslosenquote,3.0%,3.0%,3.0%,medium
+2026-01-09,14:30,Kanada,Arbeitslosenquote,6.8%,6.7%,6.5%,high
+2026-01-09,14:30,Kanada,Beschäftigungsänderung,8.2K,-1.8K,53.6K,high
+2026-01-09,14:30,USA,Arbeitslosenquote,4.4%,4.5%,4.6%,high
+2026-01-09,14:30,USA,Durchschn. Stundenlöhne m/m,0.3%,0.3%,0.1%,medium
+2026-01-09,14:30,USA,Non-Farm Payrolls,50K,66K,56K,high
+2026-01-13,14:30,USA,CPI m/m,0.3%,0.3%,0.3%,high
+2026-01-13,14:30,USA,CPI y/y,2.7%,2.7%,2.7%,high
+2026-01-13,14:30,USA,Kern-CPI m/m,0.2%,0.3%,0.2%,high
+2026-01-13,14:30,USA,Kern-CPI y/y,2.6%,2.7%,2.6%,high
+2026-01-19,14:30,Kanada,CPI m/m,-0.2%,-0.4%,0.1%,high
+2026-01-19,14:30,Kanada,Median-CPI y/y,2.5%,2.7%,2.8%,medium
+2026-01-20,08:00,Großbritannien,Arbeitslosenquote,5.1%,5.1%,5.1%,high
+2026-01-20,08:00,Großbritannien,Durchschnittslöhne 3m/y,4.7%,4.6%,4.8%,high
+2026-01-21,08:00,Großbritannien,CPI y/y,3.4%,3.3%,3.2%,high
+2026-01-21,08:00,Großbritannien,Kern-CPI y/y,3.2%,3.3%,3.2%,high
+2026-01-22,01:30,Australien,Arbeitslosenquote,4.1%,4.4%,4.3%,high
+2026-01-22,01:30,Australien,Beschäftigungsänderung,65.2K,28.3K,-28.7K,high
+2026-01-22,16:00,USA,Kern-PCE m/m,0.2%,0.2%,0.2%,medium
+2026-01-22,22:45,Neuseeland,CPI q/q,0.6%,0.5%,1.0%,high
+2026-01-23,00:30,Japan,Kern-CPI y/y (landesweit),2.4%,2.4%,3.0%,high
+2026-01-23,04:07,Japan,BoJ-Zinsentscheid,<0.75%,<0.75%,<0.75%,high
+2026-01-28,01:30,Australien,CPI y/y,3.8%,3.5%,3.4%,high
+2026-01-28,15:45,Kanada,BoC-Zinsentscheid,2.25%,2.25%,2.25%,high
+2026-01-28,20:00,USA,Fed-Zinsentscheid (Obergrenze),3.75%,3.75%,3.75%,high
+2026-01-30,00:30,Japan,Arbeitslosenquote,2.6%,2.6%,2.6%,medium
+2026-01-30,00:30,Japan,Kern-CPI y/y (Tokio),2.0%,2.2%,2.3%,medium
+2026-01-30,11:00,Eurozone,Arbeitslosenquote,6.2%,6.3%,6.3%,medium
+2026-01-30,14:30,USA,PPI m/m,0.5%,0.2%,0.2%,medium
+2026-02-03,04:30,Australien,RBA-Zinsentscheid,3.85%,3.85%,3.60%,high
+2026-02-03,22:45,Neuseeland,Arbeitslosenquote,5.4%,5.3%,5.3%,high
+2026-02-03,22:45,Neuseeland,Beschäftigungsänderung q/q,0.5%,0.3%,0.0%,high
+2026-02-04,11:00,Eurozone,CPI y/y (Schnellschätzung),1.7%,1.7%,1.9%,high
+2026-02-04,11:00,Eurozone,Kern-CPI y/y (Schnellschätzung),2.2%,2.3%,2.3%,high
+2026-02-05,13:00,Großbritannien,BoE-Zinsentscheid,3.75%,3.75%,3.75%,high
+2026-02-05,14:15,Eurozone,EZB-Zinsentscheid,2.15%,2.15%,2.15%,high
+2026-02-06,09:00,Schweiz,Arbeitslosenquote,2.9%,3.0%,3.0%,medium
+2026-02-06,14:30,Kanada,Arbeitslosenquote,6.5%,6.8%,6.8%,high
+2026-02-06,14:30,Kanada,Beschäftigungsänderung,-24.8K,5.2K,8.2K,high
+2026-02-11,14:30,USA,Arbeitslosenquote,4.3%,4.4%,4.4%,high
+2026-02-11,14:30,USA,Durchschn. Stundenlöhne m/m,0.4%,0.3%,0.1%,medium
+2026-02-11,14:30,USA,Non-Farm Payrolls,130K,66K,48K,high
+2026-02-13,08:30,Schweiz,CPI m/m,-0.1%,0.0%,0.0%,high
+2026-02-13,14:30,USA,CPI m/m,0.2%,0.3%,0.3%,high
+2026-02-13,14:30,USA,CPI y/y,2.4%,2.5%,2.7%,high
+2026-02-13,14:30,USA,Kern-CPI m/m,0.3%,0.3%,0.2%,high
+2026-02-13,14:30,USA,Kern-CPI y/y,2.5%,2.5%,2.6%,high
+2026-02-17,08:00,Großbritannien,Arbeitslosenquote,5.2%,5.2%,5.1%,high
+2026-02-17,08:00,Großbritannien,Durchschnittslöhne 3m/y,4.2%,4.6%,4.6%,high
+2026-02-17,14:30,Kanada,CPI m/m,0.0%,0.1%,-0.2%,high
+2026-02-17,14:30,Kanada,Median-CPI y/y,2.5%,2.5%,2.6%,medium
+2026-02-18,01:30,Australien,Lohnpreisindex q/q,0.8%,0.8%,0.8%,medium
+2026-02-18,02:00,Neuseeland,RBNZ-Zinsentscheid,2.25%,2.25%,2.25%,high
+2026-02-18,08:00,Großbritannien,CPI y/y,3.0%,3.0%,3.4%,high
+2026-02-18,08:00,Großbritannien,Kern-CPI y/y,3.1%,3.0%,3.2%,high
+2026-02-19,01:30,Australien,Arbeitslosenquote,4.1%,4.2%,4.1%,high
+2026-02-19,01:30,Australien,Beschäftigungsänderung,17.8K,20.0K,68.5K,high
+2026-02-20,00:30,Japan,Kern-CPI y/y (landesweit),2.0%,2.0%,2.4%,high
+2026-02-20,14:30,USA,Kern-PCE m/m,0.4%,0.3%,0.2%,medium
+2026-02-25,01:30,Australien,CPI y/y,3.8%,3.7%,3.8%,high
+2026-02-27,00:30,Japan,Kern-CPI y/y (Tokio),1.8%,1.7%,2.0%,medium
+2026-02-27,14:30,USA,PPI m/m,0.5%,0.3%,0.4%,medium
+2026-03-02,00:30,Japan,Arbeitslosenquote,2.7%,2.6%,2.6%,medium
+2026-03-03,11:00,Eurozone,CPI y/y (Schnellschätzung),1.9%,1.7%,1.7%,high
+2026-03-03,11:00,Eurozone,Kern-CPI y/y (Schnellschätzung),2.4%,2.2%,2.2%,high
+2026-03-04,08:30,Schweiz,CPI m/m,0.6%,0.5%,-0.1%,high
+2026-03-04,11:00,Eurozone,Arbeitslosenquote,6.1%,6.2%,6.3%,medium
+2026-03-05,09:00,Schweiz,Arbeitslosenquote,3.0%,2.9%,2.9%,medium
+2026-03-06,14:30,USA,Arbeitslosenquote,4.4%,4.3%,4.3%,high
+2026-03-06,14:30,USA,Durchschn. Stundenlöhne m/m,0.4%,0.3%,0.4%,medium
+2026-03-06,14:30,USA,Non-Farm Payrolls,-92K,58K,126K,high
+2026-03-11,13:30,USA,CPI m/m,0.3%,0.3%,0.2%,high
+2026-03-11,13:30,USA,CPI y/y,2.4%,2.4%,2.4%,high
+2026-03-11,13:30,USA,Kern-CPI m/m,0.2%,0.2%,0.3%,high
+2026-03-11,13:30,USA,Kern-CPI y/y,2.5%,2.5%,2.5%,high
+2026-03-13,13:30,Kanada,Arbeitslosenquote,6.7%,6.6%,6.5%,high
+2026-03-13,13:30,Kanada,Beschäftigungsänderung,-83.9K,10.3K,-24.8K,high
+2026-03-13,13:30,USA,Kern-PCE m/m,0.4%,0.4%,0.4%,medium
+2026-03-16,13:30,Kanada,CPI m/m,0.5%,0.7%,0.0%,high
+2026-03-16,13:30,Kanada,Median-CPI y/y,2.3%,2.4%,2.5%,medium
+2026-03-17,04:30,Australien,RBA-Zinsentscheid,4.10%,4.10%,3.85%,high
+2026-03-18,13:30,USA,PPI m/m,0.7%,0.3%,0.5%,medium
+2026-03-18,14:45,Kanada,BoC-Zinsentscheid,2.25%,2.25%,2.25%,high
+2026-03-18,19:00,USA,Fed-Zinsentscheid (Obergrenze),3.75%,3.75%,3.75%,high
+2026-03-19,03:46,Japan,BoJ-Zinsentscheid,<0.75%,<0.75%,<0.75%,high
+2026-03-19,08:00,Großbritannien,Arbeitslosenquote,5.2%,5.3%,5.2%,high
+2026-03-19,08:00,Großbritannien,Durchschnittslöhne 3m/y,3.9%,3.9%,4.2%,high
+2026-03-19,09:30,Schweiz,SNB-Zinsentscheid,0.00%,0.00%,0.00%,high
+2026-03-19,13:00,Großbritannien,BoE-Zinsentscheid,3.75%,3.75%,3.75%,high
+2026-03-19,14:15,Eurozone,EZB-Zinsentscheid,2.15%,2.15%,2.15%,high
+2026-03-20,01:30,Australien,Arbeitslosenquote,4.3%,4.1%,4.1%,high
+2026-03-20,01:30,Australien,Beschäftigungsänderung,48.9K,20.8K,26.1K,high
+2026-03-24,00:30,Japan,Kern-CPI y/y (landesweit),1.6%,1.7%,2.0%,high
+2026-03-24,01:30,Australien,CPI y/y,3.7%,3.8%,3.8%,high
+2026-03-25,08:00,Großbritannien,CPI y/y,3.0%,3.0%,3.0%,high
+2026-03-25,08:00,Großbritannien,Kern-CPI y/y,3.2%,3.1%,3.1%,high
+2026-03-31,01:30,Japan,Arbeitslosenquote,2.6%,2.7%,2.7%,medium
+2026-03-31,01:30,Japan,Kern-CPI y/y (Tokio),1.7%,1.8%,1.8%,medium
+2026-03-31,11:00,Eurozone,CPI y/y (Schnellschätzung),2.5%,2.6%,1.9%,high
+2026-03-31,11:00,Eurozone,Kern-CPI y/y (Schnellschätzung),2.3%,2.4%,2.4%,high
+2026-04-01,11:00,Eurozone,Arbeitslosenquote,6.2%,6.1%,6.1%,medium
+2026-04-02,08:30,Schweiz,CPI m/m,0.2%,0.5%,0.6%,high
+2026-04-03,14:30,USA,Arbeitslosenquote,4.3%,4.4%,4.4%,high
+2026-04-03,14:30,USA,Durchschn. Stundenlöhne m/m,0.2%,0.3%,0.4%,medium
+2026-04-03,14:30,USA,Non-Farm Payrolls,178K,65K,-133K,high
+2026-04-08,04:00,Neuseeland,RBNZ-Zinsentscheid,2.25%,2.25%,2.25%,high
+2026-04-08,09:00,Schweiz,Arbeitslosenquote,3.0%,3.0%,3.0%,medium
+2026-04-09,14:30,USA,Kern-PCE m/m,0.4%,0.4%,0.4%,medium
+2026-04-10,14:30,Kanada,Arbeitslosenquote,6.7%,6.8%,6.7%,high
+2026-04-10,14:30,Kanada,Beschäftigungsänderung,14.1K,14.5K,-83.9K,high
+2026-04-10,14:30,USA,CPI m/m,0.9%,1.0%,0.3%,high
+2026-04-10,14:30,USA,CPI y/y,3.3%,3.4%,2.4%,high
+2026-04-10,14:30,USA,Kern-CPI m/m,0.2%,0.3%,0.2%,high
+2026-04-10,14:30,USA,Kern-CPI y/y,2.6%,2.7%,2.5%,high
+2026-04-14,14:30,USA,PPI m/m,0.5%,1.1%,0.5%,medium
+2026-04-16,03:30,Australien,Arbeitslosenquote,4.3%,4.3%,4.3%,high
+2026-04-16,03:30,Australien,Beschäftigungsänderung,17.9K,19.1K,49.7K,high
+2026-04-20,14:30,Kanada,CPI m/m,0.9%,1.1%,0.5%,high
+2026-04-20,14:30,Kanada,Median-CPI y/y,2.3%,2.4%,2.3%,medium
+2026-04-21,00:45,Neuseeland,CPI q/q,0.9%,0.8%,0.6%,high
+2026-04-21,08:00,Großbritannien,Arbeitslosenquote,4.9%,5.2%,5.2%,high
+2026-04-21,08:00,Großbritannien,Durchschnittslöhne 3m/y,3.8%,3.6%,4.1%,high
+2026-04-22,08:00,Großbritannien,CPI y/y,3.3%,3.3%,3.0%,high
+2026-04-22,08:00,Großbritannien,Kern-CPI y/y,3.1%,3.2%,3.2%,high
+2026-04-23,20:00,USA,Fed-Zinsentscheid (Obergrenze),3.75%,3.75%,3.75%,high
+2026-04-24,01:30,Japan,Kern-CPI y/y (landesweit),1.8%,1.7%,1.6%,high
+2026-04-28,01:30,Japan,Arbeitslosenquote,2.7%,2.6%,2.6%,medium
+2026-04-28,05:04,Japan,BoJ-Zinsentscheid,<0.75%,<0.75%,<0.75%,high
+2026-04-29,03:30,Australien,CPI y/y,4.6%,4.8%,3.7%,high
+2026-04-29,15:45,Kanada,BoC-Zinsentscheid,2.25%,2.25%,2.25%,high
+2026-04-30,11:00,Eurozone,Arbeitslosenquote,6.2%,6.2%,6.3%,medium
+2026-04-30,11:00,Eurozone,CPI y/y (Schnellschätzung),3.0%,3.0%,2.6%,high
+2026-04-30,11:00,Eurozone,Kern-CPI y/y (Schnellschätzung),2.2%,2.2%,2.3%,high
+2026-04-30,13:00,Großbritannien,BoE-Zinsentscheid,3.75%,3.75%,3.75%,high
+2026-04-30,14:15,Eurozone,EZB-Zinsentscheid,2.15%,2.15%,2.15%,high
+2026-04-30,14:30,USA,Kern-PCE m/m,0.3%,0.3%,0.4%,medium
+2026-05-01,01:30,Japan,Kern-CPI y/y (Tokio),1.5%,1.8%,1.7%,medium
+2026-05-05,06:30,Australien,RBA-Zinsentscheid,4.35%,4.35%,4.10%,high
+2026-05-05,08:30,Schweiz,CPI m/m,0.3%,0.3%,0.2%,high
+2026-05-06,00:45,Neuseeland,Arbeitslosenquote,5.3%,5.4%,5.4%,high
+2026-05-07,09:00,Schweiz,Arbeitslosenquote,3.0%,3.0%,3.0%,medium
+2026-05-08,14:30,Kanada,Arbeitslosenquote,6.9%,6.7%,6.7%,high
+2026-05-08,14:30,Kanada,Beschäftigungsänderung,-17.7K,12.9K,14.1K,high
+2026-05-08,14:30,USA,Arbeitslosenquote,4.3%,4.3%,4.3%,high
+2026-05-08,14:30,USA,Durchschn. Stundenlöhne m/m,0.2%,0.3%,0.2%,medium
+2026-05-08,14:30,USA,Non-Farm Payrolls,115K,65K,185K,high
+2026-05-12,03:30,Australien,Lohnpreisindex q/q,0.8%,0.8%,0.8%,medium
+2026-05-12,14:30,USA,CPI m/m,0.6%,0.6%,0.9%,high
+2026-05-12,14:30,USA,CPI y/y,3.8%,3.7%,3.3%,high
+2026-05-12,14:30,USA,Kern-CPI m/m,0.4%,0.3%,0.2%,high
+2026-05-12,14:30,USA,Kern-CPI y/y,2.8%,2.7%,2.6%,high
+2026-05-13,14:30,USA,PPI m/m,1.4%,0.5%,0.7%,medium
+2026-05-19,08:00,Großbritannien,Arbeitslosenquote,5.0%,4.9%,4.9%,high
+2026-05-19,08:00,Großbritannien,Durchschnittslöhne 3m/y,4.1%,3.8%,3.9%,high
+2026-05-19,14:30,Kanada,CPI m/m,0.4%,0.7%,0.9%,high
+2026-05-19,14:30,Kanada,Median-CPI y/y,2.1%,2.3%,2.3%,medium
+2026-05-20,08:00,Großbritannien,CPI y/y,2.8%,3.0%,3.3%,high
+2026-05-20,08:00,Großbritannien,Kern-CPI y/y,2.5%,2.6%,3.1%,high
+2026-05-21,03:30,Australien,Arbeitslosenquote,4.5%,4.3%,4.3%,high
+2026-05-21,03:30,Australien,Beschäftigungsänderung,-18.6K,16.7K,23.3K,high
+2026-05-22,01:30,Japan,Kern-CPI y/y (landesweit),1.4%,1.7%,1.8%,high
+2026-05-27,03:30,Australien,CPI y/y,4.2%,4.4%,4.6%,high
+2026-05-27,04:00,Neuseeland,RBNZ-Zinsentscheid,2.25%,2.25%,2.25%,high
+2026-05-28,14:30,USA,Kern-PCE m/m,0.2%,0.3%,0.3%,medium
+2026-05-29,01:30,Japan,Arbeitslosenquote,2.5%,2.7%,2.7%,medium
+2026-05-29,01:30,Japan,Kern-CPI y/y (Tokio),1.3%,1.5%,1.5%,medium
+2026-06-01,11:00,Eurozone,Arbeitslosenquote,6.3%,6.2%,6.3%,medium
+2026-06-02,11:00,Eurozone,CPI y/y (Schnellschätzung),3.2%,3.2%,3.0%,high
+2026-06-02,11:00,Eurozone,Kern-CPI y/y (Schnellschätzung),2.5%,2.4%,2.2%,high
+2026-06-04,08:30,Schweiz,CPI m/m,0.2%,0.3%,0.3%,high
+2026-06-04,09:00,Schweiz,Arbeitslosenquote,3.1%,3.0%,3.0%,medium
+2026-06-05,14:30,Kanada,Arbeitslosenquote,6.6%,6.9%,6.9%,high
+2026-06-05,14:30,Kanada,Beschäftigungsänderung,87.8K,10.6K,-17.7K,high
+2026-06-05,14:30,USA,Arbeitslosenquote,4.3%,4.3%,4.3%,high
+2026-06-05,14:30,USA,Durchschn. Stundenlöhne m/m,0.3%,0.3%,0.2%,medium
+2026-06-05,14:30,USA,Non-Farm Payrolls,172K,85K,179K,high
+2026-06-10,14:30,USA,CPI m/m,0.5%,0.5%,0.6%,high
+2026-06-10,14:30,USA,CPI y/y,4.2%,4.2%,3.8%,high
+2026-06-10,14:30,USA,Kern-CPI m/m,0.2%,0.3%,0.4%,high
+2026-06-10,14:30,USA,Kern-CPI y/y,2.9%,2.9%,2.8%,high
+2026-06-10,15:45,Kanada,BoC-Zinsentscheid,2.25%,2.25%,2.25%,high
+2026-06-11,14:15,Eurozone,EZB-Zinsentscheid,2.40%,2.40%,2.15%,high
+2026-06-11,14:30,USA,PPI m/m,1.1%,0.7%,1.1%,medium
+2026-06-16,05:19,Japan,BoJ-Zinsentscheid,<1.00%,<1.00%,<0.75%,high
+2026-06-16,06:30,Australien,RBA-Zinsentscheid,4.35%,4.35%,4.35%,high
+2026-06-17,08:00,Großbritannien,CPI y/y,2.8%,3.0%,2.8%,high
+2026-06-17,08:00,Großbritannien,Kern-CPI y/y,2.6%,2.7%,2.5%,high
+2026-06-17,20:00,USA,Fed-Zinsentscheid (Obergrenze),3.75%,3.75%,3.75%,high
+2026-06-18,08:00,Großbritannien,Arbeitslosenquote,4.9%,5.0%,5.0%,high
+2026-06-18,08:00,Großbritannien,Durchschnittslöhne 3m/y,4.4%,4.0%,4.4%,high
+2026-06-18,09:30,Schweiz,SNB-Zinsentscheid,0.00%,0.00%,0.00%,high
+2026-06-18,13:00,Großbritannien,BoE-Zinsentscheid,3.75%,3.75%,3.75%,high
+2026-06-19,01:30,Japan,Kern-CPI y/y (landesweit),1.4%,1.4%,1.4%,high
+2026-06-22,14:30,Kanada,CPI m/m,1.0%,0.7%,0.4%,high
+2026-06-22,14:30,Kanada,Median-CPI y/y,2.1%,2.1%,2.1%,medium
+2026-06-24,03:30,Australien,CPI y/y,4.0%,4.3%,4.2%,high
+2026-06-25,03:30,Australien,Arbeitslosenquote,4.4%,4.4%,4.5%,high
+2026-06-25,03:30,Australien,Beschäftigungsänderung,40.3K,31.2K,-40.7K,high
+2026-06-25,14:30,USA,Kern-PCE m/m,0.3%,0.3%,0.3%,medium
+2026-06-26,01:30,Japan,Kern-CPI y/y (Tokio),1.6%,1.6%,1.3%,medium
+2026-06-30,01:30,Japan,Arbeitslosenquote,2.5%,2.5%,2.5%,medium
+2026-07-01,11:00,Eurozone,CPI y/y (Schnellschätzung),2.8%,3.0%,3.2%,high
+2026-07-01,11:00,Eurozone,Kern-CPI y/y (Schnellschätzung),2.4%,2.5%,2.6%,high
+2026-07-02,08:30,Schweiz,CPI m/m,0.0%,0.1%,0.2%,high
+2026-07-02,11:00,Eurozone,Arbeitslosenquote,6.2%,6.3%,6.2%,medium
+2026-07-02,14:30,USA,Arbeitslosenquote,4.2%,4.3%,4.3%,high
+2026-07-02,14:30,USA,Durchschn. Stundenlöhne m/m,0.3%,0.3%,0.3%,medium
+2026-07-02,14:30,USA,Non-Farm Payrolls,57K,114K,129K,high
+2026-07-06,09:00,Schweiz,Arbeitslosenquote,3.1%,3.1%,3.1%,medium
+2026-07-08,04:00,Neuseeland,RBNZ-Zinsentscheid,2.50%,2.50%,2.25%,high
+2026-07-10,14:30,Kanada,Arbeitslosenquote,6.5%,6.6%,6.6%,high
+2026-07-10,14:30,Kanada,Beschäftigungsänderung,18.2K,11.2K,87.8K,high
+2026-07-14,14:30,USA,CPI m/m,-0.4%,-0.1%,0.5%,high
+2026-07-14,14:30,USA,CPI y/y,3.5%,3.8%,4.2%,high
+2026-07-14,14:30,USA,Kern-CPI m/m,0.0%,0.2%,0.2%,high
+2026-07-14,14:30,USA,Kern-CPI y/y,2.6%,2.8%,2.9%,high
+2026-07-15,14:30,USA,PPI m/m,-0.3%,0.0%,0.6%,medium
+2026-07-15,15:45,Kanada,BoC-Zinsentscheid,2.25%,2.25%,2.25%,high
+2026-07-20,14:30,Kanada,CPI m/m,-0.4%,-0.2%,1.0%,high
+2026-07-20,14:30,Kanada,Median-CPI y/y,1.9%,2.1%,2.1%,medium
+2026-07-21,00:45,Neuseeland,CPI q/q,1.5%,1.4%,0.9%,high
+2026-07-21,08:00,Großbritannien,Arbeitslosenquote,4.9%,4.9%,4.9%,high
+2026-07-21,08:00,Großbritannien,Durchschnittslöhne 3m/y,4.3%,4.5%,4.4%,high
+2026-07-22,08:00,Großbritannien,CPI y/y,2.6%,2.7%,2.8%,high
+2026-07-22,08:00,Großbritannien,Kern-CPI y/y,2.6%,2.5%,2.6%,high
+2026-07-23,03:30,Australien,Arbeitslosenquote,4.4%,4.4%,4.4%,high
+2026-07-23,03:30,Australien,Beschäftigungsänderung,76.3K,16.4K,44.0K,high
+2026-07-23,14:15,Eurozone,EZB-Zinsentscheid,2.40%,2.40%,2.40%,high
+2026-07-24,01:30,Japan,Kern-CPI y/y (landesweit),1.6%,1.6%,1.4%,high
+2026-07-29,03:30,Australien,CPI y/y,3.8%,4.0%,4.0%,high
+2026-07-29,20:00,USA,Fed-Zinsentscheid (Obergrenze),3.75%,3.75%,3.75%,high
+2026-07-30,11:00,Eurozone,Arbeitslosenquote,6.3%,6.2%,6.3%,medium
+2026-07-30,13:00,Großbritannien,BoE-Zinsentscheid,3.75%,3.75%,3.75%,high
+2026-07-30,14:30,USA,Kern-PCE m/m,0.1%,0.2%,0.3%,medium
+2026-07-31,01:30,Japan,Arbeitslosenquote,2.5%,2.5%,2.5%,medium
+2026-07-31,01:30,Japan,Kern-CPI y/y (Tokio),1.9%,1.8%,1.6%,medium
+2026-07-31,05:11,Japan,BoJ-Zinsentscheid,<1.00%,<1.00%,<1.00%,high
+2026-07-31,11:00,Eurozone,CPI y/y (Schnellschätzung),2.9%,2.9%,2.8%,high
+2026-07-31,11:00,Eurozone,Kern-CPI y/y (Schnellschätzung),2.5%,2.4%,2.4%,high
+2026-08-03,08:30,Schweiz,CPI m/m,-0.1%,-0.1%,0.0%,high
+2026-08-05,00:45,Neuseeland,Arbeitslosenquote,5.6%,5.4%,5.4%,high
+2026-08-05,00:45,Neuseeland,Beschäftigungsänderung q/q,0.5%,0.1%,0.2%,high
+2026-08-06,09:00,Schweiz,Arbeitslosenquote,3.1%,3.1%,3.1%,medium
+2026-08-07,14:30,Kanada,Arbeitslosenquote,6.4%,6.5%,6.5%,high
+2026-08-07,14:30,Kanada,Beschäftigungsänderung,75.1K,17.8K,18.2K,high
+2026-08-07,14:30,USA,Arbeitslosenquote,4.1%,4.2%,4.2%,high
+2026-08-07,14:30,USA,Durchschn. Stundenlöhne m/m,0.1%,0.3%,0.3%,medium
+2026-08-07,14:30,USA,Non-Farm Payrolls,-23K,85K,20K,high
+2026-08-11,06:30,Australien,RBA-Zinsentscheid,4.35%,4.35%,4.35%,high
+2026-08-12,14:30,USA,CPI m/m,0.1%,0.1%,-0.4%,high
+2026-08-12,14:30,USA,CPI y/y,3.4%,3.4%,3.5%,high
+2026-08-12,14:30,USA,Kern-CPI m/m,0.2%,0.2%,0.0%,high
+2026-08-12,14:30,USA,Kern-CPI y/y,2.5%,2.5%,2.6%,high
+2026-08-13,14:30,USA,PPI m/m,0.0%,0.2%,-0.1%,medium
+2026-08-17,14:30,Kanada,CPI m/m,0.5%,0.4%,-0.4%,high
+2026-08-17,14:30,Kanada,Median-CPI y/y,2.0%,2.0%,1.9%,medium
+2026-08-18,08:00,Großbritannien,Arbeitslosenquote,4.9%,4.8%,4.9%,high
+2026-08-18,08:00,Großbritannien,Durchschnittslöhne 3m/y,4.1%,4.0%,4.4%,high
+2026-08-19,03:30,Australien,Lohnpreisindex q/q,0.8%,0.8%,0.8%,medium
+2026-08-19,08:00,Großbritannien,CPI y/y,2.9%,2.9%,2.6%,high
+2026-08-19,08:00,Großbritannien,Kern-CPI y/y,2.6%,2.5%,2.6%,high
+2026-08-20,03:30,Australien,Arbeitslosenquote,4.5%,4.4%,4.4%,high
+2026-08-20,03:30,Australien,Beschäftigungsänderung,-15.8K,11.7K,80.2K,high
+2026-08-21,01:30,Japan,Kern-CPI y/y (landesweit),1.8%,1.8%,1.6%,high
+2026-08-26,03:30,Australien,CPI y/y,3.5%,3.3%,3.8%,high
+2026-08-26,14:30,USA,Kern-PCE m/m,0.2%,0.2%,0.1%,medium
+2026-08-28,01:30,Japan,Arbeitslosenquote,2.4%,2.5%,2.5%,medium
+2026-08-28,01:30,Japan,Kern-CPI y/y (Tokio),1.8%,1.8%,1.7%,medium
+2026-09-01,11:00,Eurozone,Arbeitslosenquote,6.4%,6.3%,6.4%,medium
+2026-09-01,11:00,Eurozone,CPI y/y (Schnellschätzung),3.3%,3.3%,2.9%,high
+2026-09-01,11:00,Eurozone,Kern-CPI y/y (Schnellschätzung),2.4%,2.5%,2.5%,high
+2026-09-02,04:00,Neuseeland,RBNZ-Zinsentscheid,2.75%,2.75%,2.50%,high
+2026-09-02,15:45,Kanada,BoC-Zinsentscheid,2.25%,2.25%,2.25%,high
+2026-09-03,08:30,Schweiz,CPI m/m,0.4%,0.0%,-0.1%,high
+2026-09-04,14:30,Kanada,Arbeitslosenquote,6.4%,6.4%,6.4%,high
+2026-09-04,14:30,Kanada,Beschäftigungsänderung,-41.7K,15.1K,75.1K,high
+2026-09-04,14:30,USA,Arbeitslosenquote,4.1%,4.1%,4.1%,high
+2026-09-04,14:30,USA,Durchschn. Stundenlöhne m/m,0.3%,0.3%,0.2%,medium
+2026-09-04,14:30,USA,Non-Farm Payrolls,162K,55K,21K,high
+2026-09-07,09:00,Schweiz,Arbeitslosenquote,3.1%,3.1%,3.1%,medium
+2026-09-10,14:15,Eurozone,EZB-Zinsentscheid,2.65%,2.65%,2.40%,high
+2026-09-10,14:30,USA,PPI m/m,0.4%,0.4%,0.1%,medium
+2026-09-11,14:30,USA,CPI m/m,0.4%,0.4%,0.1%,high
+2026-09-11,14:30,USA,CPI y/y,3.4%,3.4%,3.4%,high
+2026-09-11,14:30,USA,Kern-CPI m/m,0.3%,0.2%,0.2%,high
+2026-09-11,14:30,USA,Kern-CPI y/y,2.4%,2.4%,2.5%,high
+2026-09-14,14:30,Kanada,CPI m/m,-0.1%,-0.1%,0.5%,high
+2026-09-14,14:30,Kanada,Median-CPI y/y,2.0%,2.0%,2.0%,medium
+2026-09-15,08:00,Großbritannien,Arbeitslosenquote,4.9%,5.0%,4.9%,high
+2026-09-15,08:00,Großbritannien,Durchschnittslöhne 3m/y,3.9%,3.9%,4.2%,high
+2026-09-16,08:00,Großbritannien,CPI y/y,3.1%,3.1%,2.9%,high
+2026-09-16,08:00,Großbritannien,Kern-CPI y/y,2.6%,2.6%,2.6%,high
+2026-09-16,20:00,USA,Fed-Zinsentscheid (Obergrenze),4.00%,4.00%,3.75%,high
+2026-09-17,13:00,Großbritannien,BoE-Zinsentscheid,3.75%,3.75%,3.75%,high
+2026-09-18,01:30,Japan,Kern-CPI y/y (landesweit),1.7%,1.8%,1.8%,high
+2026-09-18,04:54,Japan,BoJ-Zinsentscheid,<1.25%,<1.25%,<1.00%,high
+2026-09-24,03:30,Australien,Arbeitslosenquote,4.6%,4.5%,4.5%,high
+2026-09-24,03:30,Australien,Beschäftigungsänderung,39.5K,21.5K,-15.9K,high
+2026-09-24,09:30,Schweiz,SNB-Zinsentscheid,0.00%,0.00%,0.00%,high
+2026-09-29,06:30,Australien,RBA-Zinsentscheid,4.60%,4.60%,4.35%,high
+2026-09-30,03:30,Australien,CPI y/y,4.0%,4.1%,3.5%,high
+2026-09-30,14:30,USA,Kern-PCE m/m,0.2%,0.3%,0.1%,medium
+2026-10-01,08:30,Schweiz,CPI m/m,0.0%,0.0%,0.4%,high
+2026-10-01,11:00,Eurozone,Arbeitslosenquote,6.4%,6.4%,6.4%,medium
+2026-10-02,01:30,Japan,Arbeitslosenquote,2.5%,2.4%,2.4%,medium
+2026-10-02,01:30,Japan,Kern-CPI y/y (Tokio),2.7%,2.4%,1.8%,medium
+2026-10-02,11:00,Eurozone,CPI y/y (Schnellschätzung),3.8%,3.7%,3.2%,high
+2026-10-02,11:00,Eurozone,Kern-CPI y/y (Schnellschätzung),2.5%,2.5%,2.4%,high
+2026-10-02,14:30,USA,Arbeitslosenquote,4.2%,4.1%,4.1%,high
+2026-10-02,14:30,USA,Durchschn. Stundenlöhne m/m,0.1%,0.3%,0.3%,medium
+2026-10-02,14:30,USA,Non-Farm Payrolls,29K,89K,133K,high
+2026-10-06,09:00,Schweiz,Arbeitslosenquote,3.1%,3.1%,3.1%,medium
+2026-10-09,14:30,Kanada,Arbeitslosenquote,6.5%,6.5%,6.4%,high
+2026-10-09,14:30,Kanada,Beschäftigungsänderung,-68.3K,6.1K,-41.7K,high
+2026-10-14,14:30,USA,CPI m/m,,0.6%,0.4%,high
+2026-10-14,14:30,USA,CPI y/y,,3.6%,3.4%,high
+2026-10-14,14:30,USA,Kern-CPI m/m,,0.2%,0.3%,high
+2026-10-14,14:30,USA,Kern-CPI y/y,,2.5%,2.4%,high
+2026-10-15,02:30,Australien,Arbeitslosenquote,,4.6%,4.6%,high
+2026-10-15,02:30,Australien,Beschäftigungsänderung,,20.0K,39.5K,high
+2026-10-15,14:30,USA,PPI m/m,,0.5%,0.4%,medium
+2026-10-19,14:30,Kanada,CPI m/m,,,,high
+2026-10-19,14:30,Kanada,Median-CPI y/y,,,,medium
+2026-10-19,23:45,Neuseeland,CPI q/q,,,,high
+2026-10-20,08:00,Großbritannien,Arbeitslosenquote,,,,high
+2026-10-20,08:00,Großbritannien,Durchschnittslöhne 3m/y,,,,high
+2026-10-21,08:00,Großbritannien,CPI y/y,,,,high
+2026-10-21,08:00,Großbritannien,Kern-CPI y/y,,,,high
+2026-10-23,01:30,Japan,Kern-CPI y/y (landesweit),,,,high
+2026-10-27,02:00,Neuseeland,RBNZ-Zinsentscheid,,,,high
+2026-10-28,14:45,Kanada,BoC-Zinsentscheid,,,,high
+2026-10-28,19:00,USA,Fed-Zinsentscheid (Obergrenze),,,,high
+2026-10-29,13:30,USA,Kern-PCE m/m,,,,medium
+2026-10-29,14:15,Eurozone,EZB-Zinsentscheid,,,,high
+2026-10-30,00:30,Japan,Arbeitslosenquote,,,,medium
+2026-10-30,00:30,Japan,BoJ-Zinsentscheid,,,,high
+2026-10-30,00:30,Japan,Kern-CPI y/y (Tokio),,,,medium
+2026-10-30,11:00,Eurozone,Arbeitslosenquote,,,,medium
+2026-11-03,04:30,Australien,RBA-Zinsentscheid,,,,high
+2026-11-03,22:45,Neuseeland,Arbeitslosenquote,,,,high
+2026-11-04,08:30,Schweiz,CPI m/m,,,,high
+2026-11-04,11:00,Eurozone,CPI y/y (Schnellschätzung),,,,high
+2026-11-04,11:00,Eurozone,Kern-CPI y/y (Schnellschätzung),,,,high
+2026-11-05,13:00,Großbritannien,BoE-Zinsentscheid,,,,high
+2026-11-06,14:30,Kanada,Arbeitslosenquote,,,,high
+2026-11-06,14:30,Kanada,Beschäftigungsänderung,,,,high
+2026-11-06,14:30,USA,Arbeitslosenquote,,,,high
+2026-11-06,14:30,USA,Durchschn. Stundenlöhne m/m,,,,medium
+2026-11-06,14:30,USA,Non-Farm Payrolls,,,,high
+2026-11-10,14:30,USA,CPI m/m,,,,high
+2026-11-10,14:30,USA,CPI y/y,,,,high
+2026-11-10,14:30,USA,Kern-CPI m/m,,,,high
+2026-11-10,14:30,USA,Kern-CPI y/y,,,,high
+2026-11-11,09:00,Schweiz,Arbeitslosenquote,,,,medium
+2026-11-13,14:30,USA,PPI m/m,,,,medium
+2026-11-16,08:00,Großbritannien,Arbeitslosenquote,,,,high
+2026-11-16,08:00,Großbritannien,Durchschnittslöhne 3m/y,,,,high
+2026-11-16,14:30,Kanada,CPI m/m,,,,high
+2026-11-16,14:30,Kanada,Median-CPI y/y,,,,medium
+2026-11-18,01:30,Australien,Lohnpreisindex q/q,,,,medium
+2026-11-18,08:00,Großbritannien,Kern-CPI y/y,,,,high
+2026-11-19,01:30,Australien,Arbeitslosenquote,,,,high
+2026-11-19,01:30,Australien,Beschäftigungsänderung,,,,high
+2026-11-20,00:30,Japan,Kern-CPI y/y (landesweit),,,,high
+2026-11-25,01:30,Australien,CPI y/y,,,,high
+2026-11-25,14:30,USA,Kern-PCE m/m,,,,medium
+2026-11-27,00:30,Japan,Kern-CPI y/y (Tokio),,,,medium
+2026-12-01,00:30,Japan,Arbeitslosenquote,,,,medium
+2026-12-01,11:00,Eurozone,CPI y/y (Schnellschätzung),,,,high
+2026-12-01,11:00,Eurozone,Kern-CPI y/y (Schnellschätzung),,,,high
+2026-12-02,11:00,Eurozone,Arbeitslosenquote,,,,medium
+2026-12-03,08:30,Schweiz,CPI m/m,,,,high
+2026-12-04,14:30,Kanada,Arbeitslosenquote,,,,high
+2026-12-04,14:30,Kanada,Beschäftigungsänderung,,,,high
+2026-12-04,14:30,USA,Arbeitslosenquote,,,,high
+2026-12-04,14:30,USA,Durchschn. Stundenlöhne m/m,,,,medium
+2026-12-04,14:30,USA,Non-Farm Payrolls,,,,high
+2026-12-08,04:30,Australien,RBA-Zinsentscheid,,,,high
+2026-12-09,02:00,Neuseeland,RBNZ-Zinsentscheid,,,,high
+2026-12-09,15:45,Kanada,BoC-Zinsentscheid,,,,high
+2026-12-09,20:00,USA,Fed-Zinsentscheid (Obergrenze),,,,high
+2026-12-10,09:30,Schweiz,SNB-Zinsentscheid,,,,high
+2026-12-10,14:30,USA,CPI m/m,,,,high
+2026-12-10,14:30,USA,CPI y/y,,,,high
+2026-12-10,14:30,USA,Kern-CPI m/m,,,,high
+2026-12-10,14:30,USA,Kern-CPI y/y,,,,high
