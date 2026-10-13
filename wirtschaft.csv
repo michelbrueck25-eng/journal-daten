@@ -326,21 +326,21 @@ date,time,country,title,actual,forecast,previous,impact
 2026-10-14,14:30,USA,Kern-CPI m/m,,0.2%,0.3%,high
 2026-10-14,14:30,USA,Kern-CPI y/y,,2.5%,2.4%,high
 2026-10-15,02:30,Australien,Arbeitslosenquote,,4.6%,4.6%,high
-2026-10-15,02:30,Australien,Beschäftigungsänderung,,20.0K,39.5K,high
+2026-10-15,02:30,Australien,Beschäftigungsänderung,,19.6K,39.5K,high
 2026-10-15,08:00,Großbritannien,BIP m/m,,-0.1%,0.4%,medium
-2026-10-15,14:30,USA,PPI m/m,,0.5%,0.4%,medium
+2026-10-15,14:30,USA,PPI m/m,,0.6%,0.4%,medium
 2026-10-15,14:30,USA,Einzelhandelsumsätze m/m,,0.3%,1.2%,medium
 2026-10-15,14:30,USA,Kern-Einzelhandelsumsätze m/m,,0.5%,1.4%,medium
 2026-10-16,11:00,Eurozone,CPI y/y (Endgültig),,3.8%,3.8%,medium
 2026-10-16,11:00,Eurozone,Kern-CPI y/y (Endgültig),,2.5%,2.5%,medium
-2026-10-19,14:30,Kanada,CPI m/m,,,,high
-2026-10-19,14:30,Kanada,Median-CPI y/y,,,,medium
-2026-10-19,23:45,Neuseeland,CPI q/q,,,,high
-2026-10-20,08:00,Großbritannien,Arbeitslosenquote,,,,high
-2026-10-20,08:00,Großbritannien,Durchschnittslöhne 3m/y,,,,high
-2026-10-21,08:00,Großbritannien,CPI y/y,,,,high
-2026-10-21,08:00,Großbritannien,Kern-CPI y/y,,,,high
-2026-10-23,01:30,Japan,Kern-CPI y/y (landesweit),,,,high
+2026-10-19,14:30,Kanada,CPI m/m,,,-0.1%,high
+2026-10-19,14:30,Kanada,Median-CPI y/y,,,2.0%,medium
+2026-10-19,23:45,Neuseeland,CPI q/q,,,1.5%,high
+2026-10-20,08:00,Großbritannien,Arbeitslosenquote,,,4.9%,high
+2026-10-20,08:00,Großbritannien,Durchschnittslöhne 3m/y,,,3.9%,high
+2026-10-21,08:00,Großbritannien,CPI y/y,,,3.1%,high
+2026-10-21,08:00,Großbritannien,Kern-CPI y/y,,,2.6%,high
+2026-10-23,01:30,Japan,Kern-CPI y/y (landesweit),,,1.7%,high
 2026-10-27,02:00,Neuseeland,RBNZ-Zinsentscheid,,,,high
 2026-10-28,14:45,Kanada,BoC-Zinsentscheid,,,,high
 2026-10-28,19:00,USA,Fed-Zinsentscheid (Obergrenze),,,,high
