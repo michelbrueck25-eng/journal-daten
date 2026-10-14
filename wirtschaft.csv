@@ -325,10 +325,10 @@ date,time,country,title,actual,forecast,previous,impact
 2026-10-13,08:00,Eurozone,Deutschland HVPI y/y (final),3.3%,3.3%,2.9%,low
 2026-10-13,08:00,Eurozone,Deutschland CPI m/m (final),0.6%,0.6%,0.6%,low
 2026-10-13,12:00,USA,NFIB Small Business Index,97.9,98.1,98.7,low
-2026-10-14,14:30,USA,CPI m/m,,0.6%,0.4%,high
-2026-10-14,14:30,USA,CPI y/y,,3.6%,3.4%,high
-2026-10-14,14:30,USA,Kern-CPI m/m,,0.2%,0.3%,high
-2026-10-14,14:30,USA,Kern-CPI y/y,,2.5%,2.4%,high
+2026-10-14,14:30,USA,CPI m/m,0.6%,0.6%,0.4%,high
+2026-10-14,14:30,USA,CPI y/y,3.7%,3.6%,3.4%,high
+2026-10-14,14:30,USA,Kern-CPI m/m,0.3%,0.2%,0.3%,high
+2026-10-14,14:30,USA,Kern-CPI y/y,2.6%,2.5%,2.4%,high
 2026-10-15,02:30,Australien,Arbeitslosenquote,,4.6%,4.6%,high
 2026-10-15,02:30,Australien,Beschäftigungsänderung,,19.6K,39.5K,high
 2026-10-15,08:00,Großbritannien,BIP m/m,,-0.1%,0.4%,medium
