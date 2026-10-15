@@ -329,8 +329,8 @@ date,time,country,title,actual,forecast,previous,impact
 2026-10-14,14:30,USA,CPI y/y,3.7%,3.6%,3.4%,high
 2026-10-14,14:30,USA,Kern-CPI m/m,0.3%,0.2%,0.3%,high
 2026-10-14,14:30,USA,Kern-CPI y/y,2.6%,2.5%,2.4%,high
-2026-10-15,02:30,Australien,Arbeitslosenquote,,4.6%,4.6%,high
-2026-10-15,02:30,Australien,Beschäftigungsänderung,,19.6K,39.5K,high
+2026-10-15,02:30,Australien,Arbeitslosenquote,4.7%,4.6%,4.6%,high
+2026-10-15,02:30,Australien,Beschäftigungsänderung,-39.3K,19.6K,39.5K,high
 2026-10-15,08:00,Großbritannien,BIP m/m,,-0.1%,0.4%,medium
 2026-10-15,14:30,USA,PPI m/m,,0.6%,0.4%,medium
 2026-10-15,14:30,USA,Einzelhandelsumsätze m/m,,0.3%,1.2%,medium
