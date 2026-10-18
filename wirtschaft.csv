@@ -345,6 +345,9 @@ date,time,country,title,actual,forecast,previous,impact
 2026-10-21,08:00,Großbritannien,CPI y/y,,,3.1%,high
 2026-10-21,08:00,Großbritannien,Kern-CPI y/y,,,2.6%,high
 2026-10-23,01:30,Japan,Kern-CPI y/y (landesweit),,,1.7%,high
+2026-10-23,10:00,Eurozone,Composite-PMI (vorläufig),,,,medium
+2026-10-23,10:30,Großbritannien,Composite-PMI (vorläufig),,,,medium
+2026-10-23,15:45,USA,Composite-PMI (vorläufig),,,,medium
 2026-10-27,02:00,Neuseeland,RBNZ-Zinsentscheid,,,,high
 2026-10-28,14:45,Kanada,BoC-Zinsentscheid,,,,high
 2026-10-28,19:00,USA,Fed-Zinsentscheid (Obergrenze),,,,high
