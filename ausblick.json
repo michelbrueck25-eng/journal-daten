@@ -1,6 +1,6 @@
 {
  "typ": "ausblick",
- "stand": "2026-10-25T19:00",
+ "stand": "2026-10-25T20:08",
  "zusammenfassung": "Wochenausblick ab 26.10.: Die Woche wird von vier Notenbankterminen in 48 Stunden entschieden (RBNZ und BoC sowie Fed am 28.10., EZB am 29.10., BoJ am 30.10.). Mein Hauptgedanke: Wer Währungen handelt, sollte dort stehen, wo Positionierung, Zinsrichtung und Nachrichtenlage in dieselbe Richtung zeigen. Das trifft derzeit vor allem auf die Gegenseite zum Yen und zum Franken zu: Die Commercials (COT, Stand 20.10.) stehen bei AUD (100), EUR (97) und NZD (89) im oberen, bei JPY (19) und CHF (13) im unteren Extrembereich, gleichzeitig bleibt die Zinsdifferenz groß und die Risikostimmung (Chip-Ausverkauf, Hormus, Ölpreis bei rund 115 USD) belastet den Yen eher als dass sie ihn stützt. Beim Dollar und beim Euro sehe ich dagegen keinen sauberen Vorteil, solange Fed und EZB nicht gesprochen haben.",
  "paare": [
   {
@@ -199,8 +199,8 @@
      "antwort": "Das ist das beste Gegenargument. Deshalb ist die Idee nur ein Vierer: Der Öl-Effekt kann das Paar wochenlang gegen die Zins- und COT-Logik drücken."
     },
     {
-     "einwand": "Die Quellen zur BoC am 28.10. widersprechen sich (eine nennt etwa 80 Prozent für eine Erhöhung, eine andere eine wahrscheinliche Pause).",
-     "antwort": "Genau deshalb würde ich vor dem BoC-Entscheid keine Position eingehen. Das ist ein Fall, in dem Abwarten vernünftiger ist als eine Meinung zu erzwingen."
+     "einwand": "Die BoC entscheidet am 28.10. und könnte um 25 Basispunkte erhöhen (FXStreet-Wochenausblick), ältere Quellen sahen eher eine Pause.",
+     "antwort": "Genau deshalb bleibt es bei Stärke 4. Erhöht die BoC tatsächlich, stützt das den Kanadischen Dollar zusätzlich zum Ölpreis und spricht klar gegen die AUD/CAD-Long-Idee. Ich würde vor dem Entscheid keine Position eingehen."
     }
    ],
    "termine": [
@@ -251,7 +251,7 @@
    "horizont": "bis nach 30.10.",
    "begruendung": "Beide im unteren COT-Bereich (USD 33, JPY 19), kein klarer Vorteil. Interventionsrisiko unter 158,50 und BoJ am 30.10. machen das Paar unberechenbar.",
    "risiko": "Plötzliche Yen-Intervention.",
-   "these": "USD/JPY ist das Paar mit dem unattraktivsten Verhältnis aus Chance und Risiko. Beide Währungen stehen im unteren COT-Bereich (USD 33, JPY 19), es gibt also keinen klaren Positionierungsvorteil. Bei 157 bis 158 lauert das Interventionsrisiko, die BoJ hat bereits einen Rate Check gemacht. Dazu die BoJ am 30.10. und eine Fed, die zwischen Pause und Dezember-Erhöhung schwankt: Das sind drei Binärereignisse in vier Tagen.",
+   "these": "USD/JPY ist das Paar mit dem unattraktivsten Verhältnis aus Chance und Risiko. Beide Währungen stehen im unteren COT-Bereich (USD 33, JPY 19), es gibt also keinen klaren Positionierungsvorteil. Das Paar erreichte zuletzt frische Fünf-Wochen-Tiefs nahe 156,00 und erholte sich auf 157,00 (FXStreet), im Bereich 157 bis 158 lauert das Interventionsrisiko, die BoJ hat bereits einen Rate Check gemacht. Dazu die BoJ am 30.10. und eine Fed, die zwischen Pause und Dezember-Erhöhung schwankt: Das sind drei Binärereignisse in vier Tagen.",
    "argumente": [
     {
      "titel": "Interventionsrisiko",

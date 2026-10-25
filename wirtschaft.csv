@@ -352,15 +352,22 @@ date,time,country,title,actual,forecast,previous,impact
 2026-10-23,10:00,Eurozone,Composite-PMI (vorläufig),51.9,52.7,53.1,medium
 2026-10-23,10:30,Großbritannien,Composite-PMI (vorläufig),53.1,51.8,52.0,medium
 2026-10-23,15:45,USA,Composite-PMI (vorläufig),57.6,,58.4,medium
+2026-10-27,15:00,USA,Verbrauchervertrauen (Conference Board),,,,medium
+2026-10-28,01:30,Australien,CPI y/y,,,4.0%,high
 2026-10-28,02:00,Neuseeland,RBNZ-Zinsentscheid,,,,high
 2026-10-28,14:45,Kanada,BoC-Zinsentscheid,,,,high
 2026-10-28,19:00,USA,Fed-Zinsentscheid (Obergrenze),,,,high
 2026-10-29,13:30,USA,Kern-PCE m/m,,,,medium
+2026-10-29,13:30,USA,BIP q/q (1. Schätzung Q3),,,2.2%,high
+2026-10-29,13:30,USA,Kern-PCE y/y,,,3.0%,medium
 2026-10-29,14:15,Eurozone,EZB-Zinsentscheid,,,,high
 2026-10-30,00:30,Japan,Arbeitslosenquote,,,,medium
 2026-10-30,00:30,Japan,BoJ-Zinsentscheid,,,,high
 2026-10-30,00:30,Japan,Kern-CPI y/y (Tokio),,,,medium
+2026-10-30,08:00,Eurozone,Deutschland BIP q/q (vorläufig Q3),,,0.3%,medium
 2026-10-30,11:00,Eurozone,Arbeitslosenquote,,,,medium
+2026-10-30,11:00,Eurozone,BIP q/q (1. Schätzung Q3),,,0.6%,medium
+2026-10-30,14:00,Eurozone,Deutschland HVPI y/y (vorläufig),,,3.3%,medium
 2026-11-03,04:30,Australien,RBA-Zinsentscheid,,,,high
 2026-11-03,22:45,Neuseeland,Arbeitslosenquote,,,,high
 2026-11-04,08:30,Schweiz,CPI m/m,,,,high
