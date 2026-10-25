@@ -1,0 +1,64 @@
+{
+ "typ": "ausblick",
+ "stand": "2026-10-25T13:45",
+ "zusammenfassung": "Wochenausblick ab 26.10.: Die Woche wird von drei Notenbankterminen geprägt (RBNZ und BoC 28.10., Fed 28.10. Abend, EZB 29.10., BoJ 30.10.). COT stützt weiter AUD, NZD und EUR (Commercials im oberen Bereich) gegen JPY und CHF (unterer Bereich). Gegenwind: Der Dollar ist nach der US-Inflation von 3,7 Prozent stark, Risikostimmung schwach (Chip-Ausverkauf, Hormus). Deshalb sehe ich Yen-Gegenseiten als Favoriten, Euro und Dollar eher als Abwarten.",
+ "paare": [
+  {
+   "paar": "AUD/JPY",
+   "richtung": "long",
+   "staerke": 7,
+   "horizont": "2 bis 6 Wochen",
+   "begruendung": "COT: AUD 100 oben, JPY 19 unten (Differenz 81). RBA-Erhöhung am 3.11. etwa 33 Prozent eingepreist, BoJ am 30.10. wahrscheinlich Pause. Hormus belastet den Yen.",
+   "risiko": "Risikoangst und Interventionsrisiko beim Yen; schwache australische Arbeitsmarktdaten."
+  },
+  {
+   "paar": "NZD/JPY",
+   "richtung": "long",
+   "staerke": 6,
+   "horizont": "2 bis 4 Wochen",
+   "begruendung": "COT: NZD 89, JPY 19. RBNZ am 28.10. mit rund 80 Prozent Erhöhung erwartet, dazu Zollwaffenruhe USA/China bis 10.1.",
+   "risiko": "Die RBNZ war zuletzt moderater als erwartet. Ein enttäuschender Entscheid am 28.10. könnte das Paar drücken."
+  },
+  {
+   "paar": "GBP/CHF",
+   "richtung": "long",
+   "staerke": 5,
+   "horizont": "2 bis 6 Wochen",
+   "begruendung": "COT: GBP 67, CHF 13. BoE-Erhöhung am 5.11. klar eingepreist, SNB bei 0 Prozent (Franken als Carry-Finanzierung).",
+   "risiko": "Pfund auf 11-Monatstief nach der US-Inflation, bei Risikoangst steigt der Franken."
+  },
+  {
+   "paar": "EUR/CHF",
+   "richtung": "long",
+   "staerke": 5,
+   "horizont": "Wochen",
+   "begruendung": "COT: EUR 97, CHF 13, deutlichster Unterschied unter den Paaren. EZB am 29.10. mit etwa 28 Prozent Erhöhungschance.",
+   "risiko": "Frankreich (Haushalt, Anleihen) belastet den Euro, Euro auf 17-Monatstief."
+  },
+  {
+   "paar": "AUD/CAD",
+   "richtung": "long",
+   "staerke": 4,
+   "horizont": "2 bis 4 Wochen",
+   "begruendung": "COT: AUD 100, CAD 42. Dagegen: Ölpreis hoch (Brent rund 114 bis 117) stützt CAD, BoC am 28.10. Pause wahrscheinlich, Kanada-Arbeitsmarkt schwach.",
+   "risiko": "Schwache AUD-Jobdaten und hoher Ölpreis sprechen gegen die Richtung."
+  },
+  {
+   "paar": "EUR/USD",
+   "richtung": "abwarten",
+   "staerke": 3,
+   "horizont": "bis nach 29.10.",
+   "begruendung": "COT spricht für den Euro (EUR 97, USD 33), aber US-Inflation 3,7 Prozent, Dezember-Erhöhung der Fed zu rund 89 Prozent eingepreist und Euro-Schwäche halten dagegen. Erst Fed (28.10.) und EZB (29.10.) abwarten.",
+   "risiko": "Starker Dollar bei Risikoangst."
+  },
+  {
+   "paar": "USD/JPY",
+   "richtung": "abwarten",
+   "staerke": 2,
+   "horizont": "bis nach 30.10.",
+   "begruendung": "Beide im unteren COT-Bereich (USD 33, JPY 19), kein klarer Vorteil. Interventionsrisiko unter 158,50 und BoJ am 30.10. machen das Paar unberechenbar.",
+   "risiko": "Plötzliche Yen-Intervention."
+  }
+ ],
+ "hinweis": "Meine Einschätzung aus COT (Stand 20.10.), Zinserwartungen, Lage und Kalender. Sie ist eine zweite Meinung und keine Anlageberatung. Die Überzeugung (0 bis 10) zeigt, wie viele Faktoren in dieselbe Richtung zeigen."
+}
