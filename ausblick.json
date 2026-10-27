@@ -1,6 +1,6 @@
 {
  "typ": "ausblick",
- "stand": "2026-10-27T13:52",
+ "stand": "2026-10-27T13:56",
  "zusammenfassung": "Wochenausblick ab 26.10.: Die Woche wird von vier Notenbankterminen in 48 Stunden entschieden (RBNZ und BoC sowie Fed am 28.10., EZB am 29.10., BoJ am 30.10.). Mein Hauptgedanke: Wer Währungen handelt, sollte dort stehen, wo Positionierung, Zinsrichtung und Nachrichtenlage in dieselbe Richtung zeigen. Das trifft derzeit vor allem auf die Gegenseite zum Yen und zum Franken zu: Die Commercials (COT, Stand 20.10.) stehen bei AUD (100), EUR (97) und NZD (89) im oberen, bei JPY (19) und CHF (13) im unteren Extrembereich, gleichzeitig bleibt die Zinsdifferenz groß und die Risikostimmung (Chip-Ausverkauf, Hormus, Ölpreis bei rund 115 USD) belastet den Yen eher als dass sie ihn stützt. Beim Dollar und beim Euro sehe ich dagegen keinen sauberen Vorteil, solange Fed und EZB nicht gesprochen haben. Neu am Montagmorgen: Lula gewann die brasilianische Stichwahl mit rund 51,8 Prozent; das ist ein möglicher Risikoabschlag für Schwellenländer-Währungen, ändert aber an der Rangfolge der acht Hauptwährungen noch nichts. Entscheidend bleibt die Zentralbankwoche ab Dienstag (BoC, Fed, RBNZ am 28.10., EZB am 29.10., BoJ am 30.10.).",
  "paare": [
   {
@@ -345,7 +345,7 @@
    "konflikt": "Du hast AUDCAD offen sowie Limits auf AUDNZD und AUDUSD. Mehr als 2 AUD-Positionen sind nach deiner Analyse zu viel: Streiche das AUDUSD-Limit oder halbiere es, bevor du AUD/JPY dazunimmst. Letzter AUD/JPY-Trade war am 07.09., die 5 Wochen Pause sind vorbei.",
    "gueltig_bis": "2026-11-11",
    "ob": {
-    "stand": "2026-10-27T13:52",
+    "stand": "2026-10-27T13:55",
     "checks": [
      {
       "t": "ok",
@@ -381,6 +381,7 @@
     "kurs": 110.992,
     "kursstand": "2026-10-26",
     "abstand_atr": 1.0,
+    "zone_t": 1769385600000,
     "einstieg": 108.607,
     "stopp": 105.8625,
     "ziel1": 111.3515,
@@ -407,7 +408,7 @@
    "konflikt": "NZD/JPY und AUD/JPY zusammen sind eine doppelte Yen-Wette. Nimm lieber nur eine der beiden mit vollem Risiko.",
    "gueltig_bis": "2026-11-11",
    "ob": {
-    "stand": "2026-10-27T13:52",
+    "stand": "2026-10-27T13:55",
     "checks": [
      {
       "t": "ok",
@@ -443,6 +444,7 @@
     "kurs": 90.023,
     "kursstand": "2026-10-26",
     "abstand_atr": 0.7,
+    "zone_t": 1763337600000,
     "einstieg": 88.856,
     "stopp": 87.1378,
     "ziel1": 90.5742,
@@ -469,7 +471,7 @@
    "konflikt": "Keiner. Das Paar hat keine offene Position.",
    "gueltig_bis": "2026-11-06",
    "ob": {
-    "stand": "2026-10-27T13:52",
+    "stand": "2026-10-27T13:55",
     "checks": [
      {
       "t": "bad",
@@ -501,6 +503,7 @@
     "kurs": 1.10459,
     "kursstand": "2026-10-26",
     "abstand_atr": 1.3,
+    "zone_t": 1784505600000,
     "einstieg": 1.09072,
     "stopp": 1.08396,
     "ziel1": 1.09748,
@@ -522,7 +525,7 @@
    "konflikt": "Euro-Risiko durch Frankreich spricht eher gegen diese Idee. Sie ist die schwächste der vier.",
    "gueltig_bis": "2026-11-06",
    "ob": {
-    "stand": "2026-10-27T13:52",
+    "stand": "2026-10-27T13:55",
     "checks": [
      {
       "t": "ok",
@@ -606,6 +609,7 @@
    "status": "ungültig",
    "art": "Limit",
    "zone": {
+    "zt": 1788134400000,
     "zone": [
      1.86109,
      1.87604
@@ -649,6 +653,7 @@
    "status": "prüfen",
    "art": "Limit",
    "zone": {
+    "zt": 1785715200000,
     "zone": [
      1.1913,
      1.21021
@@ -692,6 +697,7 @@
    "status": "prüfen",
    "art": "Limit",
    "zone": {
+    "zt": 1763337600000,
     "zone": [
      87.26536,
      88.856
@@ -735,6 +741,7 @@
    "status": "prüfen",
    "art": "Limit",
    "zone": {
+    "zt": 1791763200000,
     "zone": [
      0.68956,
      0.69821
@@ -778,6 +785,7 @@
    "status": "prüfen",
    "art": "Limit",
    "zone": {
+    "zt": 1740355200000,
     "zone": [
      0.82419997,
      0.83050001
@@ -815,7 +823,7 @@
    ]
   }
  ],
- "pruefung_stand": "2026-10-27T13:52",
+ "pruefung_stand": "2026-10-27T13:55",
  "lernen": {
   "n": 0,
   "gut": 0,
