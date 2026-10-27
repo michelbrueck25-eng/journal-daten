@@ -329,5 +329,63 @@
    "titel": "BoJ-Zinsentscheid",
    "wichtig": 1
   }
+ ],
+ "empfehlungen": [
+  {
+   "paar": "AUD/JPY",
+   "richtung": "long",
+   "status": "Nach 28.10. prüfen",
+   "ab": "28.10. nach der australischen Inflation (01:30 Uhr)",
+   "staerke": 7,
+   "bedingung": "Australische Q3-Inflation mindestens wie erwartet (4,2 % y/y) und BoJ am 30.10. ohne Erhöhung. Einstieg nur mit Daily-Bestätigung (OB-LTF), so wie deine Auswertung es verlangt.",
+   "einstieg": "Limit im Daily-Orderblock innerhalb der Weekly-Zone, nicht aus der Mitte des Kurses. Kursniveau aktuell etwa 110,50, die genaue Zone zeichnest du im Chart-Tool, mir fehlen dafür Kerzendaten.",
+   "stopp": "Unter die letzte Wochentief-Zone, nicht eng. Stopp nicht auf Einstand nachziehen.",
+   "ziel": "Weekly-Teil: Ziel laut Reiter KI Trades (Entspannt oder Maximaler Ertrag). Daily-Teil: 2 bis 3 R.",
+   "risiko": "Vorschlag 0,5 % gesamt, davon 30 % Weekly und 70 % Daily. Halbes Risiko, weil schon viele AUD-Positionen offen sind.",
+   "konflikt": "Du hast AUDCAD offen sowie Limits auf AUDNZD und AUDUSD. Mehr als 2 AUD-Positionen sind nach deiner Analyse zu viel: Streiche das AUDUSD-Limit oder halbiere es, bevor du AUD/JPY dazunimmst. Letzter AUD/JPY-Trade war am 07.09., die 5 Wochen Pause sind vorbei.",
+   "gueltig_bis": "2026-11-11"
+  },
+  {
+   "paar": "NZD/JPY",
+   "richtung": "long",
+   "status": "Limit besteht schon",
+   "ab": "Vor 28.10. 02:00 nichts ändern",
+   "staerke": 6,
+   "bedingung": "Bleibt dein Weekly-Limit vom 19.10. aktiv. Die RBNZ soll auf 3,00 % erhöhen (Prognose, Markt etwa 80 %). Erhöht sie nicht oder deutet das Ende des Zyklus an, streichen.",
+   "einstieg": "Dein bestehendes Weekly-Limit. Daily-Bestätigung abwarten und, wenn möglich, einen Daily-Teil ergänzen.",
+   "stopp": "Wie im bestehenden Limit. Nicht verschieben, um nach dem Entscheid enger zu sein.",
+   "ziel": "Wie im Limit. Prüfe mit dem Reiter KI Trades, ob das Ziel zu deinem Modus passt.",
+   "risiko": "Bisher 1 % im Limit. Ich würde auf 0,5 % senken, solange die Zahl der Yen-Gegenseiten steigt (AUD/JPY und NZD/JPY sind fast dieselbe Wette).",
+   "konflikt": "NZD/JPY und AUD/JPY zusammen sind eine doppelte Yen-Wette. Nimm lieber nur eine der beiden mit vollem Risiko.",
+   "gueltig_bis": "2026-11-11"
+  },
+  {
+   "paar": "GBP/CHF",
+   "richtung": "long",
+   "status": "Vorbereiten",
+   "ab": "Nach dem Fed-Entscheid 28.10. 19:00",
+   "staerke": 5,
+   "bedingung": "Kein Risiko-Aus nach der Fed. BoE-Erhöhung am 5.11. bleibt eingepreist. Dein letzter Trade im Paar war ein Short (15.09.), das ist ein anderes Setup und löst die Pause nicht aus.",
+   "einstieg": "Daily-Orderblock in der Weekly-Zone, erst nach Daily-Bestätigung. Kein Einstieg vor dem Fed-Termin.",
+   "stopp": "Unter dem letzten Wochentief.",
+   "ziel": "Weekly-Teil laut Reiter KI Trades, Daily-Teil 2 R.",
+   "risiko": "Vorschlag 0,5 %, weil die Überzeugung nur 5 von 10 ist.",
+   "konflikt": "Keiner. Das Paar hat keine offene Position.",
+   "gueltig_bis": "2026-11-06"
+  },
+  {
+   "paar": "EUR/CHF",
+   "richtung": "long",
+   "status": "Nur beobachten",
+   "ab": "Nach dem EZB-Entscheid 29.10.",
+   "staerke": 5,
+   "bedingung": "Nur wenn der Franken nach der EZB schwach bleibt und der OAT-Bund-Spread nicht weiter steigt (Frankreich ist auf dem höchsten Stand seit 2011).",
+   "einstieg": "Erst eine Daily-Zone nach dem Entscheid zeichnen. Heute kein Limit.",
+   "stopp": "Unter dem Wochentief, nicht eng.",
+   "ziel": "Laut Reiter KI Trades.",
+   "risiko": "Vorschlag 0,5 % oder weniger.",
+   "konflikt": "Euro-Risiko durch Frankreich spricht eher gegen diese Idee. Sie ist die schwächste der vier.",
+   "gueltig_bis": "2026-11-06"
+  }
  ]
 }
