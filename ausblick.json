@@ -207,7 +207,57 @@
     "28.10.: BoC-Entscheid und australische Q3-Inflation am selben Tag"
    ],
    "ungueltig": "Eine unerwartete BoC-Erhöhung oder ein weiterer Anstieg von Brent über 120 USD spricht gegen die Long-Idee.",
-   "plan": "Nur beobachten, bis die BoC gesprochen hat."
+   "plan": "Nur beobachten, bis die BoC gesprochen hat.",
+   "ob": {
+    "stand": "2026-10-27T14:36",
+    "checks": [
+     {
+      "t": "ok",
+      "text": "COT AUD 6M-Index 100 (Stand 20.10.2026): im passenden Extrembereich, CAD 42."
+     },
+     {
+      "t": "warn",
+      "text": "Termine in den nächsten 5 Tagen: 28.10. 01:30 CPI y/y, 28.10. 14:45 BoC-Zinsentscheid."
+     },
+     {
+      "t": "warn",
+      "text": "Weekly-Orderblock 0.94453 bis 0.95906, Qualität C (Bewegung 1.05 ATR, 1 Berührungen, 39 Wochen alt)."
+     },
+     {
+      "t": "ok",
+      "text": "Kurs 0.98614 ist 2.6 Wochen-ATR von der Zone entfernt."
+     },
+     {
+      "t": "ok",
+      "text": "Daily-Orderblock in der Weekly-Zone: 0.94546 bis 0.95097, Qualität C. Kombi-Einstieg (30 % Weekly, 70 % Daily) möglich."
+     }
+    ],
+    "quelle": "Marktdaten 27.10.2026",
+    "ebene": "weekly",
+    "zone": [
+     0.94453,
+     0.95906
+    ],
+    "qualitaet": "C",
+    "alter_wochen": 39,
+    "beruehrungen": 1,
+    "bewegung_atr": 1.05,
+    "kurs": 0.98614,
+    "kursstand": "2026-10-26",
+    "abstand_atr": 2.6,
+    "zone_t": 1769385600000,
+    "einstieg": 0.95906,
+    "stopp": 0.94308,
+    "ziel1": 0.97504,
+    "ziel2": 0.99103,
+    "daily_ob": [
+     0.94546,
+     0.95097
+    ],
+    "daily_q": "C",
+    "status": "prüfen",
+    "richtung": "long"
+   }
   },
   {
    "paar": "EUR/USD",
@@ -242,7 +292,52 @@
     "29.10.: US-PCE (13:30 Uhr), EZB (14:15 Uhr)"
    ],
    "ungueltig": "Nicht relevant, solange ich kein Szenario vorschlage. Neue Bewertung nach dem 29.10.",
-   "plan": "Keine Position. Nach der EZB neu bewerten."
+   "plan": "Keine Position. Nach der EZB neu bewerten.",
+   "ob": {
+    "stand": "2026-10-27T14:36",
+    "checks": [
+     {
+      "t": "ok",
+      "text": "COT EUR 6M-Index 97 (Stand 20.10.2026): im passenden Extrembereich, USD 33."
+     },
+     {
+      "t": "warn",
+      "text": "Termine in den nächsten 5 Tagen: 28.10. 19:00 Fed-Zinsentscheid (Obergrenze), 29.10. 13:30 BIP q/q (1. Schätzung Q3), 29.10. 14:15 EZB-Zinsentscheid."
+     },
+     {
+      "t": "ok",
+      "text": "Weekly-Orderblock 1.08057 bis 1.09545, Qualität A (Bewegung 2.61 ATR, 0 Berührungen, 84 Wochen alt)."
+     },
+     {
+      "t": "ok",
+      "text": "Kurs 1.11518 ist 1.6 Wochen-ATR von der Zone entfernt."
+     },
+     {
+      "t": "warn",
+      "text": "Kein unmitigierter Daily-Orderblock innerhalb der Weekly-Zone: nach deiner Auswertung nicht einsteigen, bis einer entsteht (Daily-Bestätigung)."
+     }
+    ],
+    "quelle": "Marktdaten 27.10.2026",
+    "ebene": "weekly",
+    "zone": [
+     1.08057,
+     1.09545
+    ],
+    "qualitaet": "A",
+    "alter_wochen": 84,
+    "beruehrungen": 0,
+    "bewegung_atr": 2.61,
+    "kurs": 1.11518,
+    "kursstand": "2026-10-26",
+    "abstand_atr": 1.6,
+    "zone_t": 1742169600000,
+    "einstieg": 1.09545,
+    "stopp": 1.07908,
+    "ziel1": 1.11182,
+    "ziel2": 1.12819,
+    "status": "prüfen",
+    "richtung": "long"
+   }
   },
   {
    "paar": "USD/JPY",
@@ -344,7 +439,7 @@
    "risiko": "Vorschlag 0,5 % gesamt, davon 30 % Weekly und 70 % Daily. Halbes Risiko, weil schon viele AUD-Positionen offen sind.",
    "gueltig_bis": "2026-11-11",
    "ob": {
-    "stand": "2026-10-27T14:08",
+    "stand": "2026-10-27T14:36",
     "checks": [
      {
       "t": "ok",
@@ -406,7 +501,7 @@
    "risiko": "Bisher 1 % im Limit. Ich würde auf 0,5 % senken, solange die Zahl der Yen-Gegenseiten steigt (AUD/JPY und NZD/JPY sind fast dieselbe Wette).",
    "gueltig_bis": "2026-11-11",
    "ob": {
-    "stand": "2026-10-27T14:08",
+    "stand": "2026-10-27T14:36",
     "checks": [
      {
       "t": "ok",
@@ -468,7 +563,7 @@
    "risiko": "Vorschlag 0,5 %, weil die Überzeugung nur 5 von 10 ist.",
    "gueltig_bis": "2026-11-06",
    "ob": {
-    "stand": "2026-10-27T14:08",
+    "stand": "2026-10-27T14:36",
     "checks": [
      {
       "t": "bad",
@@ -521,7 +616,7 @@
    "risiko": "Vorschlag 0,5 % oder weniger.",
    "gueltig_bis": "2026-11-06",
    "ob": {
-    "stand": "2026-10-27T14:08",
+    "stand": "2026-10-27T14:36",
     "checks": [
      {
       "t": "ok",
