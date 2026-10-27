@@ -1,6 +1,6 @@
 {
  "typ": "ausblick",
- "stand": "2026-10-27T13:44",
+ "stand": "2026-10-27T13:52",
  "zusammenfassung": "Wochenausblick ab 26.10.: Die Woche wird von vier Notenbankterminen in 48 Stunden entschieden (RBNZ und BoC sowie Fed am 28.10., EZB am 29.10., BoJ am 30.10.). Mein Hauptgedanke: Wer Währungen handelt, sollte dort stehen, wo Positionierung, Zinsrichtung und Nachrichtenlage in dieselbe Richtung zeigen. Das trifft derzeit vor allem auf die Gegenseite zum Yen und zum Franken zu: Die Commercials (COT, Stand 20.10.) stehen bei AUD (100), EUR (97) und NZD (89) im oberen, bei JPY (19) und CHF (13) im unteren Extrembereich, gleichzeitig bleibt die Zinsdifferenz groß und die Risikostimmung (Chip-Ausverkauf, Hormus, Ölpreis bei rund 115 USD) belastet den Yen eher als dass sie ihn stützt. Beim Dollar und beim Euro sehe ich dagegen keinen sauberen Vorteil, solange Fed und EZB nicht gesprochen haben. Neu am Montagmorgen: Lula gewann die brasilianische Stichwahl mit rund 51,8 Prozent; das ist ein möglicher Risikoabschlag für Schwellenländer-Währungen, ändert aber an der Rangfolge der acht Hauptwährungen noch nichts. Entscheidend bleibt die Zentralbankwoche ab Dienstag (BoC, Fed, RBNZ am 28.10., EZB am 29.10., BoJ am 30.10.).",
  "paare": [
   {
@@ -338,14 +338,14 @@
    "ab": "28.10. nach der australischen Inflation (01:30 Uhr)",
    "staerke": 7,
    "bedingung": "Australische Q3-Inflation mindestens wie erwartet (4,2 % y/y) und BoJ am 30.10. ohne Erhöhung. Einstieg nur mit Daily-Bestätigung (OB-LTF), so wie deine Auswertung es verlangt.",
-   "einstieg": "Limit im Daily-Orderblock innerhalb der Weekly-Zone, nicht aus der Mitte des Kurses. Kursniveau aktuell etwa 110,50, die genaue Zone zeichnest du im Chart-Tool, mir fehlen dafür Kerzendaten.",
-   "stopp": "Unter die letzte Wochentief-Zone, nicht eng. Stopp nicht auf Einstand nachziehen.",
-   "ziel": "Weekly-Teil: Ziel laut Reiter KI Trades (Entspannt oder Maximaler Ertrag). Daily-Teil: 2 bis 3 R.",
+   "einstieg": "Weekly-Teil: Limit am Zonenrand 108.607 (Zone 106.112 bis 108.607, Qualität C). Daily-Teil: Limit im Daily-Orderblock 107.505 bis 108.003 (Qualität B).",
+   "stopp": "105.862, 10 % der Zonenhöhe jenseits des Zonenrands. Nicht nachziehen.",
+   "ziel": "Ziel 1: 111.352 (1 R), Ziel 2: 114.096 (2 R). Weekly-Teil zusätzlich laut Reiter KI Trades.",
    "risiko": "Vorschlag 0,5 % gesamt, davon 30 % Weekly und 70 % Daily. Halbes Risiko, weil schon viele AUD-Positionen offen sind.",
    "konflikt": "Du hast AUDCAD offen sowie Limits auf AUDNZD und AUDUSD. Mehr als 2 AUD-Positionen sind nach deiner Analyse zu viel: Streiche das AUDUSD-Limit oder halbiere es, bevor du AUD/JPY dazunimmst. Letzter AUD/JPY-Trade war am 07.09., die 5 Wochen Pause sind vorbei.",
    "gueltig_bis": "2026-11-11",
    "ob": {
-    "stand": "2026-10-27T13:44",
+    "stand": "2026-10-27T13:52",
     "checks": [
      {
       "t": "ok",
@@ -357,10 +357,39 @@
      },
      {
       "t": "warn",
-      "text": "Keine Kerzendaten für dieses Paar: Marktdaten in der App senden (Einstellungen, Marktdaten senden), dann prüfe ich Orderblöcke."
+      "text": "Weekly-Orderblock 106.112 bis 108.607, Qualität C (Bewegung 1.06 ATR, 0 Berührungen, 39 Wochen alt)."
+     },
+     {
+      "t": "ok",
+      "text": "Kurs 110.992 ist 1.0 Wochen-ATR von der Zone entfernt."
+     },
+     {
+      "t": "ok",
+      "text": "Daily-Orderblock in der Weekly-Zone: 107.505 bis 108.003, Qualität B. Kombi-Einstieg (30 % Weekly, 70 % Daily) möglich."
      }
     ],
-    "quelle": "keine Kerzen",
+    "quelle": "Marktdaten 27.10.2026",
+    "ebene": "weekly",
+    "zone": [
+     106.112,
+     108.607
+    ],
+    "qualitaet": "C",
+    "alter_wochen": 39,
+    "beruehrungen": 0,
+    "bewegung_atr": 1.06,
+    "kurs": 110.992,
+    "kursstand": "2026-10-26",
+    "abstand_atr": 1.0,
+    "einstieg": 108.607,
+    "stopp": 105.8625,
+    "ziel1": 111.3515,
+    "ziel2": 114.096,
+    "daily_ob": [
+     107.505,
+     108.003
+    ],
+    "daily_q": "B",
     "status": "prüfen"
    }
   },
@@ -371,14 +400,14 @@
    "ab": "Vor 28.10. 02:00 nichts ändern",
    "staerke": 6,
    "bedingung": "Bleibt dein Weekly-Limit vom 19.10. aktiv. Die RBNZ soll auf 3,00 % erhöhen (Prognose, Markt etwa 80 %). Erhöht sie nicht oder deutet das Ende des Zyklus an, streichen.",
-   "einstieg": "Dein bestehendes Weekly-Limit. Daily-Bestätigung abwarten und, wenn möglich, einen Daily-Teil ergänzen.",
-   "stopp": "Wie im bestehenden Limit. Nicht verschieben, um nach dem Entscheid enger zu sein.",
-   "ziel": "Wie im Limit. Prüfe mit dem Reiter KI Trades, ob das Ziel zu deinem Modus passt.",
+   "einstieg": "Weekly-Teil: Limit am Zonenrand 88.856 (Zone 87.294 bis 88.856, Qualität C). Daily-Teil: Limit im Daily-Orderblock 87.670 bis 87.857 (Qualität A).",
+   "stopp": "87.138, 10 % der Zonenhöhe jenseits des Zonenrands. Nicht nachziehen.",
+   "ziel": "Ziel 1: 90.574 (1 R), Ziel 2: 92.292 (2 R). Weekly-Teil zusätzlich laut Reiter KI Trades.",
    "risiko": "Bisher 1 % im Limit. Ich würde auf 0,5 % senken, solange die Zahl der Yen-Gegenseiten steigt (AUD/JPY und NZD/JPY sind fast dieselbe Wette).",
    "konflikt": "NZD/JPY und AUD/JPY zusammen sind eine doppelte Yen-Wette. Nimm lieber nur eine der beiden mit vollem Risiko.",
    "gueltig_bis": "2026-11-11",
    "ob": {
-    "stand": "2026-10-27T13:44",
+    "stand": "2026-10-27T13:52",
     "checks": [
      {
       "t": "ok",
@@ -390,30 +419,39 @@
      },
      {
       "t": "warn",
-      "text": "Weekly-Orderblock 87.294 bis 88.856, Qualität C (Bewegung 1.32 ATR, 2 Berührungen, 48 Wochen alt)."
+      "text": "Weekly-Orderblock 87.294 bis 88.856, Qualität C (Bewegung 1.32 ATR, 2 Berührungen, 49 Wochen alt)."
      },
      {
       "t": "ok",
-      "text": "Kurs 89.412 ist 0.3 Wochen-ATR von der Zone entfernt."
+      "text": "Kurs 90.023 ist 0.7 Wochen-ATR von der Zone entfernt."
+     },
+     {
+      "t": "ok",
+      "text": "Daily-Orderblock in der Weekly-Zone: 87.670 bis 87.857, Qualität A. Kombi-Einstieg (30 % Weekly, 70 % Daily) möglich."
      }
     ],
-    "quelle": "Chart-Snapshot 19.10.2026",
+    "quelle": "Marktdaten 27.10.2026",
     "ebene": "weekly",
     "zone": [
      87.294,
      88.856
     ],
     "qualitaet": "C",
-    "alter_wochen": 48,
+    "alter_wochen": 49,
     "beruehrungen": 2,
     "bewegung_atr": 1.32,
-    "kurs": 89.412,
-    "kursstand": "2026-10-19",
-    "abstand_atr": 0.3,
+    "kurs": 90.023,
+    "kursstand": "2026-10-26",
+    "abstand_atr": 0.7,
     "einstieg": 88.856,
     "stopp": 87.1378,
     "ziel1": 90.5742,
     "ziel2": 92.2924,
+    "daily_ob": [
+     87.67,
+     87.857
+    ],
+    "daily_q": "A",
     "status": "prüfen"
    }
   },
@@ -424,14 +462,14 @@
    "ab": "Nach dem Fed-Entscheid 28.10. 19:00",
    "staerke": 5,
    "bedingung": "Kein Risiko-Aus nach der Fed. BoE-Erhöhung am 5.11. bleibt eingepreist. Dein letzter Trade im Paar war ein Short (15.09.), das ist ein anderes Setup und löst die Pause nicht aus.",
-   "einstieg": "Daily-Orderblock in der Weekly-Zone, erst nach Daily-Bestätigung. Kein Einstieg vor dem Fed-Termin.",
-   "stopp": "Unter dem letzten Wochentief.",
-   "ziel": "Weekly-Teil laut Reiter KI Trades, Daily-Teil 2 R.",
+   "einstieg": "Weekly-Teil: Limit am Zonenrand 1.09072 (Zone 1.08457 bis 1.09072, Qualität C). Daily-Teil erst, wenn ein Daily-Orderblock in der Zone entsteht.",
+   "stopp": "1.08396, 10 % der Zonenhöhe jenseits des Zonenrands. Nicht nachziehen.",
+   "ziel": "Ziel 1: 1.09748 (1 R), Ziel 2: 1.10425 (2 R). Weekly-Teil zusätzlich laut Reiter KI Trades.",
    "risiko": "Vorschlag 0,5 %, weil die Überzeugung nur 5 von 10 ist.",
    "konflikt": "Keiner. Das Paar hat keine offene Position.",
    "gueltig_bis": "2026-11-06",
    "ob": {
-    "stand": "2026-10-27T13:44",
+    "stand": "2026-10-27T13:52",
     "checks": [
      {
       "t": "bad",
@@ -439,10 +477,34 @@
      },
      {
       "t": "warn",
-      "text": "Keine Kerzendaten für dieses Paar: Marktdaten in der App senden (Einstellungen, Marktdaten senden), dann prüfe ich Orderblöcke."
+      "text": "Weekly-Orderblock 1.08457 bis 1.09072, Qualität C (Bewegung 1.03 ATR, 3 Berührungen, 14 Wochen alt)."
+     },
+     {
+      "t": "ok",
+      "text": "Kurs 1.10459 ist 1.3 Wochen-ATR von der Zone entfernt."
+     },
+     {
+      "t": "warn",
+      "text": "Kein unmitigierter Daily-Orderblock innerhalb der Weekly-Zone: nach deiner Auswertung nicht einsteigen, bis einer entsteht (Daily-Bestätigung)."
      }
     ],
-    "quelle": "keine Kerzen",
+    "quelle": "Marktdaten 27.10.2026",
+    "ebene": "weekly",
+    "zone": [
+     1.08457,
+     1.09072
+    ],
+    "qualitaet": "C",
+    "alter_wochen": 14,
+    "beruehrungen": 3,
+    "bewegung_atr": 1.03,
+    "kurs": 1.10459,
+    "kursstand": "2026-10-26",
+    "abstand_atr": 1.3,
+    "einstieg": 1.09072,
+    "stopp": 1.08396,
+    "ziel1": 1.09748,
+    "ziel2": 1.10425,
     "status": "ungültig"
    }
   },
@@ -460,7 +522,7 @@
    "konflikt": "Euro-Risiko durch Frankreich spricht eher gegen diese Idee. Sie ist die schwächste der vier.",
    "gueltig_bis": "2026-11-06",
    "ob": {
-    "stand": "2026-10-27T13:44",
+    "stand": "2026-10-27T13:52",
     "checks": [
      {
       "t": "ok",
@@ -471,12 +533,12 @@
       "text": "Termine in den nächsten 5 Tagen: 29.10. 14:15 EZB-Zinsentscheid."
      },
      {
-      "t": "warn",
-      "text": "Keine Kerzendaten für dieses Paar: Marktdaten in der App senden (Einstellungen, Marktdaten senden), dann prüfe ich Orderblöcke."
+      "t": "bad",
+      "text": "Weekly: kein unmitigierter Orderblock auf der richtigen Seite des Kurses, ein Limit-Einstieg ist so nicht begründbar."
      }
     ],
-    "quelle": "keine Kerzen",
-    "status": "prüfen"
+    "quelle": "Marktdaten 27.10.2026",
+    "status": "ungültig"
    }
   }
  ],
@@ -568,11 +630,15 @@
     },
     {
      "t": "ok",
-     "text": "Kursstand 1.88806 vom 12.10.2026 (Quelle: Chart-Snapshot 12.10.2026)."
+     "text": "Kursstand 1.86923 vom 27.10.2026 (Quelle: Marktdaten 27.10.2026)."
     },
     {
-     "t": "ok",
-     "text": "Kurs ist 1.4 Tages-ATR vom Limit entfernt."
+     "t": "warn",
+     "text": "Kurs hat den Limit-Preis seit 19.10.2026 erreicht, das Limit müsste ausgelöst sein. Status in der App prüfen."
+    },
+    {
+     "t": "warn",
+     "text": "Die Zone ist eine einzelne Weekly-Kerze, erfüllt aber meine Orderblock-Definition nicht (keine Bewegung über 1 ATR mit Strukturbruch)."
     }
    ]
   },
@@ -611,11 +677,11 @@
     },
     {
      "t": "ok",
-     "text": "Kursstand 1.22870 vom 12.10.2026 (Quelle: Chart-Snapshot 12.10.2026)."
+     "text": "Kursstand 1.23308 vom 27.10.2026 (Quelle: Marktdaten 27.10.2026)."
     },
     {
      "t": "ok",
-     "text": "Kurs ist 1.2 Wochen-ATR vom Limit entfernt."
+     "text": "Kurs ist 3.4 Tages-ATR vom Limit entfernt."
     }
    ]
   },
@@ -650,15 +716,15 @@
     },
     {
      "t": "ok",
-     "text": "Kursstand 89.412 vom 19.10.2026 (Quelle: Chart-Snapshot 19.10.2026)."
+     "text": "Kursstand 90.023 vom 27.10.2026 (Quelle: Marktdaten 27.10.2026)."
     },
     {
      "t": "ok",
-     "text": "Kurs ist 0.3 Wochen-ATR vom Limit entfernt."
+     "text": "Kurs ist 1.9 Tages-ATR vom Limit entfernt."
     },
     {
      "t": "warn",
-     "text": "Zone entspricht einem Weekly-Orderblock der Qualität C (Bewegung 1.32 ATR, seither 2 Berührungen)."
+     "text": "Die Zone ist eine einzelne Weekly-Kerze, erfüllt aber meine Orderblock-Definition nicht (keine Bewegung über 1 ATR mit Strukturbruch)."
     }
    ]
   },
@@ -697,11 +763,11 @@
     },
     {
      "t": "ok",
-     "text": "Kursstand 0.70316 vom 19.10.2026 (Quelle: Chart-Snapshot 19.10.2026)."
+     "text": "Kursstand 0.70337 vom 27.10.2026 (Quelle: Marktdaten 27.10.2026)."
     },
     {
      "t": "ok",
-     "text": "Kurs ist 0.5 Wochen-ATR vom Limit entfernt."
+     "text": "Kurs ist 1.3 Tages-ATR vom Limit entfernt."
     }
    ]
   },
@@ -736,11 +802,11 @@
     },
     {
      "t": "ok",
-     "text": "Kursstand 0.83752 vom 19.10.2026 (Quelle: Chart-Snapshot 19.10.2026)."
+     "text": "Kursstand 0.83648 vom 27.10.2026 (Quelle: Marktdaten 27.10.2026)."
     },
     {
      "t": "ok",
-     "text": "Kurs ist 1.0 Wochen-ATR vom Limit entfernt."
+     "text": "Kurs ist 1.8 Tages-ATR vom Limit entfernt."
     },
     {
      "t": "warn",
@@ -749,7 +815,7 @@
    ]
   }
  ],
- "pruefung_stand": "2026-10-27T13:44",
+ "pruefung_stand": "2026-10-27T13:52",
  "lernen": {
   "n": 0,
   "gut": 0,
