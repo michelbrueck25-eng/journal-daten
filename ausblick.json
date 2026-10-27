@@ -209,7 +209,7 @@
    "ungueltig": "Eine unerwartete BoC-Erhöhung oder ein weiterer Anstieg von Brent über 120 USD spricht gegen die Long-Idee.",
    "plan": "Nur beobachten, bis die BoC gesprochen hat.",
    "ob": {
-    "stand": "2026-10-27T14:49",
+    "stand": "2026-10-27T15:50",
     "checks": [
      {
       "t": "ok",
@@ -294,7 +294,7 @@
    "ungueltig": "Nicht relevant, solange ich kein Szenario vorschlage. Neue Bewertung nach dem 29.10.",
    "plan": "Keine Position. Nach der EZB neu bewerten.",
    "ob": {
-    "stand": "2026-10-27T14:49",
+    "stand": "2026-10-27T15:50",
     "checks": [
      {
       "t": "ok",
@@ -439,7 +439,7 @@
    "risiko": "Vorschlag 0,5 % gesamt, davon 30 % Weekly und 70 % Daily. Halbes Risiko, weil schon viele AUD-Positionen offen sind.",
    "gueltig_bis": "2026-11-11",
    "ob": {
-    "stand": "2026-10-27T14:49",
+    "stand": "2026-10-27T15:50",
     "checks": [
      {
       "t": "ok",
@@ -501,7 +501,7 @@
    "risiko": "Bisher 1 % im Limit. Ich würde auf 0,5 % senken, solange die Zahl der Yen-Gegenseiten steigt (AUD/JPY und NZD/JPY sind fast dieselbe Wette).",
    "gueltig_bis": "2026-11-11",
    "ob": {
-    "stand": "2026-10-27T14:49",
+    "stand": "2026-10-27T15:50",
     "checks": [
      {
       "t": "ok",
@@ -563,7 +563,7 @@
    "risiko": "Vorschlag 0,5 %, weil die Überzeugung nur 5 von 10 ist.",
    "gueltig_bis": "2026-11-06",
    "ob": {
-    "stand": "2026-10-27T14:49",
+    "stand": "2026-10-27T15:50",
     "checks": [
      {
       "t": "bad",
@@ -616,7 +616,7 @@
    "risiko": "Vorschlag 0,5 % oder weniger.",
    "gueltig_bis": "2026-11-06",
    "ob": {
-    "stand": "2026-10-27T14:49",
+    "stand": "2026-10-27T15:50",
     "checks": [
      {
       "t": "ok",
