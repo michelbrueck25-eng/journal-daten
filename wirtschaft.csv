@@ -353,7 +353,7 @@ date,time,country,title,actual,forecast,previous,impact
 2026-10-23,10:00,Eurozone,Composite-PMI (vorläufig),51.9,52.7,53.1,medium
 2026-10-23,10:30,Großbritannien,Composite-PMI (vorläufig),53.1,51.8,52.0,medium
 2026-10-23,15:45,USA,Composite-PMI (vorläufig),57.6,,58.4,medium
-2026-10-27,15:00,USA,Verbrauchervertrauen (Conference Board),,81.2,81.9,medium
+2026-10-27,15:00,USA,Verbrauchervertrauen (Conference Board),91.7,81.2,81.9,medium
 2026-10-28,01:30,Australien,CPI y/y,,4.2%,4.0%,high
 2026-10-28,02:00,Neuseeland,RBNZ-Zinsentscheid,,3.00%,2.75%,high
 2026-10-28,14:45,Kanada,BoC-Zinsentscheid,,2.50%,2.25%,high
