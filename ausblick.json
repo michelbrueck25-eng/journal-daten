@@ -1,6 +1,6 @@
 {
  "typ": "ausblick",
- "stand": "2026-10-27T20:15",
+ "stand": "2026-10-28T06:40",
  "zusammenfassung": "Wochenausblick ab 26.10.: Die Woche wird von vier Notenbankterminen in 48 Stunden entschieden (RBNZ und BoC sowie Fed am 28.10., EZB am 29.10., BoJ am 30.10.). Mein Hauptgedanke: Wer Währungen handelt, sollte dort stehen, wo Positionierung, Zinsrichtung und Nachrichtenlage in dieselbe Richtung zeigen. Das trifft derzeit vor allem auf die Gegenseite zum Yen und zum Franken zu: Die Commercials (COT, Stand 20.10.) stehen bei AUD (100), EUR (97) und NZD (89) im oberen, bei JPY (19) und CHF (13) im unteren Extrembereich, gleichzeitig bleibt die Zinsdifferenz groß und die Risikostimmung (Chip-Ausverkauf, Hormus, Ölpreis bei rund 115 USD) belastet den Yen eher als dass sie ihn stützt. Beim Dollar und beim Euro sehe ich dagegen keinen sauberen Vorteil, solange Fed und EZB nicht gesprochen haben. Neu am Montagmorgen: Lula gewann die brasilianische Stichwahl mit rund 51,8 Prozent; das ist ein möglicher Risikoabschlag für Schwellenländer-Währungen, ändert aber an der Rangfolge der acht Hauptwährungen noch nichts. Entscheidend bleibt die Zentralbankwoche ab Dienstag (BoC, Fed, RBNZ am 28.10., EZB am 29.10., BoJ am 30.10.).",
  "paare": [
   {
@@ -8,7 +8,7 @@
    "richtung": "long",
    "staerke": 7,
    "horizont": "2 bis 6 Wochen",
-   "begruendung": "COT: AUD 100 oben, JPY 19 unten (Differenz 81). RBA-Erhöhung am 3.11. etwa 33 Prozent eingepreist, BoJ am 30.10. wahrscheinlich Pause. Hormus belastet den Yen.",
+   "begruendung": "COT: AUD 100 oben, JPY 19 unten (Differenz 81). RBA-Erhöhung am 3.11. etwa 33 Prozent eingepreist, BoJ am 30.10. wahrscheinlich Pause. Hormus belastet den Yen. Australiens Inflation lag im September mit 4,3 Prozent über Erwartung (4,2), das stützt die RBA-Erhöhungswetten.",
    "risiko": "Risikoangst und Interventionsrisiko beim Yen; schwache australische Arbeitsmarktdaten.",
    "these": "Dies ist die Idee mit der breitesten Absicherung durch Daten. Der Australische Dollar steht im COT bei 100 von 100 (obere Extremzone), der Yen bei 19, die Differenz von 81 Punkten gehört zu den größten unter allen Paaren. Dazu kommt ein Zinsgefälle, das sich in den nächsten Wochen eher vergrößert als verkleinert: Die RBA liegt bei 4,60 Prozent und ihre Vizechefin hält die fünfte Erhöhung am 3.11. für realistisch, die BoJ liegt bei 1,25 Prozent und ihre Vertreter sehen laut Medienberichten wenig Bedarf für zwei Erhöhungen in Folge. Wer hier long ist, wird für das Halten bezahlt (positiver Swap) und hat die Positionierung der großen Hedger auf seiner Seite.",
    "argumente": [
@@ -57,8 +57,8 @@
    "richtung": "long",
    "staerke": 6,
    "horizont": "2 bis 4 Wochen",
-   "begruendung": "COT: NZD 89, JPY 19. RBNZ am 28.10. mit rund 80 Prozent Erhöhung erwartet, dazu Zollwaffenruhe USA/China bis 10.1.",
-   "risiko": "Die RBNZ war zuletzt moderater als erwartet. Ein enttäuschender Entscheid am 28.10. könnte das Paar drücken.",
+   "begruendung": "COT: NZD 89, JPY 19. Die RBNZ hat am 28.10. überraschend bei 2,75 Prozent gehalten (4 zu 3, Erhöhung war erwartet), der NZD fiel deutlich. Der Zinsvorteil bleibt, aber der Rückenwind durch eine weitere Erhöhung fehlt vorerst. Zollwaffenruhe USA/China bis 10.1.",
+   "risiko": "Die RBNZ war zuletzt moderater als erwartet. Ein enttäuschender Entscheid am 28.10. könnte das Paar drücken. Neu: RBNZ-Überraschung, NZD verliert Zinsfantasie. Bestehende Limits prüfen.",
    "these": "NZD/JPY ist die kürzere und schärfere Variante der AUD/JPY-Idee: Der Neuseeländische Dollar steht im COT bei 89, der Yen bei 19, und mit der RBNZ am 28.10. liegt ein Ereignis vor uns, bei dem der Markt eine Erhöhung von 2,75 auf 3,00 Prozent zu etwa 75 bis 80 Prozent einpreist. Der Reiz liegt in der Terminierung: Der Katalysator ist in drei Tagen da, nicht in sechs Wochen.",
    "argumente": [
     {
@@ -209,7 +209,7 @@
    "ungueltig": "Eine unerwartete BoC-Erhöhung oder ein weiterer Anstieg von Brent über 120 USD spricht gegen die Long-Idee.",
    "plan": "Nur beobachten, bis die BoC gesprochen hat.",
    "ob": {
-    "stand": "2026-10-27T20:12",
+    "stand": "2026-10-28T06:31",
     "checks": [
      {
       "t": "ok",
@@ -294,7 +294,7 @@
    "ungueltig": "Nicht relevant, solange ich kein Szenario vorschlage. Neue Bewertung nach dem 29.10.",
    "plan": "Keine Position. Nach der EZB neu bewerten.",
    "ob": {
-    "stand": "2026-10-27T20:12",
+    "stand": "2026-10-28T06:31",
     "checks": [
      {
       "t": "ok",
@@ -392,15 +392,6 @@
  ],
  "countdown": [
   {
-   "zeit": "2026-10-28T01:30:00+01:00",
-   "titel": "Australien Q3-Inflation"
-  },
-  {
-   "zeit": "2026-10-28T02:00:00+01:00",
-   "titel": "RBNZ-Zinsentscheid",
-   "wichtig": 1
-  },
-  {
    "zeit": "2026-10-28T14:45:00+01:00",
    "titel": "BoC-Zinsentscheid",
    "wichtig": 1
@@ -439,7 +430,7 @@
    "risiko": "Vorschlag 0,5 % gesamt, davon 30 % Weekly und 70 % Daily. Halbes Risiko, weil schon viele AUD-Positionen offen sind.",
    "gueltig_bis": "2026-11-11",
    "ob": {
-    "stand": "2026-10-27T20:12",
+    "stand": "2026-10-28T06:31",
     "checks": [
      {
       "t": "ok",
@@ -501,7 +492,7 @@
    "risiko": "Bisher 1 % im Limit. Ich würde auf 0,5 % senken, solange die Zahl der Yen-Gegenseiten steigt (AUD/JPY und NZD/JPY sind fast dieselbe Wette).",
    "gueltig_bis": "2026-11-11",
    "ob": {
-    "stand": "2026-10-27T20:12",
+    "stand": "2026-10-28T06:31",
     "checks": [
      {
       "t": "ok",
@@ -563,7 +554,7 @@
    "risiko": "Vorschlag 0,5 %, weil die Überzeugung nur 5 von 10 ist.",
    "gueltig_bis": "2026-11-06",
    "ob": {
-    "stand": "2026-10-27T20:12",
+    "stand": "2026-10-28T06:31",
     "checks": [
      {
       "t": "bad",
@@ -616,7 +607,7 @@
    "risiko": "Vorschlag 0,5 % oder weniger.",
    "gueltig_bis": "2026-11-06",
    "ob": {
-    "stand": "2026-10-27T20:12",
+    "stand": "2026-10-28T06:31",
     "checks": [
      {
       "t": "ok",
