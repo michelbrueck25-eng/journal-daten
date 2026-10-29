@@ -361,7 +361,7 @@ date,time,country,title,actual,forecast,previous,impact
 2026-10-29,13:30,USA,Kern-PCE m/m,,0.3%,0.2%,medium
 2026-10-29,13:30,USA,BIP q/q (1. Schätzung Q3),3.4%,3.2%,2.2%,high
 2026-10-29,13:30,USA,Kern-PCE y/y,,,3.0%,medium
-2026-10-29,14:15,Eurozone,EZB-Zinsentscheid,,2.65%,2.65%,high
+2026-10-29,14:15,Eurozone,EZB-Zinsentscheid,2.65%,2.65%,2.65%,high
 2026-10-30,00:30,Japan,Arbeitslosenquote,,2.5%,2.5%,medium
 2026-10-30,00:30,Japan,BoJ-Zinsentscheid,,,,high
 2026-10-30,00:30,Japan,Kern-CPI y/y (Tokio),,2.6%,2.7%,medium

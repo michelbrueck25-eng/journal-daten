@@ -1,6 +1,6 @@
 {
  "typ": "ausblick",
- "stand": "2026-10-29T10:52",
+ "stand": "2026-10-29T15:20",
  "zusammenfassung": "Wochenausblick ab 26.10.: Die Woche wird von vier Notenbankterminen in 48 Stunden entschieden (RBNZ und BoC sowie Fed am 28.10., EZB am 29.10., BoJ am 30.10.). Mein Hauptgedanke: Wer Währungen handelt, sollte dort stehen, wo Positionierung, Zinsrichtung und Nachrichtenlage in dieselbe Richtung zeigen. Das trifft derzeit vor allem auf die Gegenseite zum Yen und zum Franken zu: Die Commercials (COT, Stand 20.10.) stehen bei AUD (100), EUR (97) und NZD (89) im oberen, bei JPY (19) und CHF (13) im unteren Extrembereich, gleichzeitig bleibt die Zinsdifferenz groß und die Risikostimmung (Chip-Ausverkauf, Hormus, Ölpreis bei rund 115 USD) belastet den Yen eher als dass sie ihn stützt. Beim Dollar und beim Euro sehe ich dagegen keinen sauberen Vorteil, solange Fed und EZB nicht gesprochen haben. Neu am Montagmorgen: Lula gewann die brasilianische Stichwahl mit rund 51,8 Prozent; das ist ein möglicher Risikoabschlag für Schwellenländer-Währungen, ändert aber an der Rangfolge der acht Hauptwährungen noch nichts. Entscheidend bleibt die Zentralbankwoche ab Dienstag (BoC, Fed, RBNZ am 28.10., EZB am 29.10., BoJ am 30.10.).",
  "paare": [
   {
@@ -391,15 +391,6 @@
   }
  ],
  "countdown": [
-  {
-   "zeit": "2026-10-29T13:30:00+01:00",
-   "titel": "US-PCE und BIP"
-  },
-  {
-   "zeit": "2026-10-29T14:15:00+01:00",
-   "titel": "EZB-Zinsentscheid",
-   "wichtig": 1
-  },
   {
    "zeit": "2026-10-30T00:30:00+01:00",
    "titel": "BoJ-Zinsentscheid",
