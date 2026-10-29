@@ -180,7 +180,7 @@
    "richtung": "long",
    "staerke": 4,
    "horizont": "2 bis 4 Wochen",
-   "begruendung": "COT: AUD 100, CAD 42. Dagegen: Ölpreis hoch (Brent rund 114 bis 117) stützt CAD, BoC am 28.10. zu rund 75 Prozent mit Erhöhung eingepreist, Kanada-Arbeitsmarkt schwach.",
+   "begruendung": "COT: AUD 100, CAD 42. Dagegen: Ölpreis hoch (Brent rund 114 bis 117) stützt CAD, BoC hat am 28.10. auf 2,50 Prozent erhöht (weitere Schritte möglich), Kanada-Arbeitsmarkt schwach.",
    "risiko": "Schwache AUD-Jobdaten und hoher Ölpreis sprechen gegen die Richtung.",
    "these": "Hier gebe ich ausdrücklich eine schwächere Bewertung ab, weil die Argumente gegeneinander stehen. Dafür: COT AUD 100 gegen CAD 42, eine RBA mit Erhöhungsneigung und ein kanadischer Arbeitsmarkt, der im September 68.300 Stellen verlor (Arbeitslosenquote 6,5 Prozent). Dagegen: Ölpreise bei rund 115 USD stützen den kanadischen Dollar als Ölexporteur, und auch der Australische Dollar hatte zuletzt schwache Arbeitsmarktdaten.",
    "argumente": [
@@ -264,7 +264,7 @@
    "richtung": "abwarten",
    "staerke": 3,
    "horizont": "bis nach 29.10.",
-   "begruendung": "COT spricht für den Euro (EUR 97, USD 33), aber US-Inflation 3,7 Prozent, Dezember-Erhöhung der Fed zu rund 89 Prozent eingepreist und Euro-Schwäche halten dagegen. Erst Fed (28.10.) und EZB (29.10.) abwarten.",
+   "begruendung": "COT spricht für den Euro (EUR 97, USD 33), aber US-Inflation 3,7 Prozent, Dezember-Erhöhung der Fed nach dem 10:2-Halt am 28.10. zu rund 85 Prozent eingepreist und Euro-Schwäche halten dagegen. Erst Fed (28.10.) und EZB (29.10.) abwarten.",
    "risiko": "Starker Dollar bei Risikoangst.",
    "these": "Bei EUR/USD ist Abwarten die ehrliche Empfehlung, nicht Unentschlossenheit. Die COT-Daten sprechen für den Euro (97 gegen 33), aber die Realität widerspricht: Die US-Inflation lag im September bei 3,7 Prozent, die Fed hat eine Dezember-Erhöung zu rund 85 bis 89 Prozent im Preis, und der Euro ist durch Frankreich und schwache Einkaufsmanagerindizes belastet. Meine Einschätzung: Für ein Long fehlt ein Auslöser, für ein Short fehlt die Positionierung.",
    "argumente": [
@@ -392,16 +392,6 @@
  ],
  "countdown": [
   {
-   "zeit": "2026-10-28T14:45:00+01:00",
-   "titel": "BoC-Zinsentscheid",
-   "wichtig": 1
-  },
-  {
-   "zeit": "2026-10-28T19:00:00+01:00",
-   "titel": "Fed-Zinsentscheid",
-   "wichtig": 1
-  },
-  {
    "zeit": "2026-10-29T13:30:00+01:00",
    "titel": "US-PCE und BIP"
   },
@@ -413,6 +403,16 @@
   {
    "zeit": "2026-10-30T00:30:00+01:00",
    "titel": "BoJ-Zinsentscheid",
+   "wichtig": 1
+  },
+  {
+   "zeit": "2026-11-03T00:00:00+01:00",
+   "titel": "US-Zwischenwahlen",
+   "wichtig": 1
+  },
+  {
+   "zeit": "2026-11-06T14:30:00+01:00",
+   "titel": "US-Arbeitsmarktbericht (NFP)",
    "wichtig": 1
   }
  ],
