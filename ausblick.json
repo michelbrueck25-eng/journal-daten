@@ -1,6 +1,6 @@
 {
  "typ": "ausblick",
- "stand": "2026-10-28T10:40",
+ "stand": "2026-10-29T10:20",
  "zusammenfassung": "Wochenausblick ab 26.10.: Die Woche wird von vier Notenbankterminen in 48 Stunden entschieden (RBNZ und BoC sowie Fed am 28.10., EZB am 29.10., BoJ am 30.10.). Mein Hauptgedanke: Wer Währungen handelt, sollte dort stehen, wo Positionierung, Zinsrichtung und Nachrichtenlage in dieselbe Richtung zeigen. Das trifft derzeit vor allem auf die Gegenseite zum Yen und zum Franken zu: Die Commercials (COT, Stand 20.10.) stehen bei AUD (100), EUR (97) und NZD (89) im oberen, bei JPY (19) und CHF (13) im unteren Extrembereich, gleichzeitig bleibt die Zinsdifferenz groß und die Risikostimmung (Chip-Ausverkauf, Hormus, Ölpreis bei rund 115 USD) belastet den Yen eher als dass sie ihn stützt. Beim Dollar und beim Euro sehe ich dagegen keinen sauberen Vorteil, solange Fed und EZB nicht gesprochen haben. Neu am Montagmorgen: Lula gewann die brasilianische Stichwahl mit rund 51,8 Prozent; das ist ein möglicher Risikoabschlag für Schwellenländer-Währungen, ändert aber an der Rangfolge der acht Hauptwährungen noch nichts. Entscheidend bleibt die Zentralbankwoche ab Dienstag (BoC, Fed, RBNZ am 28.10., EZB am 29.10., BoJ am 30.10.).",
  "paare": [
   {
@@ -209,7 +209,7 @@
    "ungueltig": "Eine unerwartete BoC-Erhöhung oder ein weiterer Anstieg von Brent über 120 USD spricht gegen die Long-Idee.",
    "plan": "Nur beobachten, bis die BoC gesprochen hat.",
    "ob": {
-    "stand": "2026-10-28T10:31",
+    "stand": "2026-10-29T10:14",
     "checks": [
      {
       "t": "ok",
@@ -217,7 +217,7 @@
      },
      {
       "t": "warn",
-      "text": "Termine in den nächsten 5 Tagen: 28.10. 01:30 CPI y/y, 28.10. 14:45 BoC-Zinsentscheid."
+      "text": "Termine in den nächsten 5 Tagen: 03.11. 04:30 RBA-Zinsentscheid."
      },
      {
       "t": "warn",
@@ -225,14 +225,14 @@
      },
      {
       "t": "ok",
-      "text": "Kurs 0.98614 ist 2.6 Wochen-ATR von der Zone entfernt."
+      "text": "Kurs 0.98819 ist 2.7 Wochen-ATR von der Zone entfernt."
      },
      {
       "t": "ok",
       "text": "Daily-Orderblock in der Weekly-Zone: 0.94546 bis 0.95097, Qualität C. Kombi-Einstieg (30 % Weekly, 70 % Daily) möglich."
      }
     ],
-    "quelle": "Marktdaten 27.10.2026",
+    "quelle": "Marktdaten 28.10.2026",
     "ebene": "weekly",
     "zone": [
      0.94453,
@@ -242,9 +242,9 @@
     "alter_wochen": 39,
     "beruehrungen": 1,
     "bewegung_atr": 1.05,
-    "kurs": 0.98614,
+    "kurs": 0.98819,
     "kursstand": "2026-10-26",
-    "abstand_atr": 2.6,
+    "abstand_atr": 2.7,
     "zone_t": 1769385600000,
     "einstieg": 0.95906,
     "stopp": 0.94308,
@@ -294,7 +294,7 @@
    "ungueltig": "Nicht relevant, solange ich kein Szenario vorschlage. Neue Bewertung nach dem 29.10.",
    "plan": "Keine Position. Nach der EZB neu bewerten.",
    "ob": {
-    "stand": "2026-10-28T10:31",
+    "stand": "2026-10-29T10:14",
     "checks": [
      {
       "t": "ok",
@@ -302,7 +302,7 @@
      },
      {
       "t": "warn",
-      "text": "Termine in den nächsten 5 Tagen: 28.10. 19:00 Fed-Zinsentscheid (Obergrenze), 29.10. 13:30 BIP q/q (1. Schätzung Q3), 29.10. 14:15 EZB-Zinsentscheid."
+      "text": "Termine in den nächsten 5 Tagen: 29.10. 13:30 BIP q/q (1. Schätzung Q3), 29.10. 14:15 EZB-Zinsentscheid."
      },
      {
       "t": "ok",
@@ -310,14 +310,14 @@
      },
      {
       "t": "ok",
-      "text": "Kurs 1.11518 ist 1.6 Wochen-ATR von der Zone entfernt."
+      "text": "Kurs 1.11467 ist 1.5 Wochen-ATR von der Zone entfernt."
      },
      {
       "t": "warn",
       "text": "Kein unmitigierter Daily-Orderblock innerhalb der Weekly-Zone: nach deiner Auswertung nicht einsteigen, bis einer entsteht (Daily-Bestätigung)."
      }
     ],
-    "quelle": "Marktdaten 27.10.2026",
+    "quelle": "Marktdaten 28.10.2026",
     "ebene": "weekly",
     "zone": [
      1.08057,
@@ -327,9 +327,9 @@
     "alter_wochen": 84,
     "beruehrungen": 0,
     "bewegung_atr": 2.61,
-    "kurs": 1.11518,
+    "kurs": 1.11467,
     "kursstand": "2026-10-26",
-    "abstand_atr": 1.6,
+    "abstand_atr": 1.5,
     "zone_t": 1742169600000,
     "einstieg": 1.09545,
     "stopp": 1.07908,
@@ -430,7 +430,7 @@
    "risiko": "Vorschlag 0,5 % gesamt, davon 30 % Weekly und 70 % Daily. Halbes Risiko, weil schon viele AUD-Positionen offen sind.",
    "gueltig_bis": "2026-11-11",
    "ob": {
-    "stand": "2026-10-28T10:31",
+    "stand": "2026-10-29T10:14",
     "checks": [
      {
       "t": "ok",
@@ -438,7 +438,7 @@
      },
      {
       "t": "warn",
-      "text": "Termine in den nächsten 5 Tagen: 28.10. 01:30 CPI y/y, 30.10. 00:30 BoJ-Zinsentscheid."
+      "text": "Termine in den nächsten 5 Tagen: 30.10. 00:30 BoJ-Zinsentscheid, 03.11. 04:30 RBA-Zinsentscheid."
      },
      {
       "t": "warn",
@@ -446,14 +446,14 @@
      },
      {
       "t": "ok",
-      "text": "Kurs 110.992 ist 1.0 Wochen-ATR von der Zone entfernt."
+      "text": "Kurs 111.384 ist 1.2 Wochen-ATR von der Zone entfernt."
      },
      {
       "t": "ok",
       "text": "Daily-Orderblock in der Weekly-Zone: 107.505 bis 108.003, Qualität B. Kombi-Einstieg (30 % Weekly, 70 % Daily) möglich."
      }
     ],
-    "quelle": "Marktdaten 27.10.2026",
+    "quelle": "Marktdaten 28.10.2026",
     "ebene": "weekly",
     "zone": [
      106.112,
@@ -463,9 +463,9 @@
     "alter_wochen": 39,
     "beruehrungen": 0,
     "bewegung_atr": 1.06,
-    "kurs": 110.992,
+    "kurs": 111.384,
     "kursstand": "2026-10-26",
-    "abstand_atr": 1.0,
+    "abstand_atr": 1.2,
     "zone_t": 1769385600000,
     "einstieg": 108.607,
     "stopp": 105.8625,
@@ -492,7 +492,7 @@
    "risiko": "Bisher 1 % im Limit. Ich würde auf 0,5 % senken, solange die Zahl der Yen-Gegenseiten steigt (AUD/JPY und NZD/JPY sind fast dieselbe Wette).",
    "gueltig_bis": "2026-11-11",
    "ob": {
-    "stand": "2026-10-28T10:31",
+    "stand": "2026-10-29T10:14",
     "checks": [
      {
       "t": "ok",
@@ -500,7 +500,7 @@
      },
      {
       "t": "warn",
-      "text": "Termine in den nächsten 5 Tagen: 28.10. 02:00 RBNZ-Zinsentscheid, 30.10. 00:30 BoJ-Zinsentscheid."
+      "text": "Termine in den nächsten 5 Tagen: 30.10. 00:30 BoJ-Zinsentscheid, 03.11. 22:45 Arbeitslosenquote."
      },
      {
       "t": "warn",
@@ -508,14 +508,14 @@
      },
      {
       "t": "ok",
-      "text": "Kurs 90.023 ist 0.7 Wochen-ATR von der Zone entfernt."
+      "text": "Kurs 88.989 ist 0.1 Wochen-ATR von der Zone entfernt."
      },
      {
       "t": "ok",
       "text": "Daily-Orderblock in der Weekly-Zone: 87.670 bis 87.857, Qualität A. Kombi-Einstieg (30 % Weekly, 70 % Daily) möglich."
      }
     ],
-    "quelle": "Marktdaten 27.10.2026",
+    "quelle": "Marktdaten 28.10.2026",
     "ebene": "weekly",
     "zone": [
      87.294,
@@ -525,9 +525,9 @@
     "alter_wochen": 49,
     "beruehrungen": 2,
     "bewegung_atr": 1.32,
-    "kurs": 90.023,
+    "kurs": 88.989,
     "kursstand": "2026-10-26",
-    "abstand_atr": 0.7,
+    "abstand_atr": 0.1,
     "zone_t": 1763337600000,
     "einstieg": 88.856,
     "stopp": 87.1378,
@@ -554,7 +554,7 @@
    "risiko": "Vorschlag 0,5 %, weil die Überzeugung nur 5 von 10 ist.",
    "gueltig_bis": "2026-11-06",
    "ob": {
-    "stand": "2026-10-28T10:31",
+    "stand": "2026-10-29T10:14",
     "checks": [
      {
       "t": "bad",
@@ -566,14 +566,14 @@
      },
      {
       "t": "ok",
-      "text": "Kurs 1.10459 ist 1.3 Wochen-ATR von der Zone entfernt."
+      "text": "Kurs 1.10351 ist 1.2 Wochen-ATR von der Zone entfernt."
      },
      {
       "t": "warn",
       "text": "Kein unmitigierter Daily-Orderblock innerhalb der Weekly-Zone: nach deiner Auswertung nicht einsteigen, bis einer entsteht (Daily-Bestätigung)."
      }
     ],
-    "quelle": "Marktdaten 27.10.2026",
+    "quelle": "Marktdaten 28.10.2026",
     "ebene": "weekly",
     "zone": [
      1.08457,
@@ -583,9 +583,9 @@
     "alter_wochen": 14,
     "beruehrungen": 3,
     "bewegung_atr": 1.03,
-    "kurs": 1.10459,
+    "kurs": 1.10351,
     "kursstand": "2026-10-26",
-    "abstand_atr": 1.3,
+    "abstand_atr": 1.2,
     "zone_t": 1784505600000,
     "einstieg": 1.09072,
     "stopp": 1.08396,
@@ -607,7 +607,7 @@
    "risiko": "Vorschlag 0,5 % oder weniger.",
    "gueltig_bis": "2026-11-06",
    "ob": {
-    "stand": "2026-10-28T10:31",
+    "stand": "2026-10-29T10:14",
     "checks": [
      {
       "t": "ok",
@@ -622,7 +622,7 @@
       "text": "Weekly: kein unmitigierter Orderblock auf der richtigen Seite des Kurses, ein Limit-Einstieg ist so nicht begründbar."
      }
     ],
-    "quelle": "Marktdaten 27.10.2026",
+    "quelle": "Marktdaten 28.10.2026",
     "status": "ungültig"
    }
   }
