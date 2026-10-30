@@ -1,7 +1,7 @@
 {
  "typ": "ausblick",
- "stand": "2026-10-29T17:35",
- "zusammenfassung": "Wochenausblick ab 26.10.: Die Woche wird von vier Notenbankterminen in 48 Stunden entschieden (RBNZ und BoC sowie Fed am 28.10., EZB am 29.10., BoJ am 30.10.). Mein Hauptgedanke: Wer Währungen handelt, sollte dort stehen, wo Positionierung, Zinsrichtung und Nachrichtenlage in dieselbe Richtung zeigen. Das trifft derzeit vor allem auf die Gegenseite zum Yen und zum Franken zu: Die Commercials (COT, Stand 20.10.) stehen bei AUD (100), EUR (97) und NZD (89) im oberen, bei JPY (19) und CHF (13) im unteren Extrembereich, gleichzeitig bleibt die Zinsdifferenz groß und die Risikostimmung (Chip-Ausverkauf, Hormus, Ölpreis bei rund 115 USD) belastet den Yen eher als dass sie ihn stützt. Beim Dollar und beim Euro sehe ich dagegen keinen sauberen Vorteil, solange Fed und EZB nicht gesprochen haben. Neu am Montagmorgen: Lula gewann die brasilianische Stichwahl mit rund 51,8 Prozent; das ist ein möglicher Risikoabschlag für Schwellenländer-Währungen, ändert aber an der Rangfolge der acht Hauptwährungen noch nichts. Entscheidend bleibt die Zentralbankwoche ab Dienstag (BoC, Fed, RBNZ am 28.10., EZB am 29.10., BoJ am 30.10.).",
+ "stand": "2026-10-30T06:32",
+ "zusammenfassung": "Wochenausblick ab 26.10.: Die Woche wird von vier Notenbankterminen in 48 Stunden entschieden (RBNZ und BoC sowie Fed am 28.10., EZB am 29.10., BoJ am 30.10.). Mein Hauptgedanke: Wer Währungen handelt, sollte dort stehen, wo Positionierung, Zinsrichtung und Nachrichtenlage in dieselbe Richtung zeigen. Das trifft derzeit vor allem auf die Gegenseite zum Yen und zum Franken zu: Die Commercials (COT, Stand 20.10.) stehen bei AUD (100), EUR (97) und NZD (89) im oberen, bei JPY (19) und CHF (13) im unteren Extrembereich, gleichzeitig bleibt die Zinsdifferenz groß und die Risikostimmung (Chip-Ausverkauf, Hormus, Ölpreis bei rund 115 USD) belastet den Yen eher als dass sie ihn stützt. Beim Dollar und beim Euro sehe ich dagegen keinen sauberen Vorteil, solange Fed und EZB nicht gesprochen haben. Neu am Montagmorgen: Lula gewann die brasilianische Stichwahl mit rund 51,8 Prozent; das ist ein möglicher Risikoabschlag für Schwellenländer-Währungen, ändert aber an der Rangfolge der acht Hauptwährungen noch nichts. Entscheidend bleibt die Zentralbankwoche ab Dienstag (BoC, Fed, RBNZ am 28.10., EZB am 29.10., BoJ am 30.10.). Update 30.10.: Die BoJ hielt den Leitzins bei 1,25 Prozent (8 zu 1, Takata dagegen) und hob die Inflationsprognose an, eine Dezember-Zusage gab es nicht. Der Yen legte zeitweise zu.",
  "paare": [
   {
    "paar": "AUD/JPY",
@@ -209,7 +209,7 @@
    "ungueltig": "Eine unerwartete BoC-Erhöhung oder ein weiterer Anstieg von Brent über 120 USD spricht gegen die Long-Idee.",
    "plan": "Nur beobachten, bis die BoC gesprochen hat.",
    "ob": {
-    "stand": "2026-10-29T17:35",
+    "stand": "2026-10-30T06:32",
     "checks": [
      {
       "t": "ok",
@@ -294,7 +294,7 @@
    "ungueltig": "Nicht relevant, solange ich kein Szenario vorschlage. Neue Bewertung nach dem 29.10.",
    "plan": "Keine Position. Nach der EZB neu bewerten.",
    "ob": {
-    "stand": "2026-10-29T17:35",
+    "stand": "2026-10-30T06:32",
     "checks": [
      {
       "t": "ok",
@@ -302,7 +302,7 @@
      },
      {
       "t": "warn",
-      "text": "Termine in den nächsten 5 Tagen: 29.10. 13:30 BIP q/q (1. Schätzung Q3), 29.10. 14:15 EZB-Zinsentscheid."
+      "text": "Termine in den nächsten 5 Tagen: 04.11. 11:00 CPI y/y (Schnellschätzung), 04.11. 11:00 Kern-CPI y/y (Schnellschätzung)."
      },
      {
       "t": "ok",
@@ -392,13 +392,13 @@
  ],
  "countdown": [
   {
-   "zeit": "2026-10-30T00:30:00+01:00",
-   "titel": "BoJ-Zinsentscheid",
+   "zeit": "2026-11-03T00:00:00+01:00",
+   "titel": "US-Zwischenwahlen",
    "wichtig": 1
   },
   {
-   "zeit": "2026-11-03T00:00:00+01:00",
-   "titel": "US-Zwischenwahlen",
+   "zeit": "2026-11-03T04:30:00+01:00",
+   "titel": "RBA-Zinsentscheid",
    "wichtig": 1
   },
   {
@@ -421,7 +421,7 @@
    "risiko": "Vorschlag 0,5 % gesamt, davon 30 % Weekly und 70 % Daily. Halbes Risiko, weil schon viele AUD-Positionen offen sind.",
    "gueltig_bis": "2026-11-11",
    "ob": {
-    "stand": "2026-10-29T17:35",
+    "stand": "2026-10-30T06:32",
     "checks": [
      {
       "t": "ok",
@@ -437,7 +437,7 @@
      },
      {
       "t": "ok",
-      "text": "Kurs 111.065 ist 1.0 Wochen-ATR von der Zone entfernt."
+      "text": "Kurs 110.851 ist 1.0 Wochen-ATR von der Zone entfernt."
      },
      {
       "t": "ok",
@@ -454,7 +454,7 @@
     "alter_wochen": 39,
     "beruehrungen": 0,
     "bewegung_atr": 1.06,
-    "kurs": 111.065,
+    "kurs": 110.851,
     "kursstand": "2026-10-26",
     "abstand_atr": 1.0,
     "zone_t": 1769385600000,
@@ -483,7 +483,7 @@
    "risiko": "Bisher 1 % im Limit. Ich würde auf 0,5 % senken, solange die Zahl der Yen-Gegenseiten steigt (AUD/JPY und NZD/JPY sind fast dieselbe Wette).",
    "gueltig_bis": "2026-11-11",
    "ob": {
-    "stand": "2026-10-29T17:35",
+    "stand": "2026-10-30T06:32",
     "checks": [
      {
       "t": "ok",
@@ -499,7 +499,7 @@
      },
      {
       "t": "warn",
-      "text": "Kurs 88.824 ist 6.0 Wochen-ATR von der Zone entfernt, der Limit wird lange nicht erreicht."
+      "text": "Kurs 88.851 ist 6.0 Wochen-ATR von der Zone entfernt, der Limit wird lange nicht erreicht."
      },
      {
       "t": "ok",
@@ -516,7 +516,7 @@
     "alter_wochen": 245,
     "beruehrungen": 0,
     "bewegung_atr": 1.48,
-    "kurs": 88.824,
+    "kurs": 88.851,
     "kursstand": "2026-10-26",
     "abstand_atr": 6.0,
     "zone_t": 1644796800000,
@@ -545,11 +545,15 @@
    "risiko": "Vorschlag 0,5 %, weil die Überzeugung nur 5 von 10 ist.",
    "gueltig_bis": "2026-11-06",
    "ob": {
-    "stand": "2026-10-29T17:35",
+    "stand": "2026-10-30T06:32",
     "checks": [
      {
       "t": "bad",
       "text": "COT GBP 6M-Index 67 (Stand 20.10.2026): nicht mehr im Extrembereich für Long, CHF 13."
+     },
+     {
+      "t": "warn",
+      "text": "Termine in den nächsten 5 Tagen: 04.11. 08:30 CPI m/m."
      },
      {
       "t": "warn",
@@ -598,7 +602,7 @@
    "risiko": "Vorschlag 0,5 % oder weniger.",
    "gueltig_bis": "2026-11-06",
    "ob": {
-    "stand": "2026-10-29T17:35",
+    "stand": "2026-10-30T06:32",
     "checks": [
      {
       "t": "ok",
@@ -606,7 +610,7 @@
      },
      {
       "t": "warn",
-      "text": "Termine in den nächsten 5 Tagen: 29.10. 14:15 EZB-Zinsentscheid."
+      "text": "Termine in den nächsten 5 Tagen: 04.11. 08:30 CPI m/m, 04.11. 11:00 CPI y/y (Schnellschätzung), 04.11. 11:00 Kern-CPI y/y (Schnellschätzung)."
      },
      {
       "t": "bad",
