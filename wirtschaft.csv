@@ -367,7 +367,7 @@ date,time,country,title,actual,forecast,previous,impact
 2026-10-30,00:30,Japan,Kern-CPI y/y (Tokio),,2.6%,2.7%,medium
 2026-10-30,08:00,Eurozone,Deutschland BIP q/q (vorläufig Q3),,0.1%,0.3%,medium
 2026-10-30,11:00,Eurozone,Arbeitslosenquote,,6.4%,6.4%,medium
-2026-10-30,11:00,Eurozone,BIP q/q (1. Schätzung Q3),,0.2%,0.6%,medium
+2026-10-30,11:00,Eurozone,BIP q/q (1. Schätzung Q3),0.4%,0.2%,0.6%,medium
 2026-10-30,14:00,Eurozone,Deutschland HVPI y/y (vorläufig),,,3.3%,medium
 2026-11-03,04:30,Australien,RBA-Zinsentscheid,,,,high
 2026-11-03,22:45,Neuseeland,Arbeitslosenquote,,,,high
