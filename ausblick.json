@@ -1,632 +1,632 @@
 {
-  "typ": "ausblick",
-  "stand": "2026-10-30T14:41",
-  "zusammenfassung": "Wochenausblick ab 26.10.: Die Woche wird von vier Notenbankterminen in 48 Stunden entschieden (RBNZ und BoC sowie Fed am 28.10., EZB am 29.10., BoJ am 30.10.). Mein Hauptgedanke: Wer Währungen handelt, sollte dort stehen, wo Positionierung, Zinsrichtung und Nachrichtenlage in dieselbe Richtung zeigen. Das trifft derzeit vor allem auf die Gegenseite zum Yen und zum Franken zu: Die Commercials (COT, Stand 20.10.) stehen bei AUD (100), EUR (97) und NZD (89) im oberen, bei JPY (19) und CHF (13) im unteren Extrembereich, gleichzeitig bleibt die Zinsdifferenz groß und die Risikostimmung (Chip-Ausverkauf, Hormus, Ölpreis bei rund 115 USD) belastet den Yen eher als dass sie ihn stützt. Beim Dollar und beim Euro sehe ich dagegen keinen sauberen Vorteil, solange Fed und EZB nicht gesprochen haben. Neu am Montagmorgen: Lula gewann die brasilianische Stichwahl mit rund 51,8 Prozent; das ist ein möglicher Risikoabschlag für Schwellenländer-Währungen, ändert aber an der Rangfolge der acht Hauptwährungen noch nichts. Entscheidend bleibt die Zentralbankwoche ab Dienstag (BoC, Fed, RBNZ am 28.10., EZB am 29.10., BoJ am 30.10.). Update 30.10.: Die BoJ hielt den Leitzins bei 1,25 Prozent (8 zu 1, Takata dagegen) und hob die Inflationsprognose an, eine Dezember-Zusage gab es nicht. Der Yen legte zeitweise zu.",
-  "paare": [
+ "typ": "ausblick",
+ "stand": "2026-10-30T17:48",
+ "zusammenfassung": "Wochenausblick ab 26.10.: Die Woche wird von vier Notenbankterminen in 48 Stunden entschieden (RBNZ und BoC sowie Fed am 28.10., EZB am 29.10., BoJ am 30.10.). Mein Hauptgedanke: Wer Währungen handelt, sollte dort stehen, wo Positionierung, Zinsrichtung und Nachrichtenlage in dieselbe Richtung zeigen. Das trifft derzeit vor allem auf die Gegenseite zum Yen und zum Franken zu: Die Commercials (COT, Stand 20.10.) stehen bei AUD (100), EUR (97) und NZD (89) im oberen, bei JPY (19) und CHF (13) im unteren Extrembereich, gleichzeitig bleibt die Zinsdifferenz groß und die Risikostimmung (Chip-Ausverkauf, Hormus, Ölpreis bei rund 115 USD) belastet den Yen eher als dass sie ihn stützt. Beim Dollar und beim Euro sehe ich dagegen keinen sauberen Vorteil, solange Fed und EZB nicht gesprochen haben. Neu am Montagmorgen: Lula gewann die brasilianische Stichwahl mit rund 51,8 Prozent; das ist ein möglicher Risikoabschlag für Schwellenländer-Währungen, ändert aber an der Rangfolge der acht Hauptwährungen noch nichts. Entscheidend bleibt die Zentralbankwoche ab Dienstag (BoC, Fed, RBNZ am 28.10., EZB am 29.10., BoJ am 30.10.). Update 30.10.: Die BoJ hielt den Leitzins bei 1,25 Prozent (8 zu 1, Takata dagegen) und hob die Inflationsprognose an, eine Dezember-Zusage gab es nicht. Der Yen legte zeitweise zu.",
+ "paare": [
+  {
+   "paar": "AUD/JPY",
+   "richtung": "long",
+   "staerke": 7,
+   "horizont": "2 bis 6 Wochen",
+   "begruendung": "COT: AUD 100 oben, JPY 19 unten (Differenz 81). RBA-Erhöhung am 3.11. etwa 33 Prozent eingepreist, BoJ am 30.10. wahrscheinlich Pause. Hormus belastet den Yen. Australiens Inflation lag im September mit 4,3 Prozent über Erwartung (4,2), das stützt die RBA-Erhöhungswetten.",
+   "risiko": "Risikoangst und Interventionsrisiko beim Yen; schwache australische Arbeitsmarktdaten.",
+   "these": "Dies ist die Idee mit der breitesten Absicherung durch Daten. Der Australische Dollar steht im COT bei 100 von 100 (obere Extremzone), der Yen bei 19, die Differenz von 81 Punkten gehört zu den größten unter allen Paaren. Dazu kommt ein Zinsgefälle, das sich in den nächsten Wochen eher vergrößert als verkleinert: Die RBA liegt bei 4,60 Prozent und ihre Vizechefin hält die fünfte Erhöhung am 3.11. für realistisch, die BoJ liegt bei 1,25 Prozent und ihre Vertreter sehen laut Medienberichten wenig Bedarf für zwei Erhöhungen in Folge. Wer hier long ist, wird für das Halten bezahlt (positiver Swap) und hat die Positionierung der großen Hedger auf seiner Seite.",
+   "argumente": [
     {
-      "paar": "AUD/JPY",
-      "richtung": "long",
-      "staerke": 7,
-      "horizont": "2 bis 6 Wochen",
-      "begruendung": "COT: AUD 100 oben, JPY 19 unten (Differenz 81). RBA-Erhöhung am 3.11. etwa 33 Prozent eingepreist, BoJ am 30.10. wahrscheinlich Pause. Hormus belastet den Yen. Australiens Inflation lag im September mit 4,3 Prozent über Erwartung (4,2), das stützt die RBA-Erhöhungswetten.",
-      "risiko": "Risikoangst und Interventionsrisiko beim Yen; schwache australische Arbeitsmarktdaten.",
-      "these": "Dies ist die Idee mit der breitesten Absicherung durch Daten. Der Australische Dollar steht im COT bei 100 von 100 (obere Extremzone), der Yen bei 19, die Differenz von 81 Punkten gehört zu den größten unter allen Paaren. Dazu kommt ein Zinsgefälle, das sich in den nächsten Wochen eher vergrößert als verkleinert: Die RBA liegt bei 4,60 Prozent und ihre Vizechefin hält die fünfte Erhöhung am 3.11. für realistisch, die BoJ liegt bei 1,25 Prozent und ihre Vertreter sehen laut Medienberichten wenig Bedarf für zwei Erhöhungen in Folge. Wer hier long ist, wird für das Halten bezahlt (positiver Swap) und hat die Positionierung der großen Hedger auf seiner Seite.",
-      "argumente": [
-        {
-          "titel": "Positionierung",
-          "text": "AUD 100 oben und JPY 19 unten bedeuten, dass die Commercials (die wirtschaftlich Abgesicherten) auf AUD-Stärke und Yen-Schwäche gesetzt sind. Ein Extremwert allein ist kein Timing-Signal, er zeigt nur, wohin die großen Hedger bereits ausgerichtet sind."
-        },
-        {
-          "titel": "Zinsen",
-          "text": "RBA-Erhöhung am 3.11. zu etwa einem Drittel eingepreist, Goldman rechnet inzwischen mit +25 Basispunkten auf 4,85 Prozent. Die BoJ dürfte am 30.10. pausieren, eine Erhöhung ist eher im Dezember ein Thema. Je größer die Überraschung auf der AUD-Seite, desto stärker das Paar."
-        },
-        {
-          "titel": "Energie und Handel",
-          "text": "Brent bei rund 115 USD belastet Japan als Energieimporteur direkt, Australien ist Rohstoffexporteur. Die verlängerte Zollwaffenruhe USA/China bis 10.1.2027 stützt zusätzlich Australien und Neuseeland, weil China der wichtigste Handelspartner ist."
-        },
-        {
-          "titel": "China",
-          "text": "Das chinesische BIP im dritten Quartal (+4,5 Prozent, über der Prognose) und die stärkste Industrieproduktion seit sechs Monaten sind ein Rückenwind für den Australischen Dollar."
-        }
-      ],
-      "einwaende": [
-        {
-          "einwand": "Der australische Arbeitsmarkt war zuletzt schwach (−39.300 Stellen, Arbeitslosenquote 4,7 Prozent).",
-          "antwort": "Das stimmt und ist der Grund, warum ich nicht 9 von 10 vergebe. Es dämpft die RBA-Erhöhung am 3.11., ändert aber nicht das Zinsgefälle zur BoJ. Entscheidend ist die Q3-Inflation am 28.10.: Kommt sie hoch, ist die Arbeitsmarktschwäche kein Hindernis mehr."
-        },
-        {
-          "einwand": "Bei Risikoangst steigt der Yen als sicherer Hafen.",
-          "antwort": "Richtig, und das ist das Hauptrisiko. Der Ausverkauf bei Chip-Werten hat den Nikkei in einer Woche um etwa 5 Prozent gedrückt, trotzdem hat der Yen nicht nachhaltig gewonnen, weil die Ölpreise und das Zinsgefälle ihn belasten. Bricht dieses Muster, sehen wir es zuerst an einem schnellen Rücklauf unter die jüngsten Tiefs."
-        },
-        {
-          "einwand": "Japan könnte eingreifen.",
-          "antwort": "Interventionsrisiko betrifft vor allem USD/JPY nahe 158 bis 160. Bei AUD/JPY wirkt eine Intervention indirekt, trifft das Paar aber meist schwächer. Deshalb bevorzuge ich AUD/JPY gegenüber USD/JPY."
-        }
-      ],
-      "termine": [
-        "28.10.: australische Q3-Inflation (Vormittag australischer Zeit)",
-        "28.10.: RBNZ (Neuseeland) als Stimmungstest für die Region",
-        "30.10.: BoJ-Entscheid",
-        "03.11.: RBA-Entscheid"
-      ],
-      "ungueltig": "Meine These ist widerlegt, wenn die australische Q3-Inflation deutlich unter der Erwartung liegt und gleichzeitig die BoJ am 30.10. eine Erhöhung im Dezember klar ankündigt, oder wenn USD/JPY und AUD/JPY zusammen nach einem Risikoschock in wenigen Tagen mehr als drei bis vier Prozent fallen.",
-      "plan": "Sinnvoll wäre, den Termin 28.10. abzuwarten und erst danach in Etappen aufzubauen, nicht davor. Der Stopp gehört unter die letzte Wochentief-Zone, nicht eng ans Marktrauschen."
+     "titel": "Positionierung",
+     "text": "AUD 100 oben und JPY 19 unten bedeuten, dass die Commercials (die wirtschaftlich Abgesicherten) auf AUD-Stärke und Yen-Schwäche gesetzt sind. Ein Extremwert allein ist kein Timing-Signal, er zeigt nur, wohin die großen Hedger bereits ausgerichtet sind."
     },
     {
-      "paar": "NZD/JPY",
-      "richtung": "long",
-      "staerke": 6,
-      "horizont": "2 bis 4 Wochen",
-      "begruendung": "COT: NZD 89, JPY 19. Die RBNZ hat am 28.10. überraschend bei 2,75 Prozent gehalten (4 zu 3, Erhöhung war erwartet), der NZD fiel deutlich. Der Zinsvorteil bleibt, aber der Rückenwind durch eine weitere Erhöhung fehlt vorerst. Zollwaffenruhe USA/China bis 10.1.",
-      "risiko": "Die RBNZ war zuletzt moderater als erwartet. Ein enttäuschender Entscheid am 28.10. könnte das Paar drücken. Neu: RBNZ-Überraschung, NZD verliert Zinsfantasie. Bestehende Limits prüfen.",
-      "these": "NZD/JPY ist die kürzere und schärfere Variante der AUD/JPY-Idee: Der Neuseeländische Dollar steht im COT bei 89, der Yen bei 19, und mit der RBNZ am 28.10. liegt ein Ereignis vor uns, bei dem der Markt eine Erhöhung von 2,75 auf 3,00 Prozent zu etwa 75 bis 80 Prozent einpreist. Der Reiz liegt in der Terminierung: Der Katalysator ist in drei Tagen da, nicht in sechs Wochen.",
-      "argumente": [
-        {
-          "titel": "Erwartung ist hoch, aber gedeckt",
-          "text": "Die neuseeländische Inflation lag im dritten Quartal bei 3,7 Prozent (Prognose 3,8), also knapp unter der Erwartung. Das ändert wenig an einer Erhöhung, bleibt aber ein Dämpfer für eine aggressive Überraschung."
-        },
-        {
-          "titel": "Positionierung",
-          "text": "NZD 89 gegen JPY 19 ergibt eine Differenz von 70 Punkten, kleiner als bei AUD/JPY, aber immer noch klar im Bereich, in dem ich Richtung bevorzuge."
-        },
-        {
-          "titel": "Zollwaffenruhe",
-          "text": "Die Verlängerung der Waffenruhe zwischen den USA und China bis 10.1.2027 ist für Neuseeland besonders relevant, weil das Land stark vom Handel mit China abhängt."
-        }
-      ],
-      "einwaende": [
-        {
-          "einwand": "Die RBNZ hat zuletzt moderater erhöht als erwartet und die Prognosen gesenkt.",
-          "antwort": "Das ist der Grund für die niedrigere Stärke (6 statt 7). Wenn die Erhöhung schon zu 80 Prozent im Preis steckt, ist die Gefahr einer Enttäuschung real. Ich würde deshalb den Entscheid abwarten und nicht vorher kaufen."
-        },
-        {
-          "einwand": "Nach den Wahlen könnte das duale Mandat zurückkehren.",
-          "antwort": "Das wirkt auf Sicht von Monaten, nicht Wochen. Für ein Fenster von zwei bis vier Wochen ist es zweitrangig, aber ein Grund, nicht über das Jahresende hinaus zu planen."
-        }
-      ],
-      "termine": [
-        "28.10. ca. 02:00 Uhr: RBNZ-Entscheid inklusive Prognosen",
-        "30.10.: BoJ-Entscheid"
-      ],
-      "ungueltig": "Erhöht die RBNZ nicht oder kündigt sie ein Ende des Zyklus an, dreht die Idee. Gleiches gilt, wenn NZD/JPY nach dem Entscheid unter die Wochenspanne fällt.",
-      "plan": "Erst die Reaktion auf den Entscheid ansehen, dann einsteigen. Stärke 6, weil das Ereignisrisiko höher ist als bei AUD/JPY."
+     "titel": "Zinsen",
+     "text": "RBA-Erhöhung am 3.11. zu etwa einem Drittel eingepreist, Goldman rechnet inzwischen mit +25 Basispunkten auf 4,85 Prozent. Die BoJ dürfte am 30.10. pausieren, eine Erhöhung ist eher im Dezember ein Thema. Je größer die Überraschung auf der AUD-Seite, desto stärker das Paar."
     },
     {
-      "paar": "GBP/CHF",
-      "richtung": "long",
-      "staerke": 5,
-      "horizont": "2 bis 6 Wochen",
-      "begruendung": "COT: GBP 67, CHF 13. BoE-Erhöhung am 5.11. klar eingepreist, SNB bei 0 Prozent (Franken als Carry-Finanzierung).",
-      "risiko": "Pfund auf 11-Monatstief nach der US-Inflation, bei Risikoangst steigt der Franken.",
-      "these": "Das Pfund hat unter den großen Währungen derzeit die interessanteste Mischung aus Zinsperspektive und Daten: Die Bank of England steht am 5.11. vor einer Erhöhung (rund 20 Basispunkte eingepreist), die britische Inflation lag im September bei 3,5 Prozent (über Erwartung), die Arbeitslosenquote fiel überraschend auf 4,7 Prozent und der Composite-PMI stieg auf 53,1, den höchsten Stand seit Februar. Auf der Gegenseite steht der Franken mit einem Leitzins von 0 Prozent und einer Inflation von 1,0 Prozent: Die SNB wird voraussichtlich bis Dezember nichts tun. COT: GBP 67, CHF 13.",
-      "argumente": [
-        {
-          "titel": "Zinsgefälle",
-          "text": "3,75 Prozent Bank Rate gegen 0 Prozent SNB ist ein Gefälle von fast vier Prozentpunkten. Der positive Swap entschädigt für kleinere Rückschläge."
-        },
-        {
-          "titel": "Datenlage",
-          "text": "UK-Daten der vergangenen zwei Wochen (Arbeitsmarkt, Inflation, PMI, BIP) kamen überwiegend besser als erwartet. Das stützt die November-Erhöhung."
-        },
-        {
-          "titel": "Franken als Finanzierungswährung",
-          "text": "Solange die Märkte nicht in Panik geraten, wird der Franken im Carry-Trade verkauft. Die SNB selbst hat kein Interesse an einem stärkeren Franken."
-        }
-      ],
-      "einwaende": [
-        {
-          "einwand": "Das Pfund fiel nach der US-Inflation auf ein 11-Monatstief gegen den Dollar.",
-          "antwort": "Das war eine Dollar-Bewegung, keine Pfund-Schwäche gegenüber dem Franken. GBP/CHF hängt an Zinsdifferenzen und Risikostimmung, nicht am US-Dollar."
-        },
-        {
-          "einwand": "Die BoE-Erwartung gilt als übertrieben.",
-          "antwort": "Dieser Einwand ist berechtigt: Wenn die Erhöhung schon fest eingepreist ist, steigt das Pfund bei Eintreffen nicht mehr stark. Das ist der Grund für Stärke 5. Die Idee lebt vom Gefälle, nicht von der Überraschung."
-        },
-        {
-          "einwand": "Der Franken gewinnt bei Risikoangst.",
-          "antwort": "Ja. Deshalb ist dieses Paar bei einem Eskalationsszenario am Golf riskanter als AUD/JPY mit seinem größeren COT-Vorsprung."
-        }
-      ],
-      "termine": [
-        "28.10.: Fed als Risikoereignis für alles",
-        "05.11.: BoE-Entscheid",
-        "10.12.: SNB-Entscheid (Erhöhung etwa 50 zu 50)"
-      ],
-      "ungueltig": "Ein Risiko-Aus-Schock oder ein deutlicher Rückgang der britischen Inflation vor dem 5.11. würde das Szenario kippen.",
-      "plan": "Mittelfristige Idee mit geduldigem Stopp. Eher aufbauen, wenn der Markt nach Fed und EZB wieder ruhig ist."
+     "titel": "Energie und Handel",
+     "text": "Brent bei rund 115 USD belastet Japan als Energieimporteur direkt, Australien ist Rohstoffexporteur. Die verlängerte Zollwaffenruhe USA/China bis 10.1.2027 stützt zusätzlich Australien und Neuseeland, weil China der wichtigste Handelspartner ist."
     },
     {
-      "paar": "EUR/CHF",
-      "richtung": "long",
-      "staerke": 5,
-      "horizont": "Wochen",
-      "begruendung": "COT: EUR 97, CHF 13, deutlichster Unterschied unter den Paaren. EZB am 29.10. mit etwa 28 Prozent Erhöhungschance.",
-      "risiko": "Frankreich (Haushalt, Anleihen) belastet den Euro, Euro auf 17-Monatstief.",
-      "these": "Das ist die Idee mit dem größten COT-Unterschied unter allen Paaren (EUR 97, CHF 13). Auf dem Papier ist sie sehr stark. Ich bewerte sie trotzdem nur mit 5, weil der Euro derzeit schwächelt: Die Frankreich-Rendite liegt bei 5,07 Prozent (höchster Stand seit 2002), der Composite-PMI der Eurozone fiel im Oktober auf 51,9, die Handelsbilanz drehte überraschend ins Defizit. Der Reiz bleibt trotzdem: Die EZB hat den Einlagensatz auf 2,50 Prozent gehoben, die Inflation liegt bei 3,8 Prozent, und der Franken steht bei 0 Prozent.",
-      "argumente": [
-        {
-          "titel": "Positionierung",
-          "text": "97 gegen 13 ist der Extremwert unter den Paaren. Wenn die Positionierung recht behält, ist hier am meisten Hebel auf der Gegenseite."
-        },
-        {
-          "titel": "Inflation",
-          "text": "Eine Inflation von 3,8 Prozent zwingt die EZB, die Tür für eine Dezember-Erhöhung offen zu halten (Lagarde sieht allerdings noch keine Zweitrundeneffekte)."
-        },
-        {
-          "titel": "Moody's",
-          "text": "Der Verzicht auf eine Herabstufung Frankreichs (Aa3, Ausblick negativ) nimmt kurzfristig etwas Druck vom Euro. Die nächste Prüfung folgt am 27.11. durch S&P."
-        }
-      ],
-      "einwaende": [
-        {
-          "einwand": "Frankreich ist ein Risiko und kann den Euro weiter drücken.",
-          "antwort": "Ja, das ist das Hauptproblem des Euro. Gegenüber dem Franken bedeutet es, dass die Stärke der Positionierung nicht automatisch in Kurssteigerung übersetzt wird. Deshalb nur Stärke 5."
-        },
-        {
-          "einwand": "Wenn Risikoangst steigt, gewinnt der Franken.",
-          "antwort": "Das stimmt, und gerade in einem Umfeld mit Hormus und KI-Ausverkauf ist es kein kleines Risiko. Ein Paar wie EUR/CHF kann daher auch dann fallen, wenn die COT-Zahlen richtig lesen."
-        }
-      ],
-      "termine": [
-        "29.10.: EZB-Entscheid (keine Erhöhung erwartet)",
-        "27.11.: S&P-Prüfung Frankreich",
-        "10.12.: SNB-Entscheid"
-      ],
-      "ungueltig": "Fällt EUR/CHF nach der EZB deutlich unter das Wochentief, oder weitet sich der OAT-Bund-Spread merklich, würde ich die Idee verwerfen.",
-      "plan": "Beobachtungsliste: erst nach dem EZB-Entscheid prüfen. Wenn sich die Lage in Frankreich beruhigt, wird die Idee deutlich besser."
-    },
-    {
-      "paar": "AUD/CAD",
-      "richtung": "long",
-      "staerke": 4,
-      "horizont": "2 bis 4 Wochen",
-      "begruendung": "COT: AUD 100, CAD 42. Dagegen: Ölpreis hoch (Brent rund 114 bis 117) stützt CAD, BoC hat am 28.10. auf 2,50 Prozent erhöht (weitere Schritte möglich), Kanada-Arbeitsmarkt schwach.",
-      "risiko": "Schwache AUD-Jobdaten und hoher Ölpreis sprechen gegen die Richtung.",
-      "these": "Hier gebe ich ausdrücklich eine schwächere Bewertung ab, weil die Argumente gegeneinander stehen. Dafür: COT AUD 100 gegen CAD 42, eine RBA mit Erhöhungsneigung und ein kanadischer Arbeitsmarkt, der im September 68.300 Stellen verlor (Arbeitslosenquote 6,5 Prozent). Dagegen: Ölpreise bei rund 115 USD stützen den kanadischen Dollar als Ölexporteur, und auch der Australische Dollar hatte zuletzt schwache Arbeitsmarktdaten.",
-      "argumente": [
-        {
-          "titel": "Arbeitsmarkt Kanada",
-          "text": "Der Rückgang von 68.300 Stellen bei einer Prognose von +6.100 ist eine echte Schwäche, die BoC kaum ignorieren kann."
-        },
-        {
-          "titel": "Inflation Kanada",
-          "text": "Die Inflation lag im September bei 3,1 Prozent und damit unter der Erwartung, alle drei BoC-Kernmaße sanken. Das nimmt der BoC Spielraum für Erhöhungen."
-        }
-      ],
-      "einwaende": [
-        {
-          "einwand": "Öl bei 115 USD ist ein starker Wind für CAD.",
-          "antwort": "Das ist das beste Gegenargument. Deshalb ist die Idee nur ein Vierer: Der Öl-Effekt kann das Paar wochenlang gegen die Zins- und COT-Logik drücken."
-        },
-        {
-          "einwand": "Die BoC entscheidet am 28.10. und könnte um 25 Basispunkte erhöhen (FXStreet-Wochenausblick), ältere Quellen sahen eher eine Pause.",
-          "antwort": "Genau deshalb bleibt es bei Stärke 4. Erhöht die BoC tatsächlich, stützt das den Kanadischen Dollar zusätzlich zum Ölpreis und spricht klar gegen die AUD/CAD-Long-Idee. Ich würde vor dem Entscheid keine Position eingehen."
-        }
-      ],
-      "termine": [
-        "28.10.: BoC-Entscheid und australische Q3-Inflation am selben Tag"
-      ],
-      "ungueltig": "Eine unerwartete BoC-Erhöhung oder ein weiterer Anstieg von Brent über 120 USD spricht gegen die Long-Idee.",
-      "plan": "Nur beobachten, bis die BoC gesprochen hat.",
-      "ob": {
-        "stand": "2026-10-30T13:59",
-        "checks": [
-          {
-            "t": "ok",
-            "text": "COT AUD 6M-Index 100 (Stand 20.10.2026): im passenden Extrembereich, CAD 42."
-          },
-          {
-            "t": "warn",
-            "text": "Termine in den nächsten 5 Tagen: 03.11. 04:30 RBA-Zinsentscheid."
-          },
-          {
-            "t": "warn",
-            "text": "Weekly-Orderblock 0.94453 bis 0.95906, Qualität C (Bewegung 1.05 ATR, 1 Berührungen, 39 Wochen alt)."
-          },
-          {
-            "t": "ok",
-            "text": "Kurs 0.98356 ist 2.3 Wochen-ATR von der Zone entfernt."
-          },
-          {
-            "t": "ok",
-            "text": "Daily-Orderblock in der Weekly-Zone: 0.94546 bis 0.95097, Qualität C. Kombi-Einstieg (30 % Weekly, 70 % Daily) möglich."
-          }
-        ],
-        "quelle": "Marktdaten 29.10.2026",
-        "ebene": "weekly",
-        "zone": [
-          0.94453,
-          0.95906
-        ],
-        "qualitaet": "C",
-        "alter_wochen": 39,
-        "beruehrungen": 1,
-        "bewegung_atr": 1.05,
-        "kurs": 0.98356,
-        "kursstand": "2026-10-26",
-        "abstand_atr": 2.3,
-        "zone_t": 1769385600000,
-        "einstieg": 0.95906,
-        "stopp": 0.94308,
-        "ziel1": 0.97504,
-        "ziel2": 0.99103,
-        "daily_ob": [
-          0.94546,
-          0.95097
-        ],
-        "daily_q": "C",
-        "status": "prüfen",
-        "richtung": "long"
-      }
-    },
-    {
-      "paar": "EUR/USD",
-      "richtung": "abwarten",
-      "staerke": 3,
-      "horizont": "bis nach 29.10.",
-      "begruendung": "COT spricht für den Euro (EUR 97, USD 33), aber US-Inflation 3,7 Prozent, Dezember-Erhöhung der Fed nach dem 10:2-Halt am 28.10. zu rund 85 Prozent eingepreist und Euro-Schwäche halten dagegen. Erst Fed (28.10.) und EZB (29.10.) abwarten.",
-      "risiko": "Starker Dollar bei Risikoangst.",
-      "these": "Bei EUR/USD ist Abwarten die ehrliche Empfehlung, nicht Unentschlossenheit. Die COT-Daten sprechen für den Euro (97 gegen 33), aber die Realität widerspricht: Die US-Inflation lag im September bei 3,7 Prozent, die Fed hat eine Dezember-Erhöung zu rund 85 bis 89 Prozent im Preis, und der Euro ist durch Frankreich und schwache Einkaufsmanagerindizes belastet. Meine Einschätzung: Für ein Long fehlt ein Auslöser, für ein Short fehlt die Positionierung.",
-      "argumente": [
-        {
-          "titel": "Wenn die Fed und die EZB gesprochen haben",
-          "text": "Nach dem 28./29.10. liegen die beiden entscheidenden Informationen vor. Dann ist ein Setup sauberer, in welche Richtung auch immer."
-        },
-        {
-          "titel": "Was für Long spricht",
-          "text": "COT 97 zu 33 und ein Dollar, der nach den fallenden Renditen (10-jährige von 5,15 auf 4,96 Prozent) schwächelt."
-        },
-        {
-          "titel": "Was für Short spricht",
-          "text": "Hohe Ölpreise und Frankreich belasten den Euro, die Fed bleibt hawkish."
-        }
-      ],
-      "einwaende": [
-        {
-          "einwand": "Warum nicht trotzdem handeln, wenn die COT-Zahlen so klar sind?",
-          "antwort": "Weil Positionierung ein langsames Signal ist und zwei Notenbankentscheide in 48 Stunden schneller sind. Wer vorher einsteigt, handelt ein Münzwurf-Risiko ohne Vorteil."
-        }
-      ],
-      "termine": [
-        "28.10. 19:00 Uhr: Fed-Entscheid",
-        "29.10.: US-PCE (13:30 Uhr), EZB (14:15 Uhr)"
-      ],
-      "ungueltig": "Nicht relevant, solange ich kein Szenario vorschlage. Neue Bewertung nach dem 29.10.",
-      "plan": "Keine Position. Nach der EZB neu bewerten.",
-      "ob": {
-        "stand": "2026-10-30T13:59",
-        "checks": [
-          {
-            "t": "ok",
-            "text": "COT EUR 6M-Index 97 (Stand 20.10.2026): im passenden Extrembereich, USD 33."
-          },
-          {
-            "t": "warn",
-            "text": "Termine in den nächsten 5 Tagen: 04.11. 11:00 CPI y/y (Schnellschätzung), 04.11. 11:00 Kern-CPI y/y (Schnellschätzung)."
-          },
-          {
-            "t": "ok",
-            "text": "Weekly-Orderblock 1.08057 bis 1.09545, Qualität A (Bewegung 2.61 ATR, 0 Berührungen, 84 Wochen alt)."
-          },
-          {
-            "t": "ok",
-            "text": "Kurs 1.11680 ist 1.7 Wochen-ATR von der Zone entfernt."
-          },
-          {
-            "t": "warn",
-            "text": "Kein unmitigierter Daily-Orderblock innerhalb der Weekly-Zone: nach deiner Auswertung nicht einsteigen, bis einer entsteht (Daily-Bestätigung)."
-          }
-        ],
-        "quelle": "Marktdaten 29.10.2026",
-        "ebene": "weekly",
-        "zone": [
-          1.08057,
-          1.09545
-        ],
-        "qualitaet": "A",
-        "alter_wochen": 84,
-        "beruehrungen": 0,
-        "bewegung_atr": 2.61,
-        "kurs": 1.1168,
-        "kursstand": "2026-10-26",
-        "abstand_atr": 1.7,
-        "zone_t": 1742169600000,
-        "einstieg": 1.09545,
-        "stopp": 1.07908,
-        "ziel1": 1.11182,
-        "ziel2": 1.12819,
-        "status": "prüfen",
-        "richtung": "long"
-      }
-    },
-    {
-      "paar": "USD/JPY",
-      "richtung": "abwarten",
-      "staerke": 2,
-      "horizont": "bis nach 30.10.",
-      "begruendung": "Beide im unteren COT-Bereich (USD 33, JPY 19), kein klarer Vorteil. Interventionsrisiko unter 158,50 und BoJ am 30.10. machen das Paar unberechenbar.",
-      "risiko": "Plötzliche Yen-Intervention.",
-      "these": "USD/JPY ist das Paar mit dem unattraktivsten Verhältnis aus Chance und Risiko. Beide Währungen stehen im unteren COT-Bereich (USD 33, JPY 19), es gibt also keinen klaren Positionierungsvorteil. Das Paar erreichte zuletzt frische Fünf-Wochen-Tiefs nahe 156,00 und erholte sich auf 157,00 (FXStreet), im Bereich 157 bis 158 lauert das Interventionsrisiko, die BoJ hat bereits einen Rate Check gemacht. Dazu die BoJ am 30.10. und eine Fed, die zwischen Pause und Dezember-Erhöhung schwankt: Das sind drei Binärereignisse in vier Tagen.",
-      "argumente": [
-        {
-          "titel": "Interventionsrisiko",
-          "text": "Eine plötzliche Intervention kann in Minuten mehrere Yen kosten. Das Risiko ist asymmetrisch gegen Long-Positionen."
-        },
-        {
-          "titel": "Beide Zinsentscheide",
-          "text": "Fed (28.10.) und BoJ (30.10.) können das Paar in entgegengesetzte Richtungen bewegen."
-        }
-      ],
-      "einwaende": [
-        {
-          "einwand": "Der Yen ist doch strukturell schwach.",
-          "antwort": "Das ist er, aber diese Schwäche nutzt man sauberer über AUD/JPY oder NZD/JPY, wo die COT-Lage den Yen-Nachteil bestätigt und das Interventionsrisiko kleiner ist."
-        }
-      ],
-      "termine": [
-        "28.10. 19:00 Uhr: Fed-Entscheid",
-        "30.10.: BoJ-Entscheid"
-      ],
-      "ungueltig": "Nicht anwendbar, es ist eine Beobachtung.",
-      "plan": "Keine Position bis nach der BoJ."
+     "titel": "China",
+     "text": "Das chinesische BIP im dritten Quartal (+4,5 Prozent, über der Prognose) und die stärkste Industrieproduktion seit sechs Monaten sind ein Rückenwind für den Australischen Dollar."
     }
-  ],
-  "hinweis": "Meine Einschätzung aus COT (Stand 20.10.), Zinserwartungen, Lage und Kalender. Sie ist eine zweite Meinung und keine Anlageberatung. Die Überzeugung (0 bis 10) zeigt, wie viele unabhängige Faktoren in dieselbe Richtung zeigen. Zahlen stammen aus den importierten Daten und Meldungen vom 24./25.10.; was ich nicht belegen konnte, habe ich weggelassen.",
-  "ueberblick": [
+   ],
+   "einwaende": [
     {
-      "titel": "Das Gesamtbild in drei Sätzen",
-      "text": "Die Notenbanken heben weltweit weiter an oder halten die Tür dafür offen (RBNZ, RBA, BoE, Fed im Dezember), nur die BoJ und die SNB bleiben bei sehr niedrigen Zinsen (1,25 und 0 Prozent). Das schafft ein klares Zinsgefälle, das Carry-Trades belohnt, solange die Märkte ruhig bleiben. Die COT-Daten bestätigen, dass die großen Hedger genau diese Richtung bereits positioniert haben, sie sind also nicht allein, wenn sie AUD und NZD gegen JPY und CHF bevorzugen."
+     "einwand": "Der australische Arbeitsmarkt war zuletzt schwach (−39.300 Stellen, Arbeitslosenquote 4,7 Prozent).",
+     "antwort": "Das stimmt und ist der Grund, warum ich nicht 9 von 10 vergebe. Es dämpft die RBA-Erhöhung am 3.11., ändert aber nicht das Zinsgefälle zur BoJ. Entscheidend ist die Q3-Inflation am 28.10.: Kommt sie hoch, ist die Arbeitsmarktschwäche kein Hindernis mehr."
     },
     {
-      "titel": "Warum ich dich von Yen-Gegenseiten überzeugen will",
-      "text": "Drei unabhängige Quellen sprechen für dieselbe Richtung: Positionierung (COT-Differenz AUD/JPY von 81 Punkten, hoher Abstand), Geldpolitik (RBNZ und RBA vor weiteren Erhöhungen, BoJ eher abwartend, Dezember statt Oktober) und Rohstoffe (hohe Energiepreise belasten Japan als Importeur). Unabhängig heißt: Fällt eine Säule weg, tragen zwei weiter. Das ist der Unterschied zu einer Idee, die nur auf einem Chartbild beruht (deshalb bekommt AUD/JPY von mir die höchste Stärke)."
+     "einwand": "Bei Risikoangst steigt der Yen als sicherer Hafen.",
+     "antwort": "Richtig, und das ist das Hauptrisiko. Der Ausverkauf bei Chip-Werten hat den Nikkei in einer Woche um etwa 5 Prozent gedrückt, trotzdem hat der Yen nicht nachhaltig gewonnen, weil die Ölpreise und das Zinsgefälle ihn belasten. Bricht dieses Muster, sehen wir es zuerst an einem schnellen Rücklauf unter die jüngsten Tiefs."
     },
     {
-      "titel": "Was diese Woche wirklich zählt",
-      "text": "28.10.: RBNZ (Erhöhung auf 3,00 Prozent zu etwa 75 bis 80 Prozent eingepreist), australische Q3-Inflation (Vorlage für die RBA am 3.11.), BoC und die Fed am Abend (Halten erwartet). 29.10.: US-PCE und EZB (keine Erhöhung erwartet, es zählt die Dezember-Andeutung). 30.10.: BoJ (Halten bei 1,25 Prozent, Hinweise auf Dezember). Bis dahin würde ich keine Position vergrößern, nur planen."
-    },
-    {
-      "titel": "Wo ich falsch liegen kann",
-      "text": "Das größte Risiko ist ein plötzlicher Risiko-Aus-Schock (eskalierende Lage am Golf, weiterer KI-Ausverkauf), bei dem der Yen und der Franken als sichere Häfen kräftig steigen und Carry-Positionen binnen Tagen zurückgedreht werden. Dazu kommt das Interventionsrisiko beim Yen, wenn USD/JPY nahe 158 bis 160 notiert. Deshalb hängt meine Stärke-Bewertung nicht nur an den Zinsen, sondern auch daran, wie viele Faktoren gleichzeitig dieselbe Richtung zeigen."
+     "einwand": "Japan könnte eingreifen.",
+     "antwort": "Interventionsrisiko betrifft vor allem USD/JPY nahe 158 bis 160. Bei AUD/JPY wirkt eine Intervention indirekt, trifft das Paar aber meist schwächer. Deshalb bevorzuge ich AUD/JPY gegenüber USD/JPY."
     }
-  ],
-  "countdown": [
+   ],
+   "termine": [
+    "28.10.: australische Q3-Inflation (Vormittag australischer Zeit)",
+    "28.10.: RBNZ (Neuseeland) als Stimmungstest für die Region",
+    "30.10.: BoJ-Entscheid",
+    "03.11.: RBA-Entscheid"
+   ],
+   "ungueltig": "Meine These ist widerlegt, wenn die australische Q3-Inflation deutlich unter der Erwartung liegt und gleichzeitig die BoJ am 30.10. eine Erhöhung im Dezember klar ankündigt, oder wenn USD/JPY und AUD/JPY zusammen nach einem Risikoschock in wenigen Tagen mehr als drei bis vier Prozent fallen.",
+   "plan": "Sinnvoll wäre, den Termin 28.10. abzuwarten und erst danach in Etappen aufzubauen, nicht davor. Der Stopp gehört unter die letzte Wochentief-Zone, nicht eng ans Marktrauschen."
+  },
+  {
+   "paar": "NZD/JPY",
+   "richtung": "long",
+   "staerke": 6,
+   "horizont": "2 bis 4 Wochen",
+   "begruendung": "COT: NZD 89, JPY 19. Die RBNZ hat am 28.10. überraschend bei 2,75 Prozent gehalten (4 zu 3, Erhöhung war erwartet), der NZD fiel deutlich. Der Zinsvorteil bleibt, aber der Rückenwind durch eine weitere Erhöhung fehlt vorerst. Zollwaffenruhe USA/China bis 10.1.",
+   "risiko": "Die RBNZ war zuletzt moderater als erwartet. Ein enttäuschender Entscheid am 28.10. könnte das Paar drücken. Neu: RBNZ-Überraschung, NZD verliert Zinsfantasie. Bestehende Limits prüfen.",
+   "these": "NZD/JPY ist die kürzere und schärfere Variante der AUD/JPY-Idee: Der Neuseeländische Dollar steht im COT bei 89, der Yen bei 19, und mit der RBNZ am 28.10. liegt ein Ereignis vor uns, bei dem der Markt eine Erhöhung von 2,75 auf 3,00 Prozent zu etwa 75 bis 80 Prozent einpreist. Der Reiz liegt in der Terminierung: Der Katalysator ist in drei Tagen da, nicht in sechs Wochen.",
+   "argumente": [
     {
-      "zeit": "2026-11-03T00:00:00+01:00",
-      "titel": "US-Zwischenwahlen",
-      "wichtig": 1
+     "titel": "Erwartung ist hoch, aber gedeckt",
+     "text": "Die neuseeländische Inflation lag im dritten Quartal bei 3,7 Prozent (Prognose 3,8), also knapp unter der Erwartung. Das ändert wenig an einer Erhöhung, bleibt aber ein Dämpfer für eine aggressive Überraschung."
     },
     {
-      "zeit": "2026-11-03T04:30:00+01:00",
-      "titel": "RBA-Zinsentscheid",
-      "wichtig": 1
+     "titel": "Positionierung",
+     "text": "NZD 89 gegen JPY 19 ergibt eine Differenz von 70 Punkten, kleiner als bei AUD/JPY, aber immer noch klar im Bereich, in dem ich Richtung bevorzuge."
     },
     {
-      "zeit": "2026-11-06T14:30:00+01:00",
-      "titel": "US-Arbeitsmarktbericht (NFP)",
-      "wichtig": 1
+     "titel": "Zollwaffenruhe",
+     "text": "Die Verlängerung der Waffenruhe zwischen den USA und China bis 10.1.2027 ist für Neuseeland besonders relevant, weil das Land stark vom Handel mit China abhängt."
     }
-  ],
-  "empfehlungen": [
+   ],
+   "einwaende": [
     {
-      "paar": "AUD/JPY",
-      "richtung": "long",
-      "status": "Nach 28.10. prüfen",
-      "ab": "28.10. nach der australischen Inflation (01:30 Uhr)",
-      "staerke": 7,
-      "bedingung": "Australische Q3-Inflation mindestens wie erwartet (4,2 % y/y) und BoJ am 30.10. ohne Erhöhung. Einstieg nur mit Daily-Bestätigung (OB-LTF), so wie deine Auswertung es verlangt.",
-      "einstieg": "Weekly-Teil: Limit am Zonenrand 108.607 (Zone 106.112 bis 108.607, Qualität C). Daily-Teil: Limit im Daily-Orderblock 107.505 bis 108.003 (Qualität B).",
-      "stopp": "105.862, 10 % der Zonenhöhe jenseits des Zonenrands. Nicht nachziehen.",
-      "ziel": "Ziel 1: 111.352 (1 R), Ziel 2: 114.096 (2 R). Weekly-Teil zusätzlich laut Reiter KI Trades.",
-      "risiko": "Vorschlag 0,5 % gesamt, davon 30 % Weekly und 70 % Daily. Halbes Risiko, weil schon viele AUD-Positionen offen sind.",
-      "gueltig_bis": "2026-11-11",
-      "ob": {
-        "stand": "2026-10-30T13:59",
-        "checks": [
-          {
-            "t": "ok",
-            "text": "COT AUD 6M-Index 100 (Stand 20.10.2026): im passenden Extrembereich, JPY 19 bestätigt gegenläufig."
-          },
-          {
-            "t": "warn",
-            "text": "Termine in den nächsten 5 Tagen: 30.10. 00:30 BoJ-Zinsentscheid, 03.11. 04:30 RBA-Zinsentscheid."
-          },
-          {
-            "t": "warn",
-            "text": "Weekly-Orderblock 106.112 bis 108.607, Qualität C (Bewegung 1.06 ATR, 0 Berührungen, 39 Wochen alt)."
-          },
-          {
-            "t": "ok",
-            "text": "Kurs 110.851 ist 1.0 Wochen-ATR von der Zone entfernt."
-          },
-          {
-            "t": "ok",
-            "text": "Daily-Orderblock in der Weekly-Zone: 107.505 bis 108.003, Qualität B. Kombi-Einstieg (30 % Weekly, 70 % Daily) möglich."
-          }
-        ],
-        "quelle": "Marktdaten 29.10.2026",
-        "ebene": "weekly",
-        "zone": [
-          106.112,
-          108.607
-        ],
-        "qualitaet": "C",
-        "alter_wochen": 39,
-        "beruehrungen": 0,
-        "bewegung_atr": 1.06,
-        "kurs": 110.851,
-        "kursstand": "2026-10-26",
-        "abstand_atr": 1.0,
-        "zone_t": 1769385600000,
-        "einstieg": 108.607,
-        "stopp": 105.8625,
-        "ziel1": 111.3515,
-        "ziel2": 114.096,
-        "daily_ob": [
-          107.505,
-          108.003
-        ],
-        "daily_q": "B",
-        "status": "prüfen"
-      }
+     "einwand": "Die RBNZ hat zuletzt moderater erhöht als erwartet und die Prognosen gesenkt.",
+     "antwort": "Das ist der Grund für die niedrigere Stärke (6 statt 7). Wenn die Erhöhung schon zu 80 Prozent im Preis steckt, ist die Gefahr einer Enttäuschung real. Ich würde deshalb den Entscheid abwarten und nicht vorher kaufen."
     },
     {
-      "paar": "NZD/JPY",
-      "richtung": "long",
-      "status": "Limit besteht schon",
-      "ab": "Vor 28.10. 02:00 nichts ändern",
-      "staerke": 6,
-      "bedingung": "Bleibt dein Weekly-Limit vom 19.10. aktiv. Die RBNZ soll auf 3,00 % erhöhen (Prognose, Markt etwa 80 %). Erhöht sie nicht oder deutet das Ende des Zyklus an, streichen.",
-      "einstieg": "Weekly-Teil: Limit am Zonenrand 77.600 (Zone 75.860 bis 77.600, Qualität B). Daily-Teil: Limit im Daily-Orderblock 75.935 bis 76.540 (Qualität C).",
-      "stopp": "75.686, 10 % der Zonenhöhe jenseits des Zonenrands. Nicht nachziehen.",
-      "ziel": "Ziel 1: 79.514 (1 R), Ziel 2: 81.428 (2 R). Weekly-Teil zusätzlich laut Reiter KI Trades.",
-      "risiko": "Bisher 1 % im Limit. Ich würde auf 0,5 % senken, solange die Zahl der Yen-Gegenseiten steigt (AUD/JPY und NZD/JPY sind fast dieselbe Wette).",
-      "gueltig_bis": "2026-11-11",
-      "ob": {
-        "stand": "2026-10-30T13:59",
-        "checks": [
-          {
-            "t": "ok",
-            "text": "COT NZD 6M-Index 89 (Stand 20.10.2026): im passenden Extrembereich, JPY 19 bestätigt gegenläufig."
-          },
-          {
-            "t": "warn",
-            "text": "Termine in den nächsten 5 Tagen: 30.10. 00:30 BoJ-Zinsentscheid, 03.11. 22:45 Arbeitslosenquote."
-          },
-          {
-            "t": "ok",
-            "text": "Weekly-Orderblock 75.860 bis 77.600, Qualität B (Bewegung 1.48 ATR, 0 Berührungen, 245 Wochen alt)."
-          },
-          {
-            "t": "warn",
-            "text": "Kurs 88.851 ist 6.0 Wochen-ATR von der Zone entfernt, der Limit wird lange nicht erreicht."
-          },
-          {
-            "t": "ok",
-            "text": "Daily-Orderblock in der Weekly-Zone: 75.935 bis 76.540, Qualität C. Kombi-Einstieg (30 % Weekly, 70 % Daily) möglich."
-          }
-        ],
-        "quelle": "Marktdaten 29.10.2026",
-        "ebene": "weekly",
-        "zone": [
-          75.86,
-          77.6
-        ],
-        "qualitaet": "B",
-        "alter_wochen": 245,
-        "beruehrungen": 0,
-        "bewegung_atr": 1.48,
-        "kurs": 88.851,
-        "kursstand": "2026-10-26",
-        "abstand_atr": 6.0,
-        "zone_t": 1644796800000,
-        "einstieg": 77.6,
-        "stopp": 75.686,
-        "ziel1": 79.514,
-        "ziel2": 81.428,
-        "daily_ob": [
-          75.935,
-          76.54
-        ],
-        "daily_q": "C",
-        "status": "prüfen"
-      }
-    },
-    {
-      "paar": "GBP/CHF",
-      "richtung": "long",
-      "status": "Vorbereiten",
-      "ab": "Nach dem Fed-Entscheid 28.10. 19:00",
-      "staerke": 5,
-      "bedingung": "Kein Risiko-Aus nach der Fed. BoE-Erhöhung am 5.11. bleibt eingepreist. Dein letzter Trade im Paar war ein Short (15.09.), das ist ein anderes Setup und löst die Pause nicht aus.",
-      "einstieg": "Weekly-Teil: Limit am Zonenrand 1.09072 (Zone 1.08457 bis 1.09072, Qualität C). Daily-Teil erst, wenn ein Daily-Orderblock in der Zone entsteht.",
-      "stopp": "1.08396, 10 % der Zonenhöhe jenseits des Zonenrands. Nicht nachziehen.",
-      "ziel": "Ziel 1: 1.09748 (1 R), Ziel 2: 1.10425 (2 R). Weekly-Teil zusätzlich laut Reiter KI Trades.",
-      "risiko": "Vorschlag 0,5 %, weil die Überzeugung nur 5 von 10 ist.",
-      "gueltig_bis": "2026-11-06",
-      "ob": {
-        "stand": "2026-10-30T13:59",
-        "checks": [
-          {
-            "t": "bad",
-            "text": "COT GBP 6M-Index 67 (Stand 20.10.2026): nicht mehr im Extrembereich für Long, CHF 13."
-          },
-          {
-            "t": "warn",
-            "text": "Termine in den nächsten 5 Tagen: 04.11. 08:30 CPI m/m."
-          },
-          {
-            "t": "warn",
-            "text": "Weekly-Orderblock 1.08457 bis 1.09072, Qualität C (Bewegung 1.03 ATR, 3 Berührungen, 14 Wochen alt)."
-          },
-          {
-            "t": "ok",
-            "text": "Kurs 1.10517 ist 1.3 Wochen-ATR von der Zone entfernt."
-          },
-          {
-            "t": "warn",
-            "text": "Kein unmitigierter Daily-Orderblock innerhalb der Weekly-Zone: nach deiner Auswertung nicht einsteigen, bis einer entsteht (Daily-Bestätigung)."
-          }
-        ],
-        "quelle": "Marktdaten 29.10.2026",
-        "ebene": "weekly",
-        "zone": [
-          1.08457,
-          1.09072
-        ],
-        "qualitaet": "C",
-        "alter_wochen": 14,
-        "beruehrungen": 3,
-        "bewegung_atr": 1.03,
-        "kurs": 1.10517,
-        "kursstand": "2026-10-26",
-        "abstand_atr": 1.3,
-        "zone_t": 1784505600000,
-        "einstieg": 1.09072,
-        "stopp": 1.08396,
-        "ziel1": 1.09748,
-        "ziel2": 1.10425,
-        "status": "ungültig"
-      }
-    },
-    {
-      "paar": "EUR/CHF",
-      "richtung": "long",
-      "status": "Nur beobachten",
-      "ab": "Nach dem EZB-Entscheid 29.10.",
-      "staerke": 5,
-      "bedingung": "Nur wenn der Franken nach der EZB schwach bleibt und der OAT-Bund-Spread nicht weiter steigt (Frankreich ist auf dem höchsten Stand seit 2011).",
-      "einstieg": "Erst eine Daily-Zone nach dem Entscheid zeichnen. Heute kein Limit.",
-      "stopp": "Unter dem Wochentief, nicht eng.",
-      "ziel": "Laut Reiter KI Trades.",
-      "risiko": "Vorschlag 0,5 % oder weniger.",
-      "gueltig_bis": "2026-11-06",
-      "ob": {
-        "stand": "2026-10-30T13:59",
-        "checks": [
-          {
-            "t": "ok",
-            "text": "COT EUR 6M-Index 97 (Stand 20.10.2026): im passenden Extrembereich, CHF 13 bestätigt gegenläufig."
-          },
-          {
-            "t": "warn",
-            "text": "Termine in den nächsten 5 Tagen: 04.11. 08:30 CPI m/m, 04.11. 11:00 CPI y/y (Schnellschätzung), 04.11. 11:00 Kern-CPI y/y (Schnellschätzung)."
-          },
-          {
-            "t": "bad",
-            "text": "Weekly: kein unmitigierter Orderblock auf der richtigen Seite des Kurses, ein Limit-Einstieg ist so nicht begründbar."
-          }
-        ],
-        "quelle": "Marktdaten 29.10.2026",
-        "status": "ungültig"
-      }
+     "einwand": "Nach den Wahlen könnte das duale Mandat zurückkehren.",
+     "antwort": "Das wirkt auf Sicht von Monaten, nicht Wochen. Für ein Fenster von zwei bis vier Wochen ist es zweitrangig, aber ein Grund, nicht über das Jahresende hinaus zu planen."
     }
-  ],
-  "lernen": {
-    "n": 0,
-    "gut": 0,
-    "schwach": 0,
-    "falsch": 0,
-    "eigene_zonen": []
+   ],
+   "termine": [
+    "28.10. ca. 02:00 Uhr: RBNZ-Entscheid inklusive Prognosen",
+    "30.10.: BoJ-Entscheid"
+   ],
+   "ungueltig": "Erhöht die RBNZ nicht oder kündigt sie ein Ende des Zyklus an, dreht die Idee. Gleiches gilt, wenn NZD/JPY nach dem Entscheid unter die Wochenspanne fällt.",
+   "plan": "Erst die Reaktion auf den Entscheid ansehen, dann einsteigen. Stärke 6, weil das Ereignisrisiko höher ist als bei AUD/JPY."
+  },
+  {
+   "paar": "GBP/CHF",
+   "richtung": "long",
+   "staerke": 5,
+   "horizont": "2 bis 6 Wochen",
+   "begruendung": "COT: GBP 67, CHF 13. BoE-Erhöhung am 5.11. klar eingepreist, SNB bei 0 Prozent (Franken als Carry-Finanzierung).",
+   "risiko": "Pfund auf 11-Monatstief nach der US-Inflation, bei Risikoangst steigt der Franken.",
+   "these": "Das Pfund hat unter den großen Währungen derzeit die interessanteste Mischung aus Zinsperspektive und Daten: Die Bank of England steht am 5.11. vor einer Erhöhung (rund 20 Basispunkte eingepreist), die britische Inflation lag im September bei 3,5 Prozent (über Erwartung), die Arbeitslosenquote fiel überraschend auf 4,7 Prozent und der Composite-PMI stieg auf 53,1, den höchsten Stand seit Februar. Auf der Gegenseite steht der Franken mit einem Leitzins von 0 Prozent und einer Inflation von 1,0 Prozent: Die SNB wird voraussichtlich bis Dezember nichts tun. COT: GBP 67, CHF 13.",
+   "argumente": [
+    {
+     "titel": "Zinsgefälle",
+     "text": "3,75 Prozent Bank Rate gegen 0 Prozent SNB ist ein Gefälle von fast vier Prozentpunkten. Der positive Swap entschädigt für kleinere Rückschläge."
+    },
+    {
+     "titel": "Datenlage",
+     "text": "UK-Daten der vergangenen zwei Wochen (Arbeitsmarkt, Inflation, PMI, BIP) kamen überwiegend besser als erwartet. Das stützt die November-Erhöhung."
+    },
+    {
+     "titel": "Franken als Finanzierungswährung",
+     "text": "Solange die Märkte nicht in Panik geraten, wird der Franken im Carry-Trade verkauft. Die SNB selbst hat kein Interesse an einem stärkeren Franken."
+    }
+   ],
+   "einwaende": [
+    {
+     "einwand": "Das Pfund fiel nach der US-Inflation auf ein 11-Monatstief gegen den Dollar.",
+     "antwort": "Das war eine Dollar-Bewegung, keine Pfund-Schwäche gegenüber dem Franken. GBP/CHF hängt an Zinsdifferenzen und Risikostimmung, nicht am US-Dollar."
+    },
+    {
+     "einwand": "Die BoE-Erwartung gilt als übertrieben.",
+     "antwort": "Dieser Einwand ist berechtigt: Wenn die Erhöhung schon fest eingepreist ist, steigt das Pfund bei Eintreffen nicht mehr stark. Das ist der Grund für Stärke 5. Die Idee lebt vom Gefälle, nicht von der Überraschung."
+    },
+    {
+     "einwand": "Der Franken gewinnt bei Risikoangst.",
+     "antwort": "Ja. Deshalb ist dieses Paar bei einem Eskalationsszenario am Golf riskanter als AUD/JPY mit seinem größeren COT-Vorsprung."
+    }
+   ],
+   "termine": [
+    "28.10.: Fed als Risikoereignis für alles",
+    "05.11.: BoE-Entscheid",
+    "10.12.: SNB-Entscheid (Erhöhung etwa 50 zu 50)"
+   ],
+   "ungueltig": "Ein Risiko-Aus-Schock oder ein deutlicher Rückgang der britischen Inflation vor dem 5.11. würde das Szenario kippen.",
+   "plan": "Mittelfristige Idee mit geduldigem Stopp. Eher aufbauen, wenn der Markt nach Fed und EZB wieder ruhig ist."
+  },
+  {
+   "paar": "EUR/CHF",
+   "richtung": "long",
+   "staerke": 5,
+   "horizont": "Wochen",
+   "begruendung": "COT: EUR 97, CHF 13, deutlichster Unterschied unter den Paaren. EZB am 29.10. mit etwa 28 Prozent Erhöhungschance.",
+   "risiko": "Frankreich (Haushalt, Anleihen) belastet den Euro, Euro auf 17-Monatstief.",
+   "these": "Das ist die Idee mit dem größten COT-Unterschied unter allen Paaren (EUR 97, CHF 13). Auf dem Papier ist sie sehr stark. Ich bewerte sie trotzdem nur mit 5, weil der Euro derzeit schwächelt: Die Frankreich-Rendite liegt bei 5,07 Prozent (höchster Stand seit 2002), der Composite-PMI der Eurozone fiel im Oktober auf 51,9, die Handelsbilanz drehte überraschend ins Defizit. Der Reiz bleibt trotzdem: Die EZB hat den Einlagensatz auf 2,50 Prozent gehoben, die Inflation liegt bei 3,8 Prozent, und der Franken steht bei 0 Prozent.",
+   "argumente": [
+    {
+     "titel": "Positionierung",
+     "text": "97 gegen 13 ist der Extremwert unter den Paaren. Wenn die Positionierung recht behält, ist hier am meisten Hebel auf der Gegenseite."
+    },
+    {
+     "titel": "Inflation",
+     "text": "Eine Inflation von 3,8 Prozent zwingt die EZB, die Tür für eine Dezember-Erhöhung offen zu halten (Lagarde sieht allerdings noch keine Zweitrundeneffekte)."
+    },
+    {
+     "titel": "Moody's",
+     "text": "Der Verzicht auf eine Herabstufung Frankreichs (Aa3, Ausblick negativ) nimmt kurzfristig etwas Druck vom Euro. Die nächste Prüfung folgt am 27.11. durch S&P."
+    }
+   ],
+   "einwaende": [
+    {
+     "einwand": "Frankreich ist ein Risiko und kann den Euro weiter drücken.",
+     "antwort": "Ja, das ist das Hauptproblem des Euro. Gegenüber dem Franken bedeutet es, dass die Stärke der Positionierung nicht automatisch in Kurssteigerung übersetzt wird. Deshalb nur Stärke 5."
+    },
+    {
+     "einwand": "Wenn Risikoangst steigt, gewinnt der Franken.",
+     "antwort": "Das stimmt, und gerade in einem Umfeld mit Hormus und KI-Ausverkauf ist es kein kleines Risiko. Ein Paar wie EUR/CHF kann daher auch dann fallen, wenn die COT-Zahlen richtig lesen."
+    }
+   ],
+   "termine": [
+    "29.10.: EZB-Entscheid (keine Erhöhung erwartet)",
+    "27.11.: S&P-Prüfung Frankreich",
+    "10.12.: SNB-Entscheid"
+   ],
+   "ungueltig": "Fällt EUR/CHF nach der EZB deutlich unter das Wochentief, oder weitet sich der OAT-Bund-Spread merklich, würde ich die Idee verwerfen.",
+   "plan": "Beobachtungsliste: erst nach dem EZB-Entscheid prüfen. Wenn sich die Lage in Frankreich beruhigt, wird die Idee deutlich besser."
+  },
+  {
+   "paar": "AUD/CAD",
+   "richtung": "long",
+   "staerke": 4,
+   "horizont": "2 bis 4 Wochen",
+   "begruendung": "COT: AUD 100, CAD 42. Dagegen: Ölpreis hoch (Brent rund 114 bis 117) stützt CAD, BoC hat am 28.10. auf 2,50 Prozent erhöht (weitere Schritte möglich), Kanada-Arbeitsmarkt schwach.",
+   "risiko": "Schwache AUD-Jobdaten und hoher Ölpreis sprechen gegen die Richtung.",
+   "these": "Hier gebe ich ausdrücklich eine schwächere Bewertung ab, weil die Argumente gegeneinander stehen. Dafür: COT AUD 100 gegen CAD 42, eine RBA mit Erhöhungsneigung und ein kanadischer Arbeitsmarkt, der im September 68.300 Stellen verlor (Arbeitslosenquote 6,5 Prozent). Dagegen: Ölpreise bei rund 115 USD stützen den kanadischen Dollar als Ölexporteur, und auch der Australische Dollar hatte zuletzt schwache Arbeitsmarktdaten.",
+   "argumente": [
+    {
+     "titel": "Arbeitsmarkt Kanada",
+     "text": "Der Rückgang von 68.300 Stellen bei einer Prognose von +6.100 ist eine echte Schwäche, die BoC kaum ignorieren kann."
+    },
+    {
+     "titel": "Inflation Kanada",
+     "text": "Die Inflation lag im September bei 3,1 Prozent und damit unter der Erwartung, alle drei BoC-Kernmaße sanken. Das nimmt der BoC Spielraum für Erhöhungen."
+    }
+   ],
+   "einwaende": [
+    {
+     "einwand": "Öl bei 115 USD ist ein starker Wind für CAD.",
+     "antwort": "Das ist das beste Gegenargument. Deshalb ist die Idee nur ein Vierer: Der Öl-Effekt kann das Paar wochenlang gegen die Zins- und COT-Logik drücken."
+    },
+    {
+     "einwand": "Die BoC entscheidet am 28.10. und könnte um 25 Basispunkte erhöhen (FXStreet-Wochenausblick), ältere Quellen sahen eher eine Pause.",
+     "antwort": "Genau deshalb bleibt es bei Stärke 4. Erhöht die BoC tatsächlich, stützt das den Kanadischen Dollar zusätzlich zum Ölpreis und spricht klar gegen die AUD/CAD-Long-Idee. Ich würde vor dem Entscheid keine Position eingehen."
+    }
+   ],
+   "termine": [
+    "28.10.: BoC-Entscheid und australische Q3-Inflation am selben Tag"
+   ],
+   "ungueltig": "Eine unerwartete BoC-Erhöhung oder ein weiterer Anstieg von Brent über 120 USD spricht gegen die Long-Idee.",
+   "plan": "Nur beobachten, bis die BoC gesprochen hat.",
+   "ob": {
+    "stand": "2026-10-30T17:47",
+    "checks": [
+     {
+      "t": "ok",
+      "text": "COT AUD 6M-Index 100 (Stand 20.10.2026): im passenden Extrembereich, CAD 42."
+     },
+     {
+      "t": "warn",
+      "text": "Termine in den nächsten 5 Tagen: 03.11. 04:30 RBA-Zinsentscheid."
+     },
+     {
+      "t": "warn",
+      "text": "Weekly-Orderblock 0.94453 bis 0.95906, Qualität C (Bewegung 1.05 ATR, 1 Berührungen, 39 Wochen alt)."
+     },
+     {
+      "t": "ok",
+      "text": "Kurs 0.98356 ist 2.3 Wochen-ATR von der Zone entfernt."
+     },
+     {
+      "t": "ok",
+      "text": "Daily-Orderblock in der Weekly-Zone: 0.94546 bis 0.95097, Qualität C. Kombi-Einstieg (30 % Weekly, 70 % Daily) möglich."
+     }
+    ],
+    "quelle": "Marktdaten 29.10.2026",
+    "ebene": "weekly",
+    "zone": [
+     0.94453,
+     0.95906
+    ],
+    "qualitaet": "C",
+    "alter_wochen": 39,
+    "beruehrungen": 1,
+    "bewegung_atr": 1.05,
+    "kurs": 0.98356,
+    "kursstand": "2026-10-26",
+    "abstand_atr": 2.3,
+    "zone_t": 1769385600000,
+    "einstieg": 0.95906,
+    "stopp": 0.94308,
+    "ziel1": 0.97504,
+    "ziel2": 0.99103,
+    "daily_ob": [
+     0.94546,
+     0.95097
+    ],
+    "daily_q": "C",
+    "status": "prüfen",
+    "richtung": "long"
+   }
+  },
+  {
+   "paar": "EUR/USD",
+   "richtung": "abwarten",
+   "staerke": 3,
+   "horizont": "bis nach 29.10.",
+   "begruendung": "COT spricht für den Euro (EUR 97, USD 33), aber US-Inflation 3,7 Prozent, Dezember-Erhöhung der Fed nach dem 10:2-Halt am 28.10. zu rund 85 Prozent eingepreist und Euro-Schwäche halten dagegen. Erst Fed (28.10.) und EZB (29.10.) abwarten.",
+   "risiko": "Starker Dollar bei Risikoangst.",
+   "these": "Bei EUR/USD ist Abwarten die ehrliche Empfehlung, nicht Unentschlossenheit. Die COT-Daten sprechen für den Euro (97 gegen 33), aber die Realität widerspricht: Die US-Inflation lag im September bei 3,7 Prozent, die Fed hat eine Dezember-Erhöung zu rund 85 bis 89 Prozent im Preis, und der Euro ist durch Frankreich und schwache Einkaufsmanagerindizes belastet. Meine Einschätzung: Für ein Long fehlt ein Auslöser, für ein Short fehlt die Positionierung.",
+   "argumente": [
+    {
+     "titel": "Wenn die Fed und die EZB gesprochen haben",
+     "text": "Nach dem 28./29.10. liegen die beiden entscheidenden Informationen vor. Dann ist ein Setup sauberer, in welche Richtung auch immer."
+    },
+    {
+     "titel": "Was für Long spricht",
+     "text": "COT 97 zu 33 und ein Dollar, der nach den fallenden Renditen (10-jährige von 5,15 auf 4,96 Prozent) schwächelt."
+    },
+    {
+     "titel": "Was für Short spricht",
+     "text": "Hohe Ölpreise und Frankreich belasten den Euro, die Fed bleibt hawkish."
+    }
+   ],
+   "einwaende": [
+    {
+     "einwand": "Warum nicht trotzdem handeln, wenn die COT-Zahlen so klar sind?",
+     "antwort": "Weil Positionierung ein langsames Signal ist und zwei Notenbankentscheide in 48 Stunden schneller sind. Wer vorher einsteigt, handelt ein Münzwurf-Risiko ohne Vorteil."
+    }
+   ],
+   "termine": [
+    "28.10. 19:00 Uhr: Fed-Entscheid",
+    "29.10.: US-PCE (13:30 Uhr), EZB (14:15 Uhr)"
+   ],
+   "ungueltig": "Nicht relevant, solange ich kein Szenario vorschlage. Neue Bewertung nach dem 29.10.",
+   "plan": "Keine Position. Nach der EZB neu bewerten.",
+   "ob": {
+    "stand": "2026-10-30T17:47",
+    "checks": [
+     {
+      "t": "ok",
+      "text": "COT EUR 6M-Index 97 (Stand 20.10.2026): im passenden Extrembereich, USD 33."
+     },
+     {
+      "t": "warn",
+      "text": "Termine in den nächsten 5 Tagen: 04.11. 11:00 CPI y/y (Schnellschätzung), 04.11. 11:00 Kern-CPI y/y (Schnellschätzung)."
+     },
+     {
+      "t": "ok",
+      "text": "Weekly-Orderblock 1.08057 bis 1.09545, Qualität A (Bewegung 2.61 ATR, 0 Berührungen, 84 Wochen alt)."
+     },
+     {
+      "t": "ok",
+      "text": "Kurs 1.11680 ist 1.7 Wochen-ATR von der Zone entfernt."
+     },
+     {
+      "t": "warn",
+      "text": "Kein unmitigierter Daily-Orderblock innerhalb der Weekly-Zone: nach deiner Auswertung nicht einsteigen, bis einer entsteht (Daily-Bestätigung)."
+     }
+    ],
+    "quelle": "Marktdaten 29.10.2026",
+    "ebene": "weekly",
+    "zone": [
+     1.08057,
+     1.09545
+    ],
+    "qualitaet": "A",
+    "alter_wochen": 84,
+    "beruehrungen": 0,
+    "bewegung_atr": 2.61,
+    "kurs": 1.1168,
+    "kursstand": "2026-10-26",
+    "abstand_atr": 1.7,
+    "zone_t": 1742169600000,
+    "einstieg": 1.09545,
+    "stopp": 1.07908,
+    "ziel1": 1.11182,
+    "ziel2": 1.12819,
+    "status": "prüfen",
+    "richtung": "long"
+   }
+  },
+  {
+   "paar": "USD/JPY",
+   "richtung": "abwarten",
+   "staerke": 2,
+   "horizont": "bis nach 30.10.",
+   "begruendung": "Beide im unteren COT-Bereich (USD 33, JPY 19), kein klarer Vorteil. Interventionsrisiko unter 158,50 und BoJ am 30.10. machen das Paar unberechenbar.",
+   "risiko": "Plötzliche Yen-Intervention.",
+   "these": "USD/JPY ist das Paar mit dem unattraktivsten Verhältnis aus Chance und Risiko. Beide Währungen stehen im unteren COT-Bereich (USD 33, JPY 19), es gibt also keinen klaren Positionierungsvorteil. Das Paar erreichte zuletzt frische Fünf-Wochen-Tiefs nahe 156,00 und erholte sich auf 157,00 (FXStreet), im Bereich 157 bis 158 lauert das Interventionsrisiko, die BoJ hat bereits einen Rate Check gemacht. Dazu die BoJ am 30.10. und eine Fed, die zwischen Pause und Dezember-Erhöhung schwankt: Das sind drei Binärereignisse in vier Tagen.",
+   "argumente": [
+    {
+     "titel": "Interventionsrisiko",
+     "text": "Eine plötzliche Intervention kann in Minuten mehrere Yen kosten. Das Risiko ist asymmetrisch gegen Long-Positionen."
+    },
+    {
+     "titel": "Beide Zinsentscheide",
+     "text": "Fed (28.10.) und BoJ (30.10.) können das Paar in entgegengesetzte Richtungen bewegen."
+    }
+   ],
+   "einwaende": [
+    {
+     "einwand": "Der Yen ist doch strukturell schwach.",
+     "antwort": "Das ist er, aber diese Schwäche nutzt man sauberer über AUD/JPY oder NZD/JPY, wo die COT-Lage den Yen-Nachteil bestätigt und das Interventionsrisiko kleiner ist."
+    }
+   ],
+   "termine": [
+    "28.10. 19:00 Uhr: Fed-Entscheid",
+    "30.10.: BoJ-Entscheid"
+   ],
+   "ungueltig": "Nicht anwendbar, es ist eine Beobachtung.",
+   "plan": "Keine Position bis nach der BoJ."
   }
+ ],
+ "hinweis": "Meine Einschätzung aus COT (Stand 20.10.), Zinserwartungen, Lage und Kalender. Sie ist eine zweite Meinung und keine Anlageberatung. Die Überzeugung (0 bis 10) zeigt, wie viele unabhängige Faktoren in dieselbe Richtung zeigen. Zahlen stammen aus den importierten Daten und Meldungen vom 24./25.10.; was ich nicht belegen konnte, habe ich weggelassen.",
+ "ueberblick": [
+  {
+   "titel": "Das Gesamtbild in drei Sätzen",
+   "text": "Die Notenbanken heben weltweit weiter an oder halten die Tür dafür offen (RBNZ, RBA, BoE, Fed im Dezember), nur die BoJ und die SNB bleiben bei sehr niedrigen Zinsen (1,25 und 0 Prozent). Das schafft ein klares Zinsgefälle, das Carry-Trades belohnt, solange die Märkte ruhig bleiben. Die COT-Daten bestätigen, dass die großen Hedger genau diese Richtung bereits positioniert haben, sie sind also nicht allein, wenn sie AUD und NZD gegen JPY und CHF bevorzugen."
+  },
+  {
+   "titel": "Warum ich dich von Yen-Gegenseiten überzeugen will",
+   "text": "Drei unabhängige Quellen sprechen für dieselbe Richtung: Positionierung (COT-Differenz AUD/JPY von 81 Punkten, hoher Abstand), Geldpolitik (RBNZ und RBA vor weiteren Erhöhungen, BoJ eher abwartend, Dezember statt Oktober) und Rohstoffe (hohe Energiepreise belasten Japan als Importeur). Unabhängig heißt: Fällt eine Säule weg, tragen zwei weiter. Das ist der Unterschied zu einer Idee, die nur auf einem Chartbild beruht (deshalb bekommt AUD/JPY von mir die höchste Stärke)."
+  },
+  {
+   "titel": "Was diese Woche wirklich zählt",
+   "text": "28.10.: RBNZ (Erhöhung auf 3,00 Prozent zu etwa 75 bis 80 Prozent eingepreist), australische Q3-Inflation (Vorlage für die RBA am 3.11.), BoC und die Fed am Abend (Halten erwartet). 29.10.: US-PCE und EZB (keine Erhöhung erwartet, es zählt die Dezember-Andeutung). 30.10.: BoJ (Halten bei 1,25 Prozent, Hinweise auf Dezember). Bis dahin würde ich keine Position vergrößern, nur planen."
+  },
+  {
+   "titel": "Wo ich falsch liegen kann",
+   "text": "Das größte Risiko ist ein plötzlicher Risiko-Aus-Schock (eskalierende Lage am Golf, weiterer KI-Ausverkauf), bei dem der Yen und der Franken als sichere Häfen kräftig steigen und Carry-Positionen binnen Tagen zurückgedreht werden. Dazu kommt das Interventionsrisiko beim Yen, wenn USD/JPY nahe 158 bis 160 notiert. Deshalb hängt meine Stärke-Bewertung nicht nur an den Zinsen, sondern auch daran, wie viele Faktoren gleichzeitig dieselbe Richtung zeigen."
+  }
+ ],
+ "countdown": [
+  {
+   "zeit": "2026-11-03T00:00:00+01:00",
+   "titel": "US-Zwischenwahlen",
+   "wichtig": 1
+  },
+  {
+   "zeit": "2026-11-03T04:30:00+01:00",
+   "titel": "RBA-Zinsentscheid",
+   "wichtig": 1
+  },
+  {
+   "zeit": "2026-11-06T14:30:00+01:00",
+   "titel": "US-Arbeitsmarktbericht (NFP)",
+   "wichtig": 1
+  }
+ ],
+ "empfehlungen": [
+  {
+   "paar": "AUD/JPY",
+   "richtung": "long",
+   "status": "Nach 28.10. prüfen",
+   "ab": "28.10. nach der australischen Inflation (01:30 Uhr)",
+   "staerke": 7,
+   "bedingung": "Australische Q3-Inflation mindestens wie erwartet (4,2 % y/y) und BoJ am 30.10. ohne Erhöhung. Einstieg nur mit Daily-Bestätigung (OB-LTF), so wie deine Auswertung es verlangt.",
+   "einstieg": "Weekly-Teil: Limit am Zonenrand 108.607 (Zone 106.112 bis 108.607, Qualität C). Daily-Teil: Limit im Daily-Orderblock 107.505 bis 108.003 (Qualität B).",
+   "stopp": "105.862, 10 % der Zonenhöhe jenseits des Zonenrands. Nicht nachziehen.",
+   "ziel": "Ziel 1: 111.352 (1 R), Ziel 2: 114.096 (2 R). Weekly-Teil zusätzlich laut Reiter KI Trades.",
+   "risiko": "Vorschlag 0,5 % gesamt, davon 30 % Weekly und 70 % Daily. Halbes Risiko, weil schon viele AUD-Positionen offen sind.",
+   "gueltig_bis": "2026-11-11",
+   "ob": {
+    "stand": "2026-10-30T17:47",
+    "checks": [
+     {
+      "t": "ok",
+      "text": "COT AUD 6M-Index 100 (Stand 20.10.2026): im passenden Extrembereich, JPY 19 bestätigt gegenläufig."
+     },
+     {
+      "t": "warn",
+      "text": "Termine in den nächsten 5 Tagen: 30.10. 00:30 BoJ-Zinsentscheid, 03.11. 04:30 RBA-Zinsentscheid."
+     },
+     {
+      "t": "warn",
+      "text": "Weekly-Orderblock 106.112 bis 108.607, Qualität C (Bewegung 1.06 ATR, 0 Berührungen, 39 Wochen alt)."
+     },
+     {
+      "t": "ok",
+      "text": "Kurs 110.851 ist 1.0 Wochen-ATR von der Zone entfernt."
+     },
+     {
+      "t": "ok",
+      "text": "Daily-Orderblock in der Weekly-Zone: 107.505 bis 108.003, Qualität B. Kombi-Einstieg (30 % Weekly, 70 % Daily) möglich."
+     }
+    ],
+    "quelle": "Marktdaten 29.10.2026",
+    "ebene": "weekly",
+    "zone": [
+     106.112,
+     108.607
+    ],
+    "qualitaet": "C",
+    "alter_wochen": 39,
+    "beruehrungen": 0,
+    "bewegung_atr": 1.06,
+    "kurs": 110.851,
+    "kursstand": "2026-10-26",
+    "abstand_atr": 1.0,
+    "zone_t": 1769385600000,
+    "einstieg": 108.607,
+    "stopp": 105.8625,
+    "ziel1": 111.3515,
+    "ziel2": 114.096,
+    "daily_ob": [
+     107.505,
+     108.003
+    ],
+    "daily_q": "B",
+    "status": "prüfen"
+   }
+  },
+  {
+   "paar": "NZD/JPY",
+   "richtung": "long",
+   "status": "Limit besteht schon",
+   "ab": "Vor 28.10. 02:00 nichts ändern",
+   "staerke": 6,
+   "bedingung": "Bleibt dein Weekly-Limit vom 19.10. aktiv. Die RBNZ soll auf 3,00 % erhöhen (Prognose, Markt etwa 80 %). Erhöht sie nicht oder deutet das Ende des Zyklus an, streichen.",
+   "einstieg": "Weekly-Teil: Limit am Zonenrand 77.600 (Zone 75.860 bis 77.600, Qualität B). Daily-Teil: Limit im Daily-Orderblock 75.935 bis 76.540 (Qualität C).",
+   "stopp": "75.686, 10 % der Zonenhöhe jenseits des Zonenrands. Nicht nachziehen.",
+   "ziel": "Ziel 1: 79.514 (1 R), Ziel 2: 81.428 (2 R). Weekly-Teil zusätzlich laut Reiter KI Trades.",
+   "risiko": "Bisher 1 % im Limit. Ich würde auf 0,5 % senken, solange die Zahl der Yen-Gegenseiten steigt (AUD/JPY und NZD/JPY sind fast dieselbe Wette).",
+   "gueltig_bis": "2026-11-11",
+   "ob": {
+    "stand": "2026-10-30T17:47",
+    "checks": [
+     {
+      "t": "ok",
+      "text": "COT NZD 6M-Index 89 (Stand 20.10.2026): im passenden Extrembereich, JPY 19 bestätigt gegenläufig."
+     },
+     {
+      "t": "warn",
+      "text": "Termine in den nächsten 5 Tagen: 30.10. 00:30 BoJ-Zinsentscheid, 03.11. 22:45 Arbeitslosenquote."
+     },
+     {
+      "t": "ok",
+      "text": "Weekly-Orderblock 75.860 bis 77.600, Qualität B (Bewegung 1.48 ATR, 0 Berührungen, 245 Wochen alt)."
+     },
+     {
+      "t": "warn",
+      "text": "Kurs 88.851 ist 6.0 Wochen-ATR von der Zone entfernt, der Limit wird lange nicht erreicht."
+     },
+     {
+      "t": "ok",
+      "text": "Daily-Orderblock in der Weekly-Zone: 75.935 bis 76.540, Qualität C. Kombi-Einstieg (30 % Weekly, 70 % Daily) möglich."
+     }
+    ],
+    "quelle": "Marktdaten 29.10.2026",
+    "ebene": "weekly",
+    "zone": [
+     75.86,
+     77.6
+    ],
+    "qualitaet": "B",
+    "alter_wochen": 245,
+    "beruehrungen": 0,
+    "bewegung_atr": 1.48,
+    "kurs": 88.851,
+    "kursstand": "2026-10-26",
+    "abstand_atr": 6.0,
+    "zone_t": 1644796800000,
+    "einstieg": 77.6,
+    "stopp": 75.686,
+    "ziel1": 79.514,
+    "ziel2": 81.428,
+    "daily_ob": [
+     75.935,
+     76.54
+    ],
+    "daily_q": "C",
+    "status": "prüfen"
+   }
+  },
+  {
+   "paar": "GBP/CHF",
+   "richtung": "long",
+   "status": "Vorbereiten",
+   "ab": "Nach dem Fed-Entscheid 28.10. 19:00",
+   "staerke": 5,
+   "bedingung": "Kein Risiko-Aus nach der Fed. BoE-Erhöhung am 5.11. bleibt eingepreist. Dein letzter Trade im Paar war ein Short (15.09.), das ist ein anderes Setup und löst die Pause nicht aus.",
+   "einstieg": "Weekly-Teil: Limit am Zonenrand 1.09072 (Zone 1.08457 bis 1.09072, Qualität C). Daily-Teil erst, wenn ein Daily-Orderblock in der Zone entsteht.",
+   "stopp": "1.08396, 10 % der Zonenhöhe jenseits des Zonenrands. Nicht nachziehen.",
+   "ziel": "Ziel 1: 1.09748 (1 R), Ziel 2: 1.10425 (2 R). Weekly-Teil zusätzlich laut Reiter KI Trades.",
+   "risiko": "Vorschlag 0,5 %, weil die Überzeugung nur 5 von 10 ist.",
+   "gueltig_bis": "2026-11-06",
+   "ob": {
+    "stand": "2026-10-30T17:47",
+    "checks": [
+     {
+      "t": "bad",
+      "text": "COT GBP 6M-Index 67 (Stand 20.10.2026): nicht mehr im Extrembereich für Long, CHF 13."
+     },
+     {
+      "t": "warn",
+      "text": "Termine in den nächsten 5 Tagen: 04.11. 08:30 CPI m/m."
+     },
+     {
+      "t": "warn",
+      "text": "Weekly-Orderblock 1.08457 bis 1.09072, Qualität C (Bewegung 1.03 ATR, 3 Berührungen, 14 Wochen alt)."
+     },
+     {
+      "t": "ok",
+      "text": "Kurs 1.10517 ist 1.3 Wochen-ATR von der Zone entfernt."
+     },
+     {
+      "t": "warn",
+      "text": "Kein unmitigierter Daily-Orderblock innerhalb der Weekly-Zone: nach deiner Auswertung nicht einsteigen, bis einer entsteht (Daily-Bestätigung)."
+     }
+    ],
+    "quelle": "Marktdaten 29.10.2026",
+    "ebene": "weekly",
+    "zone": [
+     1.08457,
+     1.09072
+    ],
+    "qualitaet": "C",
+    "alter_wochen": 14,
+    "beruehrungen": 3,
+    "bewegung_atr": 1.03,
+    "kurs": 1.10517,
+    "kursstand": "2026-10-26",
+    "abstand_atr": 1.3,
+    "zone_t": 1784505600000,
+    "einstieg": 1.09072,
+    "stopp": 1.08396,
+    "ziel1": 1.09748,
+    "ziel2": 1.10425,
+    "status": "ungültig"
+   }
+  },
+  {
+   "paar": "EUR/CHF",
+   "richtung": "long",
+   "status": "Nur beobachten",
+   "ab": "Nach dem EZB-Entscheid 29.10.",
+   "staerke": 5,
+   "bedingung": "Nur wenn der Franken nach der EZB schwach bleibt und der OAT-Bund-Spread nicht weiter steigt (Frankreich ist auf dem höchsten Stand seit 2011).",
+   "einstieg": "Erst eine Daily-Zone nach dem Entscheid zeichnen. Heute kein Limit.",
+   "stopp": "Unter dem Wochentief, nicht eng.",
+   "ziel": "Laut Reiter KI Trades.",
+   "risiko": "Vorschlag 0,5 % oder weniger.",
+   "gueltig_bis": "2026-11-06",
+   "ob": {
+    "stand": "2026-10-30T17:47",
+    "checks": [
+     {
+      "t": "ok",
+      "text": "COT EUR 6M-Index 97 (Stand 20.10.2026): im passenden Extrembereich, CHF 13 bestätigt gegenläufig."
+     },
+     {
+      "t": "warn",
+      "text": "Termine in den nächsten 5 Tagen: 04.11. 08:30 CPI m/m, 04.11. 11:00 CPI y/y (Schnellschätzung), 04.11. 11:00 Kern-CPI y/y (Schnellschätzung)."
+     },
+     {
+      "t": "bad",
+      "text": "Weekly: kein unmitigierter Orderblock auf der richtigen Seite des Kurses, ein Limit-Einstieg ist so nicht begründbar."
+     }
+    ],
+    "quelle": "Marktdaten 29.10.2026",
+    "status": "ungültig"
+   }
+  }
+ ],
+ "lernen": {
+  "n": 0,
+  "gut": 0,
+  "schwach": 0,
+  "falsch": 0,
+  "eigene_zonen": []
+ }
 }
