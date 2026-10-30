@@ -40,3 +40,40 @@ Meine Positionen, Trades und Analysen bleiben im privaten Repo. In Chat und Bena
 
 BEGINN
 Sag mir zuerst, welche Felder du in meinem Export gefunden hast und was dir zum Start noch fehlt (Repo, Token, Twelve-Data-Key). Danach führe die erste Analyse aus.
+
+FORWARD-TEST UND STRATEGIESUCHE (neu ab Journal39.19, gilt bei jedem Lauf)
+Ziel: robuste, handelbare Strategien finden, die zusammen etwa 3 bis 6 Prozent im Monat bei kleinem Drawdown bringen sollen (Funded-Konto). Arbeite selbstständig, ehrlich und ohne Rückfragen.
+
+A) Was in jedem Lauf passiert
+1. Lies journal-export.json (strategien, strategienEntfernt, forwardAktiv, forwardEntfernt). Teste alle Strategien aus dem Strategie-Labor wie oben beschrieben.
+2. Suche pro Lauf mindestens 5 neue, möglichst unterschiedliche Strategien (bis zu 10 sind erwünscht). Quellen: Trend, Momentum, Mean-Reversion, Volatilität, Preisaktion (Orderblock, Fair-Value-Gap, Liquiditäts-Sweep), COT (Commercials, Non-Commercials, Veränderung), Währungskorb, Seasonalität, Fundamentales (Zinsen, Inflation, Arbeitsmarkt), Intermarket, Statistik und Machine Learning mit Walk-forward. Auch aus dem Internet bekannte Strategien prüfen und die Quelle nennen.
+3. Pflege forwardtest.json im privaten Repo (Format unten). Strategien aus forwardAktiv laufen mit neuen Kerzen vorwärts (Forward-Trades eröffnen und schließen, in forward und feedback melden). Strategien aus forwardEntfernt nie wieder aufnehmen.
+
+B) Qualitätsregeln (nicht verhandelbar)
+- Netto rechnen: 1 Pip Spread (Metalle, Indizes höher, Annahme nennen), Swap als Annahme (0,3 Pip je Kalendertag bei Forex), Kommission und Slippage des Kontos nennen. Brutto und netto zeigen.
+- Mindest-Expectancy netto 0,15 R, sonst nicht in den Forward-Test. Mindestens 300 Trades, sonst als zu klein kennzeichnen (Status Beobachtung).
+- Kein Blick in die Zukunft, Stopp zuerst bei Konflikt in einer Kerze, Entwicklung und Prüfung trennen (bis 2022 gegen ab 2023), Zufallsvergleich (gleiche Signale an verschobenem Datum, 150 bis 300 Läufe), Bootstrap-Intervall der Expectancy, Zahl aller getesteten Varianten nennen. Die beste von vielen Varianten kann Zufall sein, deshalb zählt der Forward-Test.
+- Haltedauer: bevorzugt 1 bis 2 Wochen, bis 4 Wochen gut, bis 8 Wochen nur bei deutlich besserem Ergebnis. Zeitebene nie unter H1.
+- Immer die Zeitebene angeben. Korrelation der Monatsergebnisse zwischen Strategien berechnen, weil nur unabhängige Strategien ein Portfolio ergeben.
+
+C) Risiko-Empfehlung je Strategie (Feld risiko)
+Monte-Carlo über die Trades (2000 Jahre, Trades mit Zurücklegen). Risiko pro Trade so wählen, dass der Drawdown im 95. Perzentil höchstens die Hälfte des erlaubten Gesamtverlusts beträgt (Annahme 10 Prozent Gesamt-, 5 Prozent Tagesverlust, bitte vom Nutzer bestätigen lassen), Deckel 1,5 Prozent je Trade. Niedrige Winrate heißt weniger Risiko. Ausgeben: empfohlenes Risiko in Prozent, erwarteter Drawdown (Median und 95 Prozent), geschätzte Rendite pro Monat, Trades pro Jahr.
+
+D) Format forwardtest.json (öffentliche Vorlage: https://raw.githubusercontent.com/michelbrueck25-eng/journal-daten/main/forwardtest.json)
+{"typ":"forwardtest","stand":"<ISO>","start":"<Datum>","hinweis":"","feedback":[{"datum","titel","art","text"}],"definitionen":[],"strategien":[{"id","gruppe","tf","status","name","beschreibung","regeln","notiz","bericht","plan","backtest":{"n","wr","avg","pf","dd","jahr","monate":[[Tage seit 1970 des Monatsersten, Trades, Summe R]]},"risiko":{"empfohlen_pct","dd_median_pct","dd95_pct","monat_pct","trades_pro_jahr","annahme"},"forward":{"n","offen","equity":[]},"offene":[],"trades":[],"cfg":{}}]}
+- regeln: so genau, dass man die Strategie ohne dich nachbauen kann (Universum, Zeitebene, Einstieg, Stopp, Ziel, Risiko, Filter, Ausstieg, Beispiel).
+- bericht: Ergebnis, Zufallsvergleich, Hälften, Schwächen. plan: wie und wann handeln, wann nicht.
+- Für jede Strategie zusätzlich strategiezeichnungen/<id>.json (Zonen und bis zu 25 Beispiel-Trades je Paar, Schema siehe öffentliche Vorlage), damit "Im Chart zeigen" funktioniert.
+- Das Journal zeigt Vergleich und Rangliste, aktive Forward-Tests oben und sortiert nach Expectancy.
+
+E) Signale für den Nutzer
+Erscheint bei einer aktiven Strategie ein Setup, melde Instrument, Richtung, Einstieg, Stopp, Ziel, Risiko in Prozent und Gültigkeit (Pop-up/Benachrichtigung und Eintrag in forwardtest.json). Live nur nach bestandenem Forward-Beweis (vorher festgelegte Kriterien: Mindestzahl Trades, Netto-Expectancy im Rahmen des Backtests, Drawdown im erwarteten Bereich). Keine Anlageberatung.
+
+F) Bisherige Erkenntnisse (öffentliche Vorlage, zum Gegenprüfen mit deinen Daten)
+- Reine Kursmuster auf Daily-Forex (Bollinger, MA-Kreuzung, Momentum, Fair-Value-Gaps, Sweeps, Dreiecke, Entscheidungsbaum) liegen nach Kosten bei etwa 0 R.
+- Saisonalität: hohe Trefferquoten in den Vorjahren verschwinden im Handelsjahr (Auswahleffekt).
+- Tragfähig war nur COT (Commercials: Top gegen Flop über 156 Wochen, Abstand 70 Indexpunkte, und Positionsänderung über 8 Wochen folgen), etwa 0,2 bis 0,3 R, aber wenige Trades und stark untereinander korreliert. Für Streuung fehlen unabhängige Quellen (Rohstoffkurse, Zins-, Inflations-, Arbeitsmarktdaten, H1-Kerzen).
+- Skripte: tests/ (eng.py laden und simulieren, seas.py Saisonalität, ideen.py bis ideen6.py und build6.py Ideenläufe). Pfad HOME in eng.py auf dein privates Repo setzen.
+
+G) Wichtig für deine Sicherheit
+Dein Repo mit Journal und Export MUSS privat sein (GitHub, Settings, Danger Zone, Change visibility). Das Token nie in Dateien, Chat oder Prompts schreiben.
