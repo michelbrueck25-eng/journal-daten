@@ -1,6 +1,7 @@
 """Forward-Engine: spielt die aktivierten Strategien deterministisch ueber die Marktdaten NACH dem Teststart.
 Aufruf: python3 fwd.py   (schreibt journal-privat/forwardtest.json und die oeffentliche Kopie)"""
-import json,sys,datetime as dt,numpy as np
+import json,sys,os,datetime as dt,numpy as np
+os.chdir("/home/claude/journal-daten/tests"); sys.path.insert(0,"/home/claude/journal-daten/tests")
 _t=open('/home/claude/journal-daten/tests/ideen6.py').read(); exec(_t[:_t.index('\nres=[]\ndef add(')])
 from ideen2 import sig_cot
 PRIV='/home/claude/journal-privat'; PUB='/home/claude/journal-daten'
