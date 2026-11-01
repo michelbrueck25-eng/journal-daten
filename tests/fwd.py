@@ -95,7 +95,7 @@ def fsim4(s,i,L,sa,tg,N):
     if not closed and j>=i+N: closed=True;why='Zeit'
     days=(d['t'][j]-d['t'][i+1])/864e5+0.17;r=sg*(px-e)/sd-H4.cost_r(s,sd,a,days)
     bars=round((j-i)/6,2);od=str(dt.datetime.fromtimestamp(d['t'][i+1]/1000,dt.timezone.utc))[:16]
-    o=dict(closed=closed,r=round(float(r),3),mfe=round(float(mfe),2),mae=round(float(mae),2),bars=bars,bd=bd,bp=bp,entry=float(e),open_date=od)
+    o=dict(closed=closed,r=round(float(r),3),mfe=round(float(mfe),2),mae=round(float(mae),2),bars=bars,bd=round(bd/6,2),bp=round(bp/6,2),entry=float(e),open_date=od)
     if closed: o.update(why=why,close_date=str(dt.datetime.fromtimestamp(d['t'][j]/1000,dt.timezone.utc))[:16])
     else: o.update(stop=float(stp),last=str(dt.datetime.fromtimestamp(d['t'][j]/1000,dt.timezone.utc))[:16])
     return o
