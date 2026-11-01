@@ -8,6 +8,7 @@ F=json.load(open(PRIV)); bt=json.load(open(f'{PUB}/backtest-trades.json'))
 S={x['id']:x for x in F['strategien']}
 for n,(m,c,a,dv,te) in enumerate(sel,1+OFF):
     en,sb,tg,md,qs,age,grp=c[:7]; flt=c[7] if len(c)>7 else ''; tr=run(*c); sid=f'fw10-o{n}'
+    fxs=[x for x in tr if x['sym'] not in PIPS]; swr=float(np.mean([0.3*(0.01 if x['sym'].endswith('JPY') else 0.0001)*x['bars']*7/5/x['risk'] for x in fxs])) if fxs else 0.0
     r=np.array([x['r'] for x in tr]); w=(r>0).mean()*100; gw=r[r>0].sum(); gl=-r[r<0].sum(); eq=np.cumsum(r); dd=float((np.maximum.accumulate(eq)-eq).max())
     mo=collections.OrderedDict()
     for x in sorted(tr,key=lambda x:x['date']):
@@ -23,7 +24,7 @@ for n,(m,c,a,dv,te) in enumerate(sel,1+OFF):
       name=f"Daily-OB A · {'Mitte' if en=='mid' else 'Rand'} · {tg} R · Stopp {sb} ATR · {md} Tage"+(f" · Alter ≤{age}" if age else '')+(' · nur FX' if grp=='FX' else '')+{'weekly_trend':' · Weekly-Trend','cot_stark30':' · COT stark'}.get(flt,''),
       beschreibung=regeln,regeln=regeln,
       notiz="Gleiche Familie wie Kandidat 1 bis 3 (Korrelation der Monatsergebnisse zu diesen zwischen 0,4 und 0,85). Aus 384 bzw. 270 (mit Filter) Varianten ausgewählt, die in Entwicklung und Prüfung je über 0,25 R lagen.",
-      bericht=f"Zeitebene Daily. {len(r)} Trades, Winrate {w:.1f} %, E: {r.mean():+.3f} R netto, Profitfaktor {gw/gl:.2f}, Drawdown {dd:.1f} R, {jahr:+.1f} R pro Jahr. Entwicklung (bis 2022): {dv[0]} Trades, E {dv[1]:+.3f} R. Prüfung (ab 2023): {te[0]} Trades, E {te[1]:+.3f} R. Je Jahr: {je}. Einschränkungen: Variante aus 384 getesteten ausgewählt, Zonen benachbarter Paare sind korreliert, kein Zufallsvergleich für diese Variante gerechnet. Kosten: 1 Pip Spread, keine Swaps (Haltedauer bis {md} Tage, Swap kommt noch dazu).",
+      bericht=f"Zeitebene Daily. {len(r)} Trades, Winrate {w:.1f} %, E: {r.mean():+.3f} R netto, Profitfaktor {gw/gl:.2f}, Drawdown {dd:.1f} R, {jahr:+.1f} R pro Jahr. Entwicklung (bis 2022): {dv[0]} Trades, E {dv[1]:+.3f} R. Prüfung (ab 2023): {te[0]} Trades, E {te[1]:+.3f} R. Je Jahr: {je}. Einschränkungen: Variante aus 384 getesteten ausgewählt, Zonen benachbarter Paare sind korreliert, kein Zufallsvergleich für diese Variante gerechnet. Kosten: 1 Pip Spread; Swaps (0,3 Pip je Kalendertag) sind in den Zahlen noch nicht abgezogen und kosten im Mittel etwa {swr:.3f} R je Trade, E läge dann bei etwa {r.mean()-swr:+.2f} R.",
       plan="Im Forward-Test beobachten. Für diese Familie fehlt noch die Forward-Engine, bis dahin nur Backtest.",
       backtest=dict(n=len(r),wr=round(float(w),1),avg=round(float(r.mean()),3),pf=round(float(gw/gl),2),dd=round(dd,1),jahr=jahr,monate=monate),
       forward=dict(n=0,offen=0,equity=[],kennzahlen={'n':0},testStart='2026-10-30',testEnde='2026-12-30',datenstand=str(F.get('forwardDatenstand','')),offen_r=0.0),

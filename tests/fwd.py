@@ -119,7 +119,7 @@ FW.update({
  'fw9-s2':(lambda:_smc('FVG Retest',20),'pyr',dict(sa=2,tk=99,adds=(),red=None,N=15,tg=None)),
  'fw9-s3':(lambda:_smc('OB nach BOS',20),'pyr',dict(sa=2,tk=99,adds=(),red=None,N=25,tg=None)),
 })
-OBF={'fw10-o1':('mid',0.1,5,20,'A',0,'alle'),'fw10-o2':('mid',0.25,3,10,'A',20,'FX'),'fw10-o3':('mid',0.25,2,20,'A',0,'FX'),'fw3-k1':('mid',0.25,3,10,'A',0,'alle'),'fw3-k2':('mid',0.5,3,7,'A',0,'alle','weekly_trend'),'fw3-k3':('edge',0.1,3,10,'A',0,'alle','cot_stark30'),'fw10-o4':('mid', 0.1, 5, 20, 'A', 20, 'FX', 'weekly_trend'),'fw10-o5':('mid', 0.1, 4, 7, 'A', 20, 'FX', 'weekly_trend'),'fw10-o6':('mid', 0.1, 3, 10, 'A', 20, 'FX', 'weekly_trend'),'fw10-o7':('edge', 0.1, 5, 10, 'A', 0, 'alle', 'cot_stark30'),'fw10-o8':('edge', 0.1, 3, 20, 'A', 0, 'alle', 'cot_stark30')}
+OBF={'fw10-o1':('mid',0.1,5,20,'A',0,'alle'),'fw10-o2':('mid',0.25,3,10,'A',20,'FX'),'fw10-o3':('mid',0.25,2,20,'A',0,'FX'),'fw3-k1':('mid',0.25,3,10,'A',0,'alle'),'fw3-k2':('mid',0.5,3,7,'A',0,'alle','weekly_trend'),'fw3-k3':('edge',0.1,3,10,'A',0,'alle','cot_stark30'),'fw10-o9':('mid', 0.15, 5, 60, 'A', 40, 'alle', ''),'fw10-o10':('mid', 0.1, 5, 60, 'A', 40, 'FX', ''),'fw10-o11':('mid', 0.15, 6, 30, 'A', 40, 'FX', ''),'fw10-o12':('mid', 0.1, 8, 60, 'A', 40, 'FX', ''),'fw10-o13':('mid', 0.1, 6, 60, 'A', 0, 'FX', ''),'fw10-o4':('mid', 0.1, 5, 20, 'A', 20, 'FX', 'weekly_trend'),'fw10-o5':('mid', 0.1, 4, 7, 'A', 20, 'FX', 'weekly_trend'),'fw10-o6':('mid', 0.1, 3, 10, 'A', 20, 'FX', 'weekly_trend'),'fw10-o7':('edge', 0.1, 5, 10, 'A', 0, 'alle', 'cot_stark30'),'fw10-o8':('edge', 0.1, 3, 20, 'A', 0, 'alle', 'cot_stark30')}
 _OB={}
 def ob_fwd(sid):
     """Daily-Orderblock-Forward: Zonen und Einstieg wie in obsearch.run, nur Trades mit Einstieg ab START."""

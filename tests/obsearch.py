@@ -36,7 +36,7 @@ def run(entry,stopb,tg,md,qs,age,grp,flt=''):
             if kk is None: continue
             en=mid
         r=simulate(d,kk,L,en,stop,tg,md,z['sym'])
-        if r: out.append(dict(r=r[0],date=dt.datetime.utcfromtimestamp(d['t'][kk]/1000).strftime('%Y-%m-%d'),sym=z['sym'],bars=r[1],L=L,entry=float(en),why=r[2],offen=(r[2]=='Zeit' and kk+1+md>len(d['c'])),last=dt.datetime.utcfromtimestamp(d['t'][min(kk+r[1],len(d['c'])-1)]/1000).strftime('%Y-%m-%d')))
+        if r: out.append(dict(r=r[0],date=dt.datetime.utcfromtimestamp(d['t'][kk]/1000).strftime('%Y-%m-%d'),sym=z['sym'],bars=r[1],L=L,risk=float(r[5]),entry=float(en),why=r[2],offen=(r[2]=='Zeit' and kk+1+md>len(d['c'])),last=dt.datetime.utcfromtimestamp(d['t'][min(kk+r[1],len(d['c'])-1)]/1000).strftime('%Y-%m-%d')))
     return out
 def st(tr):
     if len(tr)<10: return None
