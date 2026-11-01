@@ -4,8 +4,12 @@ os.chdir('/home/claude/journal-daten/tests'); sys.path.insert(0,'.')
 t=open('dob.py').read(); t=t[:t.index('def runB')]
 with contextlib.redirect_stdout(io.StringIO()): exec(t)
 SP='2023-01-01'; FXs=lambda s:s not in PIPS
-def run(entry,stopb,tg,md,qs,age,grp):
+def run(entry,stopb,tg,md,qs,age,grp,flt=''):
     out=[]
+    if flt=='cot_stark30':
+        from gen import cot_idx
+    if flt=='weekly_trend':
+        _wt={s:eng.wk_trend(U[s]) for s in U}
     for z in Z:
         if qs=='A' and z['q']!='A': continue
         if age and z['t0']-z['i']>age: continue
@@ -13,6 +17,13 @@ def run(entry,stopb,tg,md,qs,age,grp):
         if grp=='Metall' and z['sym'] not in PIPS: continue
         d=U[z['sym']]; L=z['L']; k=z['t0']; a=z['a']
         if np.isnan(a): continue
+        if flt=='weekly_trend' and _wt[z['sym']][k]!=(1 if L else -1): continue
+        if flt=='cot_stark30':
+            sy=z['sym']
+            if sy in PIPS: continue
+            ds_=dt.datetime.utcfromtimestamp(d['t'][k]/1000).strftime('%Y-%m-%d'); cb,cq=cot_idx(sy[:3],ds_),cot_idx(sy[3:],ds_)
+            if cb is None or cq is None: continue
+            if not ((cb-cq>=30) if L else (cq-cb>=30)): continue
         stop=z['lo']-stopb*a if L else z['hi']+stopb*a
         if entry=='edge':
             if (d['o'][k]<z['lo']) if L else (d['o'][k]>z['hi']): continue
@@ -25,7 +36,7 @@ def run(entry,stopb,tg,md,qs,age,grp):
             if kk is None: continue
             en=mid
         r=simulate(d,kk,L,en,stop,tg,md,z['sym'])
-        if r: out.append(dict(r=r[0],date=dt.datetime.utcfromtimestamp(d['t'][kk]/1000).strftime('%Y-%m-%d'),sym=z['sym'],bars=r[1],L=L))
+        if r: out.append(dict(r=r[0],date=dt.datetime.utcfromtimestamp(d['t'][kk]/1000).strftime('%Y-%m-%d'),sym=z['sym'],bars=r[1],L=L,entry=float(en),why=r[2],offen=(r[2]=='Zeit' and kk+1+md>len(d['c'])),last=dt.datetime.utcfromtimestamp(d['t'][min(kk+r[1],len(d['c'])-1)]/1000).strftime('%Y-%m-%d')))
     return out
 def st(tr):
     if len(tr)<10: return None

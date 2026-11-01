@@ -119,6 +119,64 @@ FW.update({
  'fw9-s2':(lambda:_smc('FVG Retest',20),'pyr',dict(sa=2,tk=99,adds=(),red=None,N=15,tg=None)),
  'fw9-s3':(lambda:_smc('OB nach BOS',20),'pyr',dict(sa=2,tk=99,adds=(),red=None,N=25,tg=None)),
 })
+OBF={'fw10-o1':('mid',0.1,5,20,'A',0,'alle'),'fw10-o2':('mid',0.25,3,10,'A',20,'FX'),'fw10-o3':('mid',0.25,2,20,'A',0,'FX'),'fw3-k1':('mid',0.25,3,10,'A',0,'alle'),'fw3-k2':('mid',0.5,3,7,'A',0,'alle','weekly_trend'),'fw3-k3':('edge',0.1,3,10,'A',0,'alle','cot_stark30')}
+_OB={}
+def ob_fwd(sid):
+    """Daily-Orderblock-Forward: Zonen und Einstieg wie in obsearch.run, nur Trades mit Einstieg ab START."""
+    if 'run' not in _OB:
+        import io,contextlib
+        t=open('/home/claude/journal-daten/tests/obsearch.py').read(); t=t[:t.index('rows=[]')]
+        g={'__name__':'obsearch_fwd','__file__':'/home/claude/journal-daten/tests/dob.py'}
+        with contextlib.redirect_stdout(io.StringIO()): exec(t,g)
+        _OB['run']=g['run']
+    tr=[];op=[]
+    for x in sorted(_OB['run'](*OBF[sid]),key=lambda x:x['date']):
+        if x['date']<str(START): continue
+        t=dict(closed=not x['offen'],r=round(float(x['r']),3),bars=x['bars'],entry=x['entry'],open_date=x['date']+' 00:00',sym=x['sym'],dir='long' if x['L'] else 'short',date=x['date']+' 00:00',why={'SL':'Stopp','TP':'Ziel','Zeit':'Zeit'}[x['why']])
+        if x['offen']: t['last']=x['last']+' 00:00'; op.append(t)
+        else: t['close_date']=x['last']+' 00:00'; tr.append(t)
+    return tr,op
+def sig_saison(N=30,stopm=2.0,thr=0.75,minyrs=6,mean_min=0.05,step=3):
+    """Saisonalitaets-Signale (wie seas2.run, Walk-forward) fuer die aktuellen Bars; Index in der P-Struktur dieser Datei."""
+    import io,contextlib
+    with contextlib.redirect_stdout(io.StringIO()): import seas2 as S2
+    out=[]
+    for s in S2.SYMS:
+        RL,_=S2.sim_all(s,N,stopm,0,True); RS,_=S2.sim_all(s,N,stopm,0,False)
+        md=S2.P[s]['md']; yr=S2.P[s]['yr']; n=len(yr); cell={}
+        for i in range(n):
+            m,dd=md[i]
+            if dd>28 or (dd-1)%step: continue
+            key=(m,(dd-1)//step*step+1); cell.setdefault(key,{})
+            if yr[i] not in cell[key]: cell[key][yr[i]]=i
+        y=max(set(yr)); ds={str(x):k for k,x in enumerate(P[s]['ts'])}
+        sig=[]
+        for key,byy in cell.items():
+            past=[byy[yy] for yy in byy if yy<y]
+            if len(past)<minyrs or y not in byy: continue
+            for L,R in ((True,RL),(False,RS)):
+                rs=np.array([R[i] for i in past]); rs=rs[~np.isnan(rs)]
+                if len(rs)<minyrs: continue
+                wr=(rs>0).mean()
+                if wr>=thr and rs.mean()>=mean_min: sig.append((wr,rs.mean(),key,L))
+        sig.sort(key=lambda x:(-x[0],-x[1]))
+        for wr,mn,key,L in sig:
+            j=ds.get(str(S2.P[s]['ts'][cell[key][y]]))
+            if j is not None: out.append((s,j,L))
+    return out
+FW['fw4-s5']=(lambda:sig_saison(),'pyr',dict(sa=2,tk=99,adds=(),red=None,N=30,tg=None))
+def wob_fwd(sid):
+    """Weekly-Orderblock-Forward (fw2-w-<cot>-<ziel*10>-<tage>)"""
+    import importlib.util
+    if 'wob' not in _OB:
+        sp=importlib.util.spec_from_file_location('wob','/home/claude/journal-daten/tests/wob.py'); m=importlib.util.module_from_spec(sp); sp.loader.exec_module(m); _OB['wob']=m
+    _,_,cot,tg,md=sid.split('-'); tr=[];op=[]
+    for x in sorted(_OB['wob'].run(int(tg)/10,int(md),cot),key=lambda x:x['date']):
+        if x['date']<str(START): continue
+        t=dict(closed=not x['offen'],r=round(float(x['r']),3),bars=x['bars'],entry=x['entry'],open_date=x['date']+' 00:00',sym=x['sym'],dir='long' if x['L'] else 'short',date=x['date']+' 00:00',why={'SL':'Stopp','TP':'Ziel','Zeit':'Zeit'}[x['why']])
+        if x['offen']: t['last']=x['last']+' 00:00'; op.append(t)
+        else: t['close_date']=x['last']+' 00:00'; tr.append(t)
+    return tr,op
 def main():
     F=json.load(open(f'{PRIV}/forwardtest.json')); ex=json.load(open(f'{PRIV}/journal-export.json'))
     aktiv=[i for i in ex['forwardAktiv'] if i not in ex.get('forwardEntfernt',[])]+[i for i in os.environ.get('FW_FORCE','').split(',') if i]  # nur was in der App aktiv ist
@@ -128,6 +186,10 @@ def main():
             x=S[sid];tr,open_=run4(x);last=max(last,max(dt.date.fromtimestamp(d['t'][-1]/1000) for d in H4.D.values())) if False else last
             K=stats(tr);eq=[round(float(v),2) for v in np.cumsum([t['r'] for t in tr])] if tr else []
             x['forward']=dict(n=len(tr),offen=len(open_),equity=eq,kennzahlen=K,testStart=str(START),testEnde=str(ENDE),datenstand=str(max(dt.datetime.fromtimestamp(d['t'][-1]/1000,dt.timezone.utc).date() for d in H4.D.values())),offen_r=round(float(sum(t['r'] for t in open_)),2))
+            x['offene']=open_;x['trades']=tr;x['status']='Forward-Test läuft';done.append(sid);continue
+        if (sid in OBF or sid.startswith('fw2-w-')) and sid in S:
+            tr,open_=ob_fwd(sid) if sid in OBF else wob_fwd(sid); x=S[sid]; K=stats(tr); eq=[round(float(v),2) for v in np.cumsum([t['r'] for t in tr])] if tr else []
+            x['forward']=dict(n=len(tr),offen=len(open_),equity=eq,kennzahlen=K,testStart=str(START),testEnde=str(ENDE),datenstand=str(last),offen_r=round(float(sum(t['r'] for t in open_)),2))
             x['offene']=open_;x['trades']=tr;x['status']='Forward-Test läuft';done.append(sid);continue
         if sid not in FW: skip.append(sid); continue
         fn,kind,p=FW[sid]; x=S[sid]; tr=[];open_=[];busy={}
