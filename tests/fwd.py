@@ -118,8 +118,6 @@ FW.update({
  'fw9-s1':(lambda:_smc('Sweep 20',20),'pyr',dict(sa=3,tk=99,adds=(),red=None,N=15,tg=None)),
  'fw9-s2':(lambda:_smc('FVG Retest',20),'pyr',dict(sa=2,tk=99,adds=(),red=None,N=15,tg=None)),
  'fw9-s3':(lambda:_smc('OB nach BOS',20),'pyr',dict(sa=2,tk=99,adds=(),red=None,N=25,tg=None)),
- 'fw9-s4':(lambda:_smc('BOS Trend',40),'pyr',dict(sa=3,tk=99,adds=(),red=None,N=40,tg=1.5)),
- 'fw9-s5':(lambda:_smc('BOS Retest',40),'pyr',dict(sa=2,tk=99,adds=(),red=None,N=40,tg=1.5)),
 })
 def main():
     F=json.load(open(f'{PRIV}/forwardtest.json')); ex=json.load(open(f'{PRIV}/journal-export.json'))
