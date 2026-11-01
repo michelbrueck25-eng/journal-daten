@@ -7,6 +7,7 @@ def load_all():
     U={}
     for f in sorted(glob.glob(f'{HOME}/marktdaten/*_D.json')):
         sym=os.path.basename(f).split('_')[0]
+        if not os.path.exists(f'{HOME}/marktdaten/{sym}_W.json'): continue  # Index-/Rohstoffdaten ohne Wochenkerzen: eigenes Universum
         r=json.load(open(f))['rows']
         if dt.datetime.utcfromtimestamp(r[-1][0]/1000).date()>=dt.datetime.utcnow().date(): r=r[:-1]  # unvollstaendige Tageskerze
         a=np.array(r,float)
