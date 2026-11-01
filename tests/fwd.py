@@ -5,7 +5,7 @@ os.chdir("/home/claude/journal-daten/tests"); sys.path.insert(0,"/home/claude/jo
 _t=open('/home/claude/journal-daten/tests/ideen6.py').read(); exec(_t[:_t.index('\nres=[]\ndef add(')])
 from ideen2 import sig_cot
 PRIV='/home/claude/journal-privat'; PUB='/home/claude/journal-daten'
-START=dt.date(2026,10,30); ENDE=dt.date(2026,12,30)
+START=dt.date.fromisoformat(os.environ.get('FW_START','2026-10-30')); ENDE=dt.date(2026,12,30)
 A2=((1,.5),(2,.5))
 FW={ # id: (Signalfunktion, Art, Parameter)
  'fw5-c1':(lambda:sig_cot(156,1,'folgen',70),'pyr',dict(sa=3,tk=99,adds=(),red=None,N=20,tg=None)),
@@ -65,11 +65,60 @@ def stats(tr):
       halt_gewinner=round(float(np.mean([x['bars'] for x in tr if x['r']>0])),1) if len(w) else None,halt_verlierer=round(float(np.mean([x['bars'] for x in tr if x['r']<=0])),1) if len(l) else None,
       zeit_drawdown_pct=round(100*sum(x['bd'] for x in tr)/max(1,tb),1),zeit_gewinn_pct=round(100*sum(x['bp'] for x in tr)/max(1,tb),1),
       mfe=round(float(np.mean([x['mfe'] for x in tr])),2),mae=round(float(np.mean([x['mae'] for x in tr])),2),max_verlustserie=m)
+
+# ---- 4h-Strategien (RSI(3)-Rücksetzer), Daten wie in h4.py ----
+import h4 as H4
+def sg4(th,minatr):
+    out=[]
+    for s,d in H4.D.items():
+        n=len(d['c']);pp=H4.pip(s)
+        for i in range(210,n-1):
+            a=d['a'][i]
+            if np.isnan(a) or np.isnan(d['sma200'][i]) or a/pp<minatr: continue
+            c=d['c'][i];up=c>d['sma200'][i]
+            if d['r3'][i]<th and up: out.append((s,i,True))
+            elif d['r3'][i]>100-th and (not up): out.append((s,i,False))
+    return out
+def fsim4(s,i,L,sa,tg,N):
+    d=H4.D[s];n=len(d['c']);a=d['a'][i]
+    if i+1>=n or np.isnan(a): return None
+    e=d['o'][i+1];sd=sa*a;sg=1 if L else -1;stp=e-sg*sd;tp=e+sg*tg*sd;mfe=mae=0.0;end=min(i+N,n-1);closed=False;bd=bp=0
+    for j in range(i+1,end+1):
+        hi,lo=d['h'][j],d['l'][j]
+        if (lo<=stp) if L else (hi>=stp): px=stp;closed=True;why='Stopp';mae=min(mae,-1.0);break
+        if (hi>=tp) if L else (lo<=tp): px=tp;closed=True;why='Ziel';mfe=max(mfe,tg);break
+        mfe=max(mfe,sg*((hi if L else lo)-e)/sd);mae=min(mae,sg*((lo if L else hi)-e)/sd)
+        pl=sg*(d['c'][j]-e)
+        if pl<0: bd+=1
+        elif pl>0: bp+=1
+    else: j=end;px=d['c'][j]
+    if not closed and j>=i+N: closed=True;why='Zeit'
+    days=(d['t'][j]-d['t'][i+1])/864e5+0.17;r=sg*(px-e)/sd-H4.cost_r(s,sd,a,days)
+    bars=round((j-i)/6,2);od=str(dt.datetime.fromtimestamp(d['t'][i+1]/1000,dt.timezone.utc))[:16]
+    o=dict(closed=closed,r=round(float(r),3),mfe=round(float(mfe),2),mae=round(float(mae),2),bars=bars,bd=bd,bp=bp,entry=float(e),open_date=od)
+    if closed: o.update(why=why,close_date=str(dt.datetime.fromtimestamp(d['t'][j]/1000,dt.timezone.utc))[:16])
+    else: o.update(stop=float(stp),last=str(dt.datetime.fromtimestamp(d['t'][j]/1000,dt.timezone.utc))[:16])
+    return o
+def run4(x):
+    c=x['cfg'];tr=[];op=[];busy={}
+    for (s,i,L) in sorted(sg4(c['th'],c['minatr']),key=lambda z:(H4.D[z[0]]['t'][z[1]],z[0])):
+        if i<=busy.get(s,-1): continue
+        if i+1>=len(H4.D[s]['c']) or dt.datetime.fromtimestamp(H4.D[s]['t'][i+1]/1000,dt.timezone.utc).date()<START: continue
+        t=fsim4(s,i,L,c['sa'],c['tg'],c['N'])
+        if not t: continue
+        t.update(sym=s,dir='long' if L else 'short',date=t['open_date']);busy[s]=i+int(round(t['bars']*6))
+        (tr if t['closed'] else op).append(t)
+    return tr,op
 def main():
     F=json.load(open(f'{PRIV}/forwardtest.json')); ex=json.load(open(f'{PRIV}/journal-export.json'))
-    aktiv=[i for i in ex['forwardAktiv'] if i not in ex.get('forwardEntfernt',[])]
+    aktiv=[i for i in ex['forwardAktiv'] if i not in ex.get('forwardEntfernt',[])]+[i for i in os.environ.get('FW_FORCE','').split(',') if i]
     last=max(P[s]['ts'][-1] for s in P); S={x['id']:x for x in F['strategien']}; done=[];skip=[]
     for sid in aktiv:
+        if sid in S and (S[sid].get('cfg') or {}).get('typ')=='h4':
+            x=S[sid];tr,open_=run4(x);last=max(last,max(dt.date.fromtimestamp(d['t'][-1]/1000) for d in H4.D.values())) if False else last
+            K=stats(tr);eq=[round(float(v),2) for v in np.cumsum([t['r'] for t in tr])] if tr else []
+            x['forward']=dict(n=len(tr),offen=len(open_),equity=eq,kennzahlen=K,testStart=str(START),testEnde=str(ENDE),datenstand=str(max(dt.datetime.fromtimestamp(d['t'][-1]/1000,dt.timezone.utc).date() for d in H4.D.values())),offen_r=round(float(sum(t['r'] for t in open_)),2))
+            x['offene']=open_;x['trades']=tr;x['status']='Forward-Test läuft';done.append(sid);continue
         if sid not in FW: skip.append(sid); continue
         fn,kind,p=FW[sid]; x=S[sid]; tr=[];open_=[];busy={}
         for (s,i,L) in sorted(fn(),key=lambda z:(P[z[0]]['ts'][z[1]],z[0])):
@@ -85,6 +134,10 @@ def main():
                           offen_r=round(float(sum(t['r'] for t in open_)),2))
         x['offene']=open_; x['trades']=tr; x['status']='Forward-Test läuft' if str(last)<=str(ENDE) else 'Testphase beendet'; done.append(sid)
     F['stand']=dt.datetime.now(dt.timezone.utc).strftime('%Y-%m-%dT%H:%M'); F['forwardDatenstand']=str(last)
+    if os.environ.get('FW_DRY'):
+        for i in aktiv:
+            if i.startswith('fw8'): print(i,json.dumps(S[i]['forward']['kennzahlen']),len(S[i]['trades']),len(S[i]['offene']),(S[i]['trades'] or S[i]['offene'])[:1])
+        print('DRY');return
     json.dump(F,open(f'{PRIV}/forwardtest.json','w'),ensure_ascii=False,separators=(',',':'))
     G=dict(F);G['strategien']=[x for x in F['strategien'] if not x['gruppe'].startswith('Alter Test')]
     json.dump(G,open(f'{PUB}/forwardtest.json','w'),ensure_ascii=False,separators=(',',':'))
