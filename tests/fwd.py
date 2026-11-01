@@ -111,9 +111,7 @@ def run4(x):
     return tr,op
 def main():
     F=json.load(open(f'{PRIV}/forwardtest.json')); ex=json.load(open(f'{PRIV}/journal-export.json'))
-    entf=set(ex.get('forwardEntfernt',[]))
-    alle=[x['id'] for x in F['strategien'] if not str(x.get('gruppe','')).startswith('Alter Test') and (x['id'] in FW or (x.get('cfg') or {}).get('typ')=='h4')]
-    aktiv=list(dict.fromkeys([i for i in ex['forwardAktiv'] if i not in entf]+[i for i in alle if i not in entf]+[i for i in os.environ.get('FW_FORCE','').split(',') if i]))  # ab 01.11.2026: alle Strategien mit Engine laufen automatisch
+    aktiv=[i for i in ex['forwardAktiv'] if i not in ex.get('forwardEntfernt',[])]+[i for i in os.environ.get('FW_FORCE','').split(',') if i]  # nur was in der App aktiv ist
     last=max(P[s]['ts'][-1] for s in P); S={x['id']:x for x in F['strategien']}; done=[];skip=[]
     for sid in aktiv:
         if sid in S and (S[sid].get('cfg') or {}).get('typ')=='h4':
