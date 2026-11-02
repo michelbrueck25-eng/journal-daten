@@ -370,21 +370,21 @@ date,time,country,title,actual,forecast,previous,impact
 2026-10-30,11:00,Eurozone,BIP q/q (1. Schätzung Q3),0.4%,0.2%,0.6%,medium
 2026-10-30,14:00,Eurozone,Deutschland HVPI y/y (vorläufig),,,3.3%,medium
 2026-10-30,14:30,USA,Arbeitskostenindex q/q (Q3),0.8%,0.8%,0.9%,medium
-2026-11-02,16:00,USA,ISM Manufacturing PMI,,,,medium
-2026-11-03,04:30,Australien,RBA-Zinsentscheid,,,,high
+2026-11-02,16:00,USA,ISM Manufacturing PMI,,54.7,54.5,medium
+2026-11-03,04:30,Australien,RBA-Zinsentscheid,,4.85%,4.60%,high
 2026-11-03,08:30,Schweiz,CPI m/m,,,,high
 2026-11-03,08:30,Schweiz,CPI y/y,,1.3%,1.0%,high
 2026-11-03,22:45,Neuseeland,Arbeitslosenquote,,,,high
-2026-11-04,11:00,Eurozone,CPI y/y (Schnellschätzung),,,,high
-2026-11-04,11:00,Eurozone,Kern-CPI y/y (Schnellschätzung),,,,high
+2026-11-04,11:00,Eurozone,CPI y/y (Schnellschätzung),,,3.8%,high
+2026-11-04,11:00,Eurozone,Kern-CPI y/y (Schnellschätzung),,,2.5%,high
 2026-11-04,14:15,USA,ADP Beschäftigung,,,90K,medium
-2026-11-04,16:00,USA,ISM Dienstleistungen PMI,,,54.9,medium
+2026-11-04,16:00,USA,ISM Dienstleistungen PMI,,54.7,54.9,medium
 2026-11-05,13:00,Großbritannien,BoE-Zinsentscheid,,,,high
-2026-11-06,14:30,Kanada,Arbeitslosenquote,,,,high
-2026-11-06,14:30,Kanada,Beschäftigungsänderung,,,,high
-2026-11-06,14:30,USA,Arbeitslosenquote,,,,high
+2026-11-06,14:30,Kanada,Arbeitslosenquote,,,6.5%,high
+2026-11-06,14:30,Kanada,Beschäftigungsänderung,,,-68K,high
+2026-11-06,14:30,USA,Arbeitslosenquote,,4.2%,4.2%,high
 2026-11-06,14:30,USA,Durchschn. Stundenlöhne m/m,,,,medium
-2026-11-06,14:30,USA,Non-Farm Payrolls,,,,high
+2026-11-06,14:30,USA,Non-Farm Payrolls,,55K,29K,high
 2026-11-10,14:30,USA,CPI m/m,,,,high
 2026-11-10,14:30,USA,CPI y/y,,,,high
 2026-11-10,14:30,USA,Kern-CPI m/m,,,,high
