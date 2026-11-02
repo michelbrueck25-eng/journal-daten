@@ -1,5 +1,4 @@
 date,time,country,title,actual,forecast,previous,impact
-2026-10-26,10:00,Eurozone,Deutschland Ifo-Geschäftsklima,90.2,90.0,89.9,medium
 2026-01-07,01:30,Australien,CPI y/y,3.4%,3.6%,3.8%,high
 2026-01-07,11:00,Eurozone,CPI y/y (Schnellschätzung),2.0%,2.0%,2.1%,high
 2026-01-07,11:00,Eurozone,Kern-CPI y/y (Schnellschätzung),2.3%,2.4%,2.4%,high
@@ -353,6 +352,7 @@ date,time,country,title,actual,forecast,previous,impact
 2026-10-23,10:00,Eurozone,Composite-PMI (vorläufig),51.9,52.7,53.1,medium
 2026-10-23,10:30,Großbritannien,Composite-PMI (vorläufig),53.1,51.8,52.0,medium
 2026-10-23,15:45,USA,Composite-PMI (vorläufig),57.6,,58.4,medium
+2026-10-26,10:00,Eurozone,Deutschland Ifo-Geschäftsklima,90.2,90.0,89.9,medium
 2026-10-27,15:00,USA,Verbrauchervertrauen (Conference Board),91.7,81.2,81.9,medium
 2026-10-28,01:30,Australien,CPI y/y,4.3%,4.2%,4.0%,high
 2026-10-28,02:00,Neuseeland,RBNZ-Zinsentscheid,2.75%,3.00%,2.75%,high
@@ -370,11 +370,14 @@ date,time,country,title,actual,forecast,previous,impact
 2026-10-30,11:00,Eurozone,BIP q/q (1. Schätzung Q3),0.4%,0.2%,0.6%,medium
 2026-10-30,14:00,Eurozone,Deutschland HVPI y/y (vorläufig),,,3.3%,medium
 2026-10-30,14:30,USA,Arbeitskostenindex q/q (Q3),0.8%,0.8%,0.9%,medium
+2026-11-02,16:00,USA,ISM Manufacturing PMI,,,,medium
 2026-11-03,04:30,Australien,RBA-Zinsentscheid,,,,high
 2026-11-03,22:45,Neuseeland,Arbeitslosenquote,,,,high
 2026-11-04,08:30,Schweiz,CPI m/m,,,,high
 2026-11-04,11:00,Eurozone,CPI y/y (Schnellschätzung),,,,high
 2026-11-04,11:00,Eurozone,Kern-CPI y/y (Schnellschätzung),,,,high
+2026-11-04,14:15,USA,ADP Beschäftigung,,,90K,medium
+2026-11-04,16:00,USA,ISM Dienstleistungen PMI,,,54.9,medium
 2026-11-05,13:00,Großbritannien,BoE-Zinsentscheid,,,,high
 2026-11-06,14:30,Kanada,Arbeitslosenquote,,,,high
 2026-11-06,14:30,Kanada,Beschäftigungsänderung,,,,high
