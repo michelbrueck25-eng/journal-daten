@@ -1,77 +1,104 @@
-import json,glob,os,itertools,random,pickle,numpy as np,pandas as pd,datetime as dt
-HOME='/home/claude/journal-privat/marktdaten'
-D={}
-for f in sorted(glob.glob(HOME+'/*_4H.json')):
-    s=os.path.basename(f).split('_')[0]; r=np.array(json.load(open(f))['rows'],float)
-    D[s]=dict(t=r[:,0],o=r[:,1],h=r[:,2],l=r[:,3],c=r[:,4])
-def pip(s): return 0.01 if s.endswith('JPY') else 0.0001
-def cost_r(s,sd,a,days):
-    if s=='GOLD': return (0.05*a+0.012*a*days)/sd
-    return (1.0+0.3*days)*pip(s)/sd
-def atr(d,n=14):
-    h,l,c=d['h'],d['l'],d['c'];pc=np.r_[c[0],c[:-1]];tr=np.maximum(h-l,np.maximum(abs(h-pc),abs(l-pc)));return pd.Series(tr).rolling(n).mean().values
-def rsi(c,n):
-    d=np.diff(c,prepend=c[0]);up=pd.Series(np.where(d>0,d,0)).ewm(alpha=1/n,adjust=False).mean();dn=pd.Series(np.where(d<0,-d,0)).ewm(alpha=1/n,adjust=False).mean();return (100-100/(1+up/dn.replace(0,np.nan))).values
-for s,d in D.items():
-    c=pd.Series(d['c']);d['a']=atr(d);d['sma200']=c.rolling(200).mean().values;d['sma50']=c.rolling(50).mean().values;d['ema20']=c.ewm(span=20,adjust=False).mean().values
-    d['m20']=c.rolling(20).mean().values;d['sd20']=c.rolling(20).std().values;d['r3']=rsi(d['c'],3);d['r14']=rsi(d['c'],14)
-    d['hh']=pd.Series(d['h']).rolling(12).max().shift(1).values;d['ll']=pd.Series(d['l']).rolling(12).min().shift(1).values
-    d['hour']=np.array([dt.datetime.fromtimestamp(t/1000,dt.timezone.utc).hour for t in d['t']])
-def sim(s,i,L,sa,tg,N):
-    d=D[s];n=len(d['c']);a=d['a'][i]
-    if i+1+N>=n or np.isnan(a): return None
-    e=d['o'][i+1];sd=sa*a;sg=1 if L else -1;stp=e-sg*sd;tp=e+sg*tg*sd
-    for j in range(i+1,i+1+N):
-        if (d['l'][j]<=stp) if L else (d['h'][j]>=stp): r=-1.0;break
-        if (d['h'][j]>=tp) if L else (d['l'][j]<=tp): r=tg;break
-    else: j=i+N;r=sg*(d['c'][j]-e)/sd
-    days=(d['t'][j]-d['t'][i+1])/864e5+0.17
-    return r-cost_r(s,sd,a,days),j
-def sigs(kind,p):
-    out=[]
-    for s,d in D.items():
-        n=len(d['c'])
-        for i in range(210,n-2):
-            if np.isnan(d['a'][i]) or np.isnan(d['sma200'][i]): continue
-            c=d['c'][i];up=c>d['sma200'][i]
-            if kind=='rsi3':
-                if d['r3'][i]<p[0] and up: out.append((s,i,True))
-                elif d['r3'][i]>100-p[0] and not up: out.append((s,i,False))
-            elif kind=='boll':
-                z=(c-d['m20'][i])/d['sd20'][i]
-                if z<-p[0] and up: out.append((s,i,True))
-                elif z>p[0] and not up: out.append((s,i,False))
-            elif kind=='pull':  # Rücksetzer zum EMA20 im Trend + Umkehrkerze
-                if up and d['l'][i]<=d['ema20'][i] and c>d['o'][i] and c>d['ema20'][i] and d['r14'][i]<p[0]: out.append((s,i,True))
-                if (not up) and d['h'][i]>=d['ema20'][i] and c<d['o'][i] and c<d['ema20'][i] and d['r14'][i]>100-p[0]: out.append((s,i,False))
-            elif kind=='ses':   # Ausbruchsfalle: 12-Bar-Hoch/Tief gebrochen, Schluss wieder zurück (Fakeout) gegen den Bruch
-                if d['h'][i]>d['hh'][i] and c<d['hh'][i]: out.append((s,i,False))
-                if d['l'][i]<d['ll'][i] and c>d['ll'][i]: out.append((s,i,True))
+"""Weekly-OB-Hit -> 4H-Break + Retest -> Ziel 1R / 2R. (a) alle Weekly-Zonen (alte Regel, wob.zones), (b) Nutzer-Trades mit eigener Zone. 4H-Daten ab 2025-04."""
+import sys,json,os,io,contextlib,bisect,datetime as dt
+sys.path.insert(0,'/home/claude/journal-daten/tests')
+with contextlib.redirect_stdout(io.StringIO()):
+    import wob
+import numpy as np
+from eng import SPREAD_PIPS
+pip=wob.eng.pip; U=wob.U; A=wob.A
+def d4(sym):
+    f=f'/home/claude/journal-privat/marktdaten/{sym}_4H.json'
+    if not os.path.exists(f): return None
+    r=np.array(json.load(open(f))['rows'],float); return dict(t=r[:,0],o=r[:,1],h=r[:,2],l=r[:,3],c=r[:,4])
+H4={s:d4(s) for s in U}
+def atr4(h,n=14):
+    tr=np.maximum(h['h'][1:]-h['l'][1:],np.maximum(abs(h['h'][1:]-h['c'][:-1]),abs(h['l'][1:]-h['c'][:-1])))
+    a=np.full(len(h['c']),np.nan)
+    for i in range(n,len(h['c'])): a[i]=tr[i-n:i].mean()
+    return a
+A4={s:atr4(H4[s]) for s in H4 if H4[s] is not None}
+def trade(sym,L,lo,hi,t_from,t_to=None,tgs=(1,2),lookb=6,wait=40,tol=0.1):
+    """liefert dict {tg:R} oder None. t_from = Zeitpunkt ab dem der Hit gesucht wird (ms)."""
+    h=H4.get(sym)
+    if h is None: return None
+    n=len(h['c']); a4=A4[sym]; sp=SPREAD_PIPS*pip(sym)
+    i0=int(np.searchsorted(h['t'],t_from))
+    if i0<=lookb+1 or i0>=n-5: return None
+    t=None
+    for i in range(i0,n if t_to is None else min(n,int(np.searchsorted(h['t'],t_to)))):
+        if (h['c'][i]<lo) if L else (h['c'][i]>hi): return None
+        if (h['l'][i]<=hi) if L else (h['h'][i]>=lo): t=i; break
+    if t is None: return None
+    sw=h['h'][t-lookb:t+1].max() if L else h['l'][t-lookb:t+1].min()   # Swing, der gebrochen werden muss
+    j=None
+    for i in range(t+1,min(n,t+60)):
+        if (h['c'][i]<lo) if L else (h['c'][i]>hi): return None
+        if (h['c'][i]>sw) if L else (h['c'][i]<sw): j=i; break
+    if j is None: return None
+    tolr=tol*a4[j] if not np.isnan(a4[j]) else 0
+    k=None
+    for i in range(j+1,min(n-1,j+1+wait)):
+        if (h['c'][i]<lo) if L else (h['c'][i]>hi): return None
+        if (h['l'][i]<=sw+tolr) if L else (h['h'][i]>=sw-tolr): k=i; break
+    if k is None: return None
+    en=sw
+    ext=h['l'][t:k+1].min() if L else h['h'][t:k+1].max()
+    st=ext-pip(sym) if L else ext+pip(sym)
+    risk=abs(en-st)
+    if risk<=0 or risk>3*(a4[k] if not np.isnan(a4[k]) else risk): return None
+    if (h['l'][k]<=st) if L else (h['h'][k]>=st): return {tg:-1-sp/risk for tg in tgs}|{'when':h['t'][k]}
+    out={'when':h['t'][k]}
+    for tg in tgs:
+        tp=en+tg*risk if L else en-tg*risk; r=None
+        for m in range(k+1,min(n,k+201)):
+            if (h['l'][m]<=st) if L else (h['h'][m]>=st): r=-1-sp/risk; break
+            if (h['h'][m]>=tp) if L else (h['l'][m]<=tp): r=tg-sp/risk; break
+        if r is None:
+            c=h['c'][min(n-1,k+200)]; r=((c-en) if L else (en-c))/risk-sp/risk
+        out[tg]=r
     return out
-def run(sg,sa,tg,N):
-    busy={};out=[]
-    for (s,i,L) in sorted(sg,key=lambda x:(D[x[0]]['t'][x[1]],x[0])):
-        if i<=busy.get(s,-1): continue
-        t=sim(s,i,L,sa,tg,N)
-        if not t: continue
-        busy[s]=t[1];out.append(dict(sym=s,t=float(D[s]['t'][i+1]),L=L,r=float(t[0]),bars=t[1]-i))
-    return out
-def summ(tr):
-    if len(tr)<30: return dict(n=len(tr))
-    r=np.array([x['r'] for x in tr]);eq=np.cumsum(r)
-    return dict(n=len(r),wr=round(float((r>0).mean()*100),1),avg=round(float(r.mean()),3),pf=round(float(r[r>0].sum()/max(1e-9,-r[r<=0].sum())),2),dd=round(float((np.maximum.accumulate(eq)-eq).max()),1),hold=round(float(np.mean([x['bars'] for x in tr])),1))
+def summ(nm,res):
+    if not res: print(nm,'keine Trades'); return
+    for tg in (1,2):
+        x=np.array([r[tg] for r in res]); print(f'{nm} Ziel {tg}R: n={len(x)} E={x.mean():+.3f} R wr={100*(x>0).mean():.0f}% Summe={x.sum():+.1f} R')
 if __name__=='__main__':
-    tmax=max(d['t'][-1] for d in D.values());tmin=min(d['t'][210] for d in D.values());cut=tmin+0.6*(tmax-tmin)
-    res=[]
-    fam=[('rsi3',(5,)),('rsi3',(10,)),('boll',(2.0,)),('boll',(2.5,)),('pull',(40,)),('pull',(30,)),('ses',(0,))]
-    for kind,p in fam:
-        sg=sigs(kind,p)
-        for sa,tg,N in itertools.product((1.5,2,3),(0.3,0.5,0.8,1.0),(12,24)):
-            tr=run(sg,sa,tg,N);a=summ(tr)
-            if a.get('n',0)<30: continue
-            dev=summ([x for x in tr if x['t']<cut]);te=summ([x for x in tr if x['t']>=cut])
-            res.append(dict(kind=kind,p=p,sa=sa,tg=tg,N=N,all=a,dev=dev,test=te,tr=tr))
-    pickle.dump(res,open('/tmp/h4.pkl','wb'))
-    ok=sorted([x for x in res if x['all'].get('wr',0)>=55],key=lambda x:-x['all']['avg'])
-    print(len(res),'Varianten, Median avg',np.median([x['all']['avg'] for x in res if 'avg' in x['all']]))
-    for x in ok[:15]: print(x['kind'],x['p'],x['sa'],x['tg'],x['N'],x['all'],'dev',x['dev'].get('avg'),'test',x['test'].get('avg'),x['test'].get('n'))
+    # (a) alle Weekly-Zonen (alte Regel), Hit nach Bildung (i+4) im 4H-Zeitraum
+    res=[]; seen=set()
+    for z in wob.zones():
+        s=z['sym']; W=z['W']
+        if H4.get(s) is None or z['i']+4>=len(W): continue
+        # Zone muss bis zum Hit auf Tagesbasis unverletzt sein
+        t0=W[z['i']+4][0]
+        if t0>H4[s]['t'][-1]: continue
+        t_start=max(t0,H4[s]['t'][0]+10*86400e3)
+        d=U[s]; q0=bisect.bisect_left(d['t'],W[z['i']+4][0]); q1=bisect.bisect_left(d['t'],t_start)
+        broken=any((d['c'][q]<z['lo']) if z['L'] else (d['c'][q]>z['hi']) for q in range(q0,q1))
+        if broken: continue
+        r=trade(s,z['L'],z['lo'],z['hi'],t_start)
+        if r: res.append(r)
+    summ('alle Weekly-Zonen (alte Regel)',res)
+    # (b) Nutzer-Trades mit eigener Zone und 4H-Daten
+    E=json.load(open('/home/claude/journal-privat/journal-export.json'))['trades']
+    res2=[]; info=[]
+    for x in E:
+        c=x.get('chart')
+        if not c or x['instrument'] not in H4 or H4[x['instrument']] is None: continue
+        ent=dt.datetime.fromisoformat(x.get('entryDate') or x['analysisDate']).replace(tzinfo=dt.timezone.utc).timestamp()*1000
+        rects=[d for d in c['drs'] if d['type']=='rect']
+        if not rects: continue
+        t_use=max(d['t1'] for d in rects)
+        ref=ent if abs(t_use-ent)>120*86400e3*0+120*86400e3 and False else None
+        # Zeitbezug: Zeichnung, falls Journaldatum weit abweicht
+        ts=[d['t0'] for d in c['drs']]+[d['t1'] for d in c['drs']]
+        a=ent if abs(np.median(ts)-ent)<=120*86400e3 else np.median(ts)
+        if not (H4[x['instrument']]['t'][0]<=a-14*86400e3 and a<=H4[x['instrument']]['t'][-1]): continue
+        L=x['dir']=='long'; pos=[d for d in c['drs'] if d['type']=='pos']
+        if pos:
+            e0=pos[-1]['entry']; rr=min(rects,key=lambda d:abs((d['p0']+d['p1'])/2-e0))
+        else: rr=rects[-1]
+        lo,hi=sorted((rr['p0'],rr['p1']))
+        r=trade(x['instrument'],L,lo,hi,a-14*86400e3,a+60*86400e3)
+        if r: res2.append(r); info.append((x['instrument'],x['source'],x.get('r'),r[1],r[2]))
+    summ('Nutzer-Zonen mit 4H-Daten',res2)
+    rr=[i[2] for i in info if isinstance(i[2],(int,float))]
+    print('Nutzer: Trades mit Signal',len(info),'davon eigener Ø R',np.mean(rr) if rr else None)
