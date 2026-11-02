@@ -370,7 +370,7 @@ date,time,country,title,actual,forecast,previous,impact
 2026-10-30,11:00,Eurozone,BIP q/q (1. Schätzung Q3),0.4%,0.2%,0.6%,medium
 2026-10-30,14:00,Eurozone,Deutschland HVPI y/y (vorläufig),,,3.3%,medium
 2026-10-30,14:30,USA,Arbeitskostenindex q/q (Q3),0.8%,0.8%,0.9%,medium
-2026-11-02,16:00,USA,ISM Manufacturing PMI,,54.7,54.5,medium
+2026-11-02,16:00,USA,ISM Manufacturing PMI,55.5,54.7,54.5,medium
 2026-11-03,04:30,Australien,RBA-Zinsentscheid,,4.85%,4.60%,high
 2026-11-03,08:30,Schweiz,CPI m/m,,,,high
 2026-11-03,08:30,Schweiz,CPI y/y,,1.3%,1.0%,high
