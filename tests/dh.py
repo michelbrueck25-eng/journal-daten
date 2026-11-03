@@ -2,7 +2,7 @@
 import sys,glob,json,io,contextlib,datetime as dt
 sys.path.insert(0,'/home/claude/journal-daten/tests')
 import numpy as np
-import h4
+import h4_wob as h4
 with contextlib.redirect_stdout(io.StringIO()):
     exec(open('/home/claude/journal-daten/tests/strictbt.py').read().split("if __name__")[0])
     _ns={}; exec(open('/tmp/dobzraw.py').read(),_ns)

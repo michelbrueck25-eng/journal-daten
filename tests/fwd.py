@@ -63,8 +63,8 @@ def stats(tr):
       avg_gewinn=round(float(w.mean()),2) if len(w) else None,avg_verlust=round(float(l.mean()),2) if len(l) else None,summe_r=round(float(r.sum()),2),
       dd=round(float((np.maximum.accumulate(np.r_[0,eq])[1:]-eq).max()),2),haltedauer=round(float(h.mean()),1),
       halt_gewinner=round(float(np.mean([x['bars'] for x in tr if x['r']>0])),1) if len(w) else None,halt_verlierer=round(float(np.mean([x['bars'] for x in tr if x['r']<=0])),1) if len(l) else None,
-      zeit_drawdown_pct=round(100*sum(x['bd'] for x in tr)/max(1,tb),1),zeit_gewinn_pct=round(100*sum(x['bp'] for x in tr)/max(1,tb),1),
-      mfe=round(float(np.mean([x['mfe'] for x in tr])),2),mae=round(float(np.mean([x['mae'] for x in tr])),2),max_verlustserie=m)
+      zeit_drawdown_pct=round(100*sum(x.get('bd',0) for x in tr)/max(1,tb),1),zeit_gewinn_pct=round(100*sum(x.get('bp',0) for x in tr)/max(1,tb),1),
+      mfe=round(float(np.mean([x.get('mfe',0) for x in tr])),2),mae=round(float(np.mean([x.get('mae',0) for x in tr])),2),max_verlustserie=m)
 
 # ---- 4h-Strategien (RSI(3)-Rücksetzer), Daten wie in h4.py ----
 import h4 as H4
