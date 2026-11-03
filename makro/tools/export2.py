@@ -5,10 +5,17 @@ from model import CUR,PX as PXD
 SETS2=dict(SETS);SETS2['I_Real+Mom']=[2,8,9,10]
 HS=list(range(46,94));ALPHAS=[20.0,200.0]
 last=months[-1];li=[i for i,d in enumerate(S) if d['m']==last]
+W={'EUR':.576,'JPY':.136,'GBP':.119,'CAD':.091,'CHF':.036}  # DXY-Gewichte ohne SEK
 def cur_scores(pr):
-    syms=sorted(pr);A=np.zeros((len(syms)+1,8));b=np.zeros(len(syms)+1)
-    for r,s in enumerate(syms): A[r,CUR.index(s[:3])]=1;A[r,CUR.index(s[3:])]=-1;b[r]=pr[s]
-    A[-1,:]=1;return np.linalg.lstsq(A,b,rcond=None)[0]
+    """Wie im Vorbild: jede Waehrung GEGEN den US-Dollar (Long = steigt gegen USD); USD-Eintrag = DXY-Nachbau (Long = DXY steigt)."""
+    v={}
+    for c in CUR:
+        if c=='USD': continue
+        v[c]=pr[c+'USD'] if c+'USD' in pr else -pr['USD'+c]
+    out=[0.0]*len(CUR)
+    for c,x in v.items(): out[CUR.index(c)]=x
+    out[CUR.index('USD')]=-sum(W[c]*v[c] for c in W)
+    return out
 CL={c:[] for c in CUR};NM=0
 for h in HS:
     y=np.array([ (math.log(PXD[d['sym']][1][d['k']+h]/PXD[d['sym']][1][d['k']])/(d['sd']*math.sqrt(h))) if d['k']+h<len(PXD[d['sym']][1]) else np.nan for d in S])
