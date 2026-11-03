@@ -1,0 +1,6 @@
+{"hinweis":"Orte und Ereignisarten für Weltkarte/Kugel. art: k=Konflikt (Panzer), u=Unruhen (Menschen, Feuer), p=Politik (Kapitol), w=Welle/Tsunami, q=Erdbeben, s=Sturm, e=Energie, b=Notenbank, g=Gold. match = Suchbegriffe (Regex) im Titel/Notiz der Lage-Meldung.",
+ "orte":[
+  {"match":"tsunami|seebeben","lat":38,"lon":142,"ort":"Japan","art":"w"},
+  {"match":"erdbeben","lat":36,"lon":140,"ort":"Japan","art":"q"},
+  {"match":"taifun|hurrikan|zyklon","lat":20,"lon":125,"ort":"Pazifik","art":"s"}
+ ]}
