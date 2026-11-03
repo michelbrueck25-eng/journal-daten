@@ -1,9 +1,7 @@
 import warnings;warnings.filterwarnings('ignore')
 exec(open('wf.py').read().split("rows=report(None)")[0])
 import json,math,sys,datetime as dt,numpy as np
-sys.path.insert(0,'/home/claude/tmp/ind')
 from model import CUR,PX as PXD
-import regime as RG
 rows=report(None)
 last=months[-1]; li=[i for i,d in enumerate(S) if d['m']==last]
 live={}  # (nm,h)-> {sym:pred}
@@ -30,15 +28,3 @@ for nm in SETS:
         out['modelle'].append(dict(name=nm,h=h,n_test=t['n'],netR_test=round(t['netR'],3),treffer_test=round(t['treffer'],3),ic_test=round(t['ic'],3),netR_dev=round(d['netR'],3) if d else None,waehrung={c:round(v,3) for c,v in cs.items()}))
 out['hinweis']='Walk-forward, Makro 1 Monat verzoegert, Split 2023-01-01, 1 Pip Kosten. Kein Modell erreicht 0,15 R netto im Test.'
 json.dump(out,open('/home/claude/journal-daten/makro/modell.json','w'),ensure_ascii=False,separators=(',',':'))
-# ---- Regime-Daten fuer die App: letzte 160 Tageskerzen je Paar ----
-import glob,os
-Hm='/home/claude/journal-privat/marktdaten';reg={'stand':last,'paare':{}}
-for f in sorted(glob.glob(Hm+'/*_D.json')):
-    s=os.path.basename(f)[:-7]
-    if len(s)!=6 or s[:3] not in CUR or s[3:] not in CUR: continue
-    r=json.load(open(f))['rows'];o=[x[1] for x in r];h=[x[2] for x in r];l=[x[3] for x in r];c=[x[4] for x in r]
-    R=RG.regime(o,h,l,c);v=[1]*len(c);pf=RG.profile(h,l,v,len(c)-1)
-    n=160;reg['paare'][s]={'k':[[x[0]//1000,x[1],x[2],x[3],x[4]] for x in r[-n:]],'r':[x if x is not None else 0 for x in R[-n:]],'vp':[round(z,6) for z in pf] if pf else None}
-json.dump(reg,open('/home/claude/journal-daten/makro/regime.json','w'),separators=(',',':'))
-print(len(out['modelle']),os.path.getsize('/home/claude/journal-daten/makro/modell.json'),os.path.getsize('/home/claude/journal-daten/makro/regime.json'))
-print({c:round(v,2) for c,v in out['waehrungen']['30'].items()})
