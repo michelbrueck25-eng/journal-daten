@@ -4,66 +4,66 @@ indicator("Regime + Volumenprofil (POC/VAH/VAL)", overlay=true, max_lines_count=
 emaN   = input.int(50, "EMA-Länge", minval=5)
 slopeN = input.int(10, "Steigung über Kerzen", minval=2)
 adxN   = input.int(14, "ADX-Länge", minval=5)
-adxMin = input.float(20, "ADX-Schwelle", minval=5)
+adxMin = input.float(20.0, "ADX-Schwelle", minval=5.0)
 vpN    = input.int(120, "Profil: Kerzen", minval=20, maxval=500)
-bins   = input.int(30, "Profil: Preisstufen", minval=10, maxval=60)
-vaPct  = input.float(70, "Value Area %", minval=50, maxval=95) / 100
-colUp  = input.color(color.new(#2ebd85, 0), "Grün")
-colMid = input.color(color.new(#f0b90b, 0), "Gelb")
-colDn  = input.color(color.new(#f6465d, 0), "Rot")
+nBins  = input.int(30, "Profil: Preisstufen", minval=10, maxval=60)
+vaPct  = input.float(70.0, "Value Area %", minval=50.0, maxval=95.0)
+colUp  = input.color(#2ebd85, "Grün")
+colMid = input.color(#f0b90b, "Gelb")
+colDn  = input.color(#f6465d, "Rot")
 
 // ---- Regime: Trendrichtung (EMA + Steigung) und Trendstärke (ADX) ----
-e   = ta.ema(close, emaN)
-[dip, dim, adx] = ta.dmi(adxN, adxN)
-up  = close > e and e > e[slopeN] and adx >= adxMin
-dn  = close < e and e < e[slopeN] and adx >= adxMin
-reg = up ? 1 : dn ? -1 : 0
-c   = reg == 1 ? colUp : reg == -1 ? colDn : colMid
-barcolor(c)
-plotcandle(open, high, low, close, "Regime-Kerzen", color=c, wickcolor=c, bordercolor=c)
+emaV = ta.ema(close, emaN)
+[diP, diM, adxV] = ta.dmi(adxN, adxN)
+isUp = close > emaV and emaV > emaV[slopeN] and adxV >= adxMin
+isDn = close < emaV and emaV < emaV[slopeN] and adxV >= adxMin
+regV = isUp ? 1 : isDn ? -1 : 0
+barcolor(regV == 1 ? colUp : regV == -1 ? colDn : colMid, title="Regime-Farbe")
 
 // ---- Volumenprofil der letzten vpN Kerzen (Volumen gleichmäßig über die Kerzenspanne) ----
-var float poc = na
-var float vah = na
-var float val = na
-if barstate.islast and bar_index >= vpN
-    hi = ta.highest(high, vpN)
-    lo = ta.lowest(low, vpN)
-    st = (hi - lo) / bins
-    vol = array.new_float(bins, 0.0)
-    for j = 0 to vpN - 1
-        a = math.min(bins - 1, int((low[j] - lo) / st))
-        b = math.min(bins - 1, int((high[j] - lo) / st))
-        k = b - a + 1
-        for q = a to b
-            array.set(vol, q, array.get(vol, q) + nz(volume[j]) / k)
-    p = 0
-    for q = 1 to bins - 1
-        if array.get(vol, q) > array.get(vol, p)
-            p := q
-    tot = array.sum(vol)
-    acc = array.get(vol, p)
-    li = p
-    hiI = p
-    while acc < vaPct * tot and (li > 0 or hiI < bins - 1)
-        dnv = li > 0 ? array.get(vol, li - 1) : -1.0
-        upv = hiI < bins - 1 ? array.get(vol, hiI + 1) : -1.0
-        if upv >= dnv
-            hiI += 1
-            acc += array.get(vol, hiI)
-        else
-            li -= 1
-            acc += array.get(vol, li)
-    poc := lo + (p + 0.5) * st
-    vah := lo + (hiI + 1) * st
-    val := lo + li * st
-    x1 = bar_index - vpN + 1
-    line.new(x1, poc, bar_index + 10, poc, color=color.new(color.white, 0), width=2)
-    line.new(x1, vah, bar_index + 10, vah, color=color.new(color.gray, 0), style=line.style_dashed)
-    line.new(x1, val, bar_index + 10, val, color=color.new(color.gray, 0), style=line.style_dashed)
-    label.new(bar_index + 10, poc, "POC", style=label.style_none, textcolor=color.white)
-    label.new(bar_index + 10, vah, "VAH", style=label.style_none, textcolor=color.gray)
-    label.new(bar_index + 10, val, "VAL", style=label.style_none, textcolor=color.gray)
+hiV = ta.highest(high, vpN)
+loV = ta.lowest(low, vpN)
 
-alertcondition(reg == 1 and reg[1] != 1, "Regime grün", "Wechsel auf Aufwärts-Regime")
-alertcondition(reg == -1 and reg[1] != -1, "Regime rot", "Wechsel auf Abwärts-Regime")
+if barstate.islast and bar_index >= vpN
+    float step = (hiV - loV) / nBins
+    float[] vols = array.new_float(nBins, 0.0)
+    for j = 0 to vpN - 1
+        int lowBin = math.min(nBins - 1, math.floor((low[j] - loV) / step))
+        int highBin = math.min(nBins - 1, math.floor((high[j] - loV) / step))
+        float share = nz(volume[j]) / (highBin - lowBin + 1)
+        for qq = lowBin to highBin
+            array.set(vols, qq, array.get(vols, qq) + share)
+    int pocBin = 0
+    for qq = 1 to nBins - 1
+        if array.get(vols, qq) > array.get(vols, pocBin)
+            pocBin := qq
+    float total = array.sum(vols)
+    float acc = array.get(vols, pocBin)
+    int loBin = pocBin
+    int hiBin = pocBin
+    for it = 1 to nBins
+        if acc >= vaPct / 100.0 * total
+            break
+        float dnVol = loBin > 0 ? array.get(vols, loBin - 1) : -1.0
+        float upVol = hiBin < nBins - 1 ? array.get(vols, hiBin + 1) : -1.0
+        if upVol < 0 and dnVol < 0
+            break
+        if upVol >= dnVol
+            hiBin += 1
+            acc += upVol
+        else
+            loBin -= 1
+            acc += dnVol
+    float pocP = loV + (pocBin + 0.5) * step
+    float vahP = loV + (hiBin + 1) * step
+    float valP = loV + loBin * step
+    int x1 = bar_index - vpN + 1
+    line.new(x1, pocP, bar_index + 10, pocP, color=color.white, width=2)
+    line.new(x1, vahP, bar_index + 10, vahP, color=color.gray, style=line.style_dashed)
+    line.new(x1, valP, bar_index + 10, valP, color=color.gray, style=line.style_dashed)
+    label.new(bar_index + 10, pocP, "POC", style=label.style_none, textcolor=color.white)
+    label.new(bar_index + 10, vahP, "VAH", style=label.style_none, textcolor=color.gray)
+    label.new(bar_index + 10, valP, "VAL", style=label.style_none, textcolor=color.gray)
+
+alertcondition(regV == 1 and regV[1] != 1, "Regime grün", "Wechsel auf Aufwärts-Regime")
+alertcondition(regV == -1 and regV[1] != -1, "Regime rot", "Wechsel auf Abwärts-Regime")
