@@ -1,6 +1,6 @@
 {
  "typ": "ausblick",
- "stand": "2026-11-03T20:14:00+01:00",
+ "stand": "2026-11-04T06:31:09+01:00",
  "zusammenfassung": "Wochenausblick ab 26.10.: Die Woche wird von vier Notenbankterminen in 48 Stunden entschieden (RBNZ und BoC sowie Fed am 28.10., EZB am 29.10., BoJ am 30.10.). Mein Hauptgedanke: Wer Währungen handelt, sollte dort stehen, wo Positionierung, Zinsrichtung und Nachrichtenlage in dieselbe Richtung zeigen. Das trifft derzeit vor allem auf die Gegenseite zum Yen und zum Franken zu: Die Commercials (COT, Stand 20.10.) stehen bei AUD (100), EUR (97) und NZD (89) im oberen, bei JPY (19) und CHF (13) im unteren Extrembereich, gleichzeitig bleibt die Zinsdifferenz groß und die Risikostimmung (Chip-Ausverkauf, Hormus, Ölpreis bei rund 115 USD) belastet den Yen eher als dass sie ihn stützt. Beim Dollar und beim Euro sehe ich dagegen keinen sauberen Vorteil, solange Fed und EZB nicht gesprochen haben. Neu am Montagmorgen: Lula gewann die brasilianische Stichwahl mit rund 51,8 Prozent; das ist ein möglicher Risikoabschlag für Schwellenländer-Währungen, ändert aber an der Rangfolge der acht Hauptwährungen noch nichts. Entscheidend bleibt die Zentralbankwoche ab Dienstag (BoC, Fed, RBNZ am 28.10., EZB am 29.10., BoJ am 30.10.). Update 30.10.: Die BoJ hielt den Leitzins bei 1,25 Prozent (8 zu 1, Takata dagegen) und hob die Inflationsprognose an, eine Dezember-Zusage gab es nicht. Der Yen legte zeitweise zu.",
  "paare": [
   {
@@ -209,7 +209,7 @@
    "ungueltig": "Eine unerwartete BoC-Erhöhung oder ein weiterer Anstieg von Brent über 120 USD spricht gegen die Long-Idee.",
    "plan": "Nur beobachten, bis die BoC gesprochen hat.",
    "ob": {
-    "stand": "2026-11-03T20:11",
+    "stand": "2026-11-04T06:30",
     "checks": [
      {
       "t": "ok",
@@ -217,7 +217,7 @@
      },
      {
       "t": "warn",
-      "text": "Termine in den nächsten 5 Tagen: 03.11. 04:30 RBA-Zinsentscheid, 06.11. 14:30 Arbeitslosenquote, 06.11. 14:30 Beschäftigungsänderung."
+      "text": "Termine in den nächsten 5 Tagen: 06.11. 14:30 Arbeitslosenquote, 06.11. 14:30 Beschäftigungsänderung."
      },
      {
       "t": "warn",
@@ -225,7 +225,7 @@
      },
      {
       "t": "ok",
-      "text": "Kurs 0.97952 ist 2.0 Wochen-ATR von der Zone entfernt."
+      "text": "Kurs 0.97564 ist 1.6 Wochen-ATR von der Zone entfernt."
      },
      {
       "t": "ok",
@@ -242,9 +242,9 @@
     "alter_wochen": 40,
     "beruehrungen": 1,
     "bewegung_atr": 1.05,
-    "kurs": 0.97952,
+    "kurs": 0.97564,
     "kursstand": "2026-11-02",
-    "abstand_atr": 2.0,
+    "abstand_atr": 1.6,
     "zone_t": 1769385600000,
     "einstieg": 0.95906,
     "stopp": 0.94308,
@@ -294,7 +294,7 @@
    "ungueltig": "Nicht relevant, solange ich kein Szenario vorschlage. Neue Bewertung nach dem 29.10.",
    "plan": "Keine Position. Nach der EZB neu bewerten.",
    "ob": {
-    "stand": "2026-11-03T20:11",
+    "stand": "2026-11-04T06:30",
     "checks": [
      {
       "t": "ok",
@@ -310,7 +310,7 @@
      },
      {
       "t": "ok",
-      "text": "Kurs 1.12140 ist 2.1 Wochen-ATR von der Zone entfernt."
+      "text": "Kurs 1.11946 ist 2.0 Wochen-ATR von der Zone entfernt."
      },
      {
       "t": "warn",
@@ -327,9 +327,9 @@
     "alter_wochen": 85,
     "beruehrungen": 0,
     "bewegung_atr": 2.61,
-    "kurs": 1.1214,
+    "kurs": 1.11946,
     "kursstand": "2026-11-02",
-    "abstand_atr": 2.1,
+    "abstand_atr": 2.0,
     "zone_t": 1742169600000,
     "einstieg": 1.09545,
     "stopp": 1.07908,
@@ -434,7 +434,7 @@
    "risiko": "Vorschlag 0,5 % gesamt, davon 30 % Weekly und 70 % Daily. Halbes Risiko, weil schon viele AUD-Positionen offen sind.",
    "gueltig_bis": "2026-11-11",
    "ob": {
-    "stand": "2026-11-03T20:11",
+    "stand": "2026-11-04T06:30",
     "checks": [
      {
       "t": "ok",
@@ -442,15 +442,11 @@
      },
      {
       "t": "warn",
-      "text": "Termine in den nächsten 5 Tagen: 03.11. 04:30 RBA-Zinsentscheid."
-     },
-     {
-      "t": "warn",
       "text": "Weekly-Orderblock 106.112 bis 108.607, Qualität C (Bewegung 1.06 ATR, 0 Berührungen, 40 Wochen alt)."
      },
      {
       "t": "ok",
-      "text": "Kurs 110.698 ist 1.0 Wochen-ATR von der Zone entfernt."
+      "text": "Kurs 110.609 ist 1.0 Wochen-ATR von der Zone entfernt."
      },
      {
       "t": "ok",
@@ -467,7 +463,7 @@
     "alter_wochen": 40,
     "beruehrungen": 0,
     "bewegung_atr": 1.06,
-    "kurs": 110.698,
+    "kurs": 110.609,
     "kursstand": "2026-11-02",
     "abstand_atr": 1.0,
     "zone_t": 1769385600000,
@@ -496,15 +492,11 @@
    "risiko": "Bisher 1 % im Limit. Ich würde auf 0,5 % senken, solange die Zahl der Yen-Gegenseiten steigt (AUD/JPY und NZD/JPY sind fast dieselbe Wette).",
    "gueltig_bis": "2026-11-11",
    "ob": {
-    "stand": "2026-11-03T20:11",
+    "stand": "2026-11-04T06:30",
     "checks": [
      {
       "t": "ok",
       "text": "COT NZD 6M-Index 88 (Stand 27.10.2026): im passenden Extrembereich, JPY 7 bestätigt gegenläufig."
-     },
-     {
-      "t": "warn",
-      "text": "Termine in den nächsten 5 Tagen: 03.11. 22:45 Arbeitslosenquote."
      },
      {
       "t": "ok",
@@ -512,7 +504,7 @@
      },
      {
       "t": "warn",
-      "text": "Kurs 88.825 ist 6.6 Wochen-ATR von der Zone entfernt, der Limit wird lange nicht erreicht."
+      "text": "Kurs 88.632 ist 6.5 Wochen-ATR von der Zone entfernt, der Limit wird lange nicht erreicht."
      },
      {
       "t": "ok",
@@ -529,9 +521,9 @@
     "alter_wochen": 246,
     "beruehrungen": 0,
     "bewegung_atr": 1.48,
-    "kurs": 88.825,
+    "kurs": 88.632,
     "kursstand": "2026-11-02",
-    "abstand_atr": 6.6,
+    "abstand_atr": 6.5,
     "zone_t": 1644796800000,
     "einstieg": 77.6,
     "stopp": 75.686,
@@ -558,7 +550,7 @@
    "risiko": "Vorschlag 0,5 %, weil die Überzeugung nur 5 von 10 ist.",
    "gueltig_bis": "2026-11-06",
    "ob": {
-    "stand": "2026-11-03T20:11",
+    "stand": "2026-11-04T06:30",
     "checks": [
      {
       "t": "bad",
@@ -566,7 +558,7 @@
      },
      {
       "t": "warn",
-      "text": "Termine in den nächsten 5 Tagen: 03.11. 08:30 CPI m/m, 03.11. 08:30 CPI y/y, 05.11. 13:00 BoE-Zinsentscheid."
+      "text": "Termine in den nächsten 5 Tagen: 05.11. 13:00 BoE-Zinsentscheid."
      },
      {
       "t": "warn",
@@ -574,7 +566,7 @@
      },
      {
       "t": "ok",
-      "text": "Kurs 1.10410 ist 1.2 Wochen-ATR von der Zone entfernt."
+      "text": "Kurs 1.10140 ist 1.0 Wochen-ATR von der Zone entfernt."
      },
      {
       "t": "warn",
@@ -591,9 +583,9 @@
     "alter_wochen": 15,
     "beruehrungen": 3,
     "bewegung_atr": 1.03,
-    "kurs": 1.1041,
+    "kurs": 1.1014,
     "kursstand": "2026-11-02",
-    "abstand_atr": 1.2,
+    "abstand_atr": 1.0,
     "zone_t": 1784505600000,
     "einstieg": 1.09072,
     "stopp": 1.08396,
@@ -615,7 +607,7 @@
    "risiko": "Vorschlag 0,5 % oder weniger.",
    "gueltig_bis": "2026-11-06",
    "ob": {
-    "stand": "2026-11-03T20:11",
+    "stand": "2026-11-04T06:30",
     "checks": [
      {
       "t": "ok",
@@ -623,7 +615,7 @@
      },
      {
       "t": "warn",
-      "text": "Termine in den nächsten 5 Tagen: 03.11. 08:30 CPI m/m, 03.11. 08:30 CPI y/y, 04.11. 11:00 CPI y/y (Schnellschätzung), 04.11. 11:00 Kern-CPI y/y (Schnellschätzung)."
+      "text": "Termine in den nächsten 5 Tagen: 04.11. 11:00 CPI y/y (Schnellschätzung), 04.11. 11:00 Kern-CPI y/y (Schnellschätzung)."
      },
      {
       "t": "bad",
