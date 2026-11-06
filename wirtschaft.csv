@@ -380,11 +380,11 @@ date,time,country,title,actual,forecast,previous,impact
 2026-11-04,14:15,USA,ADP Beschäftigung,86K,65K,90K,medium
 2026-11-04,16:00,USA,ISM Dienstleistungen PMI,54.5,54.8,54.9,medium
 2026-11-05,13:00,Großbritannien,BoE-Zinsentscheid,4.00%,4.00%,3.75%,high
-2026-11-06,14:30,Kanada,Arbeitslosenquote,,,6.5%,high
-2026-11-06,14:30,Kanada,Beschäftigungsänderung,,,-68K,high
-2026-11-06,14:30,USA,Arbeitslosenquote,,4.2%,4.2%,high
-2026-11-06,14:30,USA,Durchschn. Stundenlöhne m/m,,,,medium
-2026-11-06,14:30,USA,Non-Farm Payrolls,,55K,29K,high
+2026-11-06,14:30,Kanada,Arbeitslosenquote,6.7%,6.5%,6.5%,high
+2026-11-06,14:30,Kanada,Beschäftigungsänderung,-4.7K,13.6K,-68K,high
+2026-11-06,14:30,USA,Arbeitslosenquote,4.1%,4.2%,4.2%,high
+2026-11-06,14:30,USA,Durchschn. Stundenlöhne m/m,0.4%,0.3%,0.3%,medium
+2026-11-06,14:30,USA,Non-Farm Payrolls,165K,65K,60K,high
 2026-11-10,14:30,USA,CPI m/m,,,,high
 2026-11-10,14:30,USA,CPI y/y,,,,high
 2026-11-10,14:30,USA,Kern-CPI m/m,,,,high
