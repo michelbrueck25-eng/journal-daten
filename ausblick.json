@@ -1,6 +1,6 @@
 {
  "typ": "ausblick",
- "stand": "2026-11-07T06:31:35+01:00",
+ "stand": "2026-11-07T20:11:21+01:00",
  "zusammenfassung": "Wochenausblick ab 26.10.: Die Woche wird von vier Notenbankterminen in 48 Stunden entschieden (RBNZ und BoC sowie Fed am 28.10., EZB am 29.10., BoJ am 30.10.). Mein Hauptgedanke: Wer Währungen handelt, sollte dort stehen, wo Positionierung, Zinsrichtung und Nachrichtenlage in dieselbe Richtung zeigen. Das trifft derzeit vor allem auf die Gegenseite zum Yen und zum Franken zu: Die Commercials (COT, Stand 20.10.) stehen bei AUD (100), EUR (97) und NZD (89) im oberen, bei JPY (19) und CHF (13) im unteren Extrembereich, gleichzeitig bleibt die Zinsdifferenz groß und die Risikostimmung (Chip-Ausverkauf, Hormus, Ölpreis bei rund 115 USD) belastet den Yen eher als dass sie ihn stützt. Beim Dollar und beim Euro sehe ich dagegen keinen sauberen Vorteil, solange Fed und EZB nicht gesprochen haben. Neu am Montagmorgen: Lula gewann die brasilianische Stichwahl mit rund 51,8 Prozent; das ist ein möglicher Risikoabschlag für Schwellenländer-Währungen, ändert aber an der Rangfolge der acht Hauptwährungen noch nichts. Entscheidend bleibt die Zentralbankwoche ab Dienstag (BoC, Fed, RBNZ am 28.10., EZB am 29.10., BoJ am 30.10.). Update 30.10.: Die BoJ hielt den Leitzins bei 1,25 Prozent (8 zu 1, Takata dagegen) und hob die Inflationsprognose an, eine Dezember-Zusage gab es nicht. Der Yen legte zeitweise zu.",
  "paare": [
   {
@@ -209,7 +209,7 @@
    "ungueltig": "Eine unerwartete BoC-Erhöhung oder ein weiterer Anstieg von Brent über 120 USD spricht gegen die Long-Idee.",
    "plan": "Nur beobachten, bis die BoC gesprochen hat.",
    "ob": {
-    "stand": "2026-11-07T06:31",
+    "stand": "2026-11-07T20:10",
     "checks": [
      {
       "t": "ok",
@@ -228,7 +228,7 @@
       "text": "Daily-Orderblock in der Weekly-Zone: 0.94546 bis 0.95097, Qualität C. Kombi-Einstieg (30 % Weekly, 70 % Daily) möglich."
      }
     ],
-    "quelle": "Marktdaten 02.11.2026",
+    "quelle": "Marktdaten 07.11.2026",
     "ebene": "weekly",
     "zone": [
      0.94453,
@@ -290,7 +290,7 @@
    "ungueltig": "Nicht relevant, solange ich kein Szenario vorschlage. Neue Bewertung nach dem 29.10.",
    "plan": "Keine Position. Nach der EZB neu bewerten.",
    "ob": {
-    "stand": "2026-11-07T06:31",
+    "stand": "2026-11-07T20:10",
     "checks": [
      {
       "t": "ok",
@@ -306,14 +306,14 @@
      },
      {
       "t": "ok",
-      "text": "Kurs 1.11745 ist 1.8 Wochen-ATR von der Zone entfernt."
+      "text": "Kurs 1.11745 ist 1.7 Wochen-ATR von der Zone entfernt."
      },
      {
       "t": "warn",
       "text": "Kein unmitigierter Daily-Orderblock innerhalb der Weekly-Zone: nach deiner Auswertung nicht einsteigen, bis einer entsteht (Daily-Bestätigung)."
      }
     ],
-    "quelle": "Marktdaten 02.11.2026",
+    "quelle": "Marktdaten 07.11.2026",
     "ebene": "weekly",
     "zone": [
      1.08057,
@@ -325,7 +325,7 @@
     "bewegung_atr": 2.61,
     "kurs": 1.11745,
     "kursstand": "2026-11-02",
-    "abstand_atr": 1.8,
+    "abstand_atr": 1.7,
     "zone_t": 1742169600000,
     "einstieg": 1.09545,
     "stopp": 1.07908,
@@ -396,14 +396,29 @@
  ],
  "countdown": [
   {
-   "zeit": "2026-11-06T14:30:00+01:00",
-   "titel": "US Non-Farm Payrolls (Prognose +55K)",
-   "wichtig": 1
-  },
-  {
    "zeit": "2026-11-10T14:30:00+01:00",
    "titel": "US-Inflation CPI (Oktober)",
    "wichtig": 1
+  },
+  {
+   "zeit": "2026-11-16T08:00:00+01:00",
+   "titel": "Großbritannien: Arbeitsmarkt",
+   "wichtig": 0
+  },
+  {
+   "zeit": "2026-11-16T14:30:00+01:00",
+   "titel": "Kanada: CPI",
+   "wichtig": 0
+  },
+  {
+   "zeit": "2026-11-18T08:00:00+01:00",
+   "titel": "Großbritannien: Kern-CPI",
+   "wichtig": 1
+  },
+  {
+   "zeit": "2026-11-19T01:30:00+01:00",
+   "titel": "Australien: Arbeitsmarkt",
+   "wichtig": 0
   }
  ],
  "empfehlungen": [
@@ -420,7 +435,7 @@
    "risiko": "Vorschlag 0,5 % gesamt, davon 30 % Weekly und 70 % Daily. Halbes Risiko, weil schon viele AUD-Positionen offen sind.",
    "gueltig_bis": "2026-11-11",
    "ob": {
-    "stand": "2026-11-07T06:31",
+    "stand": "2026-11-07T20:10",
     "checks": [
      {
       "t": "ok",
@@ -428,7 +443,7 @@
      },
      {
       "t": "warn",
-      "text": "Weekly-Orderblock 106.112 bis 108.607, Qualität C (Bewegung 1.06 ATR, 0 Berührungen, 40 Wochen alt)."
+      "text": "Weekly-Orderblock 106.112 bis 108.607, Qualität C (Bewegung 1.06 ATR, 1 Berührungen, 40 Wochen alt)."
      },
      {
       "t": "ok",
@@ -439,7 +454,7 @@
       "text": "Daily-Orderblock in der Weekly-Zone: 107.505 bis 108.003, Qualität B. Kombi-Einstieg (30 % Weekly, 70 % Daily) möglich."
      }
     ],
-    "quelle": "Marktdaten 02.11.2026",
+    "quelle": "Marktdaten 07.11.2026",
     "ebene": "weekly",
     "zone": [
      106.112,
@@ -447,7 +462,7 @@
     ],
     "qualitaet": "C",
     "alter_wochen": 40,
-    "beruehrungen": 0,
+    "beruehrungen": 1,
     "bewegung_atr": 1.06,
     "kurs": 108.764,
     "kursstand": "2026-11-02",
@@ -478,7 +493,7 @@
    "risiko": "Bisher 1 % im Limit. Ich würde auf 0,5 % senken, solange die Zahl der Yen-Gegenseiten steigt (AUD/JPY und NZD/JPY sind fast dieselbe Wette).",
    "gueltig_bis": "2026-11-11",
    "ob": {
-    "stand": "2026-11-07T06:31",
+    "stand": "2026-11-07T20:10",
     "checks": [
      {
       "t": "ok",
@@ -490,14 +505,14 @@
      },
      {
       "t": "warn",
-      "text": "Kurs 87.707 ist 6.0 Wochen-ATR von der Zone entfernt, der Limit wird lange nicht erreicht."
+      "text": "Kurs 87.707 ist 5.6 Wochen-ATR von der Zone entfernt, der Limit wird lange nicht erreicht."
      },
      {
       "t": "ok",
       "text": "Daily-Orderblock in der Weekly-Zone: 75.935 bis 76.540, Qualität C. Kombi-Einstieg (30 % Weekly, 70 % Daily) möglich."
      }
     ],
-    "quelle": "Marktdaten 02.11.2026",
+    "quelle": "Marktdaten 07.11.2026",
     "ebene": "weekly",
     "zone": [
      75.86,
@@ -509,7 +524,7 @@
     "bewegung_atr": 1.48,
     "kurs": 87.707,
     "kursstand": "2026-11-02",
-    "abstand_atr": 6.0,
+    "abstand_atr": 5.6,
     "zone_t": 1644796800000,
     "einstieg": 77.6,
     "stopp": 75.686,
@@ -536,7 +551,7 @@
    "risiko": "Vorschlag 0,5 %, weil die Überzeugung nur 5 von 10 ist.",
    "gueltig_bis": "2026-11-06",
    "ob": {
-    "stand": "2026-11-07T06:31",
+    "stand": "2026-11-07T20:10",
     "checks": [
      {
       "t": "bad",
@@ -548,14 +563,14 @@
      },
      {
       "t": "ok",
-      "text": "Kurs 1.10153 ist 1.0 Wochen-ATR von der Zone entfernt."
+      "text": "Kurs 1.10153 ist 0.9 Wochen-ATR von der Zone entfernt."
      },
      {
       "t": "warn",
       "text": "Kein unmitigierter Daily-Orderblock innerhalb der Weekly-Zone: nach deiner Auswertung nicht einsteigen, bis einer entsteht (Daily-Bestätigung)."
      }
     ],
-    "quelle": "Marktdaten 02.11.2026",
+    "quelle": "Marktdaten 07.11.2026",
     "ebene": "weekly",
     "zone": [
      1.08457,
@@ -567,7 +582,7 @@
     "bewegung_atr": 1.03,
     "kurs": 1.10153,
     "kursstand": "2026-11-02",
-    "abstand_atr": 1.0,
+    "abstand_atr": 0.9,
     "zone_t": 1784505600000,
     "einstieg": 1.09072,
     "stopp": 1.08396,
@@ -589,7 +604,7 @@
    "risiko": "Vorschlag 0,5 % oder weniger.",
    "gueltig_bis": "2026-11-06",
    "ob": {
-    "stand": "2026-11-07T06:31",
+    "stand": "2026-11-07T20:10",
     "checks": [
      {
       "t": "ok",
@@ -600,7 +615,7 @@
       "text": "Weekly: kein unmitigierter Orderblock auf der richtigen Seite des Kurses, ein Limit-Einstieg ist so nicht begründbar."
      }
     ],
-    "quelle": "Marktdaten 02.11.2026",
+    "quelle": "Marktdaten 07.11.2026",
     "status": "ungültig"
    }
   }
