@@ -2,7 +2,7 @@
 <html lang="de">
 <head>
 <meta charset="utf-8">
-<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="viewport" id="vp" content="width=1180,viewport-fit=cover">
 <link rel="manifest" href="manifest.webmanifest">
 <link rel="apple-touch-icon" href="icon-180.png">
 <link rel="icon" type="image/png" href="icon-192.png">
@@ -11,6 +11,7 @@
 <meta name="apple-mobile-web-app-title" content="Journal">
 <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
 <meta name="theme-color" content="#10151c">
+<script>(function(){var w=Math.min(screen.width,screen.height);var m=document.getElementById('vp');if(m&&w>=700)m.setAttribute('content','width=device-width,initial-scale=1,viewport-fit=cover')})()</script>
 <style>body{padding-top:env(safe-area-inset-top);padding-bottom:env(safe-area-inset-bottom);padding-left:env(safe-area-inset-left);padding-right:env(safe-area-inset-right);-webkit-text-size-adjust:100%}input,select,textarea{font-size:16px}</style>
 <script>if('serviceWorker' in navigator&&location.protocol==='https:'||location.hostname==='localhost'){window.addEventListener('load',function(){navigator.serviceWorker.register('sw.js').catch(function(){})})}</script>
 <title>Trading-Journal</title>
