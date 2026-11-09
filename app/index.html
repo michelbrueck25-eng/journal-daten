@@ -15,9 +15,9 @@
 <script>(function(){
 var K='tj.zm',phone=Math.min(screen.width,screen.height)<700;if(!phone)return;
 function get(){try{var v=parseFloat(localStorage.getItem(K));if(v>=0.8&&v<=2)return v}catch(e){}return 1.2}
-function set(v){try{localStorage.setItem(K,String(v))}catch(e){}document.documentElement.style.zoom=v}
+function set(v){try{localStorage.setItem(K,String(v))}catch(e){}var d=document.documentElement;d.style.zoom=v;d.style.setProperty('--zm',v);d.classList.add('zm')}
 set(get());
-function inject(){if(!document.documentElement.style.zoom)document.documentElement.style.zoom=get();var b=document.getElementById('editBtn');if(!b||document.getElementById('zmBtn'))return;
+function inject(){if(!document.documentElement.style.zoom||!document.documentElement.classList.contains('zm'))set(get());var b=document.getElementById('editBtn');if(!b||document.getElementById('zmBtn'))return;
  var w=document.createElement('span');w.id='zmBtn';w.style.cssText='display:inline-flex;align-items:center;gap:8px;margin-left:8px';
  w.innerHTML='<button class="btn" type="button" id="zmT" title="Größe der Ansicht">Größe</button><span id="zmP" style="display:none;align-items:center;gap:6px"><span style="font-size:11px">klein</span><input id="zmR" type="range" min="0.8" max="2" step="0.05" style="width:140px"><span style="font-size:11px">groß</span></span>';
  b.parentNode.insertBefore(w,b.nextSibling);
@@ -26,7 +26,7 @@ function inject(){if(!document.documentElement.style.zoom)document.documentEleme
  r.oninput=function(){set(parseFloat(r.value))}}
 new MutationObserver(inject).observe(document.documentElement,{childList:true,subtree:true});
 document.addEventListener('DOMContentLoaded',inject)})()</script>
-<style>body{padding-top:env(safe-area-inset-top);padding-bottom:env(safe-area-inset-bottom);padding-left:env(safe-area-inset-left);padding-right:env(safe-area-inset-right);-webkit-text-size-adjust:100%}input,select,textarea{font-size:16px}</style>
+<style>html.zm .topbar{position:static!important}html.zm .jump{top:calc(var(--nav-top-h,0px)/var(--zm,1))!important;flex-wrap:nowrap!important;overflow-x:auto;-webkit-overflow-scrolling:touch;scrollbar-width:none}html.zm .jump>*{flex:none}body{padding-top:env(safe-area-inset-top);padding-bottom:env(safe-area-inset-bottom);padding-left:env(safe-area-inset-left);padding-right:env(safe-area-inset-right);-webkit-text-size-adjust:100%}input,select,textarea{font-size:16px}</style>
 <script>if('serviceWorker' in navigator&&location.protocol==='https:'||location.hostname==='localhost'){window.addEventListener('load',function(){navigator.serviceWorker.register('sw.js').catch(function(){})})}</script>
 <title>Trading-Journal</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
