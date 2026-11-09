@@ -7748,10 +7748,11 @@ function glInit(root) {
 }
 
 /* Neuigkeiten-Fenster: erscheint einmal pro Version beim ersten Öffnen und bleibt, bis es geschlossen wird */
-const WN_VER = '2026-11-09b';
+const WN_VER = '2026-11-09c';
 /* HINWEIS: Bei jeder neuen Version die Liste leeren und NUR das eintragen, was gegenüber der vorherigen Datei neu ist. */
 const WN_LIST = [
   ['Neu', [
+    'Einstellungen: Token und Kurs-Key lassen sich mit „Anzeigen“ sichtbar machen (zum Kopieren auf andere Geräte).',
     'Übersicht: Beim Drehen oder Zoomen des Handys (Größenänderung des Fensters) erschienen Kennzahlen, Equity-Kurve und Asset-Ranking doppelt. Behoben.',
     'Geräte-Sync: In den Einstellungen gibt es die Karte „Geräte-Sync“. Mit demselben Repo und Token auf Mac, iPhone und iPad gleicht die App Trades, Reviews, Learnings, Einstellungen und Bilder ab (je Eintrag gewinnt die jüngere Änderung, vor dem Übernehmen gibt es eine Sicherung).',
     'Strukturbruch (4H, ersatzweise 1H): Im Trade steht jetzt, ob nach dem Zonenkontakt die letzte Gegenstruktur gebrochen wurde, wann, und was ein Einstieg nach dem Bruch mit gleichem Stop und Ziel gebracht hätte. Im 4H- und 1H-Chart sowie in der Grafikanalyse erscheinen Bruch-Level und Bruchkerze. In der Strategie legt „Strukturbruch (4H) als Kriterium“ das Ja/Nein-Kriterium an, das die App selbst befüllt.',
@@ -10661,7 +10662,7 @@ function ghCard() {
   return `<div class="card" id="ghCard"><div class="card-head"><h2>Privater GitHub-Sync</h2></div>
     <p class="small muted" style="margin:0 0 12px;max-width:85ch">Sendet deine Trades in ein <b>privates</b> Repo, holt die Verhaltensanalyse zurück und zeigt sie oben in der KI-Analyse. Der Token bleibt nur in diesem Browser. Anleitung steht in der Datei Journal-Sync-Anleitung.md.</p>
     <div class="field"><label for="gh_repo">Privates Repo (Name/Repo)</label><input id="gh_repo" data-gh="repo" type="text" placeholder="michelbrueck25-eng/journal-privat" value="${esc(c.repo || '')}" autocomplete="off" spellcheck="false"></div>
-    <div class="field"><label for="gh_token">Token (Fine-grained, nur dieses Repo)</label><input id="gh_token" data-gh="token" type="password" placeholder="github_pat_…" value="${esc(c.token || '')}" autocomplete="off" spellcheck="false"></div>
+    <div class="field"><label for="gh_token">Token (Fine-grained, nur dieses Repo)</label><input id="gh_token" data-gh="token" type="password" placeholder="github_pat_…" value="${esc(c.token || '')}" autocomplete="off" spellcheck="false"><button class="btn sm ghost" type="button" data-pwt="1" style="margin-top:6px">Anzeigen</button></div>
     <div class="field"><label for="gh_imgs">Chart-Bilder mitsenden (für den optischen Vergleich)</label><select id="gh_imgs" data-gh="imgs"><option value="aus" ${(c.imgs || 'aus') === 'aus' ? 'selected' : ''}>Nein</option><option value="live" ${c.imgs === 'live' ? 'selected' : ''}>Nur Live-Trades</option><option value="alle" ${c.imgs === 'alle' ? 'selected' : ''}>Alle Trades (viele Bilder)</option></select></div>
     <label class="check" style="margin:6px 0 12px"><input type="checkbox" data-gh="auto" ${c.auto ? 'checked' : ''}> Beim Start und einmal täglich automatisch senden (inkl. aller Bilder) und Analyse holen</label>
     <div class="row" style="display:flex;gap:10px;flex-wrap:wrap"><button class="btn primary" data-act="gh-send" type="button">Jetzt senden</button><button class="btn" data-act="gh-get" type="button">Analyse holen</button><button class="btn" data-act="gh-markt" type="button" title="Lädt Tages- und Wochenkerzen der empfohlenen Paare und deiner offenen Positionen und schickt sie an GitHub">Marktdaten senden</button><button class="btn ghost" data-act="gh-clear" type="button">Token entfernen</button></div>
@@ -12582,7 +12583,7 @@ function chPanel() {
       <div class="ch-prow"><label title="Peak vor Rücklauf = erster Drehpunkt: so viele Kerzen links und rechts müssen niedriger (Long) bzw. höher (Short) sein. Leer = automatisch (Weekly 2, Daily 4, 4H 6)">Drehpunkt (Kerzen je Seite)</label><input type="number" min="1" step="1" data-chg="pivN" value="${CH.cfg.pivN ?? ''}" placeholder="auto" style="width:56px"></div>
       <div class="ch-prow"><label title="Wie viele Wochen nach dem Peak der MFE noch weiterlaufen darf">MFE-Fenster nach Peak</label><input type="number" min="0" step="0.5" data-chg="mfeW" value="${CH.cfg.mfeW ?? 3}" style="width:56px"> Wochen</div>
       <div class="ch-prow"><label>Standard-R:R</label><input type="number" step="any" data-chg="rr" value="${CH.cfg.rr}" style="width:56px"></div>
-      <div class="ch-prow"><label>Twelve-Data-Key</label><input type="password" data-chg="key" value="${esc(chKey())}" placeholder="Key" style="width:140px" autocomplete="off"></div>`;
+      <div class="ch-prow"><label>Twelve-Data-Key</label><input type="password" data-chg="key" value="${esc(chKey())}" placeholder="Key" style="width:140px" autocomplete="off"><button class="btn sm ghost" type="button" data-pwt="1">Anzeigen</button></div>`;
   }
   el.innerHTML = `<div class="ch-ph"><b></b><button type="button" class="btn ghost sm" data-chact="popx" aria-label="Schließen">✕</button></div>${h}`;
 }
@@ -13733,6 +13734,7 @@ async function sbAll(prof) {
 }
 document.addEventListener('click', e => { const b = e.target.closest && e.target.closest('[data-act="sb-crit"],[data-act="sb-all"]'); if (!b) return; if (b.dataset.act === 'sb-crit') sbCritAdd(); else sbAll(profileById(S.setProf)); });
 
+document.addEventListener('click', e => { const b = e.target.closest && e.target.closest('[data-pwt]'); if (!b) return; const i = b.previousElementSibling; if (!i || i.tagName !== 'INPUT') return; const show = i.type === 'password'; i.type = show ? 'text' : 'password'; b.textContent = show ? 'Verbergen' : 'Anzeigen'; });
 /* ============ Start ============ */
 renderNav();
 (async () => {
