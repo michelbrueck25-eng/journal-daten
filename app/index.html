@@ -7749,10 +7749,11 @@ function glInit(root) {
 }
 
 /* Neuigkeiten-Fenster: erscheint einmal pro Version beim ersten Öffnen und bleibt, bis es geschlossen wird */
-const WN_VER = '2026-11-09d';
+const WN_VER = '2026-11-09e';
 /* HINWEIS: Bei jeder neuen Version die Liste leeren und NUR das eintragen, was gegenüber der vorherigen Datei neu ist. */
 const WN_LIST = [
   ['Neu', [
+    'Einstellungen → Geräte-Sync: „Zugangsdaten sichern“ speichert Repo, Token und Kurs-Key in einer Datei, „Zugangsdaten laden“ trägt sie auf einem anderen Gerät ein. Die Datei nicht teilen.',
     'Handy: Bearbeiten-Modus ohne Lücken (einspaltig), größere Schaltflächen; Diagramm-Tooltips schieben die Seite nicht mehr.',
     'Layout und Stil werden nicht zwischen Geräten synchronisiert, nur Trades, Reviews, Learnings und Risiko-Einstellungen.',
     'Einstellungen: Token und Kurs-Key lassen sich mit „Anzeigen“ sichtbar machen (zum Kopieren auf andere Geräte).',
@@ -13634,9 +13635,15 @@ function syCard() {
     <p class="small muted" style="margin:0 0 12px;max-width:85ch">Gleicht Trades, Reviews, Learnings, Einstellungen und Bilder zwischen deinen Geräten über das private Repo ab (Ordner <code>sync/</code>). Auf jedem Gerät dasselbe Repo und einen Token eintragen. Wer zuletzt etwas ändert, gewinnt je Eintrag. Vor jedem Übernehmen legt die App eine Sicherung im Browser an.</p>
     <label class="check" style="margin:6px 0 12px"><input type="checkbox" data-gh="sync" ${c.sync ? 'checked' : ''}> Geräte-Sync einschalten</label>
     <div class="row" style="display:flex;gap:10px;flex-wrap:wrap"><button class="btn primary" data-act="sy-run" type="button">Jetzt abgleichen</button><button class="btn" data-act="sy-reset" type="button" title="Vergisst den Sync-Stand dieses Geräts. Beim nächsten Abgleich gewinnt für gleiche Einträge die Cloud-Version.">Sync neu starten</button></div>
+    <div class="row" style="display:flex;gap:10px;flex-wrap:wrap;margin-top:10px"><button class="btn" data-act="sy-cred-out" type="button">Zugangsdaten sichern</button><button class="btn" data-act="sy-cred-in" type="button">Zugangsdaten laden</button><input id="syCredFile" type="file" accept=".json,application/json" hidden></div><div class="small muted" style="margin-top:6px">Enthält Token und Kurs-Key im Klartext. Nur auf deine eigenen Geräte kopieren, nicht weitergeben.</div>
     <div id="syStatus" class="small muted" style="margin-top:10px">${syStatus()}</div></div>`;
 }
 document.addEventListener('click', e => { const b = e.target.closest && e.target.closest('[data-act^="sy-"]'); if (!b) return; if (b.dataset.act === 'sy-run') SY.run(true); else if (b.dataset.act === 'sy-reset') { SY.reset(); toast('Sync-Stand zurückgesetzt.'); SY.run(true); } });
+const SY_CRED = ['tj.gh', 'tj.tdkey'];
+document.addEventListener('click', e => { const b = e.target.closest && e.target.closest('[data-act^="sy-cred"]'); if (!b) return;
+  if (b.dataset.act === 'sy-cred-out') { const keys = {}; SY_CRED.forEach(k => { try { const v = localStorage.getItem(k); if (v != null) keys[k] = v; } catch (z) {} }); const u = URL.createObjectURL(new Blob([JSON.stringify({typ: 'journal-zugang', keys}, null, 1)], {type: 'application/json'})), l = document.createElement('a'); l.href = u; l.download = 'Journal-Zugangsdaten.json'; document.body.appendChild(l); l.click(); l.remove(); setTimeout(() => URL.revokeObjectURL(u), 2000); }
+  else { const f = document.getElementById('syCredFile'); if (f) f.click(); } });
+document.addEventListener('change', e => { const f = e.target; if (!f || f.id !== 'syCredFile' || !f.files[0]) return; f.files[0].text().then(t => { const d = JSON.parse(t); if (d.typ !== 'journal-zugang' || !d.keys) throw 0; Object.keys(d.keys).filter(k => SY_CRED.includes(k)).forEach(k => localStorage.setItem(k, d.keys[k])); toast('Zugangsdaten geladen.'); setTimeout(() => location.reload(), 500); }).catch(() => toast('Datei nicht erkannt.')); f.value = ''; });
 document.addEventListener('change', e => { const t = e.target.closest && e.target.closest('[data-gh="sync"]'); if (t && t.checked) { SY.start(); setTimeout(() => SY.run(true), 300); } });
 
 /* ============ Strukturbruch (4H, Rückfall auf 1H): hat nach dem Zonenkontakt ein Bruch der letzten Gegenstruktur stattgefunden? ============ */
