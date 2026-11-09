@@ -2968,6 +2968,7 @@ function renderKpiBlock() {
   const el = $('#secKpi'), eqEl = $('#secEq'), asEl = $('#assetRank'), tfEl = $('#secTf');
   if (!el && !eqEl && !asEl && !tfEl) return;
   if (S.view === 'lab' && !SCEN) return withScen(renderKpiBlock);
+  ['secKpi', 'secEq', 'assetRank', 'secTf'].forEach(id => { const own = $('#' + id); $$('#view [data-blkid]').forEach(n => { if (n.dataset.blkid.split('|')[1] === id && (!own || !own.contains(n)) && n !== own) n.remove(); }); });
   const scen = !!SCEN, unit = scen ? 'R' : S.eqUnit;
   const st = stats(selTrades());
   const nLive = st.trades.filter(t => t.source === 'live').length, nBt = st.trades.filter(t => t.source === 'backtest').length, nPh = st.trades.filter(t => t.source === 'phantom').length;
@@ -7740,10 +7741,11 @@ function glInit(root) {
 }
 
 /* Neuigkeiten-Fenster: erscheint einmal pro Version beim ersten Öffnen und bleibt, bis es geschlossen wird */
-const WN_VER = '2026-11-09a';
+const WN_VER = '2026-11-09b';
 /* HINWEIS: Bei jeder neuen Version die Liste leeren und NUR das eintragen, was gegenüber der vorherigen Datei neu ist. */
 const WN_LIST = [
   ['Neu', [
+    'Übersicht: Beim Drehen oder Zoomen des Handys (Größenänderung des Fensters) erschienen Kennzahlen, Equity-Kurve und Asset-Ranking doppelt. Behoben.',
     'Geräte-Sync: In den Einstellungen gibt es die Karte „Geräte-Sync“. Mit demselben Repo und Token auf Mac, iPhone und iPad gleicht die App Trades, Reviews, Learnings, Einstellungen und Bilder ab (je Eintrag gewinnt die jüngere Änderung, vor dem Übernehmen gibt es eine Sicherung).',
     'Strukturbruch (4H, ersatzweise 1H): Im Trade steht jetzt, ob nach dem Zonenkontakt die letzte Gegenstruktur gebrochen wurde, wann, und was ein Einstieg nach dem Bruch mit gleichem Stop und Ziel gebracht hätte. Im 4H- und 1H-Chart sowie in der Grafikanalyse erscheinen Bruch-Level und Bruchkerze. In der Strategie legt „Strukturbruch (4H) als Kriterium“ das Ja/Nein-Kriterium an, das die App selbst befüllt.',
     'Grafikanalyse: Liegt die Position (zum Beispiel ein noch nicht eingestiegenes Limit) rechts hinter der letzten Kerze, zeigt der Chart trotzdem die letzten Kerzen und die Position rechts daneben.',
