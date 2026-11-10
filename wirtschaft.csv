@@ -386,9 +386,9 @@ date,time,country,title,actual,forecast,previous,impact
 2026-11-06,14:30,USA,Durchschn. Stundenlöhne m/m,0.4%,0.3%,0.3%,medium
 2026-11-06,14:30,USA,Non-Farm Payrolls,165K,65K,60K,high
 2026-11-10,14:30,USA,CPI m/m,,,,high
-2026-11-10,14:30,USA,CPI y/y,,,,high
+2026-11-10,14:30,USA,CPI y/y,,3.9%,,high
 2026-11-10,14:30,USA,Kern-CPI m/m,,,,high
-2026-11-10,14:30,USA,Kern-CPI y/y,,,,high
+2026-11-10,14:30,USA,Kern-CPI y/y,,2.8%,,high
 2026-11-11,09:00,Schweiz,Arbeitslosenquote,,,,medium
 2026-11-12,03:00,Neuseeland,Inflationserwartungen (Q4),,,,medium
 2026-11-12,08:00,Großbritannien,"BIP q/q (Q3, vorläufig)",,,,high
