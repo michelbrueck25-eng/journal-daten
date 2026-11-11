@@ -1,6 +1,6 @@
 {
  "typ": "ausblick",
- "stand": "2026-11-10T20:15:00+01:00",
+ "stand": "2026-11-11T06:35:00+01:00",
  "zusammenfassung": "Wochenausblick ab 26.10.: Die Woche wird von vier Notenbankterminen in 48 Stunden entschieden (RBNZ und BoC sowie Fed am 28.10., EZB am 29.10., BoJ am 30.10.). Mein Hauptgedanke: Wer Währungen handelt, sollte dort stehen, wo Positionierung, Zinsrichtung und Nachrichtenlage in dieselbe Richtung zeigen. Das trifft derzeit vor allem auf die Gegenseite zum Yen und zum Franken zu: Die Commercials (COT, Stand 20.10.) stehen bei AUD (100), EUR (97) und NZD (89) im oberen, bei JPY (19) und CHF (13) im unteren Extrembereich, gleichzeitig bleibt die Zinsdifferenz groß und die Risikostimmung (Chip-Ausverkauf, Hormus, Ölpreis bei rund 115 USD) belastet den Yen eher als dass sie ihn stützt. Beim Dollar und beim Euro sehe ich dagegen keinen sauberen Vorteil, solange Fed und EZB nicht gesprochen haben. Neu am Montagmorgen: Lula gewann die brasilianische Stichwahl mit rund 51,8 Prozent; das ist ein möglicher Risikoabschlag für Schwellenländer-Währungen, ändert aber an der Rangfolge der acht Hauptwährungen noch nichts. Entscheidend bleibt die Zentralbankwoche ab Dienstag (BoC, Fed, RBNZ am 28.10., EZB am 29.10., BoJ am 30.10.). Update 30.10.: Die BoJ hielt den Leitzins bei 1,25 Prozent (8 zu 1, Takata dagegen) und hob die Inflationsprognose an, eine Dezember-Zusage gab es nicht. Der Yen legte zeitweise zu.",
  "paare": [
   {
@@ -209,11 +209,15 @@
    "ungueltig": "Eine unerwartete BoC-Erhöhung oder ein weiterer Anstieg von Brent über 120 USD spricht gegen die Long-Idee.",
    "plan": "Nur beobachten, bis die BoC gesprochen hat.",
    "ob": {
-    "stand": "2026-11-10T20:14",
+    "stand": "2026-11-11T06:30",
     "checks": [
      {
       "t": "ok",
       "text": "COT AUD 6M-Index 99 (Stand 03.11.2026): im passenden Extrembereich, CAD 20 bestätigt gegenläufig."
+     },
+     {
+      "t": "warn",
+      "text": "Termine in den nächsten 5 Tagen: 16.11. 14:30 CPI m/m."
      },
      {
       "t": "warn",
@@ -290,15 +294,11 @@
    "ungueltig": "Nicht relevant, solange ich kein Szenario vorschlage. Neue Bewertung nach dem 29.10.",
    "plan": "Keine Position. Nach der EZB neu bewerten.",
    "ob": {
-    "stand": "2026-11-10T20:14",
+    "stand": "2026-11-11T06:30",
     "checks": [
      {
       "t": "ok",
       "text": "COT EUR 6M-Index 100 (Stand 03.11.2026): im passenden Extrembereich, USD 36."
-     },
-     {
-      "t": "warn",
-      "text": "Termine in den nächsten 5 Tagen: 10.11. 14:30 CPI m/m, 10.11. 14:30 CPI y/y, 10.11. 14:30 Kern-CPI m/m, 10.11. 14:30 Kern-CPI y/y."
      },
      {
       "t": "ok",
@@ -370,6 +370,10 @@
  "hinweis": "Meine Einschätzung aus COT (Stand 20.10.), Zinserwartungen, Lage und Kalender. Sie ist eine zweite Meinung und keine Anlageberatung. Die Überzeugung (0 bis 10) zeigt, wie viele unabhängige Faktoren in dieselbe Richtung zeigen. Zahlen stammen aus den importierten Daten und Meldungen vom 24./25.10.; was ich nicht belegen konnte, habe ich weggelassen.",
  "ueberblick": [
   {
+   "titel": "Mittwoch 11.11.: Dollar fest, USD/JPY nahe 159, US-Feiertag",
+   "text": "Nach dem heißen CPI ist der Dollar breit gestiegen (Dollar-Index rund plus 0,5 Prozent). USD/JPY steht bei 158,75 und damit knapp unter 159, der Yen leidet unter der wachsenden Zinsdifferenz. AUD verlor 0,8 Prozent, weil Aktien nachgaben (S&P 500 minus 0,4 Prozent, Nvidia minus 5,5 Prozent). Brent fiel um 3,7 Prozent und schloss unter 92 USD. Die Fed-Erhöhung im Dezember ist voll eingepreist. Heute ist Veterans Day: Der US-Anleihemarkt ist zu, der Handel dünner, Ausschläge können unzuverlässig sein. Deine JPY-Longs (NZD/JPY, AUD/JPY) hängen jetzt stärker an der Aktienstimmung als am Yen."
+  },
+  {
    "titel": "US-CPI über Erwartung, Waller bringt 50 Basispunkte ins Spiel",
    "text": "Die US-Verbraucherpreise stiegen im Oktober um 0,4 Prozent zum Vormonat (erwartet 0,3), die Kernrate um 0,3 Prozent (erwartet 0,2). Fed-Gouverneur Waller sagte, bei einer Kernrate von 0,3 Prozent oder mehr solle ein Schritt um 50 Basispunkte erwogen werden. Der Markt preist die Dezember-Erhöhung jetzt voll ein: 25 Basispunkte zu 88,7 Prozent, 50 Basispunkte zu 11,3 Prozent. Der Dollar-Index stieg um 0,36 Prozent auf 102,04, die Zweijahresrendite auf 4,68 Prozent. Die meisten Paare blieben in der Vortagesspanne, die Bewegung ist also bisher moderat. Brent fiel unter 90 USD, Gold Richtung 4.060 USD. Morgen ist in den USA Veterans Day mit dünnerem Handel. Nachtrag 20:10: EUR/USD ist unter 1,1200 gefallen, AUD/USD unter 0,6900, der S&P 500 gab von rund 7.570 Richtung 7.515 nach. Die Montagserholung von EUR und AUD ist damit wieder weg."
   },
@@ -388,22 +392,6 @@
   {
    "titel": "Fed-Erhöhung im Dezember zu 77 Prozent eingepreist (03.11.)",
    "text": "Laut ActionForex liegt die Wette auf eine Fed-Erhöhung im Dezember bei 76,6 Prozent (Vortag 70,7), die Fed steht bei 3,75 bis 4,00 Prozent, zwei Mitglieder stimmten für sofort. Der Dollar-Index ist trotzdem schwach (rund 101,7). Heute US-Zwischenwahlen (Demokraten im Repräsentantenhaus gelten als sicher, Senat offen), Freitag NFP mit Prognose +56K. Quelle eine, Einschätzungen nicht bestätigt."
-  },
-  {
-   "titel": "Das Gesamtbild in drei Sätzen",
-   "text": "Die Notenbanken heben weltweit weiter an oder halten die Tür dafür offen (RBNZ, RBA, BoE, Fed im Dezember), nur die BoJ und die SNB bleiben bei sehr niedrigen Zinsen (1,25 und 0 Prozent). Das schafft ein klares Zinsgefälle, das Carry-Trades belohnt, solange die Märkte ruhig bleiben. Die COT-Daten bestätigen, dass die großen Hedger genau diese Richtung bereits positioniert haben, sie sind also nicht allein, wenn sie AUD und NZD gegen JPY und CHF bevorzugen."
-  },
-  {
-   "titel": "Warum ich dich von Yen-Gegenseiten überzeugen will",
-   "text": "Drei unabhängige Quellen sprechen für dieselbe Richtung: Positionierung (COT-Differenz AUD/JPY von 81 Punkten, hoher Abstand), Geldpolitik (RBNZ und RBA vor weiteren Erhöhungen, BoJ eher abwartend, Dezember statt Oktober) und Rohstoffe (hohe Energiepreise belasten Japan als Importeur). Unabhängig heißt: Fällt eine Säule weg, tragen zwei weiter. Das ist der Unterschied zu einer Idee, die nur auf einem Chartbild beruht (deshalb bekommt AUD/JPY von mir die höchste Stärke)."
-  },
-  {
-   "titel": "Was diese Woche wirklich zählt",
-   "text": "28.10.: RBNZ (Erhöhung auf 3,00 Prozent zu etwa 75 bis 80 Prozent eingepreist), australische Q3-Inflation (Vorlage für die RBA am 3.11.), BoC und die Fed am Abend (Halten erwartet). 29.10.: US-PCE und EZB (keine Erhöhung erwartet, es zählt die Dezember-Andeutung). 30.10.: BoJ (Halten bei 1,25 Prozent, Hinweise auf Dezember). Bis dahin würde ich keine Position vergrößern, nur planen."
-  },
-  {
-   "titel": "Wo ich falsch liegen kann",
-   "text": "Das größte Risiko ist ein plötzlicher Risiko-Aus-Schock (eskalierende Lage am Golf, weiterer KI-Ausverkauf), bei dem der Yen und der Franken als sichere Häfen kräftig steigen und Carry-Positionen binnen Tagen zurückgedreht werden. Dazu kommt das Interventionsrisiko beim Yen, wenn USD/JPY nahe 158 bis 160 notiert. Deshalb hängt meine Stärke-Bewertung nicht nur an den Zinsen, sondern auch daran, wie viele Faktoren gleichzeitig dieselbe Richtung zeigen."
   }
  ],
  "countdown": [
@@ -452,7 +440,7 @@
    "risiko": "Vorschlag 0,5 % gesamt, davon 30 % Weekly und 70 % Daily. Halbes Risiko, weil schon viele AUD-Positionen offen sind.",
    "gueltig_bis": "2026-11-11",
    "ob": {
-    "stand": "2026-11-10T20:14",
+    "stand": "2026-11-11T06:30",
     "checks": [
      {
       "t": "ok",
@@ -510,7 +498,7 @@
    "risiko": "Bisher 1 % im Limit. Ich würde auf 0,5 % senken, solange die Zahl der Yen-Gegenseiten steigt (AUD/JPY und NZD/JPY sind fast dieselbe Wette).",
    "gueltig_bis": "2026-11-11",
    "ob": {
-    "stand": "2026-11-10T20:14",
+    "stand": "2026-11-11T06:30",
     "checks": [
      {
       "t": "ok",
@@ -568,7 +556,7 @@
    "risiko": "Vorschlag 0,5 %, weil die Überzeugung nur 5 von 10 ist.",
    "gueltig_bis": "2026-11-06",
    "ob": {
-    "stand": "2026-11-10T20:14",
+    "stand": "2026-11-11T06:30",
     "checks": [
      {
       "t": "bad",
@@ -576,7 +564,7 @@
      },
      {
       "t": "warn",
-      "text": "Termine in den nächsten 5 Tagen: 12.11. 08:00 BIP q/q (Q3, vorläufig)."
+      "text": "Termine in den nächsten 5 Tagen: 12.11. 08:00 BIP q/q (Q3, vorläufig), 16.11. 08:00 Arbeitslosenquote, 16.11. 08:00 Durchschnittslöhne 3m/y."
      },
      {
       "t": "warn",
@@ -625,7 +613,7 @@
    "risiko": "Vorschlag 0,5 % oder weniger.",
    "gueltig_bis": "2026-11-06",
    "ob": {
-    "stand": "2026-11-10T20:14",
+    "stand": "2026-11-11T06:30",
     "checks": [
      {
       "t": "ok",
