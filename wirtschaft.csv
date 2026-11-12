@@ -390,7 +390,6 @@ date,time,country,title,actual,forecast,previous,impact
 2026-11-10,14:30,USA,CPI y/y,,3.9%,3.7%,high
 2026-11-10,14:30,USA,Kern-CPI m/m,0.3%,0.2%,0.3%,high
 2026-11-10,14:30,USA,Kern-CPI y/y,,2.8%,2.6%,high
-2026-11-12,03:00,Neuseeland,Inflationserwartungen (Q4),,,,medium
 2026-11-12,08:00,Großbritannien,"BIP q/q (Q3, vorläufig)",,,,high
 2026-11-13,14:30,USA,PPI m/m,,,,medium
 2026-11-16,00:50,Japan,"BIP q/q (Q3, vorläufig)",,,,medium
@@ -398,6 +397,7 @@ date,time,country,title,actual,forecast,previous,impact
 2026-11-16,08:00,Großbritannien,Durchschnittslöhne 3m/y,,,,high
 2026-11-16,14:30,Kanada,CPI m/m,,,,high
 2026-11-16,14:30,Kanada,Median-CPI y/y,,,,medium
+2026-11-17,03:00,Neuseeland,Inflationserwartungen (Q4),,,2.34%,medium
 2026-11-18,01:30,Australien,Lohnpreisindex q/q,,,,medium
 2026-11-18,08:00,Großbritannien,Kern-CPI y/y,,,,high
 2026-11-19,01:30,Australien,Arbeitslosenquote,,,,high
