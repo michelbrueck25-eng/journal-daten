@@ -1,6 +1,6 @@
 {
  "typ": "ausblick",
- "stand": "2026-11-13T17:35:00+01:00",
+ "stand": "2026-11-14T06:35:00+01:00",
  "zusammenfassung": "Wochenausblick ab 26.10.: Die Woche wird von vier Notenbankterminen in 48 Stunden entschieden (RBNZ und BoC sowie Fed am 28.10., EZB am 29.10., BoJ am 30.10.). Mein Hauptgedanke: Wer Währungen handelt, sollte dort stehen, wo Positionierung, Zinsrichtung und Nachrichtenlage in dieselbe Richtung zeigen. Das trifft derzeit vor allem auf die Gegenseite zum Yen und zum Franken zu: Die Commercials (COT, Stand 20.10.) stehen bei AUD (100), EUR (97) und NZD (89) im oberen, bei JPY (19) und CHF (13) im unteren Extrembereich, gleichzeitig bleibt die Zinsdifferenz groß und die Risikostimmung (Chip-Ausverkauf, Hormus, Ölpreis bei rund 115 USD) belastet den Yen eher als dass sie ihn stützt. Beim Dollar und beim Euro sehe ich dagegen keinen sauberen Vorteil, solange Fed und EZB nicht gesprochen haben. Neu am Montagmorgen: Lula gewann die brasilianische Stichwahl mit rund 51,8 Prozent; das ist ein möglicher Risikoabschlag für Schwellenländer-Währungen, ändert aber an der Rangfolge der acht Hauptwährungen noch nichts. Entscheidend bleibt die Zentralbankwoche ab Dienstag (BoC, Fed, RBNZ am 28.10., EZB am 29.10., BoJ am 30.10.). Update 30.10.: Die BoJ hielt den Leitzins bei 1,25 Prozent (8 zu 1, Takata dagegen) und hob die Inflationsprognose an, eine Dezember-Zusage gab es nicht. Der Yen legte zeitweise zu.",
  "paare": [
   {
@@ -209,7 +209,7 @@
    "ungueltig": "Eine unerwartete BoC-Erhöhung oder ein weiterer Anstieg von Brent über 120 USD spricht gegen die Long-Idee.",
    "plan": "Nur beobachten, bis die BoC gesprochen hat.",
    "ob": {
-    "stand": "2026-11-13T17:41",
+    "stand": "2026-11-14T06:30",
     "checks": [
      {
       "t": "ok",
@@ -217,7 +217,7 @@
      },
      {
       "t": "warn",
-      "text": "Termine in den nächsten 5 Tagen: 16.11. 14:30 CPI m/m."
+      "text": "Termine in den nächsten 5 Tagen: 16.11. 14:30 CPI m/m, 19.11. 01:30 Arbeitslosenquote, 19.11. 01:30 Beschäftigungsänderung."
      },
      {
       "t": "warn",
@@ -294,7 +294,7 @@
    "ungueltig": "Nicht relevant, solange ich kein Szenario vorschlage. Neue Bewertung nach dem 29.10.",
    "plan": "Keine Position. Nach der EZB neu bewerten.",
    "ob": {
-    "stand": "2026-11-13T17:41",
+    "stand": "2026-11-14T06:30",
     "checks": [
      {
       "t": "ok",
@@ -370,6 +370,10 @@
  "hinweis": "Meine Einschätzung aus COT (Stand 20.10.), Zinserwartungen, Lage und Kalender. Sie ist eine zweite Meinung und keine Anlageberatung. Die Überzeugung (0 bis 10) zeigt, wie viele unabhängige Faktoren in dieselbe Richtung zeigen. Zahlen stammen aus den importierten Daten und Meldungen vom 24./25.10.; was ich nicht belegen konnte, habe ich weggelassen.",
  "ueberblick": [
   {
+   "titel": "Samstag 14.11.: Dollar mit bester Woche seit September, AUD am schwächsten",
+   "text": "Der Dollar-Index schloss bei 103,21 und damit 0,9 Prozent höher in der Woche. EUR/USD fiel auf 1,1053, den tiefsten Stand seit April 2025. Der Australische Dollar war mit minus 3,4 Prozent im Monat die schwächste G10-Währung und steht bei 0,6789. USD/JPY schloss bei 159,99. Treiber waren die Zinserhöhungserwartungen für die Fed: Die Zweijahresrendite stieg in der Woche um 34 Basispunkte auf 4,86 Prozent, rund 12 Prozent rechnen im Dezember sogar mit 50 Basispunkten. Für deine offenen Sachen heißt das: Der NZD/JPY-Long lebt vom Carry, aber über 160 sieht Monex den Auslöser für einen japanischen Eingriff. Die AUD-Limits (AUD/JPY, AUD/NZD) laufen gegen einen sehr schwachen Australier. Die COT-Daten für die Woche zum 10.11. sind noch nicht veröffentlicht, im Journal steht weiter der 3.11."
+  },
+  {
    "titel": "Freitag 13.11.: PPI etwas kühler, USD/JPY testet 160",
    "text": "Die US-Erzeugerpreise stiegen im Oktober nur um 0,3 Prozent statt der erwarteten 0,4, die Jahresrate liegt mit 6,5 Prozent aber auf dem höchsten Stand seit November 2022. Der Dollar gab nur kurz nach (Index von 103,19 auf 103,09). USD/JPY hat am Donnerstag 160,30 erreicht und steht jetzt bei rund 159,89. Japans Finanzministerin Katayama kündigte eine angemessene Reaktion auf die scharfen einseitigen Bewegungen an, und das US-Finanzministerium hat im Sommer erstmals seit 1998 selbst Yen gekauft. Für deinen NZD/JPY-Long heißt das: Der Carry läuft weiter für dich, aber ein Eingriff würde das Kreuz sprunghaft drücken. Am Wochenende kommen die COT-Daten. Nachtrag 17:30: Katayama hat klargestellt, dass 160 kein offizieller Auslöser für einen Eingriff ist. Das Juli-Hoch, bei dem Japan und die USA gemeinsam eingriffen, lag bei 163,99. EUR/USD steht bei 1,1063, der Dollar-Index bei 103,15."
   },
@@ -388,10 +392,6 @@
   {
    "titel": "Dienstag 10.11.: US-CPI um 14:30, Dollar vorher schwächer",
    "text": "Am Montag hat der Dollar nachgegeben: EUR/USD 1,1220 (plus 0,7 Prozent), AUD/USD 0,6921, USD/JPY 157,97. Aktien stiegen, Öl fiel deutlich. Die Dezember-Erhöhung der Fed ist laut Reuters zu 85 Prozent eingepreist. Für den US-CPI (Oktober) werden 3,9 Prozent und im Kern 2,8 Prozent erwartet. Ein höherer Wert würde den Dollar stützen, ein niedrigerer die Erholung von EUR und AUD verlängern. Vor 14:30 keine neuen USD-Limits knapp am Markt. Nachtrag 10:30: WTI fiel am Montag auf ein Zweimonatstief bei 84,65 USD, weil auf ein US-Iran-Abkommen gehofft wird. Der Dollar-Index liegt bei 101,67."
-  },
-  {
-   "titel": "Wochenstart 09.11.: Brent 97,75, Gold 4.079, Dezember-Erhöhung zu rund 78 Prozent",
-   "text": "Zum Wochenschluss (06.11.) lag Brent bei 97,75 USD (Wochenverlust 13,6 Prozent), Gold bei 4.079,50 USD (plus 5,0 Prozent), EUR/USD bei 1,1140. Nach den US-Arbeitsmarktdaten (165.000 Stellen gegen rund 65.000 erwartet, Arbeitslosenquote 4,1 Prozent) liegt die Dezember-Erhöhung der Fed laut NordFX bei rund 78 Prozent. Der US-CPI am Dienstag 14:30 ist der nächste Test: ein weicher Wert könnte EUR/USD Richtung 1,1223 bis 1,1260 tragen, ein heißer die Zinsfantasie und damit den Dollar stützen. Am Mittwoch (11.11.) sind in den USA Banken und Anleihemarkt zu (Veterans Day). Das ist eine Quelle (NordFX, LiteFinance), die Gewichtung für meine Thesen ist eine Schätzung, Konsensprognosen für den CPI habe ich nicht gefunden."
   }
  ],
  "countdown": [
@@ -430,11 +430,15 @@
    "risiko": "Vorschlag 0,5 % gesamt, davon 30 % Weekly und 70 % Daily. Halbes Risiko, weil schon viele AUD-Positionen offen sind.",
    "gueltig_bis": "2026-11-11",
    "ob": {
-    "stand": "2026-11-13T17:41",
+    "stand": "2026-11-14T06:30",
     "checks": [
      {
       "t": "ok",
       "text": "COT AUD 6M-Index 99 (Stand 03.11.2026): im passenden Extrembereich, JPY 8 bestätigt gegenläufig."
+     },
+     {
+      "t": "warn",
+      "text": "Termine in den nächsten 5 Tagen: 19.11. 01:30 Arbeitslosenquote, 19.11. 01:30 Beschäftigungsänderung."
      },
      {
       "t": "warn",
@@ -488,7 +492,7 @@
    "risiko": "Bisher 1 % im Limit. Ich würde auf 0,5 % senken, solange die Zahl der Yen-Gegenseiten steigt (AUD/JPY und NZD/JPY sind fast dieselbe Wette).",
    "gueltig_bis": "2026-11-11",
    "ob": {
-    "stand": "2026-11-13T17:41",
+    "stand": "2026-11-14T06:30",
     "checks": [
      {
       "t": "ok",
@@ -546,7 +550,7 @@
    "risiko": "Vorschlag 0,5 %, weil die Überzeugung nur 5 von 10 ist.",
    "gueltig_bis": "2026-11-06",
    "ob": {
-    "stand": "2026-11-13T17:41",
+    "stand": "2026-11-14T06:30",
     "checks": [
      {
       "t": "bad",
@@ -603,7 +607,7 @@
    "risiko": "Vorschlag 0,5 % oder weniger.",
    "gueltig_bis": "2026-11-06",
    "ob": {
-    "stand": "2026-11-13T17:41",
+    "stand": "2026-11-14T06:30",
     "checks": [
      {
       "t": "ok",
