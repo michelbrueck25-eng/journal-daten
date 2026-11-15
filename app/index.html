@@ -111,6 +111,7 @@ img{max-width:100%}
 .icon-btn .ic-b{display:none}
 :root[data-theme="dark"] #themeBtn .ic-a{display:none}
 :root[data-theme="dark"] #themeBtn .ic-b{display:block}
+#syncBtn.busy svg{animation:syspin .9s linear infinite;transform-origin:50% 50%}@keyframes syspin{to{transform:rotate(360deg)}}
 #fullscreenBtn.is-full .ic-a{display:none}
 #fullscreenBtn.is-full .ic-b{display:block}
 
@@ -1352,6 +1353,9 @@ body[data-curview="charts"] .ch-foot{padding:3px 12px}
     <div class="brand">Trading-Journal</div>
     <nav class="nav" id="nav" aria-label="Bereiche"></nav>
     <div class="side-foot">
+      <button class="icon-btn" id="syncBtn" type="button" title="Daten aktualisieren: Geräte-Sync, Makrodaten und Kurse. Lange drücken: App neu laden." aria-label="Daten aktualisieren">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20.5 12a8.5 8.5 0 1 1-2.5-6.01"/><path d="M20.5 4.5v5h-5"/></svg>
+      </button>
       <button class="icon-btn" id="themeBtn" type="button" title="Hell / Dunkel" aria-label="Hell/Dunkel umschalten">
         <svg class="ic-a" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79Z"/></svg>
         <svg class="ic-b" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M6.34 17.66l-1.41 1.41M19.07 4.93l-1.41 1.41"/></svg>
@@ -3373,7 +3377,7 @@ function showTrade(id) {
         ${cell('Confluence-Score', d.scoreMax ? `${d.score} von ${d.scoreMax}` : '–')}
         ${d.multi ? '' : `${cell('Entry-Preis', t.entry ?? '–')}${cell('Stop', t.stop ?? '–')}${cell('Ziel', t.target ?? '–')}`}${cell('CRV geplant' + (d.multi ? ' (gewichtet)' : ''), d.crv ? '1 : ' + F.n(d.crv) : '–')}
         ${cell('Risiko', F.pct(t.riskPct, 2))}${d.multi ? '' : `${cell('MFE', F.r(t.mfe))}${cell('Tage bis MFE', ok(t.mfeDays) ? t.mfeDays : '–')}${cell('MAE', t.mae != null ? F.r(-Math.abs(t.mae)) : '–')}${cell('Peak vor Rücklauf', F.r(t.peak))}`}
-        ${cell('Exit-Grund', esc(t.exitReason || '–'))}${cell('Disziplin', t.discipline ? t.discipline + ' / 5' : '–')}${cell('Regelbruch', t.ruleBreak ? 'Ja' : 'Nein')}${t.tags ? cell('Tags', esc(t.tags)) : ''}
+        ${t.manExit != null ? cell('Manuell geschlossen bei', esc(String(t.manExit).replace('.', ','))) : ''}${cell('Exit-Grund', esc(t.exitReason || '–'))}${cell('Disziplin', t.discipline ? t.discipline + ' / 5' : '–')}${cell('Regelbruch', t.ruleBreak ? 'Ja' : 'Nein')}${t.tags ? cell('Tags', esc(t.tags)) : ''}
       </div>
       ${d.multi ? `<div class="card" style="padding:12px 16px"><h3>Positionen ${hlp('legs')}</h3>
         <div class="tbl-wrap"><table><thead><tr><th>Einstieg</th><th class="r">Risiko</th><th class="r">Entry / Stop / Ziel</th><th class="r">CRV</th><th class="r">MFE</th><th class="r">Tage bis MFE</th><th class="r">MAE</th><th class="r">Ergebnis</th><th class="r">Beitrag</th></tr></thead>
@@ -3409,8 +3413,15 @@ function chEmbedTrade(host, t) {
   requestAnimationFrame(() => requestAnimationFrame(() => { if (p) { CH.bw = 10; chCenterT(p.t0, 0.35); } chRedraw(); chInfo(); chStatus(); if (chKey()) chLoad({centerT: p ? p.t0 : null}); }));
 }
 
+/* Ergebnis in R aus einem von Hand eingetragenen Ausstiegspreis */
+function manR(t) {
+  const e = +t.entry, st = +t.stop, x = +t.manExit;
+  if (!isFinite(e) || !isFinite(st) || !isFinite(x) || !t.dir) return null;
+  const risk = Math.abs(e - st); if (!risk) return null;
+  return Math.round((t.dir === 'long' ? 1 : -1) * (x - e) / risk * 100) / 100;
+}
 /* ============ Trade: Formular ============ */
-const NUMK = ['entry','stop','target','riskPct','lots','r','mfe','mae','peak','days','discipline','mfeDays'];
+const NUMK = ['entry','stop','target','riskPct','lots','r','mfe','mae','peak','days','discipline','mfeDays','manExit'];
 const CARRY_EXCLUDE_CRIT = ['ob-ltf', 'taco'];
 function lastSettingsFor(source) {
   const list = S.trades.filter(t => t.source === source && !t.demo);
@@ -3476,6 +3487,7 @@ const Form = {
           <div class="fgrid" style="margin-top:14px">
           ${f('mfe', 'MFE' + hlp('mfe'), 'number')}${f('mfeDays', 'Tage bis MFE' + hlp('mfeDays'), 'number')}${f('mae', 'MAE' + hlp('mae'), 'number')}${f('peak', 'Peak vor Rücklauf' + hlp('peak'), 'number')}
           ${f('days', 'Haltedauer Tage', 'number')}
+          ${f('manExit', 'Manuell geschlossen bei (Preis)', 'number', 'placeholder="leer = normal auswerten"')}
           ${sel('exitReason', 'Exit-Grund', [['', '–'], ...EXITS.map(e => [e, e])])}
           ${sel('discipline', 'Disziplin', [['', '–'], ['5', '5 – nach Plan'], ['4', '4'], ['3', '3'], ['2', '2'], ['1', '1 – Plan ignoriert']])}
           ${sel('fx', 'F / X', [['', 'automatisch'], ['F', 'F – Hauptkriterien erfüllt'], ['X', 'X – nicht erfüllt']])}
@@ -3491,6 +3503,7 @@ const Form = {
           ${ta('plan', 'Was war der Plan', 'Einstieg, Stop, Ziel, rechnerisches CRV, 1 R in Euro.')}
           ${ta('happened', 'Was ist passiert', 'Der Verlauf, nicht nur das Ergebnis: MFE, MAE, wo es gedreht hat, wie lange gehalten.')}
           ${ta('deviation', 'Abweichung vom Plan', 'Wo bist du vom Plan abgewichen – und warum?')}
+          <div id="manWhyField" ${ok(d.manExit) ? '' : 'hidden'}>${ta('manWhy', 'Warum manuell geschlossen (Pflicht)', 'z. B. Swap-Gebühren haben den Trade aufgefressen, Nachricht vor dem Ziel, Zeitstopp.')}</div>
           ${ta('lesson', 'Was nehme ich mit', 'Die Lehre – auch unbequeme Beobachtungen.')}
           <div class="row"><label class="check"><input type="checkbox" data-k="lessonConfirmed" ${d.lessonConfirmed ? 'checked' : ''}> Lehre bestätigt</label>
           <label class="check"><input type="checkbox" id="lessonToLearn"> Lehre zusätzlich als Learning speichern</label></div>
@@ -3810,9 +3823,39 @@ const Form = {
     if (k === 'instrument' || k === 'dir') this.updateCrit();
     if (k === 'instrument') this.chartLoad();
     if (['instrument', 'dir', 'entry', 'stop', 'target'].includes(k)) this.tpAdv();
+    if (['manExit', 'entry', 'stop', 'dir', 'exitDate'].includes(k)) this.manApply();
     if (['instrument', 'dir', 'entryDate', 'analysisDate', 'profile'].includes(k)) this.cotAuto();
     if (k === 'riskPct') { this.updateAcc(); try { if (!d.legs && d.entry != null && d.stop != null && d.riskPct > 0 && d.instrument) { const lt = chLots({entry: d.entry, sl: d.stop, risk: d.riskPct}, String(d.instrument).toUpperCase().replace('/', '')); if (lt && isFinite(lt.lots)) { d.lots = lt.lots; const fl = $('#f_lots'); if (fl) fl.value = lt.lots; } } } catch (e) {} }
     this.side();
+  },
+  manApply() {
+    const d = this.draft; if (!d) return;
+    const on = ok(d.manExit), box = $('#manWhyField'); if (box) box.hidden = !on;
+    if (on) {
+      if (!d.exitDate) { d.exitDate = toISO(new Date()); const de = $('#f_exitDate'); if (de) de.value = d.exitDate; }
+      const r = manR(d);
+      if (r != null) {
+        d.r = r; d.exitReason = 'Manuell';
+        const er = $('#f_exitReason'); if (er) er.value = 'Manuell';
+        if (d.status !== 'geschlossen') { d.status = 'geschlossen'; const st = $('#f_status'); if (st) st.value = 'geschlossen'; }
+        if (this.mode(d) !== 'legs') {
+          d.exits = (d.exits && d.exits.length) ? d.exits : [{share: 100, targetR: null, r: null}];
+          d.exits[0].r = r; const ri = $('[data-ex="0:r"]'); if (ri) ri.value = r;
+        }
+        this.updateInfo(); this.updateAcc();
+      }
+    }
+    this.manChart();
+  },
+  manChart() {
+    const d = this.draft, c = d && d.chart; if (!c || !c.drs) return;
+    const t1 = d.exitDate ? Date.parse(d.exitDate + 'T12:00:00Z') : null;
+    c.drs.forEach(x => {
+      if (!x || x.type !== 'pos') return;
+      if (ok(d.manExit)) { x.mx = +d.manExit; x.man = {...(x.man || {}), mx: true}; if (t1) { x.t1 = t1; x.man.t1 = true; } }
+      else { delete x.mx; if (x.man) delete x.man.mx; }
+    });
+    try { if (typeof CH !== 'undefined' && CH.tradeId === d.id && CH.drs) { CH.drs['t:' + d.id] = clone(c.drs); CH.calcs = null; chRedraw(); chInfo(); } } catch (e) {}
   },
   side(force) {
     const d = this.draft, el = $('#fSide'); if (!el) return;
@@ -3887,6 +3930,18 @@ const Form = {
     if (!d.instrument) { toast('Bitte ein Instrument eintragen.'); $('#f_instrument').focus(); return; }
     if (!d.dir) { toast('Bitte die Richtung wählen.'); $('#f_dir').focus(); return; }
     if (d.status === 'limitaktiv') { d.status = 'limit'; if (!d.limitSet) { d.limitSet = true; d.limitAt = Date.now(); } } else if (d.status === 'limit') { d.limitSet = false; delete d.limitAt; }
+    if (ok(d.manExit)) {
+      if (this.mode(d) === 'legs') { toast('Manueller Ausstieg geht nur bei einem Ausstieg, nicht bei mehreren Positionen.'); return; }
+      if (!ok(d.entry) || !ok(d.stop)) { toast('Für den manuellen Ausstieg Entry und Stop eintragen.'); $('#f_entry')?.focus(); return; }
+      const mr = manR(d);
+      if (mr == null) { toast('Manueller Ausstieg: Entry und Stop dürfen nicht gleich sein.'); $('#f_stop')?.focus(); return; }
+      if (!d.exitDate) { d.exitDate = toISO(new Date()); const de = $('#f_exitDate'); if (de) de.value = d.exitDate; toast('Exit-Datum war leer, heutiges Datum eingetragen. Bitte prüfen.'); return; }
+      if (!String(d.manWhy || '').trim()) { toast('Bitte eintragen, warum du manuell geschlossen hast.'); const bx = $('#manWhyField'); if (bx) bx.hidden = false; const w = $('#f_manWhy'); if (w) { w.scrollIntoView({block: 'center'}); w.focus(); } return; }
+      d.r = mr; d.exitReason = 'Manuell'; d.status = 'geschlossen';
+      d.exits = (d.exits && d.exits.length) ? d.exits : [{share: 100, targetR: null, r: null}];
+      d.exits[0].r = mr;
+      this.manChart();
+    }
     if (d.status === 'geschlossen' && !ok(d.r)) { toast('Für einen geschlossenen Trade das Ergebnis in R eintragen.'); $('[data-ex="0:r"]')?.focus(); return; }
     if (this.mode(d) === 'legs') {
       for (const l of d.legs) {
@@ -4727,7 +4782,7 @@ async function saveLists() {
 }
 
 /* ============ Export ============ */
-const CSV_BASE = ['id','source','status','profile','instrument','dir','analysisDate','entryDate','exitDate','entry','stop','target','riskPct','accounts','r','mfe','mfeDays','mae','peak','days','exitReason','fx','score','positionen','discipline','ruleBreak','emoBefore','emoDuring','emoAfter','tags','why','plan','happened','deviation','lesson','notes'];
+const CSV_BASE = ['id','source','status','profile','instrument','dir','analysisDate','entryDate','exitDate','entry','stop','target','manExit','manWhy','riskPct','accounts','r','mfe','mfeDays','mae','peak','days','exitReason','fx','score','positionen','discipline','ruleBreak','emoBefore','emoDuring','emoAfter','tags','why','plan','happened','deviation','lesson','notes'];
 function exportCSV() {
   const q = v => { const s = v == null ? '' : String(v); return /[";\n]/.test(s) ? '"' + s.replace(/"/g, '""') + '"' : s; };
   const crits = [];
@@ -7749,10 +7804,13 @@ function glInit(root) {
 }
 
 /* Neuigkeiten-Fenster: erscheint einmal pro Version beim ersten Öffnen und bleibt, bis es geschlossen wird */
-const WN_VER = '2026-11-09g';
+const WN_VER = '2026-11-13a';
 /* HINWEIS: Bei jeder neuen Version die Liste leeren und NUR das eintragen, was gegenüber der vorherigen Datei neu ist. */
 const WN_LIST = [
   ['Neu', [
+    'Neuer Knopf oben links neben Hell/Dunkel: Kreispfeil zum Aktualisieren (Geräte-Sync, Makrodaten, Kurse). Lange drücken lädt die App neu.',
+    'Trade bearbeiten: Feld „Manuell geschlossen bei (Preis)“. Ergebnis, Exit-Grund und Datum richten sich danach, der Grund im Textfeld ist Pflicht. Im Chart kommt eine rote Linie mit dem R-Wert und ein roter Punkt am Ausstieg.',
+    'Samstags (ersatzweise sonntags) erscheint einmal „Geschlossene Positionen überprüfen“: alle in der Woche geschlossenen Live- und Forward-Positionen mit Ergebnis, je Zeile „Bearbeiten“ oder „Passt“. Wegklicken geht jederzeit.',
     'Die Sprungleiste mit den Pillen (Kennzahlen, Equity-Kurve, Asset-Ranking …) oben in der Übersicht ist entfernt.',
     'Layout „Exportieren“ enthält jetzt immer die aktuelle Ansicht (Navigation, Pillen, Anordnung, Stil) als Layout „Aktuelle Ansicht (Export)“. Nach „Importieren“ einfach auf „Laden“ tippen.',
     'Einstellungen → Geräte-Sync: „Zugangsdaten sichern“ speichert Repo, Token und Kurs-Key in einer Datei, „Zugangsdaten laden“ trägt sie auf einem anderen Gerät ein. Die Datei nicht teilen.',
@@ -10005,6 +10063,36 @@ const EMO_ASK = {
   start() { setTimeout(() => this.check(false), 3000); document.addEventListener('visibilitychange', () => { if (!document.hidden) setTimeout(() => this.check(false), 1200); }); setInterval(() => this.check(false), 30 * 6e4); }
 };
 
+/* ============ Samstag: geschlossene Positionen überprüfen ============ */
+const WK_CHK = {
+  st() { try { return JSON.parse(localStorage.getItem('tj.wkChk') || '{}') || {}; } catch (e) { return {}; } },
+  save(o) { try { localStorage.setItem('tj.wkChk', JSON.stringify(o)); } catch (e) {} },
+  mon() { const d = new Date(); d.setHours(0, 0, 0, 0); d.setDate(d.getDate() - ((d.getDay() + 6) % 7)); return d; },
+  key() { const d = this.mon(); return d.getFullYear() + '-' + String(d.getMonth() + 1).padStart(2, '0') + '-' + String(d.getDate()).padStart(2, '0'); },
+  list() { const a = this.mon().getTime(), b = a + 7 * 864e5; return S.trades.filter(t => { if (t.demo || t.status !== 'geschlossen' || !t.exitDate || t.source === 'backtest' || t.source === 'phantom') return false; const x = new Date(t.exitDate + (String(t.exitDate).length <= 10 ? 'T12:00:00' : '')).getTime(); return x >= a && x < b; }).sort((x, y) => String(x.exitDate).localeCompare(String(y.exitDate))); },
+  check(force) {
+    if (!S.ready || EMO_ASK.busy()) return;
+    const st = this.st(), k = this.key(), wd = new Date().getDay(), h = new Date().getHours();
+    if (this.again) { this.again = 0; if (this.list().some(t => !(st.ok || []).includes(t.id))) this.show(); return; }
+    if (!force) { if (st.w === k || (wd !== 6 && wd !== 0) || h < 7) return; }
+    if (!this.list().length) { if (force) toast('Diese Woche wurde keine Position geschlossen.'); return; }
+    this.save({w: k, ok: st.w === k ? (st.ok || []) : []}); this.show();
+  },
+  show() {
+    const st = this.st(), ok = st.ok || [], L = this.list(), d = x => x ? String(x).slice(8, 10) + '.' + String(x).slice(5, 7) + '.' : '–';
+    const row = t => { const r = tradeR(t), c = r == null ? 'var(--text-2)' : r >= 0 ? 'var(--pos, #2ebd85)' : 'var(--neg, #f6465d)', done = ok.includes(t.id);
+      return `<div class="emo-row" style="${done ? 'opacity:.55' : ''}"><div><b>${pairFlags(t.instrument)} ${esc(t.instrument)} ${t.dir === 'long' ? 'Long' : 'Short'}</b> <span class="small muted">${esc(t.source === 'forward' ? 'Forward' : 'Live')}</span><div class="small muted">Einstieg ${d(t.entryDate)} ${t.entry != null ? esc(String(t.entry)) : ''} · Ausstieg ${d(t.exitDate)}${t.exitPrice != null ? ' ' + esc(String(t.exitPrice)) : ''}</div></div><div style="display:flex;gap:10px;align-items:center"><b style="color:${c};min-width:64px;text-align:right">${r == null ? 'ohne R' : (r >= 0 ? '+' : '') + String(Math.round(r * 100) / 100).replace('.', ',') + ' R'}</b><button class="btn sm" type="button" data-act="wk-edit" data-id="${esc(t.id)}">Bearbeiten</button><button class="btn sm ghost" type="button" data-act="wk-ok" data-id="${esc(t.id)}" aria-pressed="${done}">${done ? 'Geprüft ✓' : 'Passt'}</button></div></div>`; };
+    const sum = L.reduce((a, t) => a + (tradeR(t) || 0), 0);
+    openModal(`<div class="modal-head live"><h2>Geschlossene Positionen überprüfen</h2><button class="btn ghost" data-act="close" aria-label="Schließen">✕</button></div>
+      <div class="form-main"><p class="small muted" style="margin:0 0 12px">Diese Woche geschlossen: ${L.length} ${L.length === 1 ? 'Position' : 'Positionen'}, zusammen ${(sum >= 0 ? '+' : '') + String(Math.round(sum * 100) / 100).replace('.', ',')} R. Stimmen Ausstieg, Ergebnis und Datum? Fehlerhafte Einträge über „Bearbeiten" korrigieren.</p>
+      <div class="emo-list">${L.map(row).join('')}</div>
+      <div class="row" style="display:flex;gap:10px;margin-top:14px;justify-content:flex-end"><button class="btn primary" data-act="close" type="button">Fertig</button></div></div>`, true);
+  },
+  ok(id) { const st = this.st(), ok = new Set(st.ok || []); ok.has(id) ? ok.delete(id) : ok.add(id); this.save({...st, w: this.key(), ok: [...ok]}); closeModal(); this.show(); },
+  edit(id) { const t = S.trades.find(x => x.id === id); if (!t) return; const st = this.st(); this.save({...st, w: this.key(), ok: [...new Set([...(st.ok || []), id])]}); this.again = 1; closeModal(); Form.open(t, false); },
+  start() { setTimeout(() => this.check(false), 6000); document.addEventListener('visibilitychange', () => { if (!document.hidden) setTimeout(() => this.check(false), 2500); }); setInterval(() => this.check(false), 30 * 6e4); setInterval(() => { if (this.again) this.check(false); }, 1500); }
+};
+
 /* ============ Privater GitHub-Sync ============ */
 const GH = {
   cfg() { try { return JSON.parse(localStorage.getItem('tj.gh') || '{}') || {}; } catch (e) { return {}; } },
@@ -10772,7 +10860,7 @@ document.addEventListener('click', async e => {
   if (ds.edit) { const t = S.trades.find(x => x.id === ds.edit); closeModal(); Form.open(t, false); return; }
   if (ds.dup) {
     const t = clone(S.trades.find(x => x.id === ds.dup));
-    ['id','r','mfe','mae','peak','days','exitDate','exitReason','why','plan','happened','deviation','lesson','lessonConfirmed','notes','createdAt','updatedAt','demo','ruleBreak','discipline','emoBefore','emoDuring','emoAfter','importBatch'].forEach(k => delete t[k]);
+    ['id','r','mfe','mae','peak','days','exitDate','exitReason','manExit','manWhy','why','plan','happened','deviation','lesson','lessonConfirmed','notes','createdAt','updatedAt','demo','ruleBreak','discipline','emoBefore','emoDuring','emoAfter','importBatch'].forEach(k => delete t[k]);
     (t.accounts || []).forEach(a => { delete a.resultEur; delete a.swap; delete a.comm; });
     t.images = []; t.status = t.source === 'live' ? 'limit' : 'geschlossen';
     closeModal(); Form.open(t, true); return;
@@ -10987,6 +11075,9 @@ document.addEventListener('click', async e => {
     case 'ki-tab': kiSetTab(ds.v); break;
     case 'ki-mode': S.kiMode = ds.v; try { localStorage.setItem('tj.kiMode', ds.v); } catch (e) {} render(); break;
     case 'emo-save': EMO_ASK.saveAns(); break;
+    case 'wk-ok': WK_CHK.ok(ds.id); break;
+    case 'wk-edit': WK_CHK.edit(ds.id); break;
+    case 'wk-chk': WK_CHK.check(true); break;
     case 'ki-tf': S.kiTf = ds.v; try { localStorage.setItem('tj.kiTf', ds.v); } catch (e) {} S.kiSel = ''; render(); break;
     case 'ki-src': S.kiSrc = ds.v; try { localStorage.setItem('tj.kiSrc', ds.v); } catch (e) {} render(); break;
     case 'gh-send': GH.send(true); break;
@@ -11144,7 +11235,35 @@ let rsz; window.addEventListener('resize', () => { clearTimeout(rsz); rsz = setT
   applyDesign();
   applyNavPos();
   alxApply();
-  $('#themeBtn').addEventListener('click', () => {
+  async function syRefresh(hard) {
+  const b = $('#syncBtn');
+  if (b && b.dataset.busy) return;
+  if (b) { b.dataset.busy = '1'; b.classList.add('busy'); }
+  try {
+    if (hard) {
+      try { if (window.caches && caches.keys) { const ks = await caches.keys(); await Promise.all(ks.map(k => caches.delete(k))); } } catch (e) {}
+      location.reload(); return;
+    }
+    const jobs = [];
+    try { if (typeof SY !== 'undefined' && SY.start) jobs.push(Promise.resolve(SY.run(true)).catch(() => {})); } catch (e) {}
+    try { jobs.push(Promise.resolve(autoSync(true)).catch(() => {})); } catch (e) {}
+    await Promise.all(jobs);
+    if (typeof chKey === 'function' && chKey() && document.getElementById('chCv') && typeof chLoad === 'function') { try { await chLoad({}); } catch (e) {} }
+    render(); toast('Daten aktualisiert.');
+  } catch (e) { toast('Aktualisieren hat nicht geklappt.'); }
+  finally { const b2 = $('#syncBtn'); if (b2) { delete b2.dataset.busy; b2.classList.remove('busy'); } }
+}
+{
+  const b = $('#syncBtn');
+  if (b) {
+    let tm = 0, lng = false;
+    const stop = () => { clearTimeout(tm); };
+    b.addEventListener('pointerdown', () => { lng = false; clearTimeout(tm); tm = setTimeout(() => { lng = true; syRefresh(true); }, 800); });
+    ['pointerup', 'pointerleave', 'pointercancel'].forEach(ev => b.addEventListener(ev, stop));
+    b.addEventListener('click', e => { stop(); if (lng) { lng = false; return; } syRefresh(!!(e.altKey || e.shiftKey)); });
+  }
+}
+$('#themeBtn').addEventListener('click', () => {
     const cur = document.documentElement.dataset.theme || 'light';
     const next = cur === 'dark' ? 'light' : 'dark';
     document.documentElement.dataset.theme = next;
@@ -11264,13 +11383,17 @@ function chPosCalc1(p, sr) {
   }
   }
   if (ex < 0 && man.t1 && i1 > i0) { ex = i1; reason = 'Manuell'; }
+  const mxOn = !!(man.mx && p.mx != null && isFinite(+p.mx));
+  if (mxOn) { ex = man.t1 ? i1 : (ex >= 0 ? ex : last); reason = 'Manuell'; amb = false; }
   let r = null;
-  if (reason === 'TP') r = o.rr; else if (reason === 'SL') r = -1; else if (reason === 'Manuell') r = sg * (D[ex][4] - p.entry) / risk;
+  if (reason === 'TP') r = o.rr; else if (reason === 'SL') r = -1; else if (reason === 'Manuell') r = sg * ((mxOn ? +p.mx : D[ex][4]) - p.entry) / risk;
   /* Peak = erster bestätigter Drehpunkt (Hoch/Tief mit N Kerzen links und rechts niedriger/höher), MFE = weitester Lauf bis zu mfeW Wochen nach dem Peak */
-  const RD = SUB || D, r0 = SUB ? a0s : i0, rl = RD.length - 1, rstep = SUB ? SUBSTEP : sr.step, exR = SUB ? kS : ex;
+  const RD = SUB || D, r0 = SUB ? a0s : i0, rl = RD.length - 1, rstep = SUB ? SUBSTEP : sr.step; let exR = SUB ? kS : ex;
+  if (mxOn) { const te = man.t1 ? p.t1 : (ex >= 0 ? D[ex][0] : D[last][0]); let q = r0; while (q + 1 <= rl && RD[q + 1][0] <= te) q++; exR = q; }
   const cf = (typeof CH !== 'undefined' && CH.cfg) || {}, N = Math.max(1, Math.round(cf.pivN || (rstep >= 5e8 ? 2 : rstep >= 7e7 ? 4 : 6))), bpw = Math.max(1, Math.round(4.32e8 / rstep)), Wk = Math.max(0, cf.mfeW ?? 3);
   const fx = j => long ? RD[j][2] : RD[j][3];
   let lim = Math.min(rl, r0 + 400); for (let j = r0 + 1; j <= lim; j++) if (hitSL(RD[j])) { lim = j - 1; break; }
+  if (mxOn && exR > r0) lim = Math.min(lim, exR);
   let best = p.entry, bi = r0, pk = -1;
   for (let j = r0 + 1; j <= lim; j++) { const f = fx(j); if (sg * (f - best) > 0) { best = f; bi = j; } }
   for (let j = r0 + 1; j <= lim && pk < 0; j++) {
@@ -11290,7 +11413,7 @@ function chPosCalc1(p, sr) {
   const toW = q => { if (!SUB) return q; let w = i0; while (w + 1 <= last && D[w + 1][0] <= SUB[q][0]) w++; return w; };
   bi = toW(bi); if (pk >= 0) pk = toW(pk);
   const t1 = (ex >= 0 && reason !== 'Manuell') ? (subT != null ? subT : D[ex][0]) : (man.t1 ? p.t1 : D[last][0]);
-  return Object.assign(o, {ok: true, bi, i0, ex, reason, amb, r: r == null ? null : Math.round(r * 100) / 100, mfeP, maeP, peakP, pk: pk >= 0 ? pk : bi, mfeR: R(sg * (mfeP - p.entry)), maeR: (reason === 'SL' && !man.mae) ? 1 : R(sg * (p.entry - maeP)), peakR: R(sg * (peakP - p.entry)), mfeDays, t1, t0: D[i0][0], tf0: SUB ? SUB[a0s][0] : D[i0][0]});
+  return Object.assign(o, {mxP: mxOn ? +p.mx : null, mxI: mxOn ? ex : -1, ok: true, bi, i0, ex, reason, amb, r: r == null ? null : Math.round(r * 100) / 100, mfeP, maeP, peakP, pk: pk >= 0 ? pk : bi, mfeR: R(sg * (mfeP - p.entry)), maeR: (reason === 'SL' && !man.mae) ? 1 : R(sg * (p.entry - maeP)), peakR: R(sg * (peakP - p.entry)), mfeDays, t1, t0: D[i0][0], tf0: SUB ? SUB[a0s][0] : D[i0][0]});
 }
 function chLots(p, sym) {
   const risk = Math.abs(p.entry - p.sl); if (!risk) return null;
@@ -11625,8 +11748,8 @@ function chDraw(cv, V, O) {
       }
       /* Punkte liegen ca. eine Woche rechts vom Rechteck, damit sie sich greifen lassen, ohne die Position zu bewegen */
       const wkx = Math.min(150, Math.max(24, Math.max(1, Math.round(4.32e8 / V.sr.step)) * bw)), ln = (p, col, k, xd, lb) => { const y = Y(p); ctx.strokeStyle = col; ctx.lineWidth = 1.7; ctx.setLineDash([7, 4]); ctx.beginPath(); ctx.moveTo(x0, y); ctx.lineTo(xd, y); ctx.stroke(); ctx.setLineDash([]); ctx.fillStyle = C.bg; ctx.beginPath(); ctx.arc(xd, y, 4.5, 0, 7); ctx.fill(); ctx.strokeStyle = col; ctx.lineWidth = 2; ctx.stroke(); if (lb) { ctx.font = '700 10px -apple-system,Segoe UI,sans-serif'; ctx.fillStyle = col; ctx.textAlign = 'left'; ctx.fillText(lb, xd + 8, y + 3.5); } hits.push({k, d, y, x0, x1: xd}); };
-      (cc.legs || [cc]).forEach((lc, li) => { if (!lc.ok) return; const hd = d.hide || {}, hl = V.liveHide && !(lc.ex >= 0 && (lc.reason === 'TP' || lc.reason === 'SL')), sf = li ? '2' : '', xd = x1 + wkx + li * 24, lb = d.two ? String(li + 1) : ''; if (hl) return; if (!hd.mfe) ln(lc.mfeP, cs.mfe || C.mfe, 'mfe' + sf, xd, lb); if (!hd.mae) ln(lc.maeP, cs.mae || C.mae, 'mae' + sf, xd, lb); if (!hd.peak) ln(lc.peakP, cs.peak || C.peak, 'peak' + sf, xd, lb); });
-      (cc.legs || [cc]).forEach((lc, li) => { if (lc.ok && lc.ex >= 0) { const xe = X(lc.ex), ye = lc.reason === 'TP' ? (li ? yT2 : yT) : lc.reason === 'SL' ? yS : Y(V.sr.D[lc.ex][4]); ctx.fillStyle = lc.reason === 'TP' ? cTP : lc.reason === 'SL' ? cSL : cEN; ctx.beginPath(); ctx.arc(xe, ye, 4, 0, 7); ctx.fill(); } });
+      (cc.legs || [cc]).forEach((lc, li) => { if (!lc.ok) return; const hd = d.hide || {}, hl = V.liveHide && !(lc.ex >= 0 && (lc.reason === 'TP' || lc.reason === 'SL')), sf = li ? '2' : '', xd = x1 + wkx + li * 24, lb = d.two ? String(li + 1) : ''; if (hl) return; if (!hd.mfe) ln(lc.mfeP, cs.mfe || C.mfe, 'mfe' + sf, xd, lb); if (!hd.mae) ln(lc.maeP, cs.mae || C.mae, 'mae' + sf, xd, lb); if (!hd.peak) ln(lc.peakP, cs.peak || C.peak, 'peak' + sf, xd, lb); if (lc.mxP != null) ln(lc.mxP, cs.mx || '#f23645', 'mx' + sf, xd, lc.r == null ? lb : ((lc.r < 0 ? '\u2212' : '+') + Math.abs(lc.r).toFixed(2).replace('.', ',') + ' R')); });
+      (cc.legs || [cc]).forEach((lc, li) => { if (lc.ok && lc.ex >= 0) { const mxo = lc.mxP != null, xe = X(mxo && lc.mxI >= 0 ? lc.mxI : lc.ex), ye = mxo ? Y(lc.mxP) : lc.reason === 'TP' ? (li ? yT2 : yT) : lc.reason === 'SL' ? yS : Y(V.sr.D[lc.ex][4]); ctx.fillStyle = mxo ? (cs.mx || '#f23645') : lc.reason === 'TP' ? cTP : lc.reason === 'SL' ? cSL : cEN; ctx.beginPath(); ctx.arc(xe, ye, mxo ? 5 : 4, 0, 7); ctx.fill(); if (mxo) { ctx.strokeStyle = '#ffffff'; ctx.lineWidth = 1.3; ctx.stroke(); } } });
       let e2 = null;
       if (d.two && !O.small) {
         if (Math.abs(yE2 - yE) > 1) { ctx.strokeStyle = cEN; ctx.lineWidth = 1.5; ctx.setLineDash([3, 3]); ctx.beginPath(); ctx.moveTo(x0, yE2); ctx.lineTo(x1, yE2); ctx.stroke(); ctx.setLineDash([]); }
@@ -12581,6 +12704,7 @@ function chPanel() {
   } else if (d && d.type === 'pos') {
     const c = d.c || {}, lt = chLots(d, CH.cfg.sym);
     h = `<h4>Position</h4>${cp('sl', 'Stop-Zone', c.sl || C.sl)}${cp('tp', 'Ziel-Zone', c.tp || C.tp)}${cp('ent', 'Entry-Linie', c.ent || C.ent)}${cp('mfe', 'MFE-Linie', c.mfe || C.mfe)}${cp('peak', 'Peak-Linie', c.peak || C.peak)}${cp('mae', 'MAE-Linie', c.mae || C.mae)}
+      <div class="ch-prow"><label title="Manuell geschlossen: Preis eintragen, dann rechnet der Chart das Ergebnis daraus. Leer = normale Auswertung.">Manuell geschlossen bei</label><input type="number" step="any" data-chr="mx" value="${d.mx ?? ''}" style="width:90px"></div>
       <div class="ch-prow"><label>Kontogröße</label><input type="number" step="any" data-chr="acct" value="${lt ? lt.acct : ''}" style="width:90px"></div>
       <div class="ch-prow"><button class="btn sm ghost" type="button" data-chact="auto">MFE, MAE, Peak und Ende automatisch</button></div>`;
   } else {
@@ -12921,6 +13045,7 @@ function chInput(e) {
   }
   if (t.dataset.chc) { const k = t.dataset.chc; if (d && d.type === 'rect') d[k] = t.value; else if (d && d.type === 'pos') (d.c ||= {})[k] = t.value; else CH.cfg.col[k] = t.value; chPersist(); chRedraw(); if (d && d.type === 'pos') chInfo(); return; }
   if (t.dataset.chr === 'text' && d) { d.text = t.value; chPersist(); chRedraw(); return; }
+  if (t.dataset.chr === 'mx' && d) { const v = parseFloat(t.value); if (Number.isFinite(v)) { d.mx = v; d.man = {...(d.man || {}), mx: true}; } else { delete d.mx; if (d.man) delete d.man.mx; } CH.calcs = null; chPersist(); chRedraw(); chInfo(); return; }
   if (t.dataset.chr && d) { const v = parseFloat(t.value); if (!Number.isFinite(v)) return; if (t.dataset.chr === 'fa') d.fa = v / 100; else if (t.dataset.chr === 'w') d.w = v; else if (t.dataset.chr === 'acct') d.acct = v; chPersist(); chRedraw(); chInfo(); return; }
   if (t.dataset.chg) { if (t.dataset.chg === 'key') { try { localStorage.setItem('tj.tdkey', t.value.trim()); } catch (er) {} return; } const v = parseFloat(t.value); if (Number.isFinite(v)) { CH.cfg[t.dataset.chg] = v; chPersist(); if (t.dataset.chg === 'pivN' || t.dataset.chg === 'mfeW') { CH.calcs = null; chInfo(); chRedraw(); } } }
 }
@@ -13625,6 +13750,8 @@ const SY = {
     if (this.started) return; this.started = true;
     setTimeout(() => this.run(false), 1500);
     document.addEventListener('visibilitychange', () => { if (!document.hidden) this.run(false); });
+    window.addEventListener('focus', () => this.run(false));
+    window.addEventListener('pageshow', () => this.run(false));
     window.addEventListener('online', () => this.run(false));
     setInterval(() => { if (!document.hidden) this.run(false); }, 2 * 60 * 1000);
   },
@@ -13764,7 +13891,7 @@ renderNav();
   setTimeout(() => { chAutoStart(); }, 2500);
   setTimeout(() => { try { npShow(); } catch (e) {} }, 1600);
   setTimeout(() => { try { fuPop(); } catch (e) {} }, 2600);
-  setTimeout(() => autoSync(false), 700); SY.start(); GH.start(); EMO_ASK.start();
+  setTimeout(() => autoSync(false), 700); SY.start(); GH.start(); EMO_ASK.start(); WK_CHK.start();
   /* Makrodaten und KI-Einschätzung auch bei offenem Tab nachladen: alle 10 Minuten und beim Zurückkehren, nie während du tippst */
   { const idle = () => { const a = document.activeElement; return !(a && /^(INPUT|TEXTAREA|SELECT)$/.test(a.tagName)) && !document.body.classList.contains('editing') && !(document.getElementById('kiPanel') && document.getElementById('kiPanel').style.display === 'block') && !document.querySelector('.modal-back,.sp-back,[role=dialog]:not([hidden])'); };
     const tick = () => { if (!document.hidden && idle()) autoSync(false); };
