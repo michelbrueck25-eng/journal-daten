@@ -7804,10 +7804,11 @@ function glInit(root) {
 }
 
 /* Neuigkeiten-Fenster: erscheint einmal pro Version beim ersten Öffnen und bleibt, bis es geschlossen wird */
-const WN_VER = '2026-11-13a';
+const WN_VER = '2026-11-15a';
 /* HINWEIS: Bei jeder neuen Version die Liste leeren und NUR das eintragen, was gegenüber der vorherigen Datei neu ist. */
 const WN_LIST = [
   ['Neu', [
+    'Wenn der Chart nicht zeichnen kann, steht die Fehlermeldung jetzt gut lesbar in der Mitte statt versteckt hinter der Werkzeugleiste.',
     'Neuer Knopf oben links neben Hell/Dunkel: Kreispfeil zum Aktualisieren (Geräte-Sync, Makrodaten, Kurse). Lange drücken lädt die App neu.',
     'Trade bearbeiten: Feld „Manuell geschlossen bei (Preis)“. Ergebnis, Exit-Grund und Datum richten sich danach, der Grund im Textfeld ist Pflicht. Im Chart kommt eine rote Linie mit dem R-Wert und ein roter Punkt am Ausstieg.',
     'Samstags (ersatzweise sonntags) erscheint einmal „Geschlossene Positionen überprüfen“: alle in der Woche geschlossenen Live- und Forward-Positionen mit Ergebnis, je Zeile „Bearbeiten“ oder „Passt“. Wegklicken geht jederzeit.',
@@ -12440,7 +12441,16 @@ function chRedraw() {
     chRaf = 0; const cv = $('#chCv'); if (!cv) return;
     if (!CH.data.length) { try { const cx = cv.getContext('2d'); cx.setTransform(1, 0, 0, 1, 0, 0); cx.fillStyle = '#0b0b0d'; cx.fillRect(0, 0, cv.width, cv.height); cx.fillStyle = '#9aa0ad'; cx.font = '600 ' + Math.round(14 * (cv.width / (cv.clientWidth || cv.width))) + 'px sans-serif'; cx.textAlign = 'center'; cx.fillText(CH.loading ? 'Kurse werden geladen …' : CH.err ? 'Keine Kursdaten: ' + CH.err : !chKey() ? 'Keine Kursdaten gespeichert. Twelve-Data-Schlüssel in den Chart-Einstellungen eintragen.' : 'Keine Kursdaten für ' + CH.cfg.sym + ' ' + CH.cfg.tf + '.', cv.width / 2, cv.height / 2); } catch (er) {} return; }
     { const mx = CH.data.length - 1 - chPlotW() * 0.3 / CH.bw; if (CH.data.length && CH.vx0 > mx) CH.vx0 = mx; }
-    if (!chEmb()) chAcoEnsure(); try { CH.g = chDraw(cv, chView(), {cot: !chEmb(), emb: chEmb()}); chMqOverlay(cv); } catch (er) { CH.g = null; try { const cx = cv.getContext('2d'); cx.setTransform(1, 0, 0, 1, 0, 0); cx.fillStyle = '#e5675c'; cx.font = '14px system-ui'; cx.fillText('Chart-Fehler: ' + (er && er.message || er), 16, 28); } catch (e2) {} console.error(er); } if (CH.cfg.yfix && !CH.yMan && CH.g) CH.yMan = {lo: CH.g.lo, hi: CH.g.hi}; chEb(); chCotHd(); chAcoHd();
+    if (!chEmb()) chAcoEnsure(); try { CH.g = chDraw(cv, chView(), {cot: !chEmb(), emb: chEmb()}); chMqOverlay(cv); } catch (er) { CH.g = null; try {
+      const cx = cv.getContext('2d'), k = cv.width / (cv.clientWidth || cv.width);
+      cx.setTransform(1, 0, 0, 1, 0, 0); cx.fillStyle = '#0b0b0d'; cx.fillRect(0, 0, cv.width, cv.height);
+      cx.fillStyle = '#e5675c'; cx.textAlign = 'center'; cx.font = '600 ' + Math.round(15 * k) + 'px system-ui';
+      cx.fillText('Chart-Fehler', cv.width / 2, cv.height / 2 - 14 * k);
+      cx.fillStyle = '#9aa0ad'; cx.font = Math.round(12 * k) + 'px system-ui';
+      const msg = String((er && er.message) || er), max = 70;
+      for (let q = 0; q * max < msg.length && q < 4; q++) cx.fillText(msg.slice(q * max, q * max + max), cv.width / 2, cv.height / 2 + (8 + q * 15) * k);
+      cx.fillText('Bitte Screenshot an Claude schicken.', cv.width / 2, cv.height / 2 + 72 * k);
+    } catch (e2) {} console.error(er); } if (CH.cfg.yfix && !CH.yMan && CH.g) CH.yMan = {lo: CH.g.lo, hi: CH.g.hi}; chEb(); chCotHd(); chAcoHd();
   });
 }
 function chStatus() {
