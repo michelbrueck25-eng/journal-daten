@@ -816,6 +816,14 @@ details.fold>.fold-body{padding:0 20px 20px}
 .cot-pdet{padding:12px 0 6px;border-bottom:1px solid var(--line)}
 @media(max-width:620px){.cot-prow{grid-template-columns:1.2fr 1fr 1fr 1fr;font-size:13px}.cot-prow>span:nth-child(n+5){display:none}}
 .cot-ctl{display:flex;flex-wrap:wrap;gap:6px 18px;align-items:center;margin:0 0 10px}
+.cotx-tbl .cotx-grp th{padding-top:14px;font-size:12px;letter-spacing:.04em;text-transform:uppercase;color:var(--text-2);border-bottom:1px solid var(--line)}
+.cotx-bar{display:inline-block;position:relative;width:52px;height:6px;margin-left:8px;border-radius:3px;background:var(--line);vertical-align:middle}
+.cotx-bar i{position:absolute;top:-2px;width:3px;height:10px;border-radius:2px;background:var(--text-2);transform:translateX(-50%)}
+.cotx-tbl tr.cotx-low td:nth-child(5),.cotx-tbl tr.cotx-high td:nth-child(5){font-weight:600}
+.cotx-tbl tr.cotx-low td:nth-child(5){color:var(--pos,#2ebd85)}
+.cotx-tbl tr.cotx-high td:nth-child(5){color:var(--neg,#f6465d)}
+.cotx-tbl tr.cotx-low .cotx-bar i{background:var(--pos,#2ebd85)}
+.cotx-tbl tr.cotx-high .cotx-bar i{background:var(--neg,#f6465d)}
 .cot-rng{display:inline-flex;border:1px solid var(--line-strong);border-radius:8px;overflow:hidden}
 .cot-rng button{background:none;border:0;border-right:1px solid var(--line-strong);padding:4px 11px;font:inherit;font-size:13px;color:var(--text-2);cursor:pointer}
 .cot-rng button:last-child{border-right:0}
@@ -4518,6 +4526,10 @@ function vSettings(v) {
   </div>
   ${ghCard()}
   ${syCard()}
+  <div class="card" id="cotxCard"><div class="card-head"><h2>COT: Märkte</h2></div>
+    <p class="small muted" style="margin:0 0 12px;max-width:85ch">Welche Gruppen die Karte „COT: Rohstoffe und Indizes“ auf der Makrodaten-Seite zeigt. Die Währungen stehen weiter in der normalen COT-Karte und im Scanner. Diese Einstellung gilt nur auf diesem Gerät.</p>
+    ${COT_GRP.map(g => `<label class="check" style="margin:6px 0"><input type="checkbox" data-cotg="${g[0]}" ${S.cotUi.grp[g[0]] ? 'checked' : ''}> ${esc(g[1])} <span class="small faint">(${g[2].map(m => esc(m[1])).join(', ')})</span></label>`).join('')}
+  </div>
   ${alxCard()}
   <div class="card"><div class="card-head"><h2>Darstellung</h2></div>
     <div class="lbl" style="margin-bottom:8px">Navigationsposition</div>
@@ -7220,6 +7232,7 @@ function vMakro(v) {
         ${mkLiveCard()}
         ${mkPruefCard()}
         ${mkCotCard(c1, c2)}
+        ${mkCotXCard()}
         ${mkChartCard(c1, c2)}
         ${mkCarryCard(rates, c1, c2)}
         ${mkFormulaCard(data, rates, c1, c2)}
@@ -7804,10 +7817,12 @@ function glInit(root) {
 }
 
 /* Neuigkeiten-Fenster: erscheint einmal pro Version beim ersten Öffnen und bleibt, bis es geschlossen wird */
-const WN_VER = '2026-11-15a';
+const WN_VER = '2026-11-16a';
 /* HINWEIS: Bei jeder neuen Version die Liste leeren und NUR das eintragen, was gegenüber der vorherigen Datei neu ist. */
 const WN_LIST = [
   ['Neu', [
+    'Makrodaten: neue Karte „COT: Rohstoffe und Indizes“ mit S&P 500, Nasdaq, Rohöl, Erdgas, Gold, Silber, Platin, Kupfer und den Agrarmärkten. Extreme sind farbig markiert.',
+    'Einstellungen → „COT: Märkte“: Gruppen einzeln abschalten, gilt nur auf dem jeweiligen Gerät.',
     'Wenn der Chart nicht zeichnen kann, steht die Fehlermeldung jetzt gut lesbar in der Mitte statt versteckt hinter der Werkzeugleiste.',
     'Neuer Knopf oben links neben Hell/Dunkel: Kreispfeil zum Aktualisieren (Geräte-Sync, Makrodaten, Kurse). Lange drücken lädt die App neu.',
     'Trade bearbeiten: Feld „Manuell geschlossen bei (Preis)“. Ergebnis, Exit-Grund und Datum richten sich danach, der Grund im Textfeld ist Pflicht. Im Chart kommt eine rote Linie mit dem R-Wert und ein roter Punkt am Ausstieg.',
@@ -7850,8 +7865,15 @@ function wnShow() {
 /* ===== COT-Indikator (CFTC Legacy, Futures Only) ===== */
 const COT_CODE = {EUR: '099741', GBP: '096742', JPY: '097741', AUD: '232741', CAD: '090741', CHF: '092741', NZD: '112741', USD: '098662', GOLD: '088691', SILBER: '084691', PLATIN: '076651', KUPFER: '085692', OEL: '067651', ERDGAS: '023651', ES: '13874A', NQ: '209742', MAIS: '002602', WEIZEN: '001602', SOJA: '005602', ZUCKER: '080732', KAFFEE: '083731', BAUMWOLLE: '033661'};
 const COT_NAME = {USD: 'USD (Dollar-Index)'};
+const COT_GRP = [
+  ['idx', 'Indizes', [['ES', 'S&P 500'], ['NQ', 'Nasdaq 100']]],
+  ['ener', 'Energie', [['OEL', 'Rohöl (WTI)'], ['ERDGAS', 'Erdgas']]],
+  ['met', 'Metalle', [['GOLD', 'Gold'], ['SILBER', 'Silber'], ['PLATIN', 'Platin'], ['KUPFER', 'Kupfer']]],
+  ['agr', 'Agrar', [['MAIS', 'Mais'], ['WEIZEN', 'Weizen'], ['SOJA', 'Sojabohnen'], ['ZUCKER', 'Zucker'], ['KAFFEE', 'Kaffee'], ['BAUMWOLLE', 'Baumwolle']]]
+];
 S.cot = (() => { try { return JSON.parse(localStorage.getItem('tj.cot') || '{}') || {}; } catch (e) { return {}; } })();
 S.cotUi = lsGetJSON('tj.cotui', {cyc: false, nc: false, rt: false, tbl: true, rng: 104, scan: false, fold: false});
+S.cotUi.grp = Object.assign({idx: true, ener: true, met: true, agr: true}, S.cotUi.grp || {});
 S.cotUi.off = 0; /* verschobener Ausschnitt wird nicht mehr gemerkt: der COT-Chart beginnt immer bei der aktuellen Woche */
 const mkIsPair = (p, c1, c2) => { const [a, b] = String(p).split('/'); return !!c2 && ((a === c1 && b === c2) || (a === c2 && b === c1)); };
 function cotSave() { try { localStorage.setItem('tj.cot', JSON.stringify(S.cot)); } catch (e) { toast('COT-Daten konnten nicht gespeichert werden (Speicher voll?).'); } }
@@ -8035,6 +8057,35 @@ function cotScan() {
     out.push({pr, a, b, x, y, hi, sig, d: sa.rows[i].d});
   });
   return out.sort((p, q) => (q.sig === 'Long' || q.sig === 'Short') - (p.sig === 'Long' || p.sig === 'Short') || Math.abs(q.x - 50) - Math.abs(p.x - 50));
+}
+/* COT für Rohstoffe und Indizes: eine Zeile je Markt, Gruppen in den Einstellungen abschaltbar */
+function mkCotXCard() {
+  const on = COT_GRP.filter(g => S.cotUi.grp[g[0]]);
+  if (!on.length) return '';
+  const num = v => v == null ? '–' : (v > 0 ? '+' : v < 0 ? '\u2212' : '') + Math.abs(Math.round(v)).toLocaleString('de-DE');
+  const pct = v => v == null ? '–' : Math.round(v) + ' %';
+  let last = '', rows = '', any = false;
+  on.forEach(([gk, gname, mkts]) => {
+    let body = '';
+    mkts.forEach(([sym, name]) => {
+      const se = cotSeries(sym);
+      if (!se || !se.net.length) { body += `<tr><td>${esc(name)}</td><td class="num" colspan="5"><span class="small faint">keine Daten</span></td></tr>`; return; }
+      any = true;
+      const i = se.net.length - 1, r = se.rows[i], d = r.d;
+      if (d > last) last = d;
+      const chg = i > 0 ? se.net[i] - se.net[i - 1] : null;
+      const spec = (r.nl || 0) - (r.ns || 0);
+      const i12 = se.c12[i], i36 = se.c36[i];
+      const ext = i12 == null ? '' : i12 <= 25 ? 'low' : i12 >= 75 ? 'high' : '';
+      const bar = i12 == null ? '' : `<span class="cotx-bar" title="COT-Index 12 Monate: ${Math.round(i12)} %"><i style="left:${Math.max(0, Math.min(100, i12))}%"></i></span>`;
+      body += `<tr${ext ? ' class="cotx-' + ext + '"' : ''}><td>${esc(name)}</td><td class="num">${num(se.net[i])}</td><td class="num">${num(chg)}</td><td class="num">${num(spec)}</td><td class="num">${pct(i12)} ${bar}</td><td class="num">${pct(i36)}</td></tr>`;
+    });
+    rows += `<tr class="cotx-grp"><th colspan="6">${esc(gname)}</th></tr>` + body;
+  });
+  if (!any) return '';
+  return `<div class="card" data-blk="mk_cotx" data-noh><div class="card-head"><h2>COT: Rohstoffe und Indizes</h2><span class="small muted">Commercials, CFTC Legacy, Futures Only${last ? ' · Woche ' + esc(last) : ''}</span></div>
+    <p class="small muted" style="margin:0 0 10px;max-width:85ch">Netto heißt Commercials Long minus Short. Der COT-Index zeigt, wo die Commercials innerhalb ihrer Spanne der letzten 12 bzw. 36 Monate stehen: unter 25 Prozent sind sie ungewöhnlich short (oft ein Boden), über 75 Prozent ungewöhnlich long. Gruppen schaltest du in den Einstellungen unter „COT: Märkte“ ab.</p>
+    <div class="tbl-wrap"><table class="mk-tbl cotx-tbl"><thead><tr><th>Markt</th><th class="num">Netto Comm.</th><th class="num">Woche</th><th class="num">Netto Spek.</th><th class="num">Index 12M</th><th class="num">Index 3J</th></tr></thead><tbody>${rows}</tbody></table></div></div>`;
 }
 function mkCotCard(c1, c2) {
   const has2 = c2 && c2 !== c1, ui = S.cotUi;
@@ -13783,6 +13834,13 @@ document.addEventListener('click', e => { const b = e.target.closest && e.target
   if (b.dataset.act === 'sy-cred-out') { const keys = {}; SY_CRED.forEach(k => { try { const v = localStorage.getItem(k); if (v != null) keys[k] = v; } catch (z) {} }); const u = URL.createObjectURL(new Blob([JSON.stringify({typ: 'journal-zugang', keys}, null, 1)], {type: 'application/json'})), l = document.createElement('a'); l.href = u; l.download = 'Journal-Zugangsdaten.json'; document.body.appendChild(l); l.click(); l.remove(); setTimeout(() => URL.revokeObjectURL(u), 2000); }
   else { const f = document.getElementById('syCredFile'); if (f) f.click(); } });
 document.addEventListener('change', e => { const f = e.target; if (!f || f.id !== 'syCredFile' || !f.files[0]) return; f.files[0].text().then(t => { const d = JSON.parse(t); if (d.typ !== 'journal-zugang' || !d.keys) throw 0; Object.keys(d.keys).filter(k => SY_CRED.includes(k)).forEach(k => localStorage.setItem(k, d.keys[k])); toast('Zugangsdaten geladen.'); setTimeout(() => location.reload(), 500); }).catch(() => toast('Datei nicht erkannt.')); f.value = ''; });
+document.addEventListener('change', e => {
+  const g = e.target.closest && e.target.closest('[data-cotg]');
+  if (!g) return;
+  S.cotUi.grp[g.dataset.cotg] = g.checked;
+  try { localStorage.setItem('tj.cotui', JSON.stringify(S.cotUi)); } catch (z) {}
+  toast(g.checked ? 'Gruppe wird angezeigt.' : 'Gruppe ausgeblendet.');
+});
 document.addEventListener('change', e => { const t = e.target.closest && e.target.closest('[data-gh="sync"]'); if (t && t.checked) { SY.start(); setTimeout(() => SY.run(true), 300); } });
 
 /* ============ Strukturbruch (4H, Rückfall auf 1H): hat nach dem Zonenkontakt ein Bruch der letzten Gegenstruktur stattgefunden? ============ */
