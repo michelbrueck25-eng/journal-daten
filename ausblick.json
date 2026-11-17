@@ -1,6 +1,6 @@
 {
  "typ": "ausblick",
- "stand": "2026-11-16T14:45:00+01:00",
+ "stand": "2026-11-17T06:40:00+01:00",
  "zusammenfassung": "Wochenausblick ab 26.10.: Die Woche wird von vier Notenbankterminen in 48 Stunden entschieden (RBNZ und BoC sowie Fed am 28.10., EZB am 29.10., BoJ am 30.10.). Mein Hauptgedanke: Wer Währungen handelt, sollte dort stehen, wo Positionierung, Zinsrichtung und Nachrichtenlage in dieselbe Richtung zeigen. Das trifft derzeit vor allem auf die Gegenseite zum Yen und zum Franken zu: Die Commercials (COT, Stand 20.10.) stehen bei AUD (100), EUR (97) und NZD (89) im oberen, bei JPY (19) und CHF (13) im unteren Extrembereich, gleichzeitig bleibt die Zinsdifferenz groß und die Risikostimmung (Chip-Ausverkauf, Hormus, Ölpreis bei rund 115 USD) belastet den Yen eher als dass sie ihn stützt. Beim Dollar und beim Euro sehe ich dagegen keinen sauberen Vorteil, solange Fed und EZB nicht gesprochen haben. Neu am Montagmorgen: Lula gewann die brasilianische Stichwahl mit rund 51,8 Prozent; das ist ein möglicher Risikoabschlag für Schwellenländer-Währungen, ändert aber an der Rangfolge der acht Hauptwährungen noch nichts. Entscheidend bleibt die Zentralbankwoche ab Dienstag (BoC, Fed, RBNZ am 28.10., EZB am 29.10., BoJ am 30.10.). Update 30.10.: Die BoJ hielt den Leitzins bei 1,25 Prozent (8 zu 1, Takata dagegen) und hob die Inflationsprognose an, eine Dezember-Zusage gab es nicht. Der Yen legte zeitweise zu.",
  "paare": [
   {
@@ -209,7 +209,7 @@
    "ungueltig": "Eine unerwartete BoC-Erhöhung oder ein weiterer Anstieg von Brent über 120 USD spricht gegen die Long-Idee.",
    "plan": "Nur beobachten, bis die BoC gesprochen hat.",
    "ob": {
-    "stand": "2026-11-16T14:42",
+    "stand": "2026-11-17T06:31",
     "checks": [
      {
       "t": "ok",
@@ -217,7 +217,7 @@
      },
      {
       "t": "warn",
-      "text": "Termine in den nächsten 5 Tagen: 16.11. 14:30 CPI m/m, 19.11. 01:30 Arbeitslosenquote, 19.11. 01:30 Beschäftigungsänderung."
+      "text": "Termine in den nächsten 5 Tagen: 19.11. 01:30 Arbeitslosenquote, 19.11. 01:30 Beschäftigungsänderung."
      },
      {
       "t": "warn",
@@ -294,7 +294,7 @@
    "ungueltig": "Nicht relevant, solange ich kein Szenario vorschlage. Neue Bewertung nach dem 29.10.",
    "plan": "Keine Position. Nach der EZB neu bewerten.",
    "ob": {
-    "stand": "2026-11-16T14:42",
+    "stand": "2026-11-17T06:31",
     "checks": [
      {
       "t": "ok",
@@ -370,6 +370,10 @@
  "hinweis": "Meine Einschätzung aus COT (Stand 20.10.), Zinserwartungen, Lage und Kalender. Sie ist eine zweite Meinung und keine Anlageberatung. Die Überzeugung (0 bis 10) zeigt, wie viele unabhängige Faktoren in dieselbe Richtung zeigen. Zahlen stammen aus den importierten Daten und Meldungen vom 24./25.10.; was ich nicht belegen konnte, habe ich weggelassen.",
  "ueberblick": [
   {
+   "titel": "Dienstag 17.11.: Risk-off, AUD am Jahrestief, Nvidia-Zahlen heute Abend",
+   "text": "Die Aktien sind kräftig gefallen: S&P 500 minus 1,9 Prozent, Nasdaq 100 minus 2,7 Prozent, Nvidia minus 4,1 Prozent vor den Quartalszahlen heute Abend. Gold steht knapp unter 3.860 USD, Silber verlor über 4 Prozent, Brent 92,44, Kupfer auf einem Viermonatstief. Das trifft AUD und NZD doppelt, über die Rohstoffe und über die Risikostimmung. AUD/USD steht bei 0,6730 bis 0,6740, dem schwächsten Stand seit dem 21. Januar, der RSI liegt mit 28 im überverkauften Bereich, die Unterstützung bei 0,6725. Das RBA-Protokoll klang zwar wachsam bei der Inflation, gab aber keinen Hinweis auf weitere Erhöhungen. EUR/USD ist unter 1,10 gefallen, USD/JPY steht bei 159,47. Warsh sprach gestern nur über KI, nicht über Zinsen. Heute 08:00 UK-Arbeitsmarkt, 14:30 US-Einzelhandel."
+  },
+  {
    "titel": "Montag 16.11.: Dollar auf 19-Monats-Hoch, Japans BIP schrumpft",
    "text": "Der Dollar-Index steht bei 103,44, dem höchsten Stand seit April 2025, die zehnjährige US-Rendite bei 5,143 Prozent. Die Fed-Erhöhung am 9. Dezember ist mit 93,9 Prozent fast voll eingepreist. EUR/USD 1,1025, AUD/USD 0,6777, NZD/USD 0,5523, USD/JPY 159,69. Japans BIP fiel im dritten Quartal um 0,1 Prozent annualisiert statt der erwarteten plus 0,3, der Yen blieb trotzdem stabil, weil Interventionswarnung und BoJ-Erwartung dagegenhalten. Wichtig für deine neuen Limits: Die Spekulanten sind im AUD mit einem Rekord netto short (minus 129.457 zum 3.11.), im EUR mit minus 157.791 ebenfalls extrem. Solche Extreme sprechen eher für Eindeckungsrallyes als für weitere Schwäche, also eher Rückenwind für deine AUD/USD- und AUD/CAD-Limits. Heute 14:30 kanadischer CPI. Nachtrag 10:30: Heute um 18:00 spricht Fed-Chef Warsh. Schwache chinesische Daten belasten zusätzlich AUD und NZD, also genau deine Limit-Seite. Die Quelle sieht für heute einen bullischen Dollar und einen bärischen Euro. Nachtrag 14:40: Kanadas Inflation blieb im Oktober bei 3,1 Prozent statt der erwarteten 3,2, ohne Energie 2,0 Prozent. Leicht negativ für den CAD, das hilft deinen AUD/CAD- und NZD/CAD-Limits."
   },
@@ -388,18 +392,9 @@
   {
    "titel": "Donnerstag 12.11.: Dollar auf 19-Monats-Hoch, USD/JPY knapp unter 160",
    "text": "Der Dollar-Index stieg um 0,63 Prozent auf 102,85, den höchsten Stand seit Mitte Oktober. USD/JPY steht bei 159,58 und damit knapp unter 160, wo ein Eingriff Japans als möglich gilt. EUR/USD liegt bei 1,1099, GBP/USD bei 1,328, AUD/USD bei 0,6845, NZD/USD bei 0,5564. Heute spricht BoJ-Mitglied Asada, am Abend Fed-Williams. Um 08:00 kommt das britische BIP. Für deine JPY-Longs gilt: Ein Eingriff würde den Yen sprunghaft stärken und NZD/JPY und AUD/JPY kurzfristig drücken. Dein EUR/USD-Long steht unter Druck, solange der Dollar so fest bleibt. Nachtrag 10:30: Das britische BIP stieg im dritten Quartal um 0,7 Prozent, genau wie erwartet (Vorquartal 0,5). Das stützt das Pfund nur leicht. Nachtrag 14:40: Japan hat offiziell gewarnt. Währungsdiplomat Mimura nennt die Bewegung übermäßig schnell und erinnert an die Eingriffe im Sommer, USD/JPY stand früh bei 159,94. Der Yen hat sich danach leicht erholt. Über 160 ist ein Eingriff jederzeit möglich. Nachtrag 17:30: Der Dollar-Index steht bei 103,02, so hoch wie seit April 2025 nicht mehr. BoJ-Mitglied Asada sprach sich gegen eine baldige Zinserhöhung aus, USD/JPY liegt bei 159,83. Morgen 14:30 US-PPI, erwartet 0,4 Prozent zum Vormonat nach 1,3 Prozent."
-  },
-  {
-   "titel": "Mittwoch 11.11.: Dollar fest, USD/JPY über 159, US-Feiertag",
-   "text": "Nach dem heißen CPI ist der Dollar breit gestiegen (Dollar-Index rund plus 0,5 Prozent). USD/JPY steht bei 158,75 und damit knapp unter 159, der Yen leidet unter der wachsenden Zinsdifferenz. AUD verlor 0,8 Prozent, weil Aktien nachgaben (S&P 500 minus 0,4 Prozent, Nvidia minus 5,5 Prozent). Brent fiel um 3,7 Prozent und schloss unter 92 USD. Die Fed-Erhöhung im Dezember ist voll eingepreist. Heute ist Veterans Day: Der US-Anleihemarkt ist zu, der Handel dünner, Ausschläge können unzuverlässig sein. Deine JPY-Longs (NZD/JPY, AUD/JPY) hängen jetzt stärker an der Aktienstimmung als am Yen. Nachtrag 14:40: Die zehnjährige US-Rendite stieg auf 4,99 Prozent, zeitweise über 5. EUR/USD fiel zeitweise unter 1,1150, GBP/USD schloss unter 1,3350, AUD/USD testet unter 0,6850 das Jahrestief. Brent hat sich auf rund 92,5 USD erholt. Nachtrag 17:30: USD/JPY hat 159,00 überschritten und steht auf einem Zehnwochenhoch, der Euro auf einem Zweiwochentief. Nachtrag 20:10: EUR/USD um 1,1130 mit Unterstützung bei 1,1115 und 1,1100, GBP/USD testet 1,3300, NZD/USD um 0,5580. Aktien haben sich erholt (S&P 500 bei 7.600). Am Donnerstag ist der US-Anleihemarkt wieder offen, erst dann zeigt sich, ob die Dollar-Stärke hält."
   }
  ],
  "countdown": [
-  {
-   "zeit": "2026-11-16T18:00:00+01:00",
-   "titel": "USA: Rede von Fed-Chef Warsh",
-   "wichtig": 1
-  },
   {
    "zeit": "2026-11-17T08:00:00+01:00",
    "titel": "Großbritannien: Arbeitsmarkt",
@@ -440,7 +435,7 @@
    "risiko": "Vorschlag 0,5 % gesamt, davon 30 % Weekly und 70 % Daily. Halbes Risiko, weil schon viele AUD-Positionen offen sind.",
    "gueltig_bis": "2026-11-11",
    "ob": {
-    "stand": "2026-11-16T14:42",
+    "stand": "2026-11-17T06:31",
     "checks": [
      {
       "t": "ok",
@@ -502,7 +497,7 @@
    "risiko": "Bisher 1 % im Limit. Ich würde auf 0,5 % senken, solange die Zahl der Yen-Gegenseiten steigt (AUD/JPY und NZD/JPY sind fast dieselbe Wette).",
    "gueltig_bis": "2026-11-11",
    "ob": {
-    "stand": "2026-11-16T14:42",
+    "stand": "2026-11-17T06:31",
     "checks": [
      {
       "t": "ok",
@@ -564,7 +559,7 @@
    "risiko": "Vorschlag 0,5 %, weil die Überzeugung nur 5 von 10 ist.",
    "gueltig_bis": "2026-11-06",
    "ob": {
-    "stand": "2026-11-16T14:42",
+    "stand": "2026-11-17T06:31",
     "checks": [
      {
       "t": "bad",
@@ -621,7 +616,7 @@
    "risiko": "Vorschlag 0,5 % oder weniger.",
    "gueltig_bis": "2026-11-06",
    "ob": {
-    "stand": "2026-11-16T14:42",
+    "stand": "2026-11-17T06:31",
     "checks": [
      {
       "t": "ok",
