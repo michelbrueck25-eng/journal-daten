@@ -1,7 +1,7 @@
 {
  "typ": "ausblick",
- "stand": "2026-11-17T10:35:00+01:00",
- "zusammenfassung": "Wochenausblick ab 17.11.: Die Woche wird vom FOMC-Protokoll am Mittwoch um 20:00 und vom australischen Arbeitsmarkt am Donnerstag um 01:30 entschieden, dazu kommen der britische Arbeitsmarkt und die US-Einzelhandelsumsätze am Dienstag sowie der britische CPI am Mittwoch. Mein Hauptgedanke: Positionierung und Kursbewegung zeigen gerade in entgegengesetzte Richtungen, und das ist für einen antizyklischen Ansatz der interessanteste, aber auch der unangenehmste Zustand. Die Commercials (COT, Stand 10.11.) stehen bei AUD (100), EUR (94) und NZD (87) oben, bei CHF (0) und JPY (3) ganz unten, der Dollar-Index liegt bei 20 (Stand 3.11.). Nach dieser Logik sind Long-Positionen in AUD und EUR gegen CHF, JPY und USD die saubersten Konstellationen, allen voran AUD/CHF und AUD/JPY. Dagegen steht der Kurs: Der Dollar-Index notiert bei rund 103,4 auf dem höchsten Stand seit April 2025, weil die Fed-Erhöhung am 9.12. zu etwa 95 Prozent eingepreist ist und die Zehnjahresrendite über 5 Prozent liegt. AUD/USD steht bei 0,6730 auf dem tiefsten Stand seit dem 21. Januar, der RSI bei 28. EUR/USD ist unter 1,10 gefallen. Dazu kommt ein kräftiges Risk-off: S&P 500 minus 1,9 Prozent, Nasdaq 100 minus 2,7 Prozent, Silber über 4 Prozent im Minus, Kupfer auf einem Viermonatstief, Brent bei 92,4. Das trifft AUD und NZD doppelt, über die Rohstoffe und über die Risikostimmung, und stützt gleichzeitig Yen und Franken. Beim Yen kommt hinzu, dass USD/JPY mit 159,5 dicht unter der Marke liegt, ab der Japan einen Eingriff für möglich hält; Finanzministerin Katayama hat eine angemessene Reaktion angekündigt. Ein Eingriff wäre ein Sprung von mehreren Prozent in Minuten und trifft jede Short-Position im Yen hart, unabhängig von der COT-Lage. Mein Fazit für diese Woche: Die COT-Extreme sind echt und haben sich zum 10.11. sogar verstärkt, aber es fehlt bisher jedes Signal, dass der Markt dreht. Wer antizyklisch einsteigt, sollte auf eine Bestätigung im Tageschart warten statt in fallende Kurse zu greifen, und beim Yen das Interventionsrisiko bewusst in Kauf nehmen oder die Kreuze gegen den Franken bevorzugen. Leitzinsen aktuell: RBA 4,85, Fed 4,00 (Obergrenze), BoE 4,00, RBNZ 2,75, EZB 2,65, BoC 2,50, BoJ 1,25 Prozent.",
+ "stand": "2026-11-17T14:45:00+01:00",
+ "zusammenfassung": "Wochenausblick ab 17.11.: Die Woche wird vom FOMC-Protokoll am Mittwoch um 20:00 und vom australischen Arbeitsmarkt am Donnerstag um 01:30 entschieden, dazu kommen der britische Arbeitsmarkt und die US-Einzelhandelsumsätze am Dienstag sowie der britische CPI am Mittwoch. Mein Hauptgedanke: Positionierung und Kursbewegung zeigen gerade in entgegengesetzte Richtungen, und das ist für einen antizyklischen Ansatz der interessanteste, aber auch der unangenehmste Zustand. Die Commercials (COT, Stand 10.11.) stehen bei AUD (100), EUR (94) und NZD (87) oben, bei CHF (0) und JPY (3) ganz unten, der Dollar-Index liegt bei 20 (Stand 3.11.). Nach dieser Logik sind Long-Positionen in AUD und EUR gegen CHF, JPY und USD die saubersten Konstellationen, allen voran AUD/CHF und AUD/JPY. Dagegen steht der Kurs: Der Dollar-Index notiert bei rund 103,4 auf dem höchsten Stand seit April 2025, weil die Fed-Erhöhung am 9.12. zu etwa 95 Prozent eingepreist ist und die Zehnjahresrendite über 5 Prozent liegt. AUD/USD steht bei 0,6730 auf dem tiefsten Stand seit dem 21. Januar, der RSI bei 28. EUR/USD ist unter 1,10 gefallen. Dazu kommt ein kräftiges Risk-off: S&P 500 minus 1,9 Prozent, Nasdaq 100 minus 2,7 Prozent, Silber über 4 Prozent im Minus, Kupfer auf einem Viermonatstief, Brent bei 92,4. Das trifft AUD und NZD doppelt, über die Rohstoffe und über die Risikostimmung, und stützt gleichzeitig Yen und Franken. Beim Yen kommt hinzu, dass USD/JPY mit 159,5 dicht unter der Marke liegt, ab der Japan einen Eingriff für möglich hält; Finanzministerin Katayama hat eine angemessene Reaktion angekündigt. Ein Eingriff wäre ein Sprung von mehreren Prozent in Minuten und trifft jede Short-Position im Yen hart, unabhängig von der COT-Lage. Mein Fazit für diese Woche: Die COT-Extreme sind echt und haben sich zum 10.11. sogar verstärkt, aber es fehlt bisher jedes Signal, dass der Markt dreht. Wer antizyklisch einsteigt, sollte auf eine Bestätigung im Tageschart warten statt in fallende Kurse zu greifen, und beim Yen das Interventionsrisiko bewusst in Kauf nehmen oder die Kreuze gegen den Franken bevorzugen. Nachtrag 17.11. nachmittags: Der britische Arbeitsmarkt kam gemischt (Quote 4,6 Prozent, Löhne nur noch 3,5 Prozent, 34.000 Jobs weniger), der US-Einzelhandel etwas über der Erwartung. Beides zusammen verschiebt das Bild weiter zugunsten des Dollars und gegen das Pfund. Leitzinsen aktuell: RBA 4,85, Fed 4,00 (Obergrenze), BoE 4,00, RBNZ 2,75, EZB 2,65, BoC 2,50, BoJ 1,25 Prozent.",
  "paare": [
   {
    "paar": "AUD/CHF",
@@ -24,7 +24,7 @@
    "horizont": "2 bis 6 Wochen",
    "begruendung": "COT: AUD 100, JPY 3 (Differenz 97), Zinsabstand 4,85 gegen 1,25 Prozent. Dagegen: Risk-off stützt den Yen, und über 160 in USD/JPY droht ein japanischer Eingriff. Die Positionierung ist exzellent, das Timing ist das Problem.",
    "ob": {
-    "stand": "2026-11-17T10:31",
+    "stand": "2026-11-17T14:41",
     "checks": [
      {
       "t": "ok",
@@ -88,7 +88,7 @@
    "horizont": "3 bis 8 Wochen",
    "begruendung": "COT: AUD 100, CAD 37 (Differenz 63). Zinsabstand 4,85 gegen 2,50 Prozent. Der fallende Ölpreis belastet den CAD zusätzlich, und Kanadas Inflation blieb im Oktober mit 3,1 Prozent unter der Erwartung. Beide Währungen leiden aber unter derselben Rohstoffschwäche, deshalb kein Extremwert.",
    "ob": {
-    "stand": "2026-11-17T10:31",
+    "stand": "2026-11-17T14:41",
     "checks": [
      {
       "t": "ok",
@@ -152,7 +152,7 @@
    "horizont": "4 bis 10 Wochen",
    "begruendung": "COT: EUR 94 gegen Dollar-Index 20. Der Spekulanten-Short im Euro liegt bei minus 136.396. Dagegen: Der Zinsabstand arbeitet klar gegen den Euro, die EZB steht bei 2,65 gegen 4,00 Prozent der Fed, und der Kurs ist unter 1,10 gefallen. Positionierung ja, Zinsrichtung nein.",
    "ob": {
-    "stand": "2026-11-17T10:31",
+    "stand": "2026-11-17T14:41",
     "checks": [
      {
       "t": "ok",
@@ -194,11 +194,11 @@
    }
   }
  ],
- "hinweis": "Meine Einschätzung aus COT (Stand 10.11. für Währungen, Indizes, Metalle und Energie), Zinserwartungen, Lage und Kalender. Sie ist eine zweite Meinung und keine Anlageberatung. Die Überzeugung (0 bis 10) zeigt, wie viele unabhängige Faktoren in dieselbe Richtung zeigen; sie ist diese Woche bei allen Paaren gedämpft, weil Positionierung und Kursbewegung gegeneinander laufen. Kurse und Meldungen vom 17.11. morgens. Für den Dollar-Index liegt noch der COT-Stand vom 3.11. vor, die Agrarmärkte hinken bei der CFTC nach dem Shutdown ebenfalls nach.",
+ "hinweis": "Meine Einschätzung aus COT (Stand 10.11. für Währungen, Indizes, Metalle und Energie), Zinserwartungen, Lage und Kalender. Sie ist eine zweite Meinung und keine Anlageberatung. Die Überzeugung (0 bis 10) zeigt, wie viele unabhängige Faktoren in dieselbe Richtung zeigen; sie ist diese Woche bei allen Paaren gedämpft, weil Positionierung und Kursbewegung gegeneinander laufen. Kurse und Meldungen vom 17.11., nachmittags ergänzt. Für den Dollar-Index liegt noch der COT-Stand vom 3.11. vor, die Agrarmärkte hinken bei der CFTC nach dem Shutdown ebenfalls nach.",
  "ueberblick": [
   {
    "titel": "Dienstag 17.11.: Risk-off, AUD am Jahrestief, Nvidia-Zahlen heute Abend",
-   "text": "Die Aktien sind kräftig gefallen: S&P 500 minus 1,9 Prozent, Nasdaq 100 minus 2,7 Prozent, Nvidia minus 4,1 Prozent vor den Quartalszahlen heute Abend. Gold steht knapp unter 3.860 USD, Silber verlor über 4 Prozent, Brent 92,44, Kupfer auf einem Viermonatstief. Das trifft AUD und NZD doppelt, über die Rohstoffe und über die Risikostimmung. AUD/USD steht bei 0,6730 bis 0,6740, dem schwächsten Stand seit dem 21. Januar, der RSI liegt mit 28 im überverkauften Bereich, die Unterstützung bei 0,6725. Das RBA-Protokoll klang zwar wachsam bei der Inflation, gab aber keinen Hinweis auf weitere Erhöhungen. EUR/USD ist unter 1,10 gefallen, USD/JPY steht bei 159,47. Warsh sprach gestern nur über KI, nicht über Zinsen. Heute 08:00 UK-Arbeitsmarkt, 14:30 US-Einzelhandel. Nachtrag 07:30: Die COT-Daten zum 10.11. sind für Währungen, Indizes, Metalle und Energie eingetragen. Der AUD-Short der Spekulanten ist auf minus 151.753 gewachsen, der Commercials-Index steht bei 100. Beim Yen ist es umgekehrt: Spekulanten netto long, Commercials-Index 3. Nachtrag 10:30: Der britische Arbeitsmarkt kam gemischt. Die Quote fiel auf 4,6 Prozent, die Löhne ohne Bonus stiegen nur noch um 3,5 Prozent, und die Lohnbuchbeschäftigung sank im Oktober um 34.000. Das spricht eher gegen weitere Erhöhungen der BoE."
+   "text": "Die Aktien sind kräftig gefallen: S&P 500 minus 1,9 Prozent, Nasdaq 100 minus 2,7 Prozent, Nvidia minus 4,1 Prozent vor den Quartalszahlen heute Abend. Gold steht knapp unter 3.860 USD, Silber verlor über 4 Prozent, Brent 92,44, Kupfer auf einem Viermonatstief. Das trifft AUD und NZD doppelt, über die Rohstoffe und über die Risikostimmung. AUD/USD steht bei 0,6730 bis 0,6740, dem schwächsten Stand seit dem 21. Januar, der RSI liegt mit 28 im überverkauften Bereich, die Unterstützung bei 0,6725. Das RBA-Protokoll klang zwar wachsam bei der Inflation, gab aber keinen Hinweis auf weitere Erhöhungen. EUR/USD ist unter 1,10 gefallen, USD/JPY steht bei 159,47. Warsh sprach gestern nur über KI, nicht über Zinsen. Heute 08:00 UK-Arbeitsmarkt, 14:30 US-Einzelhandel. Nachtrag 07:30: Die COT-Daten zum 10.11. sind für Währungen, Indizes, Metalle und Energie eingetragen. Der AUD-Short der Spekulanten ist auf minus 151.753 gewachsen, der Commercials-Index steht bei 100. Beim Yen ist es umgekehrt: Spekulanten netto long, Commercials-Index 3. Nachtrag 10:30: Der britische Arbeitsmarkt kam gemischt. Die Quote fiel auf 4,6 Prozent, die Löhne ohne Bonus stiegen nur noch um 3,5 Prozent, und die Lohnbuchbeschäftigung sank im Oktober um 34.000. Das spricht eher gegen weitere Erhöhungen der BoE. Nachtrag 14:40: Der US-Einzelhandel stieg im Oktober um 0,2 Prozent (erwartet 0,1), ohne Autos um 0,6 Prozent. Der Konsum hält sich, das stützt die Dezember-Erhöhung und damit den Dollar."
   },
   {
    "titel": "Montag 16.11.: Dollar auf 19-Monats-Hoch, Japans BIP schrumpft",
@@ -222,11 +222,6 @@
   }
  ],
  "countdown": [
-  {
-   "zeit": "2026-11-17T14:30:00+01:00",
-   "titel": "USA: Einzelhandelsumsätze",
-   "wichtig": 0
-  },
   {
    "zeit": "2026-11-18T08:00:00+01:00",
    "titel": "Großbritannien: Kern-CPI",
@@ -255,7 +250,7 @@
    "stopp": "0.66540, 10 % der Zonenhöhe jenseits des Zonenrands. Nicht nachziehen.",
    "ziel": "Ziel 1: 0.68798 (1 R), Ziel 2: 0.69926 (2 R). Weekly-Teil zusätzlich laut Reiter KI Trades.",
    "ob": {
-    "stand": "2026-11-17T10:31",
+    "stand": "2026-11-17T14:41",
     "checks": [
      {
       "t": "ok",
@@ -315,7 +310,7 @@
    "stopp": "0.55463, 10 % der Zonenhöhe jenseits des Zonenrands. Nicht nachziehen.",
    "ziel": "Ziel 1: 0.56463 (1 R), Ziel 2: 0.56964 (2 R). Weekly-Teil zusätzlich laut Reiter KI Trades.",
    "ob": {
-    "stand": "2026-11-17T10:31",
+    "stand": "2026-11-17T14:41",
     "checks": [
      {
       "t": "ok",
@@ -372,7 +367,7 @@
    "staerke": 6,
    "bedingung": "Einstieg im unteren Drittel der Spanne der letzten vier Wochen mit Daily-Bestätigung. Vor dem SNB-Entscheid am 10.12. die Position eher klein halten, eine Erhöhung ist etwa 50 zu 50 eingepreist.",
    "ob": {
-    "stand": "2026-11-17T10:31",
+    "stand": "2026-11-17T14:41",
     "checks": [
      {
       "t": "ok",
@@ -398,7 +393,7 @@
    "stopp": "75.686, 10 % der Zonenhöhe jenseits des Zonenrands. Nicht nachziehen.",
    "ziel": "Ziel 1: 79.514 (1 R), Ziel 2: 81.428 (2 R). Weekly-Teil zusätzlich laut Reiter KI Trades.",
    "ob": {
-    "stand": "2026-11-17T10:31",
+    "stand": "2026-11-17T14:41",
     "checks": [
      {
       "t": "ok",
