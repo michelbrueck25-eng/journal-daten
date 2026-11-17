@@ -396,8 +396,8 @@ date,time,country,title,actual,forecast,previous,impact
 2026-11-16,14:30,Kanada,Median-CPI y/y,,,,medium
 2026-11-16,14:30,Kanada,CPI y/y,3.1%,3.2%,3.1%,high
 2026-11-17,03:00,Neuseeland,Inflationserwartungen (Q4),,,2.34%,medium
-2026-11-17,08:00,Großbritannien,Arbeitslosenquote,,4.7%,4.7%,high
-2026-11-17,08:00,Großbritannien,Durchschnittslöhne 3m/y,,,,high
+2026-11-17,08:00,Großbritannien,Arbeitslosenquote,4.6%,4.7%,4.7%,high
+2026-11-17,08:00,Großbritannien,Durchschnittslöhne 3m/y,3.6%,,3.8%,high
 2026-11-18,01:30,Australien,Lohnpreisindex q/q,,,,medium
 2026-11-18,08:00,Großbritannien,Kern-CPI y/y,,,,high
 2026-11-19,01:30,Australien,Arbeitslosenquote,,,,high
