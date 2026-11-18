@@ -399,7 +399,8 @@ date,time,country,title,actual,forecast,previous,impact
 2026-11-17,08:00,Großbritannien,Arbeitslosenquote,4.6%,4.7%,4.7%,high
 2026-11-17,08:00,Großbritannien,Durchschnittslöhne 3m/y,3.6%,,3.8%,high
 2026-11-18,01:30,Australien,Lohnpreisindex q/q,,,,medium
-2026-11-18,08:00,Großbritannien,Kern-CPI y/y,,,,high
+2026-11-18,08:00,Großbritannien,Kern-CPI y/y,2.8%,2.8%,2.8%,high
+2026-11-18,08:00,Großbritannien,CPI y/y,3.6%,,3.4%,high
 2026-11-19,01:30,Australien,Arbeitslosenquote,,,,high
 2026-11-19,01:30,Australien,Beschäftigungsänderung,,,,high
 2026-11-20,00:30,Japan,Kern-CPI y/y (landesweit),,,,high
