@@ -403,8 +403,8 @@ date,time,country,title,actual,forecast,previous,impact
 2026-11-18,08:00,Großbritannien,CPI y/y,3.6%,,3.4%,high
 2026-11-18,14:30,USA,Baubeginne,,1.250M,1.221M,medium
 2026-11-18,14:30,USA,Baugenehmigungen,,1.375M,1.398M,medium
-2026-11-19,01:30,Australien,Arbeitslosenquote,,,,high
-2026-11-19,01:30,Australien,Beschäftigungsänderung,,,,high
+2026-11-19,01:30,Australien,Arbeitslosenquote,,4.7%,4.7%,high
+2026-11-19,01:30,Australien,Beschäftigungsänderung,,25.2K,-39.3K,high
 2026-11-20,00:30,Japan,Kern-CPI y/y (landesweit),,,,high
 2026-11-25,01:30,Australien,CPI y/y,,,,high
 2026-11-25,14:30,USA,Kern-PCE m/m,,,,medium
