@@ -1,7 +1,7 @@
 {
  "typ": "ausblick",
- "stand": "2026-11-18T14:45:00+01:00",
- "zusammenfassung": "Die Lage ist unveraendert dollarfreundlich und das aus einem Grund: Die US-Daten stuetzen weitere Erhoehungen. Einzelhandel plus 0,2 Prozent wie erwartet, Importpreise plus 1,1 statt plus 0,7 Prozent, und Williams, Musalem und weitere Fed-Vertreter halten mehrere Schritte fuer noetig. Der Dollar-Index steht bei 103,66 nahe dem hoechsten Stand seit April 2025, eine Dezember-Erhoehung ist laut CME FedWatch praktisch vollstaendig eingepreist. Fuer die Rohstoffwaehrungen ist das die zentrale Belastung: AUD/USD 0,673 nach sechs Verlusttagen in Folge, NZD/USD 0,5495 nach einem 19-Monats-Tief. Nachtrag Mittwochvormittag: Der britische Kern-CPI blieb bei 2,8 Prozent und die Dienstleistungsinflation unter der Erwartung. Zusammen mit dem schwachen Arbeitsmarkt vom Dienstag spricht beides gegen eine BoE-Erhoehung im Dezember; die 82 Prozent in der Tabelle sind damit wahrscheinlich zu hoch. Wichtig fuer die antizyklische Lesart im AUD: Der COT-Index der Commercials steht bei 100 und die Spekulanten halten mit minus 152.000 Kontrakten eine Rekord-Shortposition, aber diese Position ist in der Berichtswoche um weitere 22.300 Kontrakte gewachsen. Ein Extrem, das sich noch aufbaut, ist eine Beobachtung und kein Einstieg. Entschieden wird das am Donnerstag um 01:30 mit dem australischen Arbeitsmarktbericht und um 20:00 heute mit dem FOMC-Protokoll. Gold unter 3.800 USD trotz Iran-Spannungen bestaetigt: gehandelt werden Realzinsen, nicht Risiko.",
+ "stand": "2026-11-18T17:35:00+01:00",
+ "zusammenfassung": "Der Dollar bleibt das beherrschende Thema, und der Grund ist die Zinserwartung: Die US-Daten stuetzen weitere Erhoehungen, der Dollar-Index steht bei 103,66 nahe dem Hoch seit April 2025, die Zehnjahresrendite bei ueber 5 Prozent. Eine Dezember-Erhoehung ist praktisch vollstaendig eingepreist. Heute um 20:00 kommt das Protokoll der Sitzung vom 27. und 28. Oktober, in der die Fed bei 3,75 bis 4,00 Prozent blieb und bereits zwei von zwoelf Stimmberechtigten erhoehen wollten. Die entscheidende Frage ist, wie viele weitere mitgezogen haetten. Zuvor um 19:00 eine Auktion zwanzigjaehriger Anleihen ueber 16 Milliarden Dollar. Beim Pfund hat sich die Lage heute gedreht: Gesamt-CPI 3,6 Prozent als Jahreshoch, aber Kern unveraendert 2,8 und Dienstleistungen 3,7 statt erwarteter 3,8 Prozent. GBP/USD faellt auf 1,3160. Die 82 Prozent Erhoehungswahrscheinlichkeit fuer die BoE im Dezember sind nach diesen Zahlen und dem schwachen Arbeitsmarkt vom Dienstag zu hoch. Fuer die antizyklische AUD-Lesart gilt unveraendert: Der Commercials-Index steht bei 100 und die Spekulanten halten mit minus 152.000 Kontrakten einen Rekord-Short, aber die Position ist in der Berichtswoche um weitere 22.300 Kontrakte gewachsen und die Fed bleibt falkenhaft. Ein Extrem, das sich noch aufbaut, ist eine Beobachtung und kein Einstieg. Entschieden wird das heute Abend und am Donnerstag um 01:30 mit dem australischen Arbeitsmarkt. Gold unter 3.800 USD trotz Iran-Spannungen bestaetigt die Diagnose: gehandelt werden Realzinsen, nicht Vertrauen.",
  "paare": [
   {
    "paar": "AUD/CHF",
@@ -25,7 +25,7 @@
    "horizont": "2 bis 6 Wochen",
    "begruendung": "COT: AUD 100, JPY 3 (Differenz 97), Zinsabstand 4,85 gegen 1,25 Prozent. Dagegen: Risk-off stützt den Yen, und über 160 in USD/JPY droht ein japanischer Eingriff. Die Positionierung ist exzellent, das Timing ist das Problem.",
    "ob": {
-    "stand": "2026-11-18T14:41",
+    "stand": "2026-11-18T17:30",
     "checks": [
      {
       "t": "ok",
@@ -91,7 +91,7 @@
    "horizont": "3 bis 8 Wochen",
    "begruendung": "COT: AUD 100, CAD 37 (Differenz 63). Zinsabstand 4,85 gegen 2,50 Prozent. Der fallende Ölpreis belastet den CAD zusätzlich, und Kanadas Inflation blieb im Oktober mit 3,1 Prozent unter der Erwartung. Beide Währungen leiden aber unter derselben Rohstoffschwäche, deshalb kein Extremwert.",
    "ob": {
-    "stand": "2026-11-18T14:41",
+    "stand": "2026-11-18T17:30",
     "checks": [
      {
       "t": "ok",
@@ -157,7 +157,7 @@
    "horizont": "4 bis 10 Wochen",
    "begruendung": "COT: EUR 94 gegen Dollar-Index 20. Der Spekulanten-Short im Euro liegt bei minus 136.396. Dagegen: Der Zinsabstand arbeitet klar gegen den Euro, die EZB steht bei 2,65 gegen 4,00 Prozent der Fed, und der Kurs ist unter 1,10 gefallen. Positionierung ja, Zinsrichtung nein.",
    "ob": {
-    "stand": "2026-11-18T14:41",
+    "stand": "2026-11-18T17:30",
     "checks": [
      {
       "t": "ok",
@@ -203,7 +203,7 @@
  "ueberblick": [
   {
    "titel": "Mittwoch 18.11.: Nvidia liefert, Erholung in den Futures, Gold auf 14-Monats-Tief",
-   "text": "Nvidia hat die Erwartungen klar geschlagen (Umsatz 115,8 statt 108,9 Mrd. USD, Ausblick 130 statt 125,3) und stieg nachbörslich um 3,7 Prozent. Die Futures drehten ins Plus, S&P 500 plus 0,8 und Nasdaq 100 plus 1,4 Prozent, nachdem der Dienstag noch der vierte Verlusttag in Folge war. Für deine AUD- und NZD-Positionen ist das die erste gute Nachricht seit Tagen: Wenn die Risikostimmung dreht, nimmt der Druck ab. Noch ist es nur die Vorbörse. AUD/USD steht bei 0,6732 nach dem sechsten Verlusttag in Folge, der NZD ist weiter die schwächste G10-Währung. Gold fiel auf ein 14-Monats-Tief bei 3.825 USD, die US-Zehnjahresrendite gab leicht auf 5,10 Prozent nach. Fed-Vertreter Musalem und Williams halten mehrere weitere Erhöhungen für nötig. Heute 08:00 britischer CPI, 20:00 FOMC-Protokoll, dazu wird der Anthropic-Börsengang gepreist. Nachtrag 10:30: Die britische Inflation stieg im Oktober auf 3,6 Prozent, den höchsten Stand seit einem Jahr, aber der Kern blieb bei 2,8 und die Dienstleistungsinflation bei 3,7 Prozent und damit unter der Erwartung. Das Pfund notiert nahe einem Fünfwochentief, und die Erhöhung der BoE im Dezember wird unwahrscheinlicher. Nachtrag 14:40: Der Dollar-Index haelt sich bei 103,66 nahe dem Hoch seit April 2025, eine Fed-Erhoehung im Dezember ist praktisch voll eingepreist. Gold ist unter 3.800 USD auf ein Mehrjahrestief gefallen, obwohl die Spannungen zwischen den USA und dem Iran zunehmen. Das heisst: Der Markt handelt Zinsen, nicht Vertrauen. AUD 0,673 und NZD 0,5495 stabilisieren sich nur knapp ueber ihren Tiefs."
+   "text": "Nvidia hat die Erwartungen klar geschlagen (Umsatz 115,8 statt 108,9 Mrd. USD, Ausblick 130 statt 125,3) und stieg nachbörslich um 3,7 Prozent. Die Futures drehten ins Plus, S&P 500 plus 0,8 und Nasdaq 100 plus 1,4 Prozent, nachdem der Dienstag noch der vierte Verlusttag in Folge war. Für deine AUD- und NZD-Positionen ist das die erste gute Nachricht seit Tagen: Wenn die Risikostimmung dreht, nimmt der Druck ab. Noch ist es nur die Vorbörse. AUD/USD steht bei 0,6732 nach dem sechsten Verlusttag in Folge, der NZD ist weiter die schwächste G10-Währung. Gold fiel auf ein 14-Monats-Tief bei 3.825 USD, die US-Zehnjahresrendite gab leicht auf 5,10 Prozent nach. Fed-Vertreter Musalem und Williams halten mehrere weitere Erhöhungen für nötig. Heute 08:00 britischer CPI, 20:00 FOMC-Protokoll, dazu wird der Anthropic-Börsengang gepreist. Nachtrag 10:30: Die britische Inflation stieg im Oktober auf 3,6 Prozent, den höchsten Stand seit einem Jahr, aber der Kern blieb bei 2,8 und die Dienstleistungsinflation bei 3,7 Prozent und damit unter der Erwartung. Das Pfund notiert nahe einem Fünfwochentief, und die Erhöhung der BoE im Dezember wird unwahrscheinlicher. Nachtrag 14:40: Der Dollar-Index haelt sich bei 103,66 nahe dem Hoch seit April 2025, eine Fed-Erhoehung im Dezember ist praktisch voll eingepreist. Gold ist unter 3.800 USD auf ein Mehrjahrestief gefallen, obwohl die Spannungen zwischen den USA und dem Iran zunehmen. Das heisst: Der Markt handelt Zinsen, nicht Vertrauen. AUD 0,673 und NZD 0,5495 stabilisieren sich nur knapp ueber ihren Tiefs. Nachtrag 17:30: GBP/USD ist auf 1,3160 gefallen, nachdem die britische Dienstleistungsinflation mit 3,7 statt 3,8 Prozent unter der Erwartung lag. EUR/USD 1,0962, USD/JPY 159,20 mit Interventionssorgen oberhalb von 160. Um 19:00 versteigert das US-Finanzministerium zwanzigjaehrige Anleihen ueber 16 Milliarden Dollar, um 20:00 folgt das FOMC-Protokoll."
   },
   {
    "titel": "Dienstag 17.11.: Risk-off, AUD am Jahrestief, Nvidia-Zahlen heute Abend",
@@ -228,6 +228,11 @@
  ],
  "countdown": [
   {
+   "zeit": "2026-11-18T19:00:00+01:00",
+   "titel": "USA: Auktion 20-jaehriger Anleihen",
+   "wichtig": 0
+  },
+  {
    "zeit": "2026-11-18T20:00:00+01:00",
    "titel": "USA: FOMC-Protokoll",
    "wichtig": 1
@@ -241,11 +246,6 @@
    "zeit": "2026-11-20T00:30:00+01:00",
    "titel": "Japan: Kern-CPI",
    "wichtig": 1
-  },
-  {
-   "zeit": "2026-11-20T01:15:00+01:00",
-   "titel": "China: PBoC-Zinsentscheid",
-   "wichtig": 0
   },
   {
    "zeit": "2026-12-09T20:00:00+01:00",
@@ -265,7 +265,7 @@
    "stopp": "0.66540, 10 % der Zonenhöhe jenseits des Zonenrands. Nicht nachziehen.",
    "ziel": "Ziel 1: 0.68798 (1 R), Ziel 2: 0.69926 (2 R). Weekly-Teil zusätzlich laut Reiter KI Trades.",
    "ob": {
-    "stand": "2026-11-18T14:41",
+    "stand": "2026-11-18T17:30",
     "checks": [
      {
       "t": "ok",
@@ -325,7 +325,7 @@
    "stopp": "0.55463, 10 % der Zonenhöhe jenseits des Zonenrands. Nicht nachziehen.",
    "ziel": "Ziel 1: 0.56463 (1 R), Ziel 2: 0.56964 (2 R). Weekly-Teil zusätzlich laut Reiter KI Trades.",
    "ob": {
-    "stand": "2026-11-18T14:41",
+    "stand": "2026-11-18T17:30",
     "checks": [
      {
       "t": "ok",
@@ -382,7 +382,7 @@
    "staerke": 6,
    "bedingung": "Einstieg im unteren Drittel der Spanne der letzten vier Wochen mit Daily-Bestätigung. Vor dem SNB-Entscheid am 10.12. die Position eher klein halten, eine Erhöhung ist etwa 50 zu 50 eingepreist.",
    "ob": {
-    "stand": "2026-11-18T14:41",
+    "stand": "2026-11-18T17:30",
     "checks": [
      {
       "t": "ok",
@@ -408,7 +408,7 @@
    "stopp": "75.686, 10 % der Zonenhöhe jenseits des Zonenrands. Nicht nachziehen.",
    "ziel": "Ziel 1: 79.514 (1 R), Ziel 2: 81.428 (2 R). Weekly-Teil zusätzlich laut Reiter KI Trades.",
    "ob": {
-    "stand": "2026-11-18T14:41",
+    "stand": "2026-11-18T17:30",
     "checks": [
      {
       "t": "ok",
