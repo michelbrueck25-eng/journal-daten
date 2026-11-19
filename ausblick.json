@@ -1,7 +1,7 @@
 {
  "typ": "ausblick",
- "stand": "2026-11-19T06:40:00+01:00",
- "zusammenfassung": "Der australische Arbeitsmarktbericht hat die offene Frage entschieden, und zwar klar gegen eine antizyklische AUD-Position. Minus 43.500 Stellen gegen plus 25.000 erwartet, Arbeitslosenquote 4,9 statt 4,7 Prozent, hoechster Stand seit Ende 2021, Partizipationsquote gefallen. In zwei Monaten sind ueber 80.000 Stellen weggefallen. AUD/USD ist unter 0,6700 und unter das Zehnmonatstief der Vorwoche gefallen. Weitere RBA-Erhoehungen gelten als beendet; der Leitzins bleibt bei 4,85 Prozent, und weil die Inflation ueber 4 Prozent liegt, sind Senkungen zunaechst keine Option. Damit ist die Lage im AUD eindeutig: Das Positionierungsextrem mit einem Commercials-Index von 100 und einem Rekord-Short der Spekulanten von minus 152.000 Kontrakten ist keine Erschoepfung, sondern eine laufende Neubewertung. Es kam neue Information in dieselbe Richtung, und zwar deutlich. Kein Einstieg. Fuer die naechsten COT-Daten am Freitag ist zu erwarten, dass die Shortposition weiter gewachsen ist. Zum Vorabend: Das FOMC-Protokoll war klar falkenhaft, fast alle Teilnehmer halten weitere Erhoehungen fuer angemessen, ein Paar nannte fuer Dezember mehr als 25 Basispunkte. Die Zinsdifferenz laeuft damit auf beiden Seiten gegen den AUD. Neu nachgetragen: Die CBOT-Agrarmaerkte Mais, Weizen und Sojabohnen sind jetzt zum Stichtag 10.11. in den COT-Daten. Beim Pfund bleibt die Beurteilung von Mittwoch: Kern-CPI 2,8 und Dienstleistungen 3,7 Prozent sprechen gegen eine BoE-Erhoehung im Dezember, eine belastbare neue Wahrscheinlichkeit liess sich bisher nicht belegen.",
+ "stand": "2026-11-19T10:40:00+01:00",
+ "zusammenfassung": "Der australische Arbeitsmarktbericht hat die offene Frage entschieden, und zwar klar gegen eine antizyklische AUD-Position. Minus 43.500 Stellen gegen plus 25.000 erwartet, Arbeitslosenquote 4,9 statt 4,7 Prozent, hoechster Stand seit Ende 2021, Partizipationsquote gefallen. In zwei Monaten sind ueber 80.000 Stellen weggefallen. AUD/USD ist unter 0,6700 und unter das Zehnmonatstief der Vorwoche gefallen. Weitere RBA-Erhoehungen gelten als beendet; der Leitzins bleibt bei 4,85 Prozent, und weil die Inflation ueber 4 Prozent liegt, sind Senkungen zunaechst keine Option. Damit ist die Lage im AUD eindeutig: Das Positionierungsextrem mit einem Commercials-Index von 100 und einem Rekord-Short der Spekulanten von minus 152.000 Kontrakten ist keine Erschoepfung, sondern eine laufende Neubewertung. Es kam neue Information in dieselbe Richtung, und zwar deutlich. Kein Einstieg. Fuer die naechsten COT-Daten am Freitag ist zu erwarten, dass die Shortposition weiter gewachsen ist. Zum Vorabend: Das FOMC-Protokoll war klar falkenhaft, fast alle Teilnehmer halten weitere Erhoehungen fuer angemessen, ein Paar nannte fuer Dezember mehr als 25 Basispunkte. Die Zinsdifferenz laeuft damit auf beiden Seiten gegen den AUD. Neu nachgetragen: Die CBOT-Agrarmaerkte Mais, Weizen und Sojabohnen sind jetzt zum Stichtag 10.11. in den COT-Daten. Zur RBNZ gibt es erste Hinweise: Halt bei 2,75 Prozent am 28. Oktober in einer 4-zu-3-Abstimmung, straffere Politik weiter als wahrscheinlich bezeichnet, eine Erhoehung kurzfristig aber als sehr unwahrscheinlich. Das stammt bisher nur aus Trefferueberschriften, deshalb bleibt die Zinserwartung fuer den NZD noch leer. Beim Pfund bleibt die Beurteilung von Mittwoch: Kern-CPI 2,8 und Dienstleistungen 3,7 Prozent sprechen gegen eine BoE-Erhoehung im Dezember, eine belastbare neue Wahrscheinlichkeit liess sich bisher nicht belegen.",
  "paare": [
   {
    "paar": "AUD/CHF",
@@ -25,7 +25,7 @@
    "horizont": "2 bis 6 Wochen",
    "begruendung": "COT: AUD 100, JPY 3 (Differenz 97), Zinsabstand 4,85 gegen 1,25 Prozent. Dagegen: Risk-off stützt den Yen, und über 160 in USD/JPY droht ein japanischer Eingriff. Die Positionierung ist exzellent, das Timing ist das Problem.",
    "ob": {
-    "stand": "2026-11-19T06:31",
+    "stand": "2026-11-19T10:31",
     "checks": [
      {
       "t": "ok",
@@ -91,7 +91,7 @@
    "horizont": "3 bis 8 Wochen",
    "begruendung": "COT: AUD 100, CAD 37 (Differenz 63). Zinsabstand 4,85 gegen 2,50 Prozent. Der fallende Ölpreis belastet den CAD zusätzlich, und Kanadas Inflation blieb im Oktober mit 3,1 Prozent unter der Erwartung. Beide Währungen leiden aber unter derselben Rohstoffschwäche, deshalb kein Extremwert.",
    "ob": {
-    "stand": "2026-11-19T06:31",
+    "stand": "2026-11-19T10:31",
     "checks": [
      {
       "t": "ok",
@@ -157,7 +157,7 @@
    "horizont": "4 bis 10 Wochen",
    "begruendung": "COT: EUR 94 gegen Dollar-Index 20. Der Spekulanten-Short im Euro liegt bei minus 136.396. Dagegen: Der Zinsabstand arbeitet klar gegen den Euro, die EZB steht bei 2,65 gegen 4,00 Prozent der Fed, und der Kurs ist unter 1,10 gefallen. Positionierung ja, Zinsrichtung nein.",
    "ob": {
-    "stand": "2026-11-19T06:31",
+    "stand": "2026-11-19T10:31",
     "checks": [
      {
       "t": "ok",
@@ -203,7 +203,7 @@
  "ueberblick": [
   {
    "datum": "2026-11-19",
-   "text": "Der australische Arbeitsmarkt hat die Frage des Tages beantwortet, und zwar gegen den AUD: minus 43.500 Stellen gegen plus 25.000 erwartet, Arbeitslosenquote 4,9 statt 4,7 Prozent und damit der hoechste Stand seit Ende 2021. In zwei Monaten sind ueber 80.000 Stellen weggefallen. AUD/USD faellt unter 0,6700. Weitere RBA-Erhoehungen gelten als beendet, der Leitzins bleibt bei 4,85 Prozent. Zusammen mit dem falkenhaften FOMC-Protokoll vom Vorabend laeuft die Zinsdifferenz weiter gegen den AUD."
+   "text": "Der australische Arbeitsmarkt hat die Frage des Tages beantwortet, und zwar gegen den AUD: minus 43.500 Stellen gegen plus 25.000 erwartet, Arbeitslosenquote 4,9 statt 4,7 Prozent und damit der hoechste Stand seit Ende 2021. In zwei Monaten sind ueber 80.000 Stellen weggefallen. AUD/USD faellt unter 0,6700. Weitere RBA-Erhoehungen gelten als beendet, der Leitzins bleibt bei 4,85 Prozent. Zusammen mit dem falkenhaften FOMC-Protokoll vom Vorabend laeuft die Zinsdifferenz weiter gegen den AUD. Nachtrag 10:30: Fuer die europaeische Sitzung liessen sich keine belastbaren Kurse belegen, die erreichbaren Berichte waren aus 2025 oder ohne Datum. Es bleibt beim Stand von 01:30 mit AUD/USD unter 0,6700. Neu zur RBNZ: Hinweise auf einen ueberraschenden Halt bei 2,75 Prozent am 28. Oktober in einer 4-zu-3-Abstimmung mit weiterhin straffender Neigung, noch unbestaetigt."
   },
   {
    "titel": "Mittwoch 18.11.: Nvidia liefert, Erholung in den Futures, Gold auf 14-Monats-Tief",
@@ -269,7 +269,7 @@
    "stopp": "0.66540, 10 % der Zonenhöhe jenseits des Zonenrands. Nicht nachziehen.",
    "ziel": "Ziel 1: 0.68798 (1 R), Ziel 2: 0.69926 (2 R). Weekly-Teil zusätzlich laut Reiter KI Trades.",
    "ob": {
-    "stand": "2026-11-19T06:31",
+    "stand": "2026-11-19T10:31",
     "checks": [
      {
       "t": "ok",
@@ -329,7 +329,7 @@
    "stopp": "0.55463, 10 % der Zonenhöhe jenseits des Zonenrands. Nicht nachziehen.",
    "ziel": "Ziel 1: 0.56463 (1 R), Ziel 2: 0.56964 (2 R). Weekly-Teil zusätzlich laut Reiter KI Trades.",
    "ob": {
-    "stand": "2026-11-19T06:31",
+    "stand": "2026-11-19T10:31",
     "checks": [
      {
       "t": "ok",
@@ -386,7 +386,7 @@
    "staerke": 6,
    "bedingung": "Einstieg im unteren Drittel der Spanne der letzten vier Wochen mit Daily-Bestätigung. Vor dem SNB-Entscheid am 10.12. die Position eher klein halten, eine Erhöhung ist etwa 50 zu 50 eingepreist.",
    "ob": {
-    "stand": "2026-11-19T06:31",
+    "stand": "2026-11-19T10:31",
     "checks": [
      {
       "t": "ok",
@@ -412,7 +412,7 @@
    "stopp": "75.686, 10 % der Zonenhöhe jenseits des Zonenrands. Nicht nachziehen.",
    "ziel": "Ziel 1: 79.514 (1 R), Ziel 2: 81.428 (2 R). Weekly-Teil zusätzlich laut Reiter KI Trades.",
    "ob": {
-    "stand": "2026-11-19T06:31",
+    "stand": "2026-11-19T10:31",
     "checks": [
      {
       "t": "ok",
